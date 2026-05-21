@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexthak Mock Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-animation"></div>
+
+    <div class="test-container">
+
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <h2 id="welcomeText">Welcome</h2>
+            <div class="timer" id="timer">30:00</div>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+
+            <!-- Question Section -->
+            <div class="question-card">
+                <h3 id="questionText">Question text here</h3>
+
+                <div class="options" id="optionsContainer"></div>
+
+                <div class="navigation-buttons">
+                    <button onclick="prevQuestion()">Previous</button>
+                    <button onclick="markForReview()">Mark Review</button>
+                    <button onclick="nextQuestion()">Next</button>
+                    <button onclick="submitTest()">Submit</button>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="palette-card">
+                <h3>Exam Dashboard</h3>
+
+                <div class="stats-box">
+                    <p>Answered: <span id="answeredCount">0</span></p>
+                    <p>Not Answered: <span id="notAnsweredCount">0</span></p>
+                    <p>Marked: <span id="markedCount">0</span></p>
+                    <p>Total: <span id="totalCount">0</span></p>
+                </div>
+
+                <div class="legend-box">
+                    <p><span class="legend answered-box"></span> Answered</p>
+                    <p><span class="legend marked-box"></span> Marked</p>
+                    <p><span class="legend current-box"></span> Current</p>
+                </div>
+
+                <div id="questionPalette"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Nexthak | Built by Sarthak</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexthak - Mock Test Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Nexthak</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#quizzes">Quizzes</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Ultimate Mock Test Experience</h1>
+            <p>
+                Challenge yourself with realistic timed tests, track performance, and build confidence for exam.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#quizzes"><button>Start Now</button></a>
+                <a href="#features"><button class="secondary-btn">Explore Features</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+        <h2>Why Choose Nexthak?</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>⚡ Real Exam Experience</h3>
+                <p>Practice in a real certification exam environment.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🧠 Random Questions</h3>
+                <p>Every mock test gives a fresh set of questions.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📊 Performance Analytics</h3>
+                <p>Track score, review answers, and improve fast.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📱 Mobile Friendly</h3>
+                <p>Take mock tests anytime from any device.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔒 Secure Test Flow</h3>
+                <p>Protected test flow with timer and progress saving.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>☁️ Multiple Totics</h3>
+                <p>Azure, AWS, Java, Aptitude and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZZES -->
+    <section id="quizzes" class="quizzes">
+        <h2>Select Your Mock Test</h2>
+
+        <div class="quiz-grid">
+
+            <div class="quiz-card">
+                <h3>Azure</h3>
+                <p>Beginner AZ-900 preparation</p>
+                <button onclick="selectQuiz('data/azure-easy.json')">Start Test</button>
+            </div>
+
+            <div class="quiz-card">
+                <h3>Java Core</h3>
+                <p>Programming fundamentals</p>
+                <button onclick="selectQuiz('data/java-core.json')">Start Test</button>
+            </div>
+
+            <div class="quiz-card">
+                <h3>Aptitude Test</h3>
+                <p>Placement preparation</p>
+                <button onclick="selectQuiz('data/aptitude.json')">Start Test</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Nexthak</h2>
+        <p>
+           Nexthak is a modern practice platform built to help learners strengthen their knowledge, test their abilities, and gain confidence through real exam-like experiences.
+        </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <h2>Student Reviews</h2>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                ⭐ "Best mock exam experience I've used."
+            </div>
+
+            <div class="testimonial-card">
+                ⭐ "Feels exactly like a certification portal."
+            </div>
+
+            <div class="testimonial-card">
+                ⭐ "Amazing for practice and revision."
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Nexthak | Built by Sarthak</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

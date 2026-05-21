@@ -1,0 +1,303 @@
+[
+  {
+    "question": "Java is a?",
+    "options": ["Programming Language", "Database", "Operating System", "Browser"],
+    "answer": 0,
+    "explanation": "Java is a high-level programming language."
+  },
+  {
+    "question": "Who developed Java?",
+    "options": ["Microsoft", "Sun Microsystems", "Google", "Oracle"],
+    "answer": 1,
+    "explanation": "Java was originally developed by Sun Microsystems."
+  },
+  {
+    "question": "Which keyword is used to create an object?",
+    "options": ["create", "new", "object", "make"],
+    "answer": 1,
+    "explanation": "Objects are created using the new keyword."
+  },
+  {
+    "question": "JVM stands for?",
+    "options": ["Java Virtual Machine", "Java Variable Method", "Joint Virtual Machine", "Java Verified Machine"],
+    "answer": 0,
+    "explanation": "JVM executes Java bytecode."
+  },
+  {
+    "question": "JDK stands for?",
+    "options": ["Java Development Kit", "Java Design Kit", "Java Debug Kit", "Java Deployment Kit"],
+    "answer": 0,
+    "explanation": "JDK contains tools for Java development."
+  },
+  {
+    "question": "JRE stands for?",
+    "options": ["Java Runtime Environment", "Java Ready Environment", "Java Resource Engine", "Java Runtime Editor"],
+    "answer": 0,
+    "explanation": "JRE provides runtime support."
+  },
+  {
+    "question": "Which method is the entry point of Java program?",
+    "options": ["start()", "run()", "main()", "init()"],
+    "answer": 2,
+    "explanation": "main() is the program entry point."
+  },
+  {
+    "question": "Which access modifier makes members accessible everywhere?",
+    "options": ["private", "protected", "public", "default"],
+    "answer": 2,
+    "explanation": "public members are accessible from anywhere."
+  },
+  {
+    "question": "Which keyword is used for inheritance?",
+    "options": ["inherits", "extends", "implements", "super"],
+    "answer": 1,
+    "explanation": "extends is used for class inheritance."
+  },
+  {
+    "question": "Which keyword is used to inherit an interface?",
+    "options": ["extends", "implements", "inherits", "interface"],
+    "answer": 1,
+    "explanation": "Classes implement interfaces."
+  },
+  {
+    "question": "Constructor name must be?",
+    "options": ["Any name", "Same as class name", "main", "init"],
+    "answer": 1,
+    "explanation": "Constructor name must match class name."
+  },
+  {
+    "question": "Java supports multiple inheritance through?",
+    "options": ["Classes", "Interfaces", "Constructors", "Objects"],
+    "answer": 1,
+    "explanation": "Java supports multiple inheritance via interfaces."
+  },
+  {
+    "question": "Which keyword refers to current object?",
+    "options": ["self", "super", "this", "current"],
+    "answer": 2,
+    "explanation": "this refers to current object."
+  },
+  {
+    "question": "Which keyword refers to parent class?",
+    "options": ["parent", "base", "super", "this"],
+    "answer": 2,
+    "explanation": "super refers to parent class."
+  },
+  {
+    "question": "Method overloading means?",
+    "options": ["Same method name different parameters", "Same method same parameters", "Different names", "Inheritance"],
+    "answer": 0,
+    "explanation": "Overloading means same name with different parameters."
+  },
+  {
+    "question": "Method overriding requires?",
+    "options": ["Same method signature", "Different method name", "Different class only", "Constructor"],
+    "answer": 0,
+    "explanation": "Overriding requires same signature."
+  },
+  {
+    "question": "Polymorphism means?",
+    "options": ["One form", "Many forms", "No form", "Same form"],
+    "answer": 1,
+    "explanation": "Polymorphism means many forms."
+  },
+  {
+    "question": "Encapsulation means?",
+    "options": ["Wrapping data and methods", "Inheritance", "Looping", "Compilation"],
+    "answer": 0,
+    "explanation": "Encapsulation wraps data and methods."
+  },
+  {
+    "question": "Abstraction means?",
+    "options": ["Showing implementation", "Hiding implementation details", "Looping", "Inheritance"],
+    "answer": 1,
+    "explanation": "Abstraction hides implementation details."
+  },
+  {
+    "question": "Which keyword is used for abstract class?",
+    "options": ["virtual", "abstract", "hidden", "base"],
+    "answer": 1,
+    "explanation": "abstract keyword defines abstract class."
+  },
+  {
+    "question": "Can abstract class have constructor?",
+    "options": ["Yes", "No", "Sometimes", "Only static"],
+    "answer": 0,
+    "explanation": "Abstract classes can have constructors."
+  },
+  {
+    "question": "Which keyword makes variable constant?",
+    "options": ["const", "static", "final", "fixed"],
+    "answer": 2,
+    "explanation": "final makes variables constant."
+  },
+  {
+    "question": "Static variable belongs to?",
+    "options": ["Object", "Class", "Method", "Constructor"],
+    "answer": 1,
+    "explanation": "Static members belong to class."
+  },
+  {
+    "question": "Array index starts from?",
+    "options": ["1", "0", "-1", "Depends"],
+    "answer": 1,
+    "explanation": "Java arrays start from index 0."
+  },
+  {
+    "question": "String is?",
+    "options": ["Mutable", "Immutable", "Both", "None"],
+    "answer": 1,
+    "explanation": "String objects are immutable."
+  }
+,
+{
+  "question": "Which class is used for mutable strings?",
+  "options": ["String", "StringBuilder", "Integer", "Scanner"],
+  "answer": 1,
+  "explanation": "StringBuilder is mutable."
+},
+{
+  "question": "Which package contains Scanner class?",
+  "options": ["java.io", "java.util", "java.lang", "java.net"],
+  "answer": 1,
+  "explanation": "Scanner belongs to java.util package."
+},
+{
+  "question": "Exception handling uses?",
+  "options": ["if", "switch", "try-catch", "loop"],
+  "answer": 2,
+  "explanation": "Exceptions are handled using try-catch."
+},
+{
+  "question": "Finally block executes?",
+  "options": ["Always", "Never", "Sometimes", "Only on error"],
+  "answer": 0,
+  "explanation": "finally executes regardless of exception."
+},
+{
+  "question": "Which keyword throws exception manually?",
+  "options": ["throw", "throws", "catch", "error"],
+  "answer": 0,
+  "explanation": "throw manually throws exception."
+},
+{
+  "question": "throws keyword is used in?",
+  "options": ["Method declaration", "Constructor only", "Loop", "Class"],
+  "answer": 0,
+  "explanation": "throws declares exceptions in method signature."
+},
+{
+  "question": "Which exception occurs when dividing by zero?",
+  "options": ["IOException", "ArithmeticException", "NullPointerException", "ClassNotFoundException"],
+  "answer": 1,
+  "explanation": "Division by zero causes ArithmeticException."
+},
+{
+  "question": "NullPointerException occurs when?",
+  "options": ["Null object access", "Wrong input", "Array access", "Loop issue"],
+  "answer": 0,
+  "explanation": "Accessing null object causes this exception."
+},
+{
+  "question": "Collection framework is in package?",
+  "options": ["java.util", "java.io", "java.net", "java.lang"],
+  "answer": 0,
+  "explanation": "Collections are in java.util."
+},
+{
+  "question": "Which interface represents dynamic list?",
+  "options": ["Set", "List", "Map", "Queue"],
+  "answer": 1,
+  "explanation": "List represents ordered dynamic collection."
+},
+{
+  "question": "Which class implements List?",
+  "options": ["HashSet", "ArrayList", "HashMap", "TreeSet"],
+  "answer": 1,
+  "explanation": "ArrayList implements List."
+},
+{
+  "question": "HashSet stores?",
+  "options": ["Duplicates", "Unique values", "Key-value pairs", "Sorted duplicates"],
+  "answer": 1,
+  "explanation": "HashSet stores unique elements."
+},
+{
+  "question": "HashMap stores?",
+  "options": ["Only values", "Only keys", "Key-value pairs", "Sorted list"],
+  "answer": 2,
+  "explanation": "HashMap stores key-value pairs."
+},
+{
+  "question": "Which loop is entry controlled?",
+  "options": ["for", "while", "Both", "do-while"],
+  "answer": 2,
+  "explanation": "for and while are entry controlled."
+},
+{
+  "question": "Which loop executes at least once?",
+  "options": ["for", "while", "do-while", "none"],
+  "answer": 2,
+  "explanation": "do-while executes once before condition check."
+},
+{
+  "question": "break keyword does?",
+  "options": ["Skips iteration", "Ends loop", "Continues loop", "Creates object"],
+  "answer": 1,
+  "explanation": "break terminates loop."
+},
+{
+  "question": "continue keyword does?",
+  "options": ["Ends loop", "Skips current iteration", "Creates object", "Throws exception"],
+  "answer": 1,
+  "explanation": "continue skips current iteration."
+},
+{
+  "question": "Java supports garbage collection?",
+  "options": ["Yes", "No", "Partial", "Manual only"],
+  "answer": 0,
+  "explanation": "Java has automatic garbage collection."
+},
+{
+  "question": "Object class is parent of?",
+  "options": ["Some classes", "No classes", "All classes", "Interfaces only"],
+  "answer": 2,
+  "explanation": "Object is root class."
+},
+{
+  "question": "Which operator compares object references?",
+  "options": ["==", ".equals()", "!=", "compare"],
+  "answer": 0,
+  "explanation": "== compares references."
+},
+{
+  "question": ".equals() compares?",
+  "options": ["References", "Values/content", "Methods", "Classes"],
+  "answer": 1,
+  "explanation": ".equals compares content."
+},
+{
+  "question": "Can constructor be static?",
+  "options": ["Yes", "No", "Sometimes", "Only abstract class"],
+  "answer": 1,
+  "explanation": "Constructors cannot be static."
+},
+{
+  "question": "Can main method be overloaded?",
+  "options": ["Yes", "No", "Sometimes", "Never"],
+  "answer": 0,
+  "explanation": "main method can be overloaded."
+},
+{
+  "question": "Which access modifier is most restrictive?",
+  "options": ["public", "protected", "private", "default"],
+  "answer": 2,
+  "explanation": "private is most restrictive."
+},
+{
+  "question": "Java is platform independent because of?",
+  "options": ["Compiler", "JVM", "JDK", "IDE"],
+  "answer": 1,
+  "explanation": "JVM enables platform independence."
+}
+]

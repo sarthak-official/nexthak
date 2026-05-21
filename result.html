@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexthak Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <div class="result-container">
+
+        <div class="result-card">
+            <h1>Test Completed 🎉</h1>
+            <p id="studentResult"></p>
+            <button onclick="goHome()">Take Another Test</button>
+        </div>
+
+        <div id="reviewSection" class="review-section"></div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Nexthak | Built by Sarthak</p>
+    </footer>
+
+    <script>
+        // SECURITY CHECK
+        const studentName = localStorage.getItem("studentName");
+        const score = localStorage.getItem("score");
+        const total = localStorage.getItem("totalQuestions");
+
+        if (
+            !studentName ||
+            score === null ||
+            total === null
+        ) {
+            window.location.href = "index.html";
+        }
+
+        // PREVENT BACK BUTTON ACCESS
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+
+        const questions = JSON.parse(localStorage.getItem("questionsData")) || [];
+        const userAnswers = JSON.parse(localStorage.getItem("userAnswers")) || [];
+
+        document.getElementById("studentResult").innerHTML =
+            `${studentName}, you scored <strong>${score}/${total}</strong>`;
+
+        const reviewSection = document.getElementById("reviewSection");
+
+        questions.forEach((q, index) => {
+            const userAnswer = userAnswers[index];
+            const isCorrect = userAnswer === q.answer;
+
+            const reviewCard = document.createElement("div");
+            reviewCard.className = "review-card";
+
+            reviewCard.innerHTML = `
+                <h3>Q${index + 1}. ${q.question}</h3>
+                <p><strong>Your Answer:</strong> ${
+                    userAnswer !== null
+                        ? q.options[userAnswer]
+                        : "Not Answered"
+                }</p>
+                <p><strong>Correct Answer:</strong> ${q.options[q.answer]}</p>
+                <p><strong>Explanation:</strong> ${
+                    q.explanation || "No explanation available"
+                }</p>
+                <span class="${isCorrect ? 'correct' : 'wrong'}">
+                    ${isCorrect ? 'Correct ✅' : 'Wrong ❌'}
+                </span>
+            `;
+
+            reviewSection.appendChild(reviewCard);
+        });
+
+        function goHome() {
+            localStorage.clear();
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>

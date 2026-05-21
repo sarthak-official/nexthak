@@ -1,0 +1,303 @@
+[
+  {
+    "question": "What is 25% of 200?",
+    "options": ["40", "50", "60", "70"],
+    "answer": 1,
+    "explanation": "25% of 200 = (25/100) × 200 = 50"
+  },
+  {
+    "question": "If a product costs ₹500 and profit is 20%, selling price is?",
+    "options": ["₹550", "₹600", "₹650", "₹700"],
+    "answer": 1,
+    "explanation": "SP = 500 + 20% of 500 = 600"
+  },
+  {
+    "question": "Average of 10, 20, 30, 40, 50?",
+    "options": ["25", "30", "35", "40"],
+    "answer": 1,
+    "explanation": "Sum = 150, Average = 150/5 = 30"
+  },
+  {
+    "question": "If 5 workers complete work in 10 days, 10 workers take?",
+    "options": ["2 days", "5 days", "8 days", "10 days"],
+    "answer": 1,
+    "explanation": "Workers double, time halves."
+  },
+  {
+    "question": "Train speed 60 km/h, distance 180 km, time taken?",
+    "options": ["2 hrs", "3 hrs", "4 hrs", "5 hrs"],
+    "answer": 1,
+    "explanation": "Time = Distance / Speed = 180/60 = 3"
+  },
+  {
+    "question": "Simple Interest on ₹1000 at 10% for 2 years?",
+    "options": ["100", "150", "200", "250"],
+    "answer": 2,
+    "explanation": "SI = (P×R×T)/100 = 200"
+  },
+  {
+    "question": "Ratio of 20:30 simplifies to?",
+    "options": ["2:3", "3:2", "4:5", "5:6"],
+    "answer": 0,
+    "explanation": "Divide by 10."
+  },
+  {
+    "question": "What is 15% of 300?",
+    "options": ["35", "40", "45", "50"],
+    "answer": 2,
+    "explanation": "15% of 300 = 45"
+  },
+  {
+    "question": "A number divisible by 2 and 5 is divisible by?",
+    "options": ["10", "15", "20", "25"],
+    "answer": 0,
+    "explanation": "LCM of 2 and 5 = 10"
+  },
+  {
+    "question": "If CP = ₹800 and SP = ₹720, loss %?",
+    "options": ["5%", "10%", "15%", "20%"],
+    "answer": 1,
+    "explanation": "Loss = 80, loss% = 10%"
+  },
+  {
+    "question": "Compound interest on ₹1000 at 10% for 2 years?",
+    "options": ["200", "210", "220", "230"],
+    "answer": 1,
+    "explanation": "Amount = 1210, CI = 210"
+  },
+  {
+    "question": "What is 3/4 of 200?",
+    "options": ["100", "120", "150", "180"],
+    "answer": 2,
+    "explanation": "3/4 × 200 = 150"
+  },
+  {
+    "question": "If 12 men do work in 8 days, 6 men take?",
+    "options": ["12", "14", "16", "18"],
+    "answer": 2,
+    "explanation": "Half workers = double time"
+  },
+  {
+    "question": "Speed = 40 km/h, time = 5 hrs, distance?",
+    "options": ["180", "190", "200", "210"],
+    "answer": 2,
+    "explanation": "Distance = Speed × Time"
+  },
+  {
+    "question": "Average of first 5 natural numbers?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 1,
+    "explanation": "1+2+3+4+5 = 15, average = 3"
+  },
+  {
+    "question": "20% increase on 500 = ?",
+    "options": ["550", "600", "650", "700"],
+    "answer": 1,
+    "explanation": "20% of 500 = 100"
+  },
+  {
+    "question": "What is 50% of 90?",
+    "options": ["35", "40", "45", "50"],
+    "answer": 2,
+    "explanation": "Half of 90 = 45"
+  },
+  {
+    "question": "LCM of 4 and 6?",
+    "options": ["10", "12", "16", "18"],
+    "answer": 1,
+    "explanation": "LCM = 12"
+  },
+  {
+    "question": "HCF of 12 and 18?",
+    "options": ["3", "6", "9", "12"],
+    "answer": 1,
+    "explanation": "HCF = 6"
+  },
+  {
+    "question": "A train crosses 120 km in 2 hours. Speed?",
+    "options": ["50", "60", "70", "80"],
+    "answer": 1,
+    "explanation": "120/2 = 60"
+  },
+  {
+    "question": "Profit % if CP=100, SP=125?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "answer": 1,
+    "explanation": "Profit = 25%"
+  },
+  {
+    "question": "1/5 of 250?",
+    "options": ["40", "45", "50", "55"],
+    "answer": 2,
+    "explanation": "250/5 = 50"
+  },
+  {
+    "question": "Average of 8, 12, 16?",
+    "options": ["10", "12", "14", "16"],
+    "answer": 1,
+    "explanation": "36/3 = 12"
+  },
+  {
+    "question": "Time if distance=100 km and speed=25 km/h?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 2,
+    "explanation": "100/25 = 4"
+  },
+  {
+    "question": "25% of 400?",
+    "options": ["80", "90", "100", "120"],
+    "answer": 2,
+    "explanation": "25% of 400 = 100"
+  }
+  ,
+{
+  "question": "If 8 workers complete work in 15 days, 4 workers take?",
+  "options": ["20", "25", "30", "35"],
+  "answer": 2,
+  "explanation": "Half workers = double time = 30 days"
+},
+{
+  "question": "What is 10% of 750?",
+  "options": ["65", "70", "75", "80"],
+  "answer": 2,
+  "explanation": "10% of 750 = 75"
+},
+{
+  "question": "Profit if CP=₹200 and SP=₹260?",
+  "options": ["₹40", "₹50", "₹60", "₹70"],
+  "answer": 2,
+  "explanation": "260 - 200 = 60"
+},
+{
+  "question": "Average of 5, 10, 15, 20?",
+  "options": ["10", "12.5", "15", "17.5"],
+  "answer": 1,
+  "explanation": "Sum = 50, Average = 12.5"
+},
+{
+  "question": "Distance covered at 80 km/h in 3 hours?",
+  "options": ["220", "230", "240", "250"],
+  "answer": 2,
+  "explanation": "80 × 3 = 240"
+},
+{
+  "question": "Simple Interest on ₹2000 at 5% for 2 years?",
+  "options": ["150", "200", "250", "300"],
+  "answer": 1,
+  "explanation": "SI = (2000×5×2)/100 = 200"
+},
+{
+  "question": "What is 30% of 500?",
+  "options": ["100", "120", "150", "180"],
+  "answer": 2,
+  "explanation": "30% of 500 = 150"
+},
+{
+  "question": "HCF of 20 and 30?",
+  "options": ["5", "10", "15", "20"],
+  "answer": 1,
+  "explanation": "HCF = 10"
+},
+{
+  "question": "LCM of 5 and 7?",
+  "options": ["30", "35", "40", "45"],
+  "answer": 1,
+  "explanation": "LCM = 35"
+},
+{
+  "question": "If SP=₹900 and profit=₹100, CP?",
+  "options": ["700", "750", "800", "850"],
+  "answer": 2,
+  "explanation": "CP = SP - Profit"
+},
+{
+  "question": "25% decrease of 200?",
+  "options": ["140", "150", "160", "170"],
+  "answer": 1,
+  "explanation": "25% of 200 = 50, remaining = 150"
+},
+{
+  "question": "If speed doubles, time becomes?",
+  "options": ["Double", "Half", "Same", "Triple"],
+  "answer": 1,
+  "explanation": "Speed and time are inversely proportional."
+},
+{
+  "question": "Average of 100 and 200?",
+  "options": ["120", "140", "150", "160"],
+  "answer": 2,
+  "explanation": "(100+200)/2 = 150"
+},
+{
+  "question": "What is 40% of 250?",
+  "options": ["80", "90", "100", "110"],
+  "answer": 2,
+  "explanation": "40% of 250 = 100"
+},
+{
+  "question": "1/4 of 160?",
+  "options": ["30", "35", "40", "45"],
+  "answer": 2,
+  "explanation": "160/4 = 40"
+},
+{
+  "question": "Train speed 90 km/h, time 2 hrs, distance?",
+  "options": ["160", "170", "180", "190"],
+  "answer": 2,
+  "explanation": "90 × 2 = 180"
+},
+{
+  "question": "Profit % if CP=₹400 and SP=₹500?",
+  "options": ["20%", "25%", "30%", "35%"],
+  "answer": 1,
+  "explanation": "Profit = 100, Profit% = 25%"
+},
+{
+  "question": "What is 5% of 1000?",
+  "options": ["25", "40", "50", "60"],
+  "answer": 2,
+  "explanation": "5% of 1000 = 50"
+},
+{
+  "question": "A train covers 300 km in 5 hours. Speed?",
+  "options": ["50", "60", "70", "80"],
+  "answer": 1,
+  "explanation": "300/5 = 60"
+},
+{
+  "question": "Compound interest on ₹1000 at 20% for 2 years?",
+  "options": ["400", "420", "440", "460"],
+  "answer": 2,
+  "explanation": "1000 × 1.2 × 1.2 = 1440, CI = 440"
+},
+{
+  "question": "Ratio 12:18 simplifies to?",
+  "options": ["2:3", "3:2", "4:5", "6:7"],
+  "answer": 0,
+  "explanation": "Divide both by 6"
+},
+{
+  "question": "Average of 2, 4, 6, 8?",
+  "options": ["4", "5", "6", "7"],
+  "answer": 1,
+  "explanation": "20/4 = 5"
+},
+{
+  "question": "If 3 pens cost ₹30, 1 pen costs?",
+  "options": ["₹5", "₹8", "₹10", "₹12"],
+  "answer": 2,
+  "explanation": "30/3 = 10"
+},
+{
+  "question": "15% of 600?",
+  "options": ["80", "85", "90", "95"],
+  "answer": 2,
+  "explanation": "15% of 600 = 90"
+},
+{
+  "question": "Time taken to cover 150 km at 50 km/h?",
+  "options": ["2", "2.5", "3", "3.5"],
+  "answer": 2,
+  "explanation": "150/50 = 3"
+}
+]

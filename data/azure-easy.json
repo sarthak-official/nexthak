@@ -1,0 +1,304 @@
+[
+  {
+    "question": "What is Microsoft Azure?",
+    "options": ["Cloud computing platform", "Programming language", "Database", "Browser"],
+    "answer": 0,
+    "explanation": "Microsoft Azure is a cloud computing platform."
+  },
+  {
+    "question": "Which company owns Azure?",
+    "options": ["Google", "Amazon", "Microsoft", "Oracle"],
+    "answer": 2,
+    "explanation": "Azure is owned by Microsoft."
+  },
+  {
+    "question": "What does IaaS stand for?",
+    "options": ["Infrastructure as a Service", "Internet as a Service", "Integration as a Service", "Instance as a Service"],
+    "answer": 0,
+    "explanation": "IaaS provides infrastructure resources over the internet."
+  },
+  {
+    "question": "What does PaaS stand for?",
+    "options": ["Platform as a Service", "Program as a Service", "Process as a Service", "Package as a Service"],
+    "answer": 0,
+    "explanation": "PaaS provides a platform for application development."
+  },
+  {
+    "question": "What does SaaS stand for?",
+    "options": ["Software as a Service", "System as a Service", "Storage as a Service", "Security as a Service"],
+    "answer": 0,
+    "explanation": "SaaS delivers software applications over the internet."
+  },
+  {
+    "question": "Azure Virtual Machines belongs to which cloud model?",
+    "options": ["IaaS", "PaaS", "SaaS", "Hybrid"],
+    "answer": 0,
+    "explanation": "Virtual machines are infrastructure resources."
+  },
+  {
+    "question": "Azure App Service is an example of?",
+    "options": ["IaaS", "PaaS", "SaaS", "Storage"],
+    "answer": 1,
+    "explanation": "Azure App Service is a PaaS offering."
+  },
+  {
+    "question": "Which Azure service stores unstructured data?",
+    "options": ["Azure Blob Storage", "Azure VM", "Azure DNS", "Azure AD"],
+    "answer": 0,
+    "explanation": "Blob Storage stores unstructured data."
+  },
+  {
+    "question": "Azure supports which deployment models?",
+    "options": ["Public", "Private", "Hybrid", "All of these"],
+    "answer": 3,
+    "explanation": "Azure supports all deployment models."
+  },
+  {
+    "question": "Which Azure service provides DNS hosting?",
+    "options": ["Azure DNS", "Azure VM", "Azure AD", "Azure SQL"],
+    "answer": 0,
+    "explanation": "Azure DNS hosts DNS domains."
+  },
+  {
+    "question": "Azure SQL Database is?",
+    "options": ["PaaS database", "IaaS server", "Storage service", "Networking service"],
+    "answer": 0,
+    "explanation": "Azure SQL Database is a managed PaaS database."
+  },
+  {
+    "question": "Which service manages user identities?",
+    "options": ["Azure Active Directory", "Azure DNS", "Azure Storage", "Azure VM"],
+    "answer": 0,
+    "explanation": "Azure AD manages identities and access."
+  },
+  {
+    "question": "What is Azure Functions?",
+    "options": ["Serverless compute", "Database", "Storage", "Monitoring"],
+    "answer": 0,
+    "explanation": "Azure Functions provides serverless execution."
+  },
+  {
+    "question": "Which service provides content delivery?",
+    "options": ["Azure CDN", "Azure VM", "Azure AD", "Azure SQL"],
+    "answer": 0,
+    "explanation": "Azure CDN delivers content globally."
+  },
+  {
+    "question": "Which service provides monitoring?",
+    "options": ["Azure Monitor", "Azure VM", "Azure Blob", "Azure DNS"],
+    "answer": 0,
+    "explanation": "Azure Monitor tracks performance and health."
+  },
+  {
+    "question": "Azure regions are?",
+    "options": ["Physical locations", "Virtual machines", "Databases", "Accounts"],
+    "answer": 0,
+    "explanation": "Regions are physical geographic locations."
+  },
+  {
+    "question": "Availability Zones improve?",
+    "options": ["High availability", "Storage cost", "Networking", "Identity"],
+    "answer": 0,
+    "explanation": "Availability Zones improve resilience."
+  },
+  {
+    "question": "Which Azure service manages secrets?",
+    "options": ["Key Vault", "Blob Storage", "DNS", "VM"],
+    "answer": 0,
+    "explanation": "Key Vault securely stores secrets."
+  },
+  {
+    "question": "Azure Firewall is used for?",
+    "options": ["Network security", "Storage", "Identity", "Compute"],
+    "answer": 0,
+    "explanation": "Azure Firewall protects network resources."
+  },
+  {
+    "question": "Azure Load Balancer distributes?",
+    "options": ["Traffic", "Storage", "Users", "Passwords"],
+    "answer": 0,
+    "explanation": "Load Balancer distributes incoming traffic."
+  },
+  {
+    "question": "Azure Advisor provides?",
+    "options": ["Recommendations", "Storage", "DNS", "Authentication"],
+    "answer": 0,
+    "explanation": "Azure Advisor provides best practice recommendations."
+  },
+  {
+    "question": "Azure Cost Management helps with?",
+    "options": ["Tracking cloud spending", "Identity", "Networking", "Storage"],
+    "answer": 0,
+    "explanation": "It helps monitor and optimize costs."
+  },
+  {
+    "question": "Azure Resource Manager manages?",
+    "options": ["Resources", "Users", "Passwords", "Databases only"],
+    "answer": 0,
+    "explanation": "ARM manages Azure resources."
+  },
+  {
+    "question": "Azure Sentinel is used for?",
+    "options": ["Security analytics", "Storage", "Compute", "DNS"],
+    "answer": 0,
+    "explanation": "Sentinel is a cloud-native SIEM."
+  },
+  {
+    "question": "Azure Policy helps enforce?",
+    "options": ["Governance rules", "Storage", "Networking", "Passwords"],
+    "answer": 0,
+    "explanation": "Azure Policy enforces organizational standards."
+  }
+  ,
+{
+  "question": "Which Azure service is used for relational databases?",
+  "options": ["Azure SQL Database", "Blob Storage", "Azure DNS", "Azure CDN"],
+  "answer": 0,
+  "explanation": "Azure SQL Database is a relational database service."
+},
+{
+  "question": "Azure Storage account can store?",
+  "options": ["Blobs", "Files", "Queues", "All of these"],
+  "answer": 3,
+  "explanation": "Storage accounts support multiple storage services."
+},
+{
+  "question": "Which service is used for file sharing?",
+  "options": ["Azure Files", "Azure DNS", "Azure Monitor", "Azure VM"],
+  "answer": 0,
+  "explanation": "Azure Files provides managed file shares."
+},
+{
+  "question": "Azure Queue Storage is used for?",
+  "options": ["Message storage", "Identity", "Monitoring", "DNS"],
+  "answer": 0,
+  "explanation": "Queue Storage stores messages for asynchronous processing."
+},
+{
+  "question": "Which Azure service provides virtual networking?",
+  "options": ["Azure Virtual Network", "Azure SQL", "Azure Functions", "Azure AD"],
+  "answer": 0,
+  "explanation": "Azure Virtual Network provides private networking."
+},
+{
+  "question": "Azure ExpressRoute provides?",
+  "options": ["Private connectivity", "Public website hosting", "Identity", "Monitoring"],
+  "answer": 0,
+  "explanation": "ExpressRoute gives private connection to Azure."
+},
+{
+  "question": "Which service helps backup data?",
+  "options": ["Azure Backup", "Azure DNS", "Azure CDN", "Azure VM"],
+  "answer": 0,
+  "explanation": "Azure Backup protects data and workloads."
+},
+{
+  "question": "Azure Site Recovery helps with?",
+  "options": ["Disaster recovery", "Identity", "Storage", "Monitoring"],
+  "answer": 0,
+  "explanation": "Site Recovery helps failover during outages."
+},
+{
+  "question": "Which service provides serverless workflows?",
+  "options": ["Logic Apps", "Blob Storage", "Azure VM", "Azure SQL"],
+  "answer": 0,
+  "explanation": "Logic Apps automate workflows."
+},
+{
+  "question": "Azure Kubernetes Service is used for?",
+  "options": ["Container orchestration", "Identity", "Storage", "DNS"],
+  "answer": 0,
+  "explanation": "AKS manages Kubernetes clusters."
+},
+{
+  "question": "Azure Container Instances provide?",
+  "options": ["Quick container execution", "Identity", "DNS", "Storage"],
+  "answer": 0,
+  "explanation": "ACI runs containers without managing servers."
+},
+{
+  "question": "Azure DevOps is used for?",
+  "options": ["Development lifecycle", "DNS", "Storage", "Networking"],
+  "answer": 0,
+  "explanation": "Azure DevOps supports CI/CD and project management."
+},
+{
+  "question": "Which Azure service provides analytics?",
+  "options": ["Azure Synapse", "Azure VM", "Azure DNS", "Azure Firewall"],
+  "answer": 0,
+  "explanation": "Azure Synapse provides analytics capabilities."
+},
+{
+  "question": "Azure Machine Learning is used for?",
+  "options": ["ML model building", "DNS", "Identity", "Storage"],
+  "answer": 0,
+  "explanation": "Azure ML supports machine learning workflows."
+},
+{
+  "question": "Which Azure service translates languages?",
+  "options": ["Azure Cognitive Services", "Azure SQL", "Azure VM", "Azure DNS"],
+  "answer": 0,
+  "explanation": "Cognitive Services include translation APIs."
+},
+{
+  "question": "Azure RBAC stands for?",
+  "options": ["Role-Based Access Control", "Resource Backup Access Control", "Remote Backup Access Control", "Role Backup Account Control"],
+  "answer": 0,
+  "explanation": "RBAC manages permissions by role."
+},
+{
+  "question": "Azure MFA provides?",
+  "options": ["Extra authentication security", "Storage", "Networking", "Backup"],
+  "answer": 0,
+  "explanation": "MFA adds additional verification."
+},
+{
+  "question": "Azure SLA refers to?",
+  "options": ["Service Level Agreement", "Storage Level Access", "Security Login Access", "Server Level Application"],
+  "answer": 0,
+  "explanation": "SLA defines uptime commitments."
+},
+{
+  "question": "CapEx means?",
+  "options": ["Capital Expenditure", "Cloud Expenditure", "Compute Expense", "Cost Expansion"],
+  "answer": 0,
+  "explanation": "CapEx is upfront capital spending."
+},
+{
+  "question": "OpEx means?",
+  "options": ["Operational Expenditure", "Online Expense", "Optimized Expense", "Operational Expansion"],
+  "answer": 0,
+  "explanation": "OpEx is ongoing operational cost."
+},
+{
+  "question": "Azure pricing calculator helps?",
+  "options": ["Estimate costs", "Create VMs", "Manage DNS", "Store files"],
+  "answer": 0,
+  "explanation": "Pricing calculator estimates Azure costs."
+},
+{
+  "question": "Azure TCO calculator compares?",
+  "options": ["Cloud migration costs", "DNS performance", "Storage speed", "Identity security"],
+  "answer": 0,
+  "explanation": "TCO calculator compares on-prem vs cloud cost."
+},
+{
+  "question": "Which Azure portal is web-based?",
+  "options": ["Azure Portal", "Visual Studio", "PowerShell", "CLI"],
+  "answer": 0,
+  "explanation": "Azure Portal is the web UI."
+},
+{
+  "question": "Azure CLI is?",
+  "options": ["Command-line management tool", "Storage service", "Identity provider", "Database"],
+  "answer": 0,
+  "explanation": "Azure CLI manages Azure from terminal."
+},
+{
+  "question": "Which Azure service helps governance?",
+  "options": ["Management Groups", "Blob Storage", "VM", "DNS"],
+  "answer": 0,
+  "explanation": "Management Groups organize subscriptions."
+}
+
+]

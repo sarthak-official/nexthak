@@ -327,8 +327,9 @@ section h2 {
 }
 
 .question-card h3 {
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.3;
+    white-space: pre-line;
 }
 
 .palette-card {
@@ -337,15 +338,15 @@ section h2 {
 }
 
 .palette-card h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #4fc3f7;
 }
 
 .options {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .option-btn {
@@ -470,6 +471,7 @@ section h2 {
 .review-card h3 {
     margin-bottom: 15px;
     color: #4fc3f7;
+    white-space: pre-line;
 }
 
 .review-card p {
@@ -550,4 +552,194 @@ footer {
     .result-container {
         padding: 15px;
     }
+}
+
+/* =========================
+   ALL QUESTIONS PAGE
+========================= */
+
+#totalCount {
+    max-width: 1400px;
+    margin: 25px auto 10px;
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #4fc3f7;
+    text-align: left;
+}
+
+#allQuestions {
+    max-width: 1400px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.question-box {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 153, 255, 0.08);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.question-box:hover {
+    transform: translateY(-5px);
+    border-color: rgba(79, 195, 247, 0.35);
+    box-shadow: 0 14px 35px rgba(0, 153, 255, 0.15);
+}
+
+.question-box h3 {
+    font-size: 24px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 18px;
+    white-space: pre-line;
+}
+
+.question-box p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e2e8f0;
+    margin: 8px 0;
+}
+
+.correct-answer {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(34, 197, 94, 0.12);
+    color: #22c55e !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.explanation {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #4fc3f7;
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+    #totalCount {
+        font-size: 24px;
+        padding: 0 16px;
+    }
+
+    #allQuestions {
+        padding: 0 16px;
+    }
+
+    .question-box {
+        padding: 22px;
+    }
+
+    .question-box h3 {
+        font-size: 20px;
+    }
+
+    .question-box p {
+        font-size: 16px;
+    }
+
+    .correct-answer {
+        font-size: 16px;
+    }
+
+    .explanation {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 14px 16px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    #totalCount {
+        font-size: 18px;
+        padding: 0 12px;
+        margin-top: 16px;
+    }
+
+    #allQuestions {
+        padding: 0 10px;
+        gap: 14px;
+    }
+
+    .question-box {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .question-box h3 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .question-box p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .correct-answer {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .explanation {
+        font-size: 12px;
+        padding: 12px;
+        line-height: 1.5;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 14px;
+    }
+}
+
+#loadingScreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 30px;
+
+    z-index: 9999;
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexthak Result</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="background-animation"></div>
@@ -31,6 +33,7 @@
         const studentName = localStorage.getItem("studentName");
         const score = localStorage.getItem("score");
         const total = localStorage.getItem("totalQuestions");
+        const studentEmail = localStorage.getItem("studentEmail");
 
         if (
             !studentName ||
@@ -48,29 +51,53 @@
 
         const questions = JSON.parse(localStorage.getItem("questionsData")) || [];
         const userAnswers = JSON.parse(localStorage.getItem("userAnswers")) || [];
+        const questionTimes =
+            JSON.parse(localStorage.getItem("questionTimes")) || [];
 
         document.getElementById("studentResult").innerHTML =
-            `${studentName}, you scored <strong>${score}/${total}</strong>`;
+            `
+            <strong>${studentName}</strong><br>
+            ${studentEmail}<br><br>
+            You scored <strong>${score}/${total}</strong>
+            `;
 
         const reviewSection = document.getElementById("reviewSection");
 
-        questions.forEach((q, index) => {
-            const userAnswer = userAnswers[index];
-            const isCorrect = userAnswer === q.answer;
 
-            const reviewCard = document.createElement("div");
+        questions.forEach((q, index) => {
+
+            const userAnswer = userAnswers[index];
+
+            const isCorrect =
+                userAnswer === q.answer;
+
+            const spentSeconds =
+                questionTimes[index] || 0;
+
+            const minutes =
+                Math.floor(spentSeconds / 60);
+
+            const seconds =
+                spentSeconds % 60;
+
+            const reviewCard =
+                document.createElement("div");
+
             reviewCard.className = "review-card";
 
             reviewCard.innerHTML = `
                 <h3>Q${index + 1}. ${q.question}</h3>
-                <p><strong>Your Answer:</strong> ${
-                    userAnswer !== null
-                        ? q.options[userAnswer]
-                        : "Not Answered"
+                <p><strong>Your Answer:</strong> ${userAnswer !== null
+                    ? q.options[userAnswer]
+                    : "Not Answered"
                 }</p>
                 <p><strong>Correct Answer:</strong> ${q.options[q.answer]}</p>
-                <p><strong>Explanation:</strong> ${
-                    q.explanation || "No explanation available"
+                <p>
+                <strong>Time Spent:</strong>
+                ${String(minutes).padStart(2, "0")}:
+                ${String(seconds).padStart(2, "0")}
+                </p>
+                <p><strong>Explanation:</strong> ${q.explanation || "No explanation available"
                 }</p>
                 <span class="${isCorrect ? 'correct' : 'wrong'}">
                     ${isCorrect ? 'Correct ✅' : 'Wrong ❌'}
@@ -87,4 +114,5 @@
     </script>
 
 </body>
+
 </html>

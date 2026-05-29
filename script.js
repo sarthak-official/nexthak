@@ -4,24 +4,60 @@ let userAnswers = [];
 let markedQuestions = [];
 let timeLeft = 1800;
 let timerInterval;
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbyYWApnsVJQonaWhh6oHRbIwK4vYC4Hbi862V3irnUaZ-dqFAexl9nvZ_Twp6GIm9ZF5Q/exec";
+let questionTimes = [];
+let questionStartTime = Date.now();
 
 /* LANDING PAGE QUIZ SELECTION */
-function selectQuiz(quizPath) {
+function selectQuiz(quizPath, quizName) {
+
     localStorage.clear();
-    localStorage.setItem("selectedQuiz", quizPath);
-    window.location.href = "login.html";
+
+    localStorage.setItem(
+        "selectedQuiz",
+        quizPath
+    );
+
+    localStorage.setItem(
+        "quizName",
+        quizName
+    );
+
+    window.location.href =
+        "login.html";
+}
+
+function viewQuestions(filePath) {
+    localStorage.setItem("questionFile", filePath);
+    window.location.href = "allquestions.html";
 }
 
 /* LOGIN */
 function startTest() {
-    const studentName = document.getElementById("studentName")?.value.trim();
+
+    const studentName =
+        document.getElementById("studentName")
+        ?.value.trim();
+
+    const studentEmail =
+        document.getElementById("studentEmail")
+        ?.value.trim();
 
     if (!studentName) {
         alert("Please enter your full name");
         return;
     }
 
-    const selectedQuiz = localStorage.getItem("selectedQuiz");
+    const emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(studentEmail)) {
+        alert("Please enter a valid email address");
+        return;
+    }
+
+    const selectedQuiz =
+        localStorage.getItem("selectedQuiz");
 
     if (!selectedQuiz) {
         alert("Please select a quiz first.");
@@ -29,7 +65,16 @@ function startTest() {
         return;
     }
 
-    localStorage.setItem("studentName", studentName);
+    localStorage.setItem(
+        "studentName",
+        studentName
+    );
+
+    localStorage.setItem(
+        "studentEmail",
+        studentEmail
+    );
+
     window.location.href = "test.html";
 }
 
@@ -41,6 +86,8 @@ if (window.location.pathname.includes("test.html")) {
 async function initializeTest() {
     const studentName = localStorage.getItem("studentName");
     const selectedQuiz = localStorage.getItem("selectedQuiz");
+
+    
 
     if (!studentName || !selectedQuiz) {
         window.location.href = "index.html";
@@ -72,6 +119,12 @@ async function initializeTest() {
         markedQuestions =
             JSON.parse(localStorage.getItem("markedQuestions")) ||
             new Array(questions.length).fill(false);
+
+        questionTimes =
+            JSON.parse(localStorage.getItem("questionTimes")) ||
+            new Array(questions.length).fill(0);
+
+        questionStartTime = Date.now();
 
         timeLeft = parseInt(localStorage.getItem("timeLeft")) || 1800;
         currentQuestion = parseInt(localStorage.getItem("currentQuestion")) || 0;
@@ -105,6 +158,11 @@ function saveProgress() {
     localStorage.setItem("markedQuestions", JSON.stringify(markedQuestions));
     localStorage.setItem("timeLeft", timeLeft);
     localStorage.setItem("currentQuestion", currentQuestion);
+
+    localStorage.setItem(
+    "questionTimes",
+    JSON.stringify(questionTimes)
+    );
 }
 
 /* RENDER */
@@ -144,17 +202,29 @@ function renderQuestion() {
 
 /* NAVIGATION */
 function nextQuestion() {
+
+    saveCurrentQuestionTime();
+
     if (currentQuestion < questions.length - 1) {
+
         currentQuestion++;
+
         saveProgress();
+
         renderQuestion();
     }
 }
 
 function prevQuestion() {
+
+    saveCurrentQuestionTime();
+
     if (currentQuestion > 0) {
+
         currentQuestion--;
+
         saveProgress();
+
         renderQuestion();
     }
 }
@@ -190,11 +260,16 @@ function updatePalette() {
             btn.classList.add("answered");
         }
 
-        btn.onclick = () => {
-            currentQuestion = index;
-            saveProgress();
-            renderQuestion();
-        };
+       btn.onclick = () => {
+
+    saveCurrentQuestionTime();
+
+    currentQuestion = index;
+
+    saveProgress();
+
+    renderQuestion();
+};
 
         palette.appendChild(btn);
     });
@@ -246,12 +321,22 @@ function startTimer() {
 
 /* SUBMIT */
 function submitTest(showConfirm = true) {
+
     if (showConfirm) {
-        const confirmSubmit = confirm("Are you sure you want to submit?");
+        const confirmSubmit =
+            confirm("Are you sure you want to submit?");
+
         if (!confirmSubmit) return;
     }
 
     clearInterval(timerInterval);
+
+    saveCurrentQuestionTime();
+    document.getElementById("loadingScreen").style.display = "flex";
+    localStorage.setItem(
+        "questionTimes",
+        JSON.stringify(questionTimes)
+    );
 
     let score = 0;
 
@@ -266,5 +351,45 @@ function submitTest(showConfirm = true) {
     localStorage.setItem("questionsData", JSON.stringify(questions));
     localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
 
+    const studentName =
+        localStorage.getItem("studentName");
+
+    const studentEmail =
+        localStorage.getItem("studentEmail");
+
+    const quizName = localStorage.getItem("quizName");
+
+    console.log("Name:", studentName);
+    console.log("Email:", studentEmail);
+    console.log("Score:", score);
+
+    const formData = new FormData();
+
+formData.append("name", studentName);
+formData.append("email", studentEmail);
+formData.append("quiz", quizName);
+formData.append("score", score);
+formData.append("total", questions.length);
+formData.append("time", 1800 - timeLeft);
+
+fetch(SHEET_URL, {
+    method: "POST",
+    body: formData
+})
+.then(() => {
     window.location.href = "result.html";
+});
+}
+function saveCurrentQuestionTime() {
+
+    const spent = Math.floor(
+        (Date.now() - questionStartTime) / 1000
+    );
+
+    questionTimes[currentQuestion] =
+        (questionTimes[currentQuestion] || 0) + spent;
+
+    questionStartTime = Date.now();
+
+    saveProgress();
 }

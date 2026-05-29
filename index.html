@@ -74,30 +74,51 @@
 
     <!-- QUIZZES -->
     <section id="quizzes" class="quizzes">
-        <h2>Select Your Mock Test</h2>
+    <h2>Select Your Mock Test</h2>
 
-        <div class="quiz-grid">
+    <div class="quiz-grid">
 
-            <div class="quiz-card">
-                <h3>Azure</h3>
-                <p>Beginner AZ-900 preparation</p>
-                <button onclick="selectQuiz('data/azure-easy.json')">Start Test</button>
-            </div>
+        <div class="quiz-card">
+            <h3>Azure</h3>
+            <p>Beginner AZ-900 preparation</p>
 
-            <div class="quiz-card">
-                <h3>Java Core</h3>
-                <p>Programming fundamentals</p>
-                <button onclick="selectQuiz('data/java-core.json')">Start Test</button>
-            </div>
+            <button onclick="selectQuiz('data/azure-easy.json','azure')">
+                Start Test
+            </button>
 
-            <div class="quiz-card">
-                <h3>Aptitude Test</h3>
-                <p>Placement preparation</p>
-                <button onclick="selectQuiz('data/aptitude.json')">Start Test</button>
-            </div>
-
+            <button onclick="viewQuestions('data/azure-easy.json')">
+                View All Questions
+            </button>
         </div>
-    </section>
+
+        <div class="quiz-card">
+            <h3>Java Core</h3>
+            <p>Programming fundamentals</p>
+
+            <button onclick="selectQuiz('data/java-core.json','java')">
+                Start Test
+            </button>
+
+            <button onclick="viewQuestions('data/java-core.json')">
+                View All Questions
+            </button>
+        </div>
+
+        <div class="quiz-card">
+            <h3>Aptitude Test</h3>
+            <p>Placement preparation</p>
+
+            <button onclick="selectQuiz('data/aptitude.json','Aptitude')">
+                Start Test
+            </button>
+
+            <button onclick="viewQuestions('data/aptitude.json')">
+                View All Questions
+            </button>
+        </div>
+
+    </div>
+</section>
 
     <!-- ABOUT -->
     <section id="about" class="about">

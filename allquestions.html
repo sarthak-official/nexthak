@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-animation"></div>
+
+<nav class="navbar">
+    <div class="logo">Nexthak</div>
+</nav>
+
+<div id="totalCount"></div>
+
+<div id="allQuestions"></div>
+
+<footer>
+    <p>© 2026 Nexthak | Built by Sarthak</p>
+</footer>
+
+<script>
+
+async function displayAllQuestions() {
+
+    const container =
+        document.getElementById("allQuestions");
+
+    const selectedFile =
+        localStorage.getItem("questionFile");
+
+    if (!selectedFile) {
+        window.location.href = "index.html";
+        return;
+    }
+
+    try {
+
+        const response =
+            await fetch(selectedFile);
+
+        const questions =
+            await response.json();
+
+        let title = "Questions";
+
+        if (selectedFile.includes("azure")) {
+            title = "Azure Questions";
+        }
+        else if (selectedFile.includes("java")) {
+            title = "Java Questions";
+        }
+        else if (selectedFile.includes("aptitude")) {
+            title = "Aptitude Questions";
+        }
+
+        document.getElementById("totalCount")
+            .innerText =
+            `${title} (${questions.length})`;
+
+        questions.forEach((q, i) => {
+
+            container.innerHTML += `
+
+                <div class="question-box">
+
+                    <h3>
+                        Q${i + 1}: ${q.question}
+                    </h3>
+
+                    <p>
+                        A. ${q.options[0] || ""}
+                    </p>
+
+                    <p>
+                        B. ${q.options[1] || ""}
+                    </p>
+
+                    <p>
+                        C. ${q.options[2] || ""}
+                    </p>
+
+                    <p>
+                        D. ${q.options[3] || ""}
+                    </p>
+
+                    <p class="correct-answer">
+                        <b>Correct Answer:</b>
+                        ${q.options[q.answer]}
+                    </p>
+
+                    <div class="explanation">
+
+                        <b>Explanation:</b>
+
+                        ${
+                            q.explanation &&
+                            q.explanation.trim() !== ""
+                            ? q.explanation
+                            : "No explanation available"
+                        }
+
+                    </div>
+
+                </div>
+
+            `;
+        });
+
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+
+displayAllQuestions();
+
+</script>
+
+</body>
+</html>

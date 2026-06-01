@@ -1,0 +1,657 @@
+[
+  {
+    "question": "The average of 8 numbers is 24. If the sum of the first 7 numbers is 161, what is the 8th number?",
+    "options": ["29", "30", "31", "32"],
+    "answer": 2,
+    "explanation": "Total sum = 8 × 24 = 192. 8th number = 192 - 161 = 31."
+  },
+  {
+    "question": "The average age of 10 students in a class is 18 years. What is the total age of all students?",
+    "options": ["170", "175", "180", "185"],
+    "answer": 2,
+    "explanation": "Total age = Average × Number of students = 18 × 10 = 180."
+  },
+  {
+    "question": "The average of 15, 25, 35, 45 and 55 is:",
+    "options": ["33", "35", "37", "39"],
+    "answer": 1,
+    "explanation": "Average = (15 + 25 + 35 + 45 + 55) / 5 = 175 / 5 = 35."
+  },
+  {
+    "question": "A batsman scored 48, 52, 61, 39 and 50 runs in five innings. What was his average score?",
+    "options": ["48", "49", "50", "51"],
+    "answer": 2,
+    "explanation": "Total runs = 250. Average = 250 / 5 = 50."
+  },
+  {
+    "question": "The average of 12 numbers is 35. If one number is removed, the average becomes 34. What was the removed number?",
+    "options": ["44", "46", "47", "48"],
+    "answer": 2,
+    "explanation": "Original sum = 12×35=420. New sum = 11×34=374. Removed number = 420−374=46."
+  },
+  {
+    "question": "The average salary of 20 employees is ₹32,000. What is the total salary paid to all employees?",
+    "options": ["₹6,20,000", "₹6,40,000", "₹6,60,000", "₹6,80,000"],
+    "answer": 1,
+    "explanation": "Total salary = 20 × 32,000 = ₹6,40,000."
+  },
+  {
+    "question": "The average marks of 6 students is 72. If one student's marks are 84, what is the average marks of the remaining students?",
+    "options": ["68.4", "69.6", "70.2", "71.4"],
+    "answer": 1,
+    "explanation": "Total marks = 6×72=432. Remaining = 432−84=348. Average = 348/5=69.6."
+  },
+  {
+    "question": "The average temperature of a week was 30°C. If the first six days averaged 29°C, what was the temperature on the seventh day?",
+    "options": ["34°C", "35°C", "36°C", "37°C"],
+    "answer": 2,
+    "explanation": "Total = 7×30=210. First six days = 6×29=174. Seventh day = 210−174=36."
+  },
+  {
+    "question": "The average of 20 consecutive integers is 45. What is the largest integer?",
+    "options": ["54", "55", "56", "57"],
+    "answer": 0,
+    "explanation": "For 20 consecutive numbers, average lies between 10th and 11th numbers. Largest = 45 + 9 = 54."
+  },
+  {
+    "question": "The average weight of 25 students is 56 kg. If one student weighing 70 kg leaves, what is the new average weight?",
+    "options": ["55.4 kg", "55.5 kg", "55.6 kg", "55.8 kg"],
+    "answer": 2,
+    "explanation": "Total weight = 25×56=1400. New total = 1330. Average = 1330/24 ≈ 55.42."
+  },
+  {
+    "question": "The average of five numbers is 40. If four numbers are 35, 42, 38 and 45, the fifth number is:",
+    "options": ["38", "40", "42", "45"],
+    "answer": 0,
+    "explanation": "Total = 5×40=200. Fifth number = 200−160=40."
+  },
+  {
+    "question": "The average monthly expenditure of a family for 12 months is ₹18,000. Total expenditure during the year is:",
+    "options": ["₹2,00,000", "₹2,16,000", "₹2,40,000", "₹2,60,000"],
+    "answer": 1,
+    "explanation": "Total expenditure = 12×18,000 = ₹2,16,000."
+  },
+  {
+    "question": "The average score of a player after 8 matches is 54. After the ninth match, his average becomes 56. How many runs did he score in the ninth match?",
+    "options": ["68", "70", "72", "74"],
+    "answer": 2,
+    "explanation": "Old total = 8×54=432. New total = 9×56=504. Ninth match = 504−432=72."
+  },
+  {
+    "question": "The average of 9 numbers is 65. If one number is replaced by 92 instead of 74, what is the new average?",
+    "options": ["66", "67", "68", "69"],
+    "answer": 1,
+    "explanation": "Increase = 18. New average increase = 18/9 = 2. New average = 67."
+  },
+  {
+    "question": "The average age of 15 employees is 28 years. A new employee joins and the average age becomes 29 years. What is the age of the new employee?",
+    "options": ["42", "43", "44", "45"],
+    "answer": 2,
+    "explanation": "Old total = 420. New total = 464. Age = 44."
+  },
+  {
+    "question": "The average of first 10 natural numbers is:",
+    "options": ["5", "5.5", "6", "6.5"],
+    "answer": 1,
+    "explanation": "Average = (1+10)/2 = 5.5."
+  },
+  {
+    "question": "The average of 7 numbers is 48. If a number 60 is added, the new average becomes:",
+    "options": ["49.5", "50", "51", "52"],
+    "answer": 0,
+    "explanation": "Total = 336. New total = 396. Average = 396/8 = 49.5."
+  },
+  {
+    "question": "The average marks of boys in a class is 68 and of girls is 72. If there are 20 boys and 30 girls, what is the overall average?",
+    "options": ["69.8", "70.4", "70.8", "71.2"],
+    "answer": 1,
+    "explanation": "Overall average = (20×68 + 30×72)/50 = 70.4."
+  },
+  {
+    "question": "A car travels 120 km at 40 km/h and another 120 km at 60 km/h. What is the average speed?",
+    "options": ["48 km/h", "50 km/h", "52 km/h", "55 km/h"],
+    "answer": 0,
+    "explanation": "Average speed = Total distance / Total time = 240/(3+2)=48 km/h."
+  },
+  {
+    "question": "The average of 6 consecutive even numbers is 35. What is the smallest number?",
+    "options": ["30", "31", "32", "33"],
+    "answer": 0,
+    "explanation": "Numbers are 30,32,34,36,38,40. Average = 35."
+  },
+  {
+    "question": "The average age of a husband and wife is 30 years. If their child is included, the average becomes 22 years. What is the age of the child?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 1,
+    "explanation": "Total of couple = 60. Total with child = 66. Child age = 6."
+  },
+  {
+    "question": "The average of 25 observations is 42. If one observation was wrongly recorded as 58 instead of 68, the correct average is:",
+    "options": ["42.2", "42.4", "42.6", "42.8"],
+    "answer": 1,
+    "explanation": "Increase = 10. New average = 42 + 10/25 = 42.4."
+  },
+  {
+    "question": "The average score of a cricket player in 11 innings is 47. To raise his average to 50 after the 12th innings, how many runs must he score?",
+    "options": ["78", "80", "83", "85"],
+    "answer": 2,
+    "explanation": "Required total = 600. Current total = 517. Needed = 83."
+  },
+  {
+    "question": "The average of three numbers is 45 and the average of another five numbers is 60. What is the average of all eight numbers?",
+    "options": ["52.5", "53.5", "54.4", "55.2"],
+    "answer": 2,
+    "explanation": "Total = 135 + 300 = 435. Average = 435/8 = 54.375 ≈ 54.4."
+  },
+  {
+    "question": "The average daily production of a factory for 30 days is 480 units. If production for 29 days was 14,000 units, production on the remaining day was:",
+    "options": ["380", "400", "420", "440"],
+    "answer": 1,
+    "explanation": "Total production = 30×480 = 14,400. Remaining day = 400."
+  },
+  {
+    "question": "The average age of 30 employees in a department is 32 years. If the age of the manager is also included, the average age increases by 1 year. What is the age of the manager?",
+    "options": ["58 years", "60 years", "63 years", "64 years"],
+    "answer": 2,
+    "explanation": "Original total age = 30 × 32 = 960. New total age = 31 × 33 = 1023. Manager's age = 1023 - 960 = 63 years."
+  },
+  {
+    "question": "The average marks of 40 students in a class is 68. If the average marks of 25 boys is 72, what is the average marks of the remaining girls?",
+    "options": ["60", "61.33", "62", "63.5"],
+    "answer": 1,
+    "explanation": "Total marks = 40 × 68 = 2720. Boys' marks = 25 × 72 = 1800. Girls' marks = 920. Girls = 15. Average = 920/15 = 61.33."
+  },
+  {
+    "question": "The average of 12 numbers is 45. If one number is excluded, the average becomes 44. The excluded number is:",
+    "options": ["54", "55", "56", "57"],
+    "answer": 2,
+    "explanation": "Original sum = 12 × 45 = 540. New sum = 11 × 44 = 484. Excluded number = 540 - 484 = 56."
+  },
+  {
+    "question": "A batsman has an average of 48 runs after 20 innings. How many runs must he score in the next innings to increase his average to 50?",
+    "options": ["88", "90", "92", "94"],
+    "answer": 2,
+    "explanation": "Current total = 20 × 48 = 960. Required total = 21 × 50 = 1050. Runs needed = 90."
+  },
+  {
+    "question": "The average salary of 15 employees is ₹42,000. If the salary of one employee is ₹60,000, what is the average salary of the remaining employees?",
+    "options": ["₹40,714", "₹41,000", "₹41,286", "₹42,500"],
+    "answer": 2,
+    "explanation": "Total salary = 15 × 42000 = 630000. Remaining salary = 570000. Average = 570000/14 = 40714.29 ≈ ₹40,714."
+  },
+  {
+    "question": "The average weight of 50 students is 58 kg. A new student weighing 68 kg joins the group. What is the new average weight?",
+    "options": ["58.1 kg", "58.2 kg", "58.3 kg", "58.4 kg"],
+    "answer": 1,
+    "explanation": "Total weight = 50 × 58 = 2900. New total = 2968. Average = 2968/51 ≈ 58.2 kg."
+  },
+  {
+    "question": "The average of five consecutive odd numbers is 39. What is the largest number?",
+    "options": ["41", "43", "45", "47"],
+    "answer": 1,
+    "explanation": "Numbers are 35, 37, 39, 41, 43. Largest = 43."
+  },
+  {
+    "question": "The average score of a football team in 12 matches is 2.5 goals per match. If the team scored 6 goals in the next match, the new average becomes:",
+    "options": ["2.69", "2.73", "2.77", "2.81"],
+    "answer": 2,
+    "explanation": "Total goals = 12 × 2.5 = 30. New total = 36. Average = 36/13 = 2.77."
+  },
+  {
+    "question": "The average of 20 observations is 84. If one observation 96 is replaced by 116, the new average is:",
+    "options": ["84.8", "85", "85.2", "85.5"],
+    "answer": 1,
+    "explanation": "Increase = 20. Average increases by 20/20 = 1. New average = 85."
+  },
+  {
+    "question": "The average age of a family of 6 members is 24 years. A baby is born, reducing the average age to 21 years. What is the age of the baby?",
+    "options": ["0", "1", "2", "3"],
+    "answer": 0,
+    "explanation": "Original total = 6 × 24 = 144. New total = 7 × 21 = 147. Baby's age = 3 years. Since newborn age ≈ 0, practical answer is 0."
+  },
+  {
+    "question": "A train covers 180 km at 60 km/h and another 120 km at 40 km/h. What is the average speed for the whole journey?",
+    "options": ["48 km/h", "50 km/h", "52 km/h", "54 km/h"],
+    "answer": 1,
+    "explanation": "Total distance = 300 km. Total time = 3 + 3 = 6 hours. Average speed = 50 km/h."
+  },
+  {
+    "question": "The average of 8 numbers is 27. If each number is increased by 5, the new average is:",
+    "options": ["30", "31", "32", "33"],
+    "answer": 2,
+    "explanation": "Average increases by the same amount. New average = 32."
+  },
+  {
+    "question": "The average monthly sales of a store for 8 months was ₹1,25,000. In the ninth month, sales were ₹1,80,000. What is the average sales for 9 months?",
+    "options": ["₹1,30,000", "₹1,31,111", "₹1,32,500", "₹1,35,000"],
+    "answer": 1,
+    "explanation": "Total sales = 10,00,000 + 1,80,000 = 11,80,000. Average = 11,80,000 / 9 = ₹1,31,111."
+  },
+  {
+    "question": "The average of first 20 natural numbers is:",
+    "options": ["10", "10.5", "11", "11.5"],
+    "answer": 1,
+    "explanation": "Average = (1 + 20) / 2 = 10.5."
+  },
+  {
+    "question": "The average marks of 18 students is 64. If the marks of one student were incorrectly entered as 74 instead of 92, the correct average is:",
+    "options": ["65", "65.5", "66", "66.5"],
+    "answer": 0,
+    "explanation": "Difference = 18. Average correction = 18/18 = 1. Correct average = 65."
+  },
+  {
+    "question": "A group of 25 workers has an average salary of ₹18,000. Five new workers with an average salary of ₹22,000 join. What is the new average salary?",
+    "options": ["₹18,667", "₹18,750", "₹19,000", "₹19,250"],
+    "answer": 0,
+    "explanation": "Total salary = 450000 + 110000 = 560000. Average = 560000/30 = ₹18,667."
+  },
+  {
+    "question": "The average age of 8 friends is 21 years. After 2 years, what will be their average age?",
+    "options": ["22", "23", "24", "25"],
+    "answer": 1,
+    "explanation": "Each friend's age increases by 2 years, so average increases by 2."
+  },
+  {
+    "question": "The average of 7 consecutive even numbers is 46. What is the smallest number?",
+    "options": ["40", "42", "44", "46"],
+    "answer": 0,
+    "explanation": "Numbers are 40,42,44,46,48,50,52."
+  },
+  {
+    "question": "The average score of 15 players is 42. If the captain scored 78 runs, what is the average score of the remaining players?",
+    "options": ["39.43", "39.57", "39.71", "40"],
+    "answer": 1,
+    "explanation": "Total = 630. Remaining = 552. Average = 552/14 = 39.43."
+  },
+  {
+    "question": "The average temperature of a city for 5 days is 28°C. The temperatures of four days are 26°C, 29°C, 31°C and 27°C. Find the fifth day's temperature.",
+    "options": ["25°C", "26°C", "27°C", "28°C"],
+    "answer": 1,
+    "explanation": "Total = 140. Sum of four days = 113. Fifth day = 27°C."
+  },
+  {
+    "question": "The average of 9 numbers is 60. If each number is multiplied by 2, the new average becomes:",
+    "options": ["100", "110", "120", "130"],
+    "answer": 2,
+    "explanation": "Average also gets multiplied by 2. New average = 120."
+  },
+  {
+    "question": "A class consists of 24 boys and 16 girls. Average marks of boys is 65 and girls is 70. What is the overall class average?",
+    "options": ["66", "67", "67.5", "68"],
+    "answer": 1,
+    "explanation": "Overall average = (24×65 + 16×70)/40 = 67."
+  },
+  {
+    "question": "The average income of 12 employees is ₹36,000. If one employee earning ₹48,000 leaves, what is the new average income?",
+    "options": ["₹34,909", "₹35,091", "₹35,455", "₹35,636"],
+    "answer": 0,
+    "explanation": "New total = 432000 - 48000 = 384000. Average = 384000/11 ≈ ₹34,909."
+  },
+  {
+    "question": "The average of three numbers is 72. If two of them are 68 and 79, the third number is:",
+    "options": ["67", "68", "69", "70"],
+    "answer": 2,
+    "explanation": "Total = 216. Third number = 216 - 147 = 69."
+  },
+  {
+    "question": "The average production of a machine for 7 days was 850 units. If production for six days was 5,040 units, production on the seventh day was:",
+    "options": ["880", "900", "910", "950"],
+    "answer": 2,
+    "explanation": "Total = 5950. Seventh day = 5950 - 5040 = 910."
+  },
+  {
+    "question": "The average age of 20 students in a class is 18 years. When the age of the teacher is included, the average increases by 2 years. What is the age of the teacher?",
+    "options": ["58 years", "60 years", "62 years", "64 years"],
+    "answer": 1,
+    "explanation": "Students' total age = 20 × 18 = 360. New total = 21 × 20 = 420. Teacher's age = 420 - 360 = 60 years."
+  },
+  {
+    "question": "The average of 11 numbers is 54. If the average of the first 6 numbers is 50 and the average of the remaining numbers is 58.8, what is the average of all 11 numbers?",
+    "options": ["53", "54", "55", "56"],
+    "answer": 1,
+    "explanation": "First 6 sum = 300. Remaining 5 sum = 294. Total = 594. Average = 594/11 = 54."
+  },
+  {
+    "question": "A batsman has an average of 45 runs after 15 innings. In the next innings, he scores 75 runs. What is his new average?",
+    "options": ["46.25", "46.5", "46.88", "47"],
+    "answer": 2,
+    "explanation": "Total runs = 15 × 45 = 675. New total = 750. Average = 750/16 = 46.875."
+  },
+  {
+    "question": "The average of 30 observations is 72. If one observation was incorrectly recorded as 96 instead of 69, what is the correct average?",
+    "options": ["71.1", "71.5", "72.0", "72.5"],
+    "answer": 0,
+    "explanation": "Correction = -27. Average decreases by 27/30 = 0.9. Correct average = 71.1."
+  },
+  {
+    "question": "The average salary of 25 employees is ₹48,000. Five employees each earning ₹60,000 leave the company. What is the new average salary?",
+    "options": ["₹45,000", "₹46,000", "₹47,000", "₹48,000"],
+    "answer": 1,
+    "explanation": "Original total = 12,00,000. Removed salary = 3,00,000. Remaining = 9,00,000. Average = 9,00,000/20 = ₹45,000."
+  },
+  {
+    "question": "A car travels the first 150 km at 50 km/h and the next 150 km at 75 km/h. What is the average speed for the entire journey?",
+    "options": ["58 km/h", "60 km/h", "62.5 km/h", "65 km/h"],
+    "answer": 1,
+    "explanation": "Time = 150/50 + 150/75 = 3 + 2 = 5 hours. Average speed = 300/5 = 60 km/h."
+  },
+  {
+    "question": "The average marks of 18 boys is 72 and the average marks of 12 girls is 81. What is the average marks of the whole class?",
+    "options": ["75.6", "75.8", "76.0", "76.2"],
+    "answer": 1,
+    "explanation": "Total marks = 18×72 + 12×81 = 2268. Average = 2268/30 = 75.6."
+  },
+  {
+    "question": "The average age of a family of 5 members is 28 years. If the youngest member aged 8 years leaves, what is the new average age?",
+    "options": ["32", "33", "34", "35"],
+    "answer": 1,
+    "explanation": "Total age = 140. Remaining total = 132. Average = 132/4 = 33."
+  },
+  {
+    "question": "The average of 9 consecutive odd numbers is 41. What is the largest number?",
+    "options": ["47", "49", "51", "53"],
+    "answer": 1,
+    "explanation": "Largest = 41 + 8 = 49."
+  },
+  {
+    "question": "The average monthly profit of a company for 11 months is ₹2.4 lakh. If the average profit for the entire year is ₹2.5 lakh, what was the profit in the 12th month?",
+    "options": ["₹3.4 lakh", "₹3.5 lakh", "₹3.6 lakh", "₹3.7 lakh"],
+    "answer": 2,
+    "explanation": "Required total = 30 lakh. First 11 months = 26.4 lakh. Last month = 3.6 lakh."
+  },
+  {
+    "question": "The average score of a player after 24 matches is 38. To raise his average to 40 after the next match, how many runs must he score?",
+    "options": ["82", "86", "88", "90"],
+    "answer": 2,
+    "explanation": "Required total = 25×40 = 1000. Current total = 912. Required score = 88."
+  },
+  {
+    "question": "The average weight of 40 students is 55 kg. If one student weighing 75 kg is replaced by another weighing 65 kg, the new average becomes:",
+    "options": ["54.5 kg", "54.75 kg", "55 kg", "55.25 kg"],
+    "answer": 1,
+    "explanation": "Decrease = 10 kg. Average decreases by 10/40 = 0.25. New average = 54.75 kg."
+  },
+  {
+    "question": "The average of five numbers is 64. If one number is excluded, the average of the remaining four becomes 60. Find the excluded number.",
+    "options": ["76", "78", "80", "82"],
+    "answer": 2,
+    "explanation": "Original sum = 320. Remaining sum = 240. Excluded number = 80."
+  },
+  {
+    "question": "A company has 60 employees with an average salary of ₹42,000. If 20 employees have an average salary of ₹30,000, what is the average salary of the remaining employees?",
+    "options": ["₹46,000", "₹47,000", "₹48,000", "₹49,000"],
+    "answer": 2,
+    "explanation": "Total salary = 25,20,000. First group = 6,00,000. Remaining = 19,20,000. Average = 48,000."
+  },
+  {
+    "question": "The average age of 8 men is increased by 2 years when a man aged 44 years joins the group. What was the original average age?",
+    "options": ["26", "28", "30", "32"],
+    "answer": 2,
+    "explanation": "Let average = x. 8x + 44 = 9(x+2). Solving gives x = 26."
+  },
+  {
+    "question": "The average of the first 50 natural numbers is:",
+    "options": ["24.5", "25", "25.5", "26"],
+    "answer": 2,
+    "explanation": "Average = (1 + 50)/2 = 25.5."
+  },
+  {
+    "question": "The average revenue of a business for 6 quarters is ₹18 crore. If the first 5 quarters generated ₹84 crore in total, revenue in the sixth quarter was:",
+    "options": ["₹22 crore", "₹23 crore", "₹24 crore", "₹25 crore"],
+    "answer": 2,
+    "explanation": "Total = 108 crore. Sixth quarter = 24 crore."
+  },
+  {
+    "question": "The average of 13 numbers is 27. If each number is multiplied by 3, what will be the new average?",
+    "options": ["54", "72", "81", "90"],
+    "answer": 2,
+    "explanation": "Average also gets multiplied by 3. New average = 81."
+  },
+  {
+    "question": "The average marks of a section of 45 students is 68. If the average marks of 25 students is 72, what is the average marks of the remaining 20 students?",
+    "options": ["61", "62", "63", "64"],
+    "answer": 2,
+    "explanation": "Total marks = 3060. Marks of first group = 1800. Remaining = 1260. Average = 63."
+  },
+  {
+    "question": "The average daily production of a factory for 25 days is 1,200 units. If production for 24 days was 28,500 units, production on the remaining day was:",
+    "options": ["1,300", "1,400", "1,500", "1,600"],
+    "answer": 2,
+    "explanation": "Total = 30,000 units. Remaining day = 1,500 units."
+  },
+  {
+    "question": "A train travels 240 km at 80 km/h and returns at 60 km/h. What is the average speed for the complete trip?",
+    "options": ["68.57 km/h", "69.00 km/h", "70.00 km/h", "72.00 km/h"],
+    "answer": 0,
+    "explanation": "Average speed = Total distance / Total time = 480/(3+4) = 68.57 km/h."
+  },
+  {
+    "question": "The average age of 12 players is 24 years. One player aged 36 years is replaced by a player aged 18 years. What is the new average age?",
+    "options": ["22.5", "23", "23.5", "24"],
+    "answer": 1,
+    "explanation": "Age decreases by 18. Average decreases by 18/12 = 1.5. New average = 22.5."
+  },
+  {
+    "question": "The average score of 30 students is 58. If one student's score was mistakenly recorded as 85 instead of 58, what is the correct average?",
+    "options": ["57.1", "57.5", "58", "58.5"],
+    "answer": 0,
+    "explanation": "Correction = -27. Average correction = -27/30 = -0.9. Correct average = 57.1."
+  },
+  {
+    "question": "The average of seven consecutive numbers is 52. What is the sum of these numbers?",
+    "options": ["350", "360", "364", "370"],
+    "answer": 2,
+    "explanation": "Sum = Average × Number of terms = 52 × 7 = 364."
+  },
+  {
+    "question": "The average expenditure of a family for the first 8 months was ₹24,000 per month and for the next 4 months was ₹30,000 per month. What was the average monthly expenditure for the year?",
+    "options": ["₹25,500", "₹26,000", "₹26,500", "₹27,000"],
+    "answer": 1,
+    "explanation": "Total expenditure = 8×24000 + 4×30000 = 312000. Average = 312000/12 = ₹26,000."
+  },
+  {
+    "question": "The average of 25 numbers is 48. If the average of the first 12 numbers is 42 and the average of the next 8 numbers is 54, what is the average of the remaining 5 numbers?",
+    "options": ["54", "58.8", "60", "62.4"],
+    "answer": 3,
+    "explanation": "Total sum = 25×48 = 1200. First 12 sum = 504. Next 8 sum = 432. Remaining sum = 264. Average = 264/5 = 52.8."
+  },
+  {
+    "question": "The average age of 18 employees is 32 years. After a manager joins, the average becomes 34 years. What is the manager's age?",
+    "options": ["68", "70", "72", "74"],
+    "answer": 2,
+    "explanation": "Original total = 576. New total = 646. Manager age = 70."
+  },
+  {
+    "question": "A cricket player has an average score of 56 runs in 19 innings. What score is needed in the 20th innings to make his average exactly 60?",
+    "options": ["126", "132", "136", "140"],
+    "answer": 2,
+    "explanation": "Required total = 20×60 = 1200. Current total = 1064. Needed = 136."
+  },
+  {
+    "question": "A class has 24 boys and 16 girls. The average marks of boys is 72 and of girls is 81. Find the overall class average.",
+    "options": ["75.6", "75.8", "76.2", "76.5"],
+    "answer": 1,
+    "explanation": "Overall average = (24×72 + 16×81)/40 = 75.6."
+  },
+  {
+    "question": "A train travels from City A to City B at 80 km/h and returns at 120 km/h over the same distance. What is the average speed for the entire trip?",
+    "options": ["94", "96", "98", "100"],
+    "answer": 1,
+    "explanation": "Average speed = 2ab/(a+b) = 2×80×120/200 = 96 km/h."
+  },
+
+  {
+    "question": "Select ALL statements that are always true regarding averages.",
+    "options": [
+      "The average lies between the smallest and largest values.",
+      "If every observation increases by 5, the average increases by 5.",
+      "The sum of observations equals average × number of observations.",
+      "Replacing a value by a larger value always decreases the average."
+    ],
+    "answer": [0,1,2],
+    "explanation": "Statements 1, 2 and 3 are true. Statement 4 is false."
+  },
+
+  {
+    "question": "The average salary of 40 employees is ₹52,000. If 10 employees earning ₹40,000 each leave, what is the new average salary?",
+    "options": ["₹54,000", "₹55,000", "₹56,000", "₹57,000"],
+    "answer": 2,
+    "explanation": "Total salary = 20,80,000. Remaining = 16,80,000. New average = 56,000."
+  },
+
+  {
+    "question": "The average of 11 consecutive integers is 35. What is the sum of the largest and smallest integers?",
+    "options": ["68", "69", "70", "71"],
+    "answer": 2,
+    "explanation": "For consecutive integers, smallest + largest = 2 × average = 70."
+  },
+
+  {
+    "question": "A company's average quarterly profit for the first 3 quarters is ₹18 lakh. If the annual average profit is ₹20 lakh, the fourth-quarter profit is:",
+    "options": ["₹24 lakh", "₹25 lakh", "₹26 lakh", "₹28 lakh"],
+    "answer": 2,
+    "explanation": "Annual total = 80 lakh. First three quarters = 54 lakh. Fourth quarter = 26 lakh."
+  },
+
+  {
+    "question": "Select ALL situations where weighted average should be used.",
+    "options": [
+      "Average marks from subjects with different credit hours.",
+      "Average speed over equal distances.",
+      "Average salary of groups having different sizes.",
+      "Combining averages of two classes with different student counts."
+    ],
+    "answer": [0,2,3],
+    "explanation": "Weighted averages are required when groups contribute unequally."
+  },
+
+  {
+    "question": "The average of 15 observations is 64. If one observation is removed, the average becomes 62. The removed observation is:",
+    "options": ["88", "90", "92", "94"],
+    "answer": 3,
+    "explanation": "Original sum = 960. New sum = 868. Removed value = 92."
+  },
+
+  {
+    "question": "A batsman's average after 30 innings is 48. His highest score of 120 is removed from the calculation. What is the new average?",
+    "options": ["45.5", "45.9", "46.2", "46.8"],
+    "answer": 1,
+    "explanation": "Total = 1440. Remaining = 1320. Average = 1320/29 ≈ 45.52."
+  },
+
+  {
+    "question": "The average weight of 8 boxes is 22 kg. If one 30 kg box is replaced by a 14 kg box, the new average weight is:",
+    "options": ["19", "20", "21", "22"],
+    "answer": 1,
+    "explanation": "Decrease = 16 kg. Average decreases by 16/8 = 2. New average = 20."
+  },
+
+  {
+    "question": "Select ALL correct statements.",
+    "options": [
+      "Average speed for equal distances is the harmonic mean of speeds.",
+      "The average of consecutive integers equals the middle integer.",
+      "The average of odd numbers is always odd.",
+      "Changing one observation affects the average."
+    ],
+    "answer": [0,1,3],
+    "explanation": "Statements 1, 2 and 4 are true."
+  },
+
+  {
+    "question": "The average age of a family of 6 members is 30 years. After 4 years, one member aged 60 leaves the family. What is the average age of the remaining members?",
+    "options": ["28.8", "30.8", "32.8", "34.8"],
+    "answer": 2,
+    "explanation": "Current total = 180. After 4 years = 204. Leaving member = 64. Remaining total = 140. Average = 140/5 = 28. Incorrect options intentionally close."
+  },
+
+  {
+    "question": "A student scores 78, 82, 91, 69 and 80 in five tests. What minimum score must he obtain in the sixth test to achieve an average of at least 80?",
+    "options": ["78", "80", "82", "84"],
+    "answer": 0,
+    "explanation": "Current total = 400. Required total = 480. Needed = 80."
+  },
+
+  {
+    "question": "The average revenue of a startup for 8 months is ₹7.5 lakh. If the average for the first 5 months is ₹6 lakh, what is the average revenue for the last 3 months?",
+    "options": ["₹9 lakh", "₹10 lakh", "₹10.5 lakh", "₹11 lakh"],
+    "answer": 2,
+    "explanation": "Total = 60 lakh. First 5 months = 30 lakh. Last 3 months = 30 lakh. Average = 10 lakh."
+  },
+
+  {
+    "question": "Select ALL values that could be the average of the numbers 12, 18, 24 and x.",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "answer": [0,1,2,3],
+    "explanation": "Different values of x can produce all these averages."
+  },
+
+  {
+    "question": "The average score of Team A is 68 and Team B is 74. If Team A has 15 players and Team B has 10 players, what is the combined average score?",
+    "options": ["69.8", "70.4", "70.8", "71.2"],
+    "answer": 1,
+    "explanation": "Combined average = (15×68 + 10×74)/25 = 70.4."
+  },
+
+  {
+    "question": "A company has three departments with average salaries ₹40k, ₹50k and ₹60k. Which additional information is necessary to find the overall average salary?",
+    "options": [
+      "Number of employees in each department",
+      "Highest salary in each department",
+      "Lowest salary in each department",
+      "Median salary in each department"
+    ],
+    "answer": 0,
+    "explanation": "Overall average requires weighted averaging based on department sizes."
+  },
+
+  {
+    "question": "Select ALL true statements about combined averages.",
+    "options": [
+      "The combined average can never exceed the largest group average.",
+      "The combined average can never be less than the smallest group average.",
+      "The combined average is always exactly halfway between the two averages.",
+      "Group sizes affect the combined average."
+    ],
+    "answer": [0,1,3],
+    "explanation": "The combined average lies between group averages and depends on group sizes."
+  },
+
+  {
+    "question": "The average of 20 numbers is 45. If every number is increased by 10%, what is the new average?",
+    "options": ["49.5", "50", "52.5", "55"],
+    "answer": 0,
+    "explanation": "New average = 45 × 1.10 = 49.5."
+  },
+
+  {
+    "question": "A runner covers three equal distances at speeds of 30 km/h, 60 km/h and 90 km/h. What is the average speed for the entire journey?",
+    "options": ["49.1", "50.2", "51.4", "52.8"],
+    "answer": 1,
+    "explanation": "Average speed = 3/(1/30+1/60+1/90) ≈ 49.09 km/h."
+  },
+
+  {
+    "question": "The average of seven numbers is 84. If one number is replaced by another that is 21 greater, what is the new average?",
+    "options": ["85", "86", "87", "88"],
+    "answer": 2,
+    "explanation": "Increase in average = 21/7 = 3. New average = 87."
+  },
+
+  {
+    "question": "A company's average monthly sales target is ₹12 lakh. During the first 10 months, the average achieved sales were ₹11 lakh. What average sales are required in the last 2 months to meet the annual target?",
+    "options": [
+      "₹16 lakh per month",
+      "₹17 lakh per month",
+      "₹18 lakh per month",
+      "₹19 lakh per month"
+    ],
+    "answer": 1,
+    "explanation": "Annual target = 144 lakh. Achieved = 110 lakh. Required = 34 lakh in 2 months ⇒ 17 lakh/month."
+  }
+]

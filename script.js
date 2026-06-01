@@ -2,7 +2,7 @@ let questions = [];
 let currentQuestion = 0;
 let userAnswers = [];
 let markedQuestions = [];
-let timeLeft = 1800;
+let timeLeft = 3600;
 let timerInterval;
 const SHEET_URL = "https://script.google.com/macros/s/AKfycbyYWApnsVJQonaWhh6oHRbIwK4vYC4Hbi862V3irnUaZ-dqFAexl9nvZ_Twp6GIm9ZF5Q/exec";
 let questionTimes = [];
@@ -106,15 +106,19 @@ async function initializeTest() {
 
             questions = shuffleArray(questions);
 
-            const testQuestionCount = Math.min(30, questions.length);
+            const testQuestionCount = Math.min(50, questions.length);
             questions = questions.slice(0, testQuestionCount);
 
             localStorage.setItem("questionsData", JSON.stringify(questions));
         }
 
         userAnswers =
-            JSON.parse(localStorage.getItem("userAnswers")) ||
-            new Array(questions.length).fill(null);
+    JSON.parse(localStorage.getItem("userAnswers")) ||
+    questions.map(q =>
+        Array.isArray(q.answer)
+            ? []
+            : null
+    );
 
         markedQuestions =
             JSON.parse(localStorage.getItem("markedQuestions")) ||
@@ -126,7 +130,7 @@ async function initializeTest() {
 
         questionStartTime = Date.now();
 
-        timeLeft = parseInt(localStorage.getItem("timeLeft")) || 1800;
+        timeLeft = parseInt(localStorage.getItem("timeLeft")) || 3600;
         currentQuestion = parseInt(localStorage.getItem("currentQuestion")) || 0;
 
         renderQuestion();
@@ -167,37 +171,163 @@ function saveProgress() {
 
 /* RENDER */
 function renderQuestion() {
+
     if (!questions.length) return;
 
     const q = questions[currentQuestion];
 
-    document.getElementById("questionText").textContent =
+    document.getElementById(
+        "questionText"
+    ).textContent =
         `Q${currentQuestion + 1}. ${q.question}`;
 
-    const optionsContainer = document.getElementById("optionsContainer");
+    const optionsContainer =
+        document.getElementById(
+            "optionsContainer"
+        );
+
     optionsContainer.innerHTML = "";
 
-    q.options.forEach((option, index) => {
-        const btn = document.createElement("button");
-        btn.textContent = option;
-        btn.classList.add("option-btn");
+    const isMultiple =
+        Array.isArray(q.answer);
 
-        if (userAnswers[currentQuestion] === index) {
-            btn.classList.add("selected");
+    q.options.forEach(
+        (option, index) => {
+
+            const btn =
+                document.createElement(
+                    "button"
+                );
+
+            btn.textContent = option;
+            btn.classList.add(
+                "option-btn"
+            );
+
+            if (isMultiple) {
+
+                if (
+                    userAnswers[
+                        currentQuestion
+                    ]?.includes(index)
+                ) {
+                    btn.classList.add(
+                        "selected"
+                    );
+                }
+
+                btn.onclick = () => {
+
+                    if (
+                        !Array.isArray(
+                            userAnswers[
+                                currentQuestion
+                            ]
+                        )
+                    ) {
+                        userAnswers[
+                            currentQuestion
+                        ] = [];
+                    }
+
+                    const answers =
+                        userAnswers[
+                            currentQuestion
+                        ];
+
+                    const pos =
+                        answers.indexOf(
+                            index
+                        );
+
+                    if (pos > -1) {
+
+                        answers.splice(
+                            pos,
+                            1
+                        );
+
+                    } else {
+
+                        answers.push(
+                            index
+                        );
+                    }
+
+                    saveProgress();
+                    renderQuestion();
+                };
+
+            } else {
+
+                if (
+                    userAnswers[
+                        currentQuestion
+                    ] === index
+                ) {
+                    btn.classList.add(
+                        "selected"
+                    );
+                }
+
+                btn.onclick = () => {
+
+                    userAnswers[
+                        currentQuestion
+                    ] = index;
+
+                    saveProgress();
+                    renderQuestion();
+                };
+            }
+
+            optionsContainer.appendChild(
+                btn
+            );
         }
-
-        btn.onclick = () => {
-            userAnswers[currentQuestion] = index;
-            saveProgress();
-            renderQuestion();
-        };
-
-        optionsContainer.appendChild(btn);
-    });
+    );
 
     updateProgress();
     updateStats();
     updatePalette();
+}
+
+function isCorrect(
+    question,
+    userAnswer
+) {
+
+    if (
+        Array.isArray(
+            question.answer
+        )
+    ) {
+
+        if (
+            !Array.isArray(
+                userAnswer
+            )
+        ) {
+            return false;
+        }
+
+        return (
+            userAnswer.length ===
+            question.answer.length &&
+            userAnswer.every(
+                ans =>
+                    question.answer.includes(
+                        ans
+                    )
+            )
+        );
+
+    }
+
+    return (
+        userAnswer ===
+        question.answer
+    );
 }
 
 /* NAVIGATION */
@@ -256,7 +386,25 @@ function updatePalette() {
 
         if (markedQuestions[index]) {
             btn.classList.add("marked");
-        } else if (userAnswers[index] !== null) {
+        } else if (
+                    (
+                    Array.isArray(
+                        userAnswers[index]
+                    )
+                    &&
+                    userAnswers[index]
+                        .length > 0
+                    )
+                    ||
+                    (
+                    !Array.isArray(
+                        userAnswers[index]
+                    )
+                    &&
+                    userAnswers[index] !== null
+                    )
+                ) 
+        {
             btn.classList.add("answered");
         }
 
@@ -277,7 +425,15 @@ function updatePalette() {
 
 /* PROGRESS */
 function updateProgress() {
-    const answered = userAnswers.filter(ans => ans !== null).length;
+    const answered =
+    userAnswers.filter(
+        ans =>
+            (
+                Array.isArray(ans)
+                    ? ans.length > 0
+                    : ans !== null
+            )
+    ).length;
     const progress = (answered / questions.length) * 100;
 
     document.getElementById("progressBar").style.width = `${progress}%`;
@@ -285,16 +441,33 @@ function updateProgress() {
 
 /* STATS */
 function updateStats() {
-    document.getElementById("answeredCount").textContent =
-        userAnswers.filter(ans => ans !== null).length;
 
-    document.getElementById("notAnsweredCount").textContent =
-        questions.length - userAnswers.filter(ans => ans !== null).length;
+    const answered =
+        userAnswers.filter(ans => {
 
-    document.getElementById("markedCount").textContent =
-        markedQuestions.filter(mark => mark).length;
+            if (Array.isArray(ans)) {
+                return ans.length > 0;
+            }
 
-    document.getElementById("totalCount").textContent =
+            return ans !== null;
+
+        }).length;
+
+    document.getElementById("answeredCount")
+        .textContent = answered;
+
+    document.getElementById("notAnsweredCount")
+        .textContent =
+        questions.length - answered;
+
+    document.getElementById("markedCount")
+        .textContent =
+        markedQuestions.filter(
+            mark => mark
+        ).length;
+
+    document.getElementById("totalCount")
+        .textContent =
         questions.length;
 }
 
@@ -340,11 +513,19 @@ function submitTest(showConfirm = true) {
 
     let score = 0;
 
-    questions.forEach((q, index) => {
-        if (userAnswers[index] === q.answer) {
+    questions.forEach(
+    (q, index) => {
+
+        if (
+            isCorrect(
+                q,
+                userAnswers[index]
+            )
+        ) {
             score++;
         }
-    });
+    }
+);
 
     localStorage.setItem("score", score);
     localStorage.setItem("totalQuestions", questions.length);
@@ -370,7 +551,7 @@ formData.append("email", studentEmail);
 formData.append("quiz", quizName);
 formData.append("score", score);
 formData.append("total", questions.length);
-formData.append("time", 1800 - timeLeft);
+formData.append("time", 3600 - timeLeft);
 
 fetch(SHEET_URL, {
     method: "POST",

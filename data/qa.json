@@ -299,5 +299,305 @@
   "options": ["2", "2.5", "3", "3.5"],
   "answer": 2,
   "explanation": "150/50 = 3"
-}
+},
+{
+    "question": "What is 35% of 400?",
+    "options": ["120", "130", "140", "150"],
+    "answer": 2,
+    "explanation": "35% of 400 = 140"
+  },
+  {
+    "question": "If CP = ₹600 and SP = ₹720, profit percentage is?",
+    "options": ["15%", "20%", "25%", "30%"],
+    "answer": 1,
+    "explanation": "Profit = 120, Profit% = 20%"
+  },
+  {
+    "question": "Average of 12, 18, 24, 30?",
+    "options": ["18", "20", "21", "24"],
+    "answer": 2,
+    "explanation": "84/4 = 21"
+  },
+  {
+    "question": "If 15 workers finish a job in 12 days, 20 workers will take?",
+    "options": ["8", "9", "10", "11"],
+    "answer": 1,
+    "explanation": "15×12 = 20×x, x=9"
+  },
+  {
+    "question": "Distance covered at 75 km/h in 4 hours?",
+    "options": ["250", "275", "300", "325"],
+    "answer": 2,
+    "explanation": "75 × 4 = 300"
+  },
+  {
+    "question": "Simple Interest on ₹3000 at 8% for 2 years?",
+    "options": ["420", "450", "480", "500"],
+    "answer": 2,
+    "explanation": "SI = 3000×8×2/100 = 480"
+  },
+  {
+    "question": "Ratio 18:24 simplifies to?",
+    "options": ["2:3", "3:4", "4:5", "5:6"],
+    "answer": 1,
+    "explanation": "Divide by 6"
+  },
+  {
+    "question": "What is 12.5% of 160?",
+    "options": ["15", "20", "25", "30"],
+    "answer": 1,
+    "explanation": "12.5% = 1/8, 160/8 = 20"
+  },
+  {
+    "question": "HCF of 24 and 36?",
+    "options": ["6", "8", "12", "18"],
+    "answer": 2,
+    "explanation": "HCF = 12"
+  },
+  {
+    "question": "LCM of 8 and 12?",
+    "options": ["16", "20", "24", "32"],
+    "answer": 2,
+    "explanation": "LCM = 24"
+  },
+  {
+    "question": "If SP = ₹1500 and loss = ₹300, CP is?",
+    "options": ["1600", "1700", "1800", "1900"],
+    "answer": 2,
+    "explanation": "CP = SP + Loss"
+  },
+  {
+    "question": "What is 60% of 250?",
+    "options": ["130", "140", "150", "160"],
+    "answer": 2,
+    "explanation": "60% of 250 = 150"
+  },
+  {
+    "question": "Average of first 10 natural numbers?",
+    "options": ["5", "5.5", "6", "6.5"],
+    "answer": 1,
+    "explanation": "55/10 = 5.5"
+  },
+  {
+    "question": "A train covers 420 km in 6 hours. Speed?",
+    "options": ["60", "65", "70", "75"],
+    "answer": 2,
+    "explanation": "420/6 = 70"
+  },
+  {
+    "question": "Compound Interest on ₹2000 at 10% for 2 years?",
+    "options": ["400", "420", "440", "460"],
+    "answer": 1,
+    "explanation": "2000×1.1×1.1 = 2420, CI=420"
+  },
+  {
+    "question": "1/8 of 240?",
+    "options": ["25", "30", "35", "40"],
+    "answer": 1,
+    "explanation": "240/8 = 30"
+  },
+  {
+    "question": "Profit % if CP = ₹800 and SP = ₹1000?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "answer": 1,
+    "explanation": "Profit = 200, Profit%=25%"
+  },
+  {
+    "question": "What is 45% of 200?",
+    "options": ["80", "90", "100", "110"],
+    "answer": 1,
+    "explanation": "45% of 200 = 90"
+  },
+  {
+    "question": "If 24 men do a work in 15 days, 12 men take?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 2,
+    "explanation": "Half workers = double time"
+  },
+  {
+    "question": "Average of 14, 16, 18, 20, 22?",
+    "options": ["16", "17", "18", "19"],
+    "answer": 2,
+    "explanation": "90/5 = 18"
+  },
+  {
+    "question": "25% of 640?",
+    "options": ["140", "150", "160", "170"],
+    "answer": 2,
+    "explanation": "640/4 = 160"
+  },
+  {
+    "question": "A number divisible by 3 and 4 is divisible by?",
+    "options": ["7", "10", "12", "15"],
+    "answer": 2,
+    "explanation": "LCM = 12"
+  },
+  {
+    "question": "Speed 90 km/h, distance 270 km, time?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 1,
+    "explanation": "270/90 = 3"
+  },
+  {
+    "question": "Simple Interest on ₹5000 at 6% for 3 years?",
+    "options": ["800", "850", "900", "950"],
+    "answer": 2,
+    "explanation": "SI = 900"
+  },
+  {
+    "question": "Ratio 21:35 simplifies to?",
+    "options": ["2:3", "3:5", "4:5", "5:7"],
+    "answer": 1,
+    "explanation": "Divide by 7"
+  },
+  {
+    "question": "What is 75% of 320?",
+    "options": ["220", "230", "240", "250"],
+    "answer": 2,
+    "explanation": "3/4 of 320 = 240"
+  },
+  {
+    "question": "HCF of 28 and 42?",
+    "options": ["7", "14", "21", "28"],
+    "answer": 1,
+    "explanation": "HCF = 14"
+  },
+  {
+    "question": "LCM of 9 and 15?",
+    "options": ["30", "45", "60", "75"],
+    "answer": 1,
+    "explanation": "LCM = 45"
+  },
+  {
+    "question": "Profit if CP=₹750 and SP=₹900?",
+    "options": ["100", "120", "150", "180"],
+    "answer": 2,
+    "explanation": "900-750 = 150"
+  },
+  {
+    "question": "Average of 25, 35, 45?",
+    "options": ["30", "35", "40", "45"],
+    "answer": 1,
+    "explanation": "105/3 = 35"
+  },
+  {
+    "question": "20% of 850?",
+    "options": ["160", "170", "180", "190"],
+    "answer": 1,
+    "explanation": "20% = 170"
+  },
+  {
+    "question": "Distance at 55 km/h in 6 hours?",
+    "options": ["300", "320", "330", "340"],
+    "answer": 2,
+    "explanation": "55×6 = 330"
+  },
+  {
+    "question": "If 18 workers finish work in 10 days, 9 workers take?",
+    "options": ["15", "18", "20", "22"],
+    "answer": 2,
+    "explanation": "Half workers = double time"
+  },
+  {
+    "question": "Compound Interest on ₹5000 at 10% for 2 years?",
+    "options": ["1000", "1050", "1100", "1150"],
+    "answer": 1,
+    "explanation": "CI = 1050"
+  },
+  {
+    "question": "What is 2/5 of 500?",
+    "options": ["180", "190", "200", "210"],
+    "answer": 2,
+    "explanation": "2/5 × 500 = 200"
+  },
+  {
+    "question": "Profit % if CP=₹1200 and SP=₹1500?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "answer": 1,
+    "explanation": "300/1200×100 = 25%"
+  },
+  {
+    "question": "Average of 6, 12, 18, 24, 30?",
+    "options": ["16", "17", "18", "19"],
+    "answer": 2,
+    "explanation": "90/5 = 18"
+  },
+  {
+    "question": "35% of 600?",
+    "options": ["190", "200", "210", "220"],
+    "answer": 2,
+    "explanation": "35% of 600 = 210"
+  },
+  {
+    "question": "A train covers 540 km in 9 hours. Speed?",
+    "options": ["50", "55", "60", "65"],
+    "answer": 2,
+    "explanation": "540/9 = 60"
+  },
+  {
+    "question": "Ratio 27:36 simplifies to?",
+    "options": ["2:3", "3:4", "4:5", "5:6"],
+    "answer": 1,
+    "explanation": "Divide by 9"
+  },
+  {
+    "question": "Simple Interest on ₹4000 at 5% for 4 years?",
+    "options": ["700", "750", "800", "850"],
+    "answer": 2,
+    "explanation": "SI = 800"
+  },
+  {
+    "question": "What is 80% of 150?",
+    "options": ["100", "110", "120", "130"],
+    "answer": 2,
+    "explanation": "80% of 150 = 120"
+  },
+  {
+    "question": "HCF of 32 and 48?",
+    "options": ["8", "12", "16", "24"],
+    "answer": 2,
+    "explanation": "HCF = 16"
+  },
+  {
+    "question": "LCM of 12 and 18?",
+    "options": ["24", "30", "36", "48"],
+    "answer": 2,
+    "explanation": "LCM = 36"
+  },
+  {
+    "question": "If SP=₹840 and loss=₹160, CP?",
+    "options": ["900", "950", "1000", "1050"],
+    "answer": 2,
+    "explanation": "CP = 1000"
+  },
+  {
+    "question": "Average of 9, 18, 27, 36?",
+    "options": ["20", "22.5", "24", "25"],
+    "answer": 1,
+    "explanation": "90/4 = 22.5"
+  },
+  {
+    "question": "15% of 800?",
+    "options": ["100", "110", "120", "130"],
+    "answer": 2,
+    "explanation": "15% = 120"
+  },
+  {
+    "question": "Distance covered at 120 km/h in 2.5 hours?",
+    "options": ["250", "275", "300", "325"],
+    "answer": 2,
+    "explanation": "120×2.5 = 300"
+  },
+  {
+    "question": "If 10 men complete a job in 20 days, 25 men take?",
+    "options": ["6", "7", "8", "9"],
+    "answer": 2,
+    "explanation": "10×20 = 25×x, x=8"
+  },
+  {
+    "question": "What is 5/8 of 320?",
+    "options": ["180", "190", "200", "210"],
+    "answer": 2,
+    "explanation": "5×40 = 200"
+  }
 ]

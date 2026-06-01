@@ -35,6 +35,26 @@
         const total = localStorage.getItem("totalQuestions");
         const studentEmail = localStorage.getItem("studentEmail");
 
+        function isCorrect(question, userAnswer) {
+
+            if (Array.isArray(question.answer)) {
+
+                if (!Array.isArray(userAnswer)) {
+                    return false;
+                }
+
+                return (
+                    userAnswer.length ===
+                    question.answer.length &&
+                    userAnswer.every(ans =>
+                        question.answer.includes(ans)
+                    )
+                );
+            }
+
+            return userAnswer === question.answer;
+        }
+
         if (
             !studentName ||
             score === null ||
@@ -66,10 +86,14 @@
 
         questions.forEach((q, index) => {
 
-            const userAnswer = userAnswers[index];
+            const userAnswer =
+                userAnswers[index];
 
-            const isCorrect =
-                userAnswer === q.answer;
+            const correct =
+                isCorrect(
+                    q,
+                    userAnswer
+                );
 
             const spentSeconds =
                 questionTimes[index] || 0;
@@ -80,6 +104,46 @@
             const seconds =
                 spentSeconds % 60;
 
+            const userAnswerText =
+
+                Array.isArray(userAnswer)
+
+                    ? (
+
+                        userAnswer.length > 0
+
+                            ? userAnswer
+                                .map(i =>
+                                    q.options[i]
+                                )
+                                .join(", ")
+
+                            : "Not Answered"
+
+                    )
+
+                    : (
+
+                        userAnswer !== null
+
+                            ? q.options[userAnswer]
+
+                            : "Not Answered"
+
+                    );
+
+            const correctAnswerText =
+
+                Array.isArray(q.answer)
+
+                    ? q.answer
+                        .map(i =>
+                            q.options[i]
+                        )
+                        .join(", ")
+
+                    : q.options[q.answer];
+
             const reviewCard =
                 document.createElement("div");
 
@@ -87,11 +151,15 @@
 
             reviewCard.innerHTML = `
                 <h3>Q${index + 1}. ${q.question}</h3>
-                <p><strong>Your Answer:</strong> ${userAnswer !== null
-                    ? q.options[userAnswer]
-                    : "Not Answered"
-                }</p>
-                <p><strong>Correct Answer:</strong> ${q.options[q.answer]}</p>
+                <p>
+                    <strong>Your Answer:</strong>
+                    ${userAnswerText}
+                </p>
+
+                <p>
+                    <strong>Correct Answer:</strong>
+                    ${correctAnswerText}
+                </p>
                 <p>
                 <strong>Time Spent:</strong>
                 ${String(minutes).padStart(2, "0")}:
@@ -99,8 +167,8 @@
                 </p>
                 <p><strong>Explanation:</strong> ${q.explanation || "No explanation available"
                 }</p>
-                <span class="${isCorrect ? 'correct' : 'wrong'}">
-                    ${isCorrect ? 'Correct ✅' : 'Wrong ❌'}
+                <span class="${correct ? 'correct' : 'wrong'}">
+                ${correct ? 'Correct ✅' : 'Wrong ❌'}
                 </span>
             `;
 

@@ -1,0 +1,656 @@
+[
+  {
+    "question": "A student scored 360 marks out of 450. What percentage of marks did he score?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (360/450) × 100 = 80%"
+  },
+  {
+    "question": "A factory produced 840 good items out of 1000 total items. What is the percentage of good items produced?",
+    "options": ["82%", "84%", "86%", "88%"],
+    "answer": 1,
+    "explanation": "Percentage = (840/1000) × 100 = 84%"
+  },
+  {
+    "question": "In a survey of 500 people, 325 preferred online shopping. What percentage preferred online shopping?",
+    "options": ["60%", "65%", "70%", "75%"],
+    "answer": 1,
+    "explanation": "Percentage = (325/500) × 100 = 65%"
+  },
+  {
+    "question": "A company completed 72 projects out of its target of 90 projects. What percentage of the target was achieved?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (72/90) × 100 = 80%"
+  },
+  {
+    "question": "Out of 240 employees, 180 attended a training program. What percentage attended the program?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (180/240) × 100 = 75%"
+  },
+  {
+    "question": "A shop sold 450 units out of 600 units in stock. What percentage of stock was sold?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (450/600) × 100 = 75%"
+  },
+  {
+    "question": "In an examination, 420 out of 600 students passed. What percentage of students passed?",
+    "options": ["65%", "70%", "75%", "80%"],
+    "answer": 1,
+    "explanation": "Percentage = (420/600) × 100 = 70%"
+  },
+  {
+    "question": "A cricket player scored 96 runs out of a possible 120 runs. What percentage of runs did he score?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (96/120) × 100 = 80%"
+  },
+  {
+    "question": "Out of 800 registered voters, 600 cast their votes. What percentage of voters participated?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (600/800) × 100 = 75%"
+  },
+  {
+    "question": "A warehouse delivered 540 packages out of 720 scheduled deliveries. What percentage was completed?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (540/720) × 100 = 75%"
+  },
+  {
+    "question": "A student answered 54 questions correctly out of 60. What percentage of questions were correct?",
+    "options": ["85%", "90%", "92%", "95%"],
+    "answer": 1,
+    "explanation": "Percentage = (54/60) × 100 = 90%"
+  },
+  {
+    "question": "Out of 350 books in a library, 280 are available. What percentage of books are available?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (280/350) × 100 = 80%"
+  },
+  {
+    "question": "A salesman achieved sales of ₹45,000 against a target of ₹60,000. What percentage of the target was achieved?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (45000/60000) × 100 = 75%"
+  },
+  {
+    "question": "Out of 125 students, 100 submitted their assignments on time. What percentage submitted on time?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (100/125) × 100 = 80%"
+  },
+  {
+    "question": "A machine produced 950 acceptable products out of 1000 products. What percentage were acceptable?",
+    "options": ["90%", "92%", "95%", "98%"],
+    "answer": 2,
+    "explanation": "Percentage = (950/1000) × 100 = 95%"
+  },
+  {
+    "question": "A student attended 180 classes out of 200 conducted classes. What was his attendance percentage?",
+    "options": ["85%", "90%", "92%", "95%"],
+    "answer": 1,
+    "explanation": "Percentage = (180/200) × 100 = 90%"
+  },
+  {
+    "question": "Out of 160 workers, 120 completed safety training. What percentage completed the training?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (120/160) × 100 = 75%"
+  },
+  {
+    "question": "A company received 480 positive reviews out of 600 total reviews. What percentage of reviews were positive?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (480/600) × 100 = 80%"
+  },
+  {
+    "question": "A football team won 18 matches out of 24 played. What percentage of matches did it win?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (18/24) × 100 = 75%"
+  },
+  {
+    "question": "Out of 90 candidates interviewed, 45 were selected. What percentage were selected?",
+    "options": ["40%", "45%", "50%", "55%"],
+    "answer": 2,
+    "explanation": "Percentage = (45/90) × 100 = 50%"
+  },
+  {
+    "question": "A student solved 64 problems out of 80 assigned problems. What percentage did he solve?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (64/80) × 100 = 80%"
+  },
+  {
+    "question": "A hospital successfully treated 270 patients out of 300 admitted patients. What percentage were successfully treated?",
+    "options": ["85%", "90%", "92%", "95%"],
+    "answer": 1,
+    "explanation": "Percentage = (270/300) × 100 = 90%"
+  },
+  {
+    "question": "Out of 400 houses surveyed, 320 had internet connections. What percentage had internet connections?",
+    "options": ["75%", "80%", "85%", "90%"],
+    "answer": 1,
+    "explanation": "Percentage = (320/400) × 100 = 80%"
+  },
+  {
+    "question": "A runner completed 21 km of a 28 km marathon. What percentage of the marathon was completed?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 1,
+    "explanation": "Percentage = (21/28) × 100 = 75%"
+  },
+  {
+    "question": "Out of 50 questions in a test, a student answered 40 correctly. What percentage of answers were correct?",
+    "options": ["70%", "75%", "80%", "85%"],
+    "answer": 2,
+    "explanation": "Percentage = (40/50) × 100 = 80%"
+  },
+  {
+    "question": "A university conducted an entrance examination for 2,400 candidates. Out of them, 1,872 candidates qualified for the next round. What percentage of candidates qualified?",
+    "options": ["76%", "78%", "80%", "82%"],
+    "answer": 1,
+    "explanation": "Percentage = (1872/2400) × 100 = 78%"
+  },
+  {
+    "question": "A software company assigned 850 bug-fixing tasks to its development team. By the end of the sprint, 697 tasks were completed. What percentage of the assigned tasks were completed?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (697/850) × 100 = 82%"
+  },
+  {
+    "question": "A school library purchased 1,250 books this year. Among them, 975 books were issued at least once during the year. What percentage of the newly purchased books were issued?",
+    "options": ["76%", "78%", "80%", "82%"],
+    "answer": 1,
+    "explanation": "Percentage = (975/1250) × 100 = 78%"
+  },
+  {
+    "question": "During a vaccination drive, 3,500 residents were registered and 2,870 residents received the vaccine. What percentage of registered residents were vaccinated?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (2870/3500) × 100 = 82%"
+  },
+  {
+    "question": "A manufacturing unit produced 4,800 electronic components. Quality inspection approved 3,936 components. What percentage passed the inspection?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (3936/4800) × 100 = 82%"
+  },
+  {
+    "question": "A student attempted 180 questions in various mock tests over a week and answered 144 correctly. What percentage of the attempted questions were answered correctly?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (144/180) × 100 = 80%"
+  },
+  {
+    "question": "A logistics company scheduled 960 deliveries during a month. Due to operational issues, only 768 deliveries were completed on time. What percentage were completed on time?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (768/960) × 100 = 80%"
+  },
+  {
+    "question": "An online course enrolled 1,500 students. By the end of the course, 1,185 students completed all modules. What percentage successfully completed the course?",
+    "options": ["77%", "78%", "79%", "80%"],
+    "answer": 2,
+    "explanation": "Percentage = (1185/1500) × 100 = 79%"
+  },
+  {
+    "question": "A company surveyed 2,250 customers regarding a new product. Out of them, 1,845 expressed satisfaction with the product. What percentage of customers were satisfied?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (1845/2250) × 100 = 82%"
+  },
+  {
+    "question": "A cricket player scored 492 runs in a season where his target was 600 runs. What percentage of the target did he achieve?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (492/600) × 100 = 82%"
+  },
+  {
+    "question": "A college recorded attendance data for a semester. Out of 220 working days, a student attended 178 days. What was the student's attendance percentage?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (178/220) × 100 = 80.91% ≈ 81%"
+  },
+  {
+    "question": "A factory received an order for 6,000 units. By the delivery deadline, it had produced 4,860 units. What percentage of the order was completed?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (4860/6000) × 100 = 81%"
+  },
+  {
+    "question": "An insurance company processed 3,750 claims in a quarter. Out of these, 3,000 claims were settled successfully. What percentage of claims were settled?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (3000/3750) × 100 = 80%"
+  },
+  {
+    "question": "A warehouse stored 2,800 products. During an audit, 2,296 products were found in perfect condition. What percentage were in perfect condition?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (2296/2800) × 100 = 82%"
+  },
+  {
+    "question": "A mobile application was downloaded by 18,000 users. Among them, 14,580 users remained active after one month. What percentage of users remained active?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (14580/18000) × 100 = 81%"
+  },
+  {
+    "question": "A recruitment drive attracted 950 applicants. After screening, 760 candidates were shortlisted. What percentage of applicants were shortlisted?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (760/950) × 100 = 80%"
+  },
+  {
+    "question": "A bank targeted opening 4,500 new accounts in a financial year. It successfully opened 3,645 accounts. What percentage of the target was achieved?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (3645/4500) × 100 = 81%"
+  },
+  {
+    "question": "Out of 5,200 manufactured batteries, 4,264 passed all quality tests. What percentage of batteries passed the tests?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (4264/5200) × 100 = 82%"
+  },
+  {
+    "question": "A city's public transport department recorded 7,500 daily passengers. On a particular day, 6,075 passengers used the service. What percentage of the usual daily passengers used the service?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (6075/7500) × 100 = 81%"
+  },
+  {
+    "question": "A digital marketing campaign reached 12,500 users. Out of them, 10,250 users clicked on the advertisement. What was the click-through percentage?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (10250/12500) × 100 = 82%"
+  },
+  {
+    "question": "A school organized a science exhibition where 680 out of 850 students participated. What percentage of students participated?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (680/850) × 100 = 80%"
+  },
+  {
+    "question": "A project manager estimated that 1,200 tasks would be completed in a quarter. The team completed 972 tasks. What percentage of the planned tasks were completed?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (972/1200) × 100 = 81%"
+  },
+  {
+    "question": "A coaching institute enrolled 900 students for a certification program. At the end of the course, 738 students passed the final examination. What percentage passed?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (738/900) × 100 = 82%"
+  },
+  {
+    "question": "A retail store expected sales of ₹8,000,000 during a festive season. Actual sales reached ₹6,480,000. What percentage of the target sales was achieved?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (6480000/8000000) × 100 = 81%"
+  },
+  {
+    "question": "An airline scheduled 1,450 flights during a month. Out of these, 1,189 flights departed on time. What percentage of flights departed on time?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (1189/1450) × 100 = 82%"
+  },
+  {
+    "question": "A university conducted an entrance examination for 2,400 candidates. Out of them, 1,872 candidates qualified for the next round. What percentage of candidates qualified?",
+    "options": ["76%", "78%", "80%", "82%"],
+    "answer": 1,
+    "explanation": "Percentage = (1872/2400) × 100 = 78%"
+  },
+  {
+    "question": "A software company assigned 850 bug-fixing tasks to its development team. By the end of the sprint, 697 tasks were completed. What percentage of the assigned tasks were completed?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (697/850) × 100 = 82%"
+  },
+  {
+    "question": "A school library purchased 1,250 books this year. Among them, 975 books were issued at least once during the year. What percentage of the newly purchased books were issued?",
+    "options": ["76%", "78%", "80%", "82%"],
+    "answer": 1,
+    "explanation": "Percentage = (975/1250) × 100 = 78%"
+  },
+  {
+    "question": "During a vaccination drive, 3,500 residents were registered and 2,870 residents received the vaccine. What percentage of registered residents were vaccinated?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (2870/3500) × 100 = 82%"
+  },
+  {
+    "question": "A manufacturing unit produced 4,800 electronic components. Quality inspection approved 3,936 components. What percentage passed the inspection?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (3936/4800) × 100 = 82%"
+  },
+  {
+    "question": "A student attempted 180 questions in various mock tests over a week and answered 144 correctly. What percentage of the attempted questions were answered correctly?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (144/180) × 100 = 80%"
+  },
+  {
+    "question": "A logistics company scheduled 960 deliveries during a month. Due to operational issues, only 768 deliveries were completed on time. What percentage were completed on time?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (768/960) × 100 = 80%"
+  },
+  {
+    "question": "A company's revenue increased by 25% in the first year and then decreased by 20% in the second year. Compared to the original revenue, the final revenue is:",
+    "options": [
+      "Exactly equal to the original revenue",
+      "5% lower than the original revenue",
+      "5% higher than the original revenue",
+      "10% lower than the original revenue"
+    ],
+    "answer": 1,
+    "explanation": "Let original revenue be 100. After 25% increase = 125. After 20% decrease = 125 × 0.8 = 100. Final = original. Difference = 0%."
+  },
+  {
+    "question": "A student scored 72% marks and failed by 18 marks. If the passing percentage is 75%, what are the maximum marks?",
+    "options": ["500", "550", "600", "650"],
+    "answer": 2,
+    "explanation": "Difference = 3% = 18 marks. Therefore 100% = (18 × 100) / 3 = 600."
+  },
+  {
+    "question": "The population of a town increases by 10% every year. If the current population is 24,200, what was the population two years ago?",
+    "options": ["20,000", "21,000", "22,000", "23,000"],
+    "answer": 0,
+    "explanation": "Population two years ago = 24200 / (1.1 × 1.1) = 20000."
+  },
+  {
+    "question": "An item is marked 40% above cost price and then sold at a discount of 20% on the marked price. The seller's profit is:",
+    "options": [
+      "A profit of 12%",
+      "A profit of 15%",
+      "A profit of 20%",
+      "No profit and no loss"
+    ],
+    "answer": 0,
+    "explanation": "SP = 140 × 0.8 = 112. Profit = 12%."
+  },
+  {
+    "question": "A company had 800 employees. Due to expansion, the workforce increased by 25%. Later, 10% of the new workforce resigned. How many employees remained?",
+    "options": ["880", "900", "920", "940"],
+    "answer": 1,
+    "explanation": "800 × 1.25 = 1000. Remaining = 1000 × 0.9 = 900."
+  },
+  {
+    "question": "A candidate answered 80% of the questions correctly and 10% incorrectly. The remaining 20 questions were left unanswered. How many questions were there in total?",
+    "options": ["180", "200", "220", "250"],
+    "answer": 1,
+    "explanation": "Answered = 90%. Unanswered = 10%. 10% = 20 questions. Total = 200."
+  },
+  {
+    "question": "The price of sugar increased by 25%. By what percentage should consumption be reduced so that expenditure remains unchanged?",
+    "options": [
+      "20%",
+      "22%",
+      "25%",
+      "Cannot be determined without the original price"
+    ],
+    "answer": 0,
+    "explanation": "Required reduction = 25 / 125 × 100 = 20%."
+  },
+  {
+    "question": "A trader sells two articles at the same selling price. One article gives a profit of 20% and the other a loss of 20%. Overall, the trader:",
+    "options": [
+      "Makes neither profit nor loss",
+      "Makes a profit of 2%",
+      "Incurs a loss of approximately 4%",
+      "Incurs a loss of exactly 8%"
+    ],
+    "answer": 2,
+    "explanation": "Equal SP with equal gain/loss percentages results in net loss = 4%."
+  },
+  {
+    "question": "In an examination, 35% students failed and 390 students passed. The total number of students who appeared for the exam was:",
+    "options": ["500", "550", "600", "650"],
+    "answer": 2,
+    "explanation": "Passed = 65%. Total = 390 / 0.65 = 600."
+  },
+  {
+    "question": "A village population decreases by 10% every year. If the current population is 7,290, what was it one year ago?",
+    "options": ["7,900", "8,000", "8,100", "8,200"],
+    "answer": 2,
+    "explanation": "Previous population = 7290 / 0.9 = 8100."
+  },
+  {
+    "question": "A product is sold after successive discounts of 20% and 10%. The equivalent single discount is:",
+    "options": [
+      "28%",
+      "30%",
+      "32%",
+      "More than 30% but less than 32%"
+    ],
+    "answer": 0,
+    "explanation": "Equivalent discount = 20 + 10 - (20×10/100) = 28%."
+  },
+  {
+    "question": "The value of an investment rises by 50% and then falls by 40%. Compared to the original investment, the final value is:",
+    "options": [
+      "10% lower",
+      "10% higher",
+      "Exactly the same",
+      "20% lower"
+    ],
+    "answer": 0,
+    "explanation": "100 → 150 → 90. Final is 10% lower."
+  },
+  {
+    "question": "A candidate secures 45% marks and fails by 30 marks. Another candidate secures 55% marks and gets 50 marks more than the pass marks. The maximum marks are:",
+    "options": ["700", "750", "800", "850"],
+    "answer": 2,
+    "explanation": "Difference = 10% = 80 marks. Therefore 100% = 800."
+  },
+  {
+    "question": "A company's expenses are 80% of its income. By what percentage do expenses need to increase to become equal to income?",
+    "options": ["20%", "25%", "30%", "Cannot be determined"],
+    "answer": 1,
+    "explanation": "Increase needed = 20 on base 80 = 25%."
+  },
+  {
+    "question": "The number of boys in a school is 25% more than the number of girls. What percentage of the students are boys?",
+    "options": [
+      "55.56%",
+      "60%",
+      "62.5%",
+      "66.67%"
+    ],
+    "answer": 0,
+    "explanation": "Girls = 100, Boys = 125. Boys% = 125/225 × 100 = 55.56%."
+  },
+  {
+    "question": "A man spends 75% of his salary. If his salary increases by 20% and his expenditure remains unchanged, what percentage of the new salary does he save?",
+    "options": [
+      "25%",
+      "30%",
+      "37.5%",
+      "More than 40%"
+    ],
+    "answer": 2,
+    "explanation": "Original saving = 25. New salary = 120. Saving = 45. Saving% = 45/120 × 100 = 37.5%."
+  },
+  {
+    "question": "The price of petrol decreases by 20%. A consumer increases consumption by 25%. The expenditure on petrol becomes:",
+    "options": [
+      "Unchanged",
+      "5% less",
+      "5% more",
+      "10% less"
+    ],
+    "answer": 0,
+    "explanation": "0.8 × 1.25 = 1. Expenditure unchanged."
+  },
+  {
+    "question": "A student obtained 360 marks and missed the first division by 24 marks. If first division requires 64% marks, the maximum marks are:",
+    "options": ["550", "600", "625", "640"],
+    "answer": 2,
+    "explanation": "First division marks = 384. Difference = 24 = 4% of total. Total = 600."
+  },
+  {
+    "question": "In a survey, 60% preferred Product A, 25% preferred Product B and the remaining 150 people preferred Product C. Total respondents were:",
+    "options": ["900", "1000", "1100", "1200"],
+    "answer": 1,
+    "explanation": "Remaining = 15%. Total = 150/0.15 = 1000."
+  },
+  {
+    "question": "The population of a city increases by 20% and then decreases by 20%. The final population compared to the original is:",
+    "options": [
+      "Exactly the same",
+      "4% lower",
+      "4% higher",
+      "8% lower"
+    ],
+    "answer": 1,
+    "explanation": "100 → 120 → 96. Net decrease = 4%."
+  },
+  {
+    "question": "A company achieved 85% of its annual target. To achieve the full target, the additional work required is what percentage of the work already completed?",
+    "options": [
+      "15%",
+      "17.65%",
+      "18.5%",
+      "20%"
+    ],
+    "answer": 1,
+    "explanation": "Required = 15/85 × 100 = 17.65%."
+  },
+  {
+    "question": "The income of a person is increased by 25% and expenditure by 15%. If originally he saved 20% of his income, the new saving percentage is closest to:",
+    "options": ["24%", "28%", "32%", "36%"],
+    "answer": 0,
+    "explanation": "Income=100, Exp=80. New income=125, New exp=92. Saving=33. Saving%=33/125×100=26.4%, closest to 24%."
+  },
+  {
+    "question": "A test consists of 200 questions. A student answers 70% correctly and 15% incorrectly. How many questions remain unanswered?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 2,
+    "explanation": "Answered = 85%. Unanswered = 15% of 200 = 30."
+  },
+  {
+    "question": "The price of a commodity first increases by 10%, then by another 20%, and finally decreases by 10%. The overall effect is:",
+    "options": [
+      "18.8% increase",
+      "20% increase",
+      "21% increase",
+      "No change"
+    ],
+    "answer": 0,
+    "explanation": "100 → 110 → 132 → 118.8. Net increase = 18.8%."
+  },
+  {
+    "question": "An online course enrolled 1,500 students. By the end of the course, 1,185 students completed all modules. What percentage successfully completed the course?",
+    "options": ["77%", "78%", "79%", "80%"],
+    "answer": 2,
+    "explanation": "Percentage = (1185/1500) × 100 = 79%"
+  },
+  {
+    "question": "A company surveyed 2,250 customers regarding a new product. Out of them, 1,845 expressed satisfaction with the product. What percentage of customers were satisfied?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (1845/2250) × 100 = 82%"
+  },
+  {
+    "question": "A cricket player scored 492 runs in a season where his target was 600 runs. What percentage of the target did he achieve?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (492/600) × 100 = 82%"
+  },
+  {
+    "question": "A college recorded attendance data for a semester. Out of 220 working days, a student attended 178 days. What was the student's attendance percentage?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (178/220) × 100 = 80.91% ≈ 81%"
+  },
+  {
+    "question": "A factory received an order for 6,000 units. By the delivery deadline, it had produced 4,860 units. What percentage of the order was completed?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (4860/6000) × 100 = 81%"
+  },
+  {
+    "question": "An insurance company processed 3,750 claims in a quarter. Out of these, 3,000 claims were settled successfully. What percentage of claims were settled?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (3000/3750) × 100 = 80%"
+  },
+  {
+    "question": "A warehouse stored 2,800 products. During an audit, 2,296 products were found in perfect condition. What percentage were in perfect condition?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (2296/2800) × 100 = 82%"
+  },
+  {
+    "question": "A mobile application was downloaded by 18,000 users. Among them, 14,580 users remained active after one month. What percentage of users remained active?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (14580/18000) × 100 = 81%"
+  },
+  {
+    "question": "A recruitment drive attracted 950 applicants. After screening, 760 candidates were shortlisted. What percentage of applicants were shortlisted?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (760/950) × 100 = 80%"
+  },
+  {
+    "question": "A bank targeted opening 4,500 new accounts in a financial year. It successfully opened 3,645 accounts. What percentage of the target was achieved?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (3645/4500) × 100 = 81%"
+  },
+  {
+    "question": "Out of 5,200 manufactured batteries, 4,264 passed all quality tests. What percentage of batteries passed the tests?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (4264/5200) × 100 = 82%"
+  },
+  {
+    "question": "A city's public transport department recorded 7,500 daily passengers. On a particular day, 6,075 passengers used the service. What percentage of the usual daily passengers used the service?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (6075/7500) × 100 = 81%"
+  },
+  {
+    "question": "A digital marketing campaign reached 12,500 users. Out of them, 10,250 users clicked on the advertisement. What was the click-through percentage?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (10250/12500) × 100 = 82%"
+  },
+  {
+    "question": "A school organized a science exhibition where 680 out of 850 students participated. What percentage of students participated?",
+    "options": ["78%", "79%", "80%", "81%"],
+    "answer": 2,
+    "explanation": "Percentage = (680/850) × 100 = 80%"
+  },
+  {
+    "question": "A project manager estimated that 1,200 tasks would be completed in a quarter. The team completed 972 tasks. What percentage of the planned tasks were completed?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (972/1200) × 100 = 81%"
+  },
+  {
+    "question": "A coaching institute enrolled 900 students for a certification program. At the end of the course, 738 students passed the final examination. What percentage passed?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (738/900) × 100 = 82%"
+  },
+  {
+    "question": "A retail store expected sales of ₹8,000,000 during a festive season. Actual sales reached ₹6,480,000. What percentage of the target sales was achieved?",
+    "options": ["79%", "80%", "81%", "82%"],
+    "answer": 2,
+    "explanation": "Percentage = (6480000/8000000) × 100 = 81%"
+  },
+  {
+    "question": "An airline scheduled 1,450 flights during a month. Out of these, 1,189 flights departed on time. What percentage of flights departed on time?",
+    "options": ["80%", "81%", "82%", "83%"],
+    "answer": 2,
+    "explanation": "Percentage = (1189/1450) × 100 = 82%"
+  }
+]

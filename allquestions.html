@@ -47,14 +47,14 @@ async function displayAllQuestions() {
 
         let title = "Questions";
 
-        if (selectedFile.includes("azure")) {
+        if (selectedFile.includes("azure_1")) {
             title = "Azure Questions";
         }
-        else if (selectedFile.includes("java")) {
-            title = "Java Questions";
+        else if (selectedFile.includes("azure_2")) {
+            title = "Azure 2 Questions";
         }
-        else if (selectedFile.includes("aptitude")) {
-            title = "Aptitude Questions";
+        else if (selectedFile.includes("azure_3")) {
+            title = "Azure 3 Questions";
         }
 
         document.getElementById("totalCount")
@@ -62,6 +62,29 @@ async function displayAllQuestions() {
             `${title} (${questions.length})`;
 
         questions.forEach((q, i) => {
+
+            let optionsHTML = "";
+            const correctAnswerText =
+
+                Array.isArray(q.answer)
+
+                    ? q.answer
+                        .map(index =>
+                            q.options[index]
+                        )
+                        .join(", ")
+
+                    : q.options[q.answer];
+
+            q.options.forEach((option, index) => {
+
+                optionsHTML += `
+                    <p>
+                        ${String.fromCharCode(65 + index)}. ${option}
+                    </p>
+                `;
+
+            });
 
             container.innerHTML += `
 
@@ -71,25 +94,11 @@ async function displayAllQuestions() {
                         Q${i + 1}: ${q.question}
                     </h3>
 
-                    <p>
-                        A. ${q.options[0] || ""}
-                    </p>
-
-                    <p>
-                        B. ${q.options[1] || ""}
-                    </p>
-
-                    <p>
-                        C. ${q.options[2] || ""}
-                    </p>
-
-                    <p>
-                        D. ${q.options[3] || ""}
-                    </p>
+                    ${optionsHTML}
 
                     <p class="correct-answer">
                         <b>Correct Answer:</b>
-                        ${q.options[q.answer]}
+                        ${correctAnswerText}
                     </p>
 
                     <div class="explanation">
@@ -108,12 +117,22 @@ async function displayAllQuestions() {
                 </div>
 
             `;
+
         });
 
     }
     catch (error) {
-        console.log(error);
+
+        console.error("Error loading questions:", error);
+
+        container.innerHTML = `
+            <p>
+                Failed to load questions.
+            </p>
+        `;
+
     }
+
 }
 
 displayAllQuestions();

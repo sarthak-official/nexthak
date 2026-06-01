@@ -164,7 +164,6 @@ section h2 {
 /* FEATURES */
 
 .feature-grid,
-
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

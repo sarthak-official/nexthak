@@ -459,5 +459,364 @@
   ],
   "answer": 3,
   "explanation": "A hybrid cloud combines existing on-premises infrastructure with public cloud resources. This approach allows organizations to use additional cloud resources when needed without replacing existing infrastructure or building a new datacenter. As a result, it minimizes both capital expenditure (CapEx) and operational expenditure (OpEx) while providing scalable resources to users. Building an additional datacenter or private cloud increases costs, and a complete migration to the public cloud is not necessary when the goal is to extend existing resources."
+}, {
+    "question": "To achieve a hybrid cloud model, a company must always migrate from a private cloud model.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A hybrid cloud combines on-premises or private infrastructure with public cloud services. A company does not need to start with a private cloud and migrate to achieve a hybrid cloud model."
+  },
+  {
+    "question": "A company can extend the capacity of its internal network by using the public cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud resources can be used to supplement on-premises infrastructure when additional computing, storage, or networking capacity is required. This capability is a common benefit of hybrid cloud environments."
+  },
+  {
+    "question": "In a public cloud model, only guest users at your company can access the resources in the cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Public cloud resources can be accessed by any authorized users, including employees, administrators, applications, and external users with appropriate permissions. Access is not limited to guest users."
+  },{
+  "question": "You plan to migrate several servers from an on-premises network to Azure. What is an advantage of using a public cloud service for the servers over an on-premises network?",
+  "options": [
+    "The public cloud is owned by the public, NOT a private corporation",
+    "The public cloud is a crowd-sourcing solution that provides corporations with the ability to enhance the cloud",
+    "All public cloud resources can be freely accessed by every member of the public",
+    "The public cloud is a shared entity whereby multiple corporations each use a portion of the resources in the cloud"
+  ],
+  "answer": 3,
+  "explanation": "A public cloud uses a shared infrastructure model in which multiple customers share the same underlying resources while maintaining isolation of their data and workloads. This multi-tenant architecture allows organizations to benefit from scalability, flexibility, and cost efficiency without managing their own physical infrastructure."
+},{
+  "question": "Azure Site Recovery provides ______ for virtual machines.",
+  "options": [
+    "Fault tolerance",
+    "Disaster recovery",
+    "Elasticity",
+    "High availability"
+  ],
+  "answer": 1,
+  "explanation": "Azure Site Recovery (ASR) is a disaster recovery service that helps protect virtual machines by replicating workloads to a secondary location. In the event of a planned or unplanned outage, ASR enables failover and recovery of virtual machines, ensuring business continuity and minimizing downtime."
+},{
+  "question": "In which type of cloud model are all the hardware resources owned by a third-party and shared between multiple tenants?",
+  "options": [
+    "Private",
+    "Hybrid",
+    "Public"
+  ],
+  "answer": 2,
+  "explanation": "In a public cloud model, the cloud infrastructure is owned and managed by a third-party cloud provider. The underlying hardware resources are shared among multiple customers (tenants) while maintaining isolation and security for each tenant. Examples of public cloud providers include Microsoft Azure, Amazon Web Services (AWS), and Google Cloud."
+},{
+  "question": "________ is a desktop and application virtualization service that enables the use of a cloud-hosted version of Windows from any location.",
+  "options": [
+    "An availability set",
+    "Azure Spot Virtual Machines",
+    "Azure Virtual Desktop",
+    "Azure Virtual Machine Scale Sets"
+  ],
+  "answer": 2,
+  "explanation": "Azure Virtual Desktop is a desktop and application virtualization service that enables users to access a cloud-hosted Windows desktop and applications from virtually any location and device. It provides secure remote access while allowing organizations to centrally manage desktop environments in Azure."
+},{
+  "question": "You have 1,000 virtual machines hosted on the Hyper-V hosts in a datacenter. You plan to migrate all the virtual machines to an Azure pay-as-you-go subscription. You need to identify which expenditure model to use for the planned Azure solution. Which expenditure model should you identify?",
+  "options": [
+    "Operational",
+    "Elastic",
+    "Capital",
+    "Scalable"
+  ],
+  "answer": 0,
+  "explanation": "A pay-as-you-go Azure subscription uses an operational expenditure (OpEx) model because organizations pay only for the resources they consume. Unlike capital expenditure (CapEx), which requires large upfront investments in hardware and infrastructure, OpEx allows costs to be incurred over time based on actual usage."
+},{
+    "question": "A cloud service that remains available after a failure occurs.",
+    "options": [
+      "Disaster recovery",
+      "Fault tolerance",
+      "Low latency",
+      "Dynamic scalability"
+    ],
+    "answer": 1,
+    "explanation": "Fault tolerance enables a service to continue operating without interruption even when a component fails. Redundant resources ensure that the service remains available."
+  },
+  {
+    "question": "A cloud service that can be recovered after a failure occurs.",
+    "options": [
+      "Disaster recovery",
+      "Fault tolerance",
+      "Low latency",
+      "Dynamic scalability"
+    ],
+    "answer": 0,
+    "explanation": "Disaster recovery focuses on restoring services and data after an outage or failure. It helps organizations resume operations following a disruptive event."
+  },
+  {
+    "question": "A cloud service that performs quickly when demand increases.",
+    "options": [
+      "Disaster recovery",
+      "Fault tolerance",
+      "Low latency",
+      "Dynamic scalability"
+    ],
+    "answer": 3,
+    "explanation": "Dynamic scalability allows cloud resources to automatically scale up or down based on demand, ensuring consistent performance during workload changes."
+  },
+  {
+    "question": "A cloud service that can be accessed quickly from the Internet.",
+    "options": [
+      "Disaster recovery",
+      "Fault tolerance",
+      "Low latency",
+      "Dynamic scalability"
+    ],
+    "answer": 2,
+    "explanation": "Low latency refers to minimal delay in data transmission, allowing users to access cloud services quickly and efficiently over the Internet."
+  }, {
+    "question": "A company can extend the computing resources of its internal network by using a hybrid cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A hybrid cloud allows organizations to use public cloud resources to supplement on-premises resources. This enables additional computing capacity when demand increases."
+  },
+  {
+    "question": "In a public cloud model, only guest users at your company can access the resources in the cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Public cloud resources can be accessed by any authorized users, applications, or services with the appropriate permissions. Access is not limited to guest users."
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution provides full control of operating systems that host applications.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "In a PaaS solution, the cloud provider manages the underlying infrastructure, operating systems, middleware, and runtime environment. Customers focus on developing and managing their applications rather than managing operating systems."
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution provides additional memory to apps by changing pricing tiers.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Many PaaS services allow applications to gain additional resources such as CPU, memory, and storage by moving to a higher pricing tier. This enables applications to handle increased workloads without managing infrastructure."
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution can automatically scale the number of instances.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "PaaS platforms often support automatic scaling, which increases or decreases the number of application instances based on demand. This helps maintain performance while optimizing resource usage and costs."
+  },{
+  "question": "Your company has an on-premises network that contains multiple servers. The company plans to reduce administrative responsibilities by migrating the servers to Azure virtual machines. Which two administrative responsibilities will be eliminated after the planned migration?",
+  "options": [
+    "Replacing failed server hardware",
+    "Backing up application data",
+    "Managing physical server security",
+    "Updating server operating systems",
+    "Managing permissions to shared documents"
+  ],
+  "answer": [
+    0,
+    2
+  ],
+  "explanation": "Azure Virtual Machines are an Infrastructure as a Service (IaaS) offering. Microsoft is responsible for the underlying physical infrastructure, including hardware maintenance and physical security of the datacenter. Customers remain responsible for managing operating systems, application data, backups, and user access permissions."
+},
+  {
+    "question": "Azure Pay-As-You-Go pricing is an example of CapEx.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Pay-As-You-Go pricing follows an Operational Expenditure (OpEx) model because organizations pay only for the resources they consume. It does not require a large upfront investment, which is characteristic of Capital Expenditure (CapEx)."
+  },
+  {
+    "question": "Paying electricity for your datacenter is an example of OpEx.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Electricity costs are recurring operational expenses required to run and maintain a datacenter. Therefore, they are classified as Operational Expenditure (OpEx)."
+  },
+  {
+    "question": "Deploying your own datacenter is an example of CapEx.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Building or deploying a datacenter requires significant upfront investments in facilities, servers, networking equipment, and other infrastructure. These costs are classified as Capital Expenditure (CapEx)."
+  },{
+  "question": "You plan to provision Infrastructure as a Service (IaaS) resources in Azure. Which resource is an example of IaaS?",
+  "options": [
+    "An Azure web app",
+    "An Azure virtual machine",
+    "An Azure logic app",
+    "An Azure SQL database"
+  ],
+  "answer": 1,
+  "explanation": "Azure Virtual Machines are an example of Infrastructure as a Service (IaaS). With IaaS, Microsoft provides the underlying infrastructure, while customers manage the operating system, applications, and data. Azure Web Apps, Logic Apps, and Azure SQL Database are Platform as a Service (PaaS) offerings."
+},{
+  "question": "To which cloud models can you deploy physical servers?",
+  "options": [
+    "Private cloud and hybrid cloud only",
+    "Private cloud only",
+    "Private cloud, hybrid cloud and public cloud",
+    "Hybrid cloud only"
+  ],
+  "answer": 0,
+  "explanation": "Physical servers can be deployed in a private cloud because the organization owns and manages the underlying infrastructure. A hybrid cloud includes an on-premises or private cloud component, allowing physical servers to be deployed as part of the environment. In a public cloud, customers consume resources provided by the cloud provider rather than deploying their own physical servers."
+},{
+    "question": "Which cloud model provides no required capital expenditure?",
+    "options": [
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Public Cloud"
+    ],
+    "answer": 2,
+    "explanation": "Public cloud services use a pay-as-you-go pricing model, eliminating the need for large upfront investments in hardware and infrastructure. This reduces capital expenditure (CapEx) and shifts costs to operational expenditure (OpEx)."
+  },
+  {
+    "question": "Which cloud model provides complete control over security?",
+    "options": [
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Public Cloud"
+    ],
+    "answer": 1,
+    "explanation": "A private cloud is dedicated to a single organization, giving it full control over the infrastructure, security policies, compliance requirements, and resource management."
+  },
+  {
+    "question": "Which cloud model provides a choice to use on-premises or cloud-based resources?",
+    "options": [
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Public Cloud"
+    ],
+    "answer": 0,
+    "explanation": "A hybrid cloud combines on-premises infrastructure with public cloud services, allowing organizations to choose where to run workloads and store data based on their requirements."
+  },{
+    "question": "A company can extend a private cloud by adding its own physical servers to the public cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Public cloud infrastructure is owned and managed by the cloud provider. Organizations cannot add their own physical servers to a public cloud provider's infrastructure."
+  },
+  {
+    "question": "A private cloud must be disconnected from the internet.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A private cloud can be connected to the internet. What makes it private is that the infrastructure is dedicated to a single organization, not whether it has internet connectivity."
+  },{
+  "question": "You have 50 virtual machines hosted on-premises and 50 virtual machines hosted in Azure. The on-premises virtual machines and the Azure virtual machines connect to each other. Which type of cloud model is this?",
+  "options": [
+    "Hybrid",
+    "Private",
+    "Public"
+  ],
+  "answer": 0,
+  "explanation": "A hybrid cloud combines on-premises infrastructure with public cloud resources. In this scenario, the organization has virtual machines running both on-premises and in Azure, and the environments are connected, which is the defining characteristic of a hybrid cloud model."
+},
+  {
+    "question": "A Platform as a Service (PaaS) solution that hosts web apps in Azure provides full control of the operating systems that host applications.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "In a PaaS solution, Microsoft manages the underlying infrastructure, operating systems, middleware, and runtime environment. Customers focus on developing and managing their applications rather than managing operating systems."
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution that hosts web apps in Azure can be provided with additional memory by changing the pricing tier.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure App Service and other PaaS offerings allow applications to gain additional resources such as CPU, memory, and storage by upgrading to a higher pricing tier."
+  },
+  {
+    "question": "A Platform as a Service (PaaS) solution that hosts web apps in Azure can be configured to automatically scale the number of instances based on demand.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure PaaS services support autoscaling, which automatically increases or decreases the number of application instances based on workload demand, helping maintain performance and optimize costs."
+  },{
+  "question": "Your company plans to migrate all its data and resources to Azure. The company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure. You create Azure virtual machines, Azure SQL databases, and Azure Storage accounts. Does this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "The solution does not meet the goal because Azure Virtual Machines are an Infrastructure as a Service (IaaS) offering. The requirement specifies that only Platform as a Service (PaaS) solutions must be used. Although Azure SQL Database is a PaaS service, the inclusion of Azure Virtual Machines violates the requirement."
+},{
+  "question": "Your company plans to deploy several custom applications to Azure. The applications will provide invoicing services to the customers of the company. Each application will have several prerequisite applications and services installed. You need to recommend a cloud deployment solution for all the applications. What should you recommend?",
+  "options": [
+    "Software as a Service (SaaS)",
+    "Platform as a Service (PaaS)",
+    "Infrastructure as a Service (IaaS)"
+  ],
+  "answer": 2,
+  "explanation": "Infrastructure as a Service (IaaS) is the best choice when applications require custom configurations, prerequisite software, and supporting services to be installed. IaaS provides virtual machines and full control over the operating system, allowing administrators to install and manage all required dependencies. SaaS provides ready-made applications, while PaaS offers a managed platform with limited control over the underlying environment."
+},
+  {
+    "question": "Building a data center infrastructure is an example of operational expenditure (OpEx) costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Building a datacenter requires significant upfront investments in facilities, servers, storage, and networking equipment. These costs are classified as Capital Expenditure (CapEx), not Operational Expenditure (OpEx)."
+  },
+  {
+    "question": "Monthly salaries for technical personnel are an example of operational expenditure (OpEx) costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Salaries are recurring business expenses required to operate and maintain services. Therefore, they are classified as Operational Expenditure (OpEx)."
+  },
+  {
+    "question": "Leasing software is an example of operational expenditure (OpEx) costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Leasing or subscribing to software involves ongoing recurring payments rather than a large upfront purchase. As a result, software leasing is considered an Operational Expenditure (OpEx)."
+  },{
+  "question": "Azure Cosmos DB is an example of a ______ offering.",
+  "options": [
+    "Platform as a Service (PaaS)",
+    "Infrastructure as a Service (IaaS)",
+    "Serverless",
+    "Software as a Service (SaaS)"
+  ],
+  "answer": 0,
+  "explanation": "Azure Cosmos DB is a fully managed globally distributed database service provided by Microsoft Azure. It is classified as a Platform as a Service (PaaS) offering because Microsoft manages the underlying infrastructure, operating systems, patching, scaling, and availability, while customers focus on their data and application logic."
 }
- ]
+]

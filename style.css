@@ -173,7 +173,7 @@ section h2 {
 .quiz-grid{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((95% - 50px)/3);
+    grid-auto-columns: calc((100% - 50px)/3);
     gap:25px;
     overflow-x: auto;
     padding-bottom: 15px;
@@ -690,7 +690,7 @@ footer {
         font-size: 14px;
     }
     .quiz-grid{
-        grid-auto-columns: calc((95% - 50px)/2);
+        grid-auto-columns: calc((100% - 50px)/2);
     }
 }
 
@@ -749,7 +749,7 @@ footer {
         padding: 14px;
     }
     .quiz-grid{
-        grid-auto-columns: 85%;
+        grid-auto-columns: 100%;
     }
 }
 
@@ -771,4 +771,45 @@ footer {
     font-size: 30px;
 
     z-index: 9999;
+}
+
+.quiz-wrapper{
+    position: relative;
+    padding: 0 50px;
+}
+
+.scroll-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    line-height: 1;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    border-radius: 50%;
+    z-index: 100;
+
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,162,255,.4);
+}
+
+.scroll-btn.left{
+    left: -10px;
+}
+
+.scroll-btn.right{
+    right: -10px;
+}
+.scroll-btn:hover{
+    transform: translateY(-50%) scale(1.1);
 }

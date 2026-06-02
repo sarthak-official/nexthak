@@ -574,3 +574,65 @@ function saveCurrentQuestionTime() {
 
     saveProgress();
 }
+
+function scrollQuiz(button,direction){
+
+    const wrapper =
+        button.parentElement;
+
+    const grid =
+        wrapper.querySelector(".quiz-grid");
+
+    grid.scrollBy({
+        left: direction * grid.clientWidth,
+        behavior: "smooth"
+    });
+
+    setTimeout(updateArrowVisibility, 400);
+}
+
+function updateArrowVisibility() {
+
+    document.querySelectorAll(".quiz-wrapper")
+    .forEach(wrapper => {
+
+        const grid =
+            wrapper.querySelector(".quiz-grid");
+
+        const leftBtn =
+            wrapper.querySelector(".left");
+
+        const rightBtn =
+            wrapper.querySelector(".right");
+
+        if (!grid || !leftBtn || !rightBtn)
+            return;
+
+        leftBtn.style.display =
+            grid.scrollLeft <= 5
+            ? "none"
+            : "flex";
+
+        rightBtn.style.display =
+            grid.scrollLeft >=
+            grid.scrollWidth -
+            grid.clientWidth - 5
+            ? "none"
+            : "flex";
+    });
+}
+
+window.addEventListener("load", () => {
+
+    document
+    .querySelectorAll(".quiz-grid")
+    .forEach(grid => {
+
+        grid.addEventListener(
+            "scroll",
+            updateArrowVisibility
+        );
+    });
+
+    updateArrowVisibility();
+});

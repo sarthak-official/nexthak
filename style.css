@@ -751,6 +751,8 @@ footer {
     .quiz-grid{
         grid-auto-columns: 100%;
     }
+    
+    
 }
 
 #loadingScreen{
@@ -775,7 +777,7 @@ footer {
 
 .quiz-wrapper{
     position: relative;
-    padding: 0 50px;
+    padding: 0 45px;
 }
 
 .scroll-btn{
@@ -812,4 +814,17 @@ footer {
 }
 .scroll-btn:hover{
     transform: translateY(-50%) scale(1.1);
+}
+@media(max-width:768px){
+    .scroll-btn{
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+    .scroll-btn.left{
+        left: 5px;
+    }
+    .scroll-btn.right{
+        right: 5px;
+    }
 }

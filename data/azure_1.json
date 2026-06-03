@@ -818,5 +818,104 @@
   ],
   "answer": 0,
   "explanation": "Azure Cosmos DB is a fully managed globally distributed database service provided by Microsoft Azure. It is classified as a Platform as a Service (PaaS) offering because Microsoft manages the underlying infrastructure, operating systems, patching, scaling, and availability, while customers focus on their data and application logic."
+},
+  {
+    "question": "With software as a service (SaaS), you must apply software updates.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "In a Software as a Service (SaaS) model, the cloud provider is responsible for managing and applying software updates, patches, and maintenance. Users simply access and use the application."
+  },
+  {
+    "question": "With infrastructure as a service (IaaS), you must install the software that you want to use.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Infrastructure as a Service (IaaS) provides virtualized computing resources. Customers are responsible for installing, configuring, and managing the operating system and any software they want to use."
+  },
+  {
+    "question": "Azure Backup is an example of platform as a service (PaaS).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Backup is a fully managed cloud-based backup service provided by Azure. Microsoft manages the underlying infrastructure, availability, and maintenance of the service, allowing customers to focus on protecting and recovering their data without managing backup infrastructure."
+  },{
+    "question": "You can create a resource group inside of another resource group.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Resource Groups cannot be nested. A resource group is a logical container for resources, but it cannot contain another resource group."
+  },
+  {
+    "question": "An Azure virtual machine can be in multiple resource groups.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "An Azure resource, including a virtual machine, can belong to only one resource group at a time. Although a resource can be moved between resource groups, it cannot exist in multiple resource groups simultaneously."
+  },
+  {
+    "question": "A resource group can contain resources from multiple Azure regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A resource group is a logical container that can hold resources deployed in different Azure regions. The resources do not need to be located in the same region as the resource group or each other."
+  },{
+    "question": "Microsoft SQL Server 2019 installed on an Azure virtual machine is an example of platform as a service (PaaS).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "SQL Server running on an Azure Virtual Machine is an Infrastructure as a Service (IaaS) solution. Customers are responsible for managing the virtual machine, operating system, SQL Server installation, updates, and configuration."
+  },
+  {
+    "question": "Azure SQL Database is an example of platform as a service (PaaS).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure SQL Database is a fully managed database service that abstracts infrastructure management. Microsoft manages the operating system, patching, backups, and high availability, making it a Platform as a Service (PaaS) offering."
+  },
+  {
+    "question": "Azure Cosmos DB is an example of software as a service (SaaS).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Cosmos DB is a fully managed globally distributed database service. It is classified as a Platform as a Service (PaaS) offering because Microsoft manages the underlying infrastructure while customers manage their data and application logic."
+  },{
+  "question": "You can assign a ______ to every Azure resource.",
+  "options": [
+    "Blueprint",
+    "Lock",
+    "Policy",
+    "Service endpoint"
+  ],
+  "answer": 1,
+  "explanation": "Azure resource locks can be applied directly to individual resources to prevent accidental deletion or modification. The two lock types are CanNotDelete and ReadOnly. Locks help protect critical resources from unintended changes."
+},{
+  "question": "Your company plans to migrate all its data and resources to Azure. The company's migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure. You need to deploy an Azure environment that meets the company's migration plan. What should you create?",
+  "options": [
+    "Azure virtual machines, Azure SQL databases, and Azure Storage accounts",
+    "An Azure App Service and Azure virtual machines that have Microsoft SQL Server installed",
+    "An Azure App Service and Azure SQL databases",
+    "Azure storage accounts and a web server in Azure virtual machines"
+  ],
+  "answer": 2,
+  "explanation": "Azure App Service and Azure SQL Database are both Platform as a Service (PaaS) offerings. Azure App Service provides a managed platform for hosting web applications, while Azure SQL Database is a fully managed database service. The other options include Azure Virtual Machines, which are Infrastructure as a Service (IaaS) resources and therefore do not satisfy the requirement that only PaaS solutions be used."
 }
 ]

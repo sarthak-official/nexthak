@@ -1,0 +1,514 @@
+[
+  {
+    "question": "A private cloud must be disconnected from the internet.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A private cloud can be connected to the internet. A cloud is considered private because its infrastructure is dedicated to a single organization, not because it is isolated from the internet."
+  },
+  {
+    "question": "Part of a hybrid cloud is the public cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A hybrid cloud combines on-premises or private cloud resources with public cloud services. Therefore, a public cloud component is an essential part of a hybrid cloud environment."
+  },
+  {
+    "question": "You must have physical servers to use cloud computing.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Cloud computing eliminates the need for customers to own and manage physical servers. The cloud provider supplies and maintains the underlying hardware infrastructure."
+  },
+  {
+    "question": "You must have internet connectivity to use cloud computing.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Cloud services are typically accessed over the internet. Users need network connectivity to access and manage cloud resources and services."
+  },
+  {
+    "question": "The costs to increase cloud computing capacity are less than the costs to increase the computing capacity of an on-premises datacenter.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Cloud computing provides on-demand scalability without requiring organizations to purchase and deploy additional hardware. This reduces upfront investment and often makes increasing capacity more cost-effective than expanding an on-premises datacenter."
+  },
+  {
+    "question": "Which cloud computing benefit allows resources to be provisioned dynamically to meet changing demands?",
+    "options": [
+      "Agility",
+      "Geo-distribution",
+      "Scalability"
+    ],
+    "answer": 2,
+    "explanation": "Scalability enables cloud resources to increase or decrease based on workload requirements. This allows organizations to dynamically adjust capacity to meet changing business demands."
+  },
+  {
+    "question": "Which cloud computing benefit allows applications and data to be deployed to multiple regions?",
+    "options": [
+      "Agility",
+      "Geo-distribution",
+      "Scalability"
+    ],
+    "answer": 1,
+    "explanation": "Geo-distribution allows applications, services, and data to be deployed across multiple geographic regions. This improves availability, performance, and disaster recovery capabilities."
+  },
+  {
+    "question": "Which cloud computing benefit allows applications to be developed, tested, and launched rapidly?",
+    "options": [
+      "Agility",
+      "Geo-distribution",
+      "Scalability"
+    ],
+    "answer": 0,
+    "explanation": "Agility enables organizations to develop, test, deploy, and update applications quickly. Cloud services provide rapid access to resources, helping accelerate innovation and time-to-market."
+  },{
+  "question": "You have an accounting application named App1 that uses a legacy database. You plan to move App1 to the cloud. Which service model should you use?",
+  "options": [
+    "Platform as a Service (PaaS)",
+    "Infrastructure as a Service (IaaS)",
+    "Software as a Service (SaaS)"
+  ],
+  "answer": 1,
+  "explanation": "Infrastructure as a Service (IaaS) is the best choice for migrating applications that use legacy databases. IaaS provides virtual machines with full control over the operating system, software, and database environment, allowing existing applications to be moved to the cloud with minimal changes. PaaS may not support all legacy application dependencies, while SaaS is intended for consuming ready-made software rather than hosting custom applications."
+},{
+  "question": "What does a customer provide in a Software as a Service (SaaS) model?",
+  "options": [
+    "Application data",
+    "Data storage",
+    "Compute resources",
+    "Application software"
+  ],
+  "answer": 0,
+  "explanation": "In a Software as a Service (SaaS) model, the cloud provider manages the application, infrastructure, storage, networking, and compute resources. The customer is responsible for providing and managing their application data, user accounts, and configuration settings."
+},
+  {
+    "question": "Azure Files is an example of infrastructure as a service (IaaS).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Files is a fully managed file share service built on Azure Storage. Microsoft manages the underlying infrastructure, availability, and maintenance, so it is not considered an Infrastructure as a Service (IaaS) offering."
+  },
+  {
+    "question": "A DNS server that runs on an Azure virtual machine is an example of platform as a service (PaaS).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A DNS server running on an Azure Virtual Machine is an Infrastructure as a Service (IaaS) solution because the customer is responsible for managing the virtual machine, operating system, and DNS software."
+  },
+  {
+    "question": "Microsoft Intune is an example of software as a service (SaaS).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft Intune is a cloud-based endpoint management service delivered as Software as a Service (SaaS). Microsoft manages the underlying infrastructure and platform, while customers use the service to manage devices and applications."
+  },
+  {
+    "question": "Cloud computing provides elastic scalability.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Elastic scalability is a core characteristic of cloud computing. Cloud resources can automatically scale up or down based on workload demand, allowing organizations to efficiently use resources and maintain performance."
+  },
+  {
+    "question": "Customers can minimize capital expenditure (CapEx) by using a public cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud services use a pay-as-you-go pricing model, reducing or eliminating the need for large upfront investments in hardware, facilities, and infrastructure. This helps organizations minimize Capital Expenditure (CapEx)."
+  },
+  {
+    "question": "Cloud computing leverages virtualization to provide services to multiple customers simultaneously.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Cloud computing relies heavily on virtualization technology to support multi-tenancy. This allows multiple customers to share the same physical infrastructure securely while maintaining isolation between their resources and workloads."
+  },{
+  "question": "What is the first stage in the Microsoft Cloud Adoption Framework for Azure?",
+  "options": [
+    "Adopt the cloud",
+    "Make a plan",
+    "Ready your organization",
+    "Define your strategy"
+  ],
+  "answer": 3,
+  "explanation": "The Microsoft Cloud Adoption Framework for Azure begins with the Strategy phase. In this stage, organizations define their business motivations, expected outcomes, and cloud adoption goals. Establishing a clear strategy helps guide the subsequent planning, readiness, adoption, governance, and management activities."
+},
+  {
+    "question": "A company can extend an internal network by adding its own physical servers to the public cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Public cloud infrastructure is owned and managed by the cloud provider. Organizations cannot add their own physical servers to a public cloud provider's datacenter."
+  },{
+  "question": "When you are implementing a Software as a Service (SaaS) solution, you are responsible for ______.",
+  "options": [
+    "Configuring high availability",
+    "Defining scalability rules",
+    "Installing the SaaS solution",
+    "Configuring the SaaS solution"
+  ],
+  "answer": 3,
+  "explanation": "In a Software as a Service (SaaS) model, the cloud provider is responsible for managing the application infrastructure, installation, updates, high availability, and scalability. The customer is responsible for configuring the SaaS application, managing users, and maintaining the data used by the application."
+},{
+  "question": "An Azure web app that queries an on-premises Microsoft SQL Server is an example of a ______ cloud.",
+  "options": [
+    "Hybrid",
+    "Multi-vendor",
+    "Private",
+    "Public"
+  ],
+  "answer": 0,
+  "explanation": "A hybrid cloud combines public cloud resources with on-premises infrastructure or private cloud resources. In this scenario, the Azure web app runs in Azure (public cloud) while the Microsoft SQL Server remains on-premises. Because the solution uses both cloud and on-premises resources, it is an example of a hybrid cloud."
+},{
+  "question": "A Microsoft SQL Server database that is hosted in the cloud and has software updates managed by Azure is an example of ______.",
+  "options": [
+    "Disaster Recovery as a Service (DRaaS)",
+    "Infrastructure as a Service (IaaS)",
+    "Platform as a Service (PaaS)",
+    "Software as a Service (SaaS)"
+  ],
+  "answer": 2,
+  "explanation": "A cloud-hosted Microsoft SQL Server database with software updates managed by Azure is an example of Platform as a Service (PaaS). In a PaaS model, Azure manages the underlying infrastructure, operating system, patching, maintenance, and high availability, allowing customers to focus on their data and applications rather than managing the database platform."
+},{
+  "question": "Which cloud computing model includes on-premises and cloud-based resources?",
+  "options": [
+    "Hybrid",
+    "Public",
+    "Private"
+  ],
+  "answer": 0,
+  "explanation": "A hybrid cloud model combines on-premises infrastructure with cloud-based resources. This approach allows organizations to run workloads in both environments and integrate them to meet business, security, and operational requirements."
+},{
+  "question": "Autoscaling is an example of ______.",
+  "options": [
+    "Agility",
+    "Elasticity",
+    "Geo-distribution",
+    "Predictability"
+  ],
+  "answer": 1,
+  "explanation": "Autoscaling is an example of elasticity. Elasticity enables cloud resources to automatically scale up when demand increases and scale down when demand decreases. This allows organizations to efficiently match resource capacity to workload requirements while optimizing costs."
+},{
+  "question": "_____ supports synchronization between on-premises storage and Azure Storage.",
+  "options": [
+    "Azure Blob Storage",
+    "Azure Files",
+    "Azure Queue Storage",
+    "Azure Table Storage"
+  ],
+  "answer": 1,
+  "explanation": "Azure Files supports synchronization between on-premises file servers and Azure Storage through Azure File Sync. This service enables organizations to centralize file shares in Azure while keeping frequently accessed files cached on local servers, providing seamless synchronization between on-premises storage and Azure."
+},{
+  "question": "Which term represents the ability to increase the computing capacity of a virtual machine by adding memory or CPUs?",
+  "options": [
+    "Agility",
+    "Vertical scaling",
+    "Horizontal scaling",
+    "Elasticity"
+  ],
+  "answer": 1,
+  "explanation": "Vertical scaling, also known as scaling up, increases the capacity of an existing virtual machine by adding more resources such as CPU cores, memory (RAM), or storage. This improves the performance of the individual machine without adding additional instances."
+},{
+  "question": "What are two benefits of cloud computing?",
+  "options": [
+    "Enables the rapid provisioning of resources",
+    "Has increased administrative complexity",
+    "Has the same configuration options as on-premises",
+    "Shifts capital expenditures (CAPEX) to operating expenditures (OPEX)"
+  ],
+  "answer": [
+    0,
+    3
+  ],
+  "explanation": "Cloud computing enables rapid provisioning of resources, allowing organizations to deploy infrastructure and services quickly as needed. It also shifts spending from large upfront capital expenditures (CAPEX) to a pay-as-you-go operational expenditure (OPEX) model, reducing the need for significant investments in hardware and datacenter infrastructure."
+},{
+  "question": "What is a feature of an Azure virtual network?",
+  "options": [
+    "Resource cost analysis",
+    "Packet inspection",
+    "Geo-redundancy",
+    "Isolation and segmentation"
+  ],
+  "answer": 3,
+  "explanation": "Azure Virtual Network (VNet) provides isolation and segmentation of Azure resources. VNets allow organizations to create private networks, divide them into subnets, control traffic flow, and securely connect Azure resources while maintaining network boundaries."
+},{
+  "question": "_____ enables Azure resources to be deployed close to users.",
+  "options": [
+    "Elasticity",
+    "Geo-distribution",
+    "High availability",
+    "Scalability"
+  ],
+  "answer": 1,
+  "explanation": "Geo-distribution enables Azure resources to be deployed across multiple geographic regions around the world. By placing resources closer to users, organizations can reduce latency, improve application performance, and enhance the overall user experience."
+}, {
+    "question": "Which cloud computing benefit increases the compute capacity of applications in the cloud?",
+    "options": [
+      "Disaster recovery",
+      "Geo-distribution",
+      "High availability",
+      "Scalability"
+    ],
+    "answer": 3,
+    "explanation": "Scalability allows cloud resources to increase or decrease based on workload demands. This enables applications to gain additional compute capacity when required."
+  },
+  {
+    "question": "Which cloud computing benefit provides a continuous user experience with no apparent downtime?",
+    "options": [
+      "Disaster recovery",
+      "Geo-distribution",
+      "High availability",
+      "Scalability"
+    ],
+    "answer": 2,
+    "explanation": "High availability ensures that applications and services remain accessible and operational even during failures, maintenance events, or unexpected disruptions, minimizing downtime for users."
+  },
+  {
+    "question": "Which cloud computing benefit ensures that users always have the best experience by deploying applications to all regions where there are users?",
+    "options": [
+      "Disaster recovery",
+      "Geo-distribution",
+      "High availability",
+      "Scalability"
+    ],
+    "answer": 1,
+    "explanation": "Geo-distribution enables applications and services to be deployed across multiple geographic regions. This reduces latency and improves performance by placing resources closer to users."
+  },{
+  "question": "Which cloud computing benefit provides continuous user access to a cloud-based application with minimal downtime?",
+  "options": [
+    "Agility",
+    "Scalability",
+    "Elasticity",
+    "High availability"
+  ],
+  "answer": 3,
+  "explanation": "High availability ensures that applications and services remain accessible with minimal downtime. It uses redundant resources, failover mechanisms, and resilient infrastructure to maintain continuous service and provide a consistent user experience even when failures occur."
+},{
+  "question": "You need to identify the type of failure for which an Azure Availability Zone can be used to protect access to Azure services. What should you identify?",
+  "options": [
+    "A physical server failure",
+    "An Azure region failure",
+    "A storage failure",
+    "An Azure datacenter failure"
+  ],
+  "answer": 3,
+  "explanation": "Azure Availability Zones are physically separate datacenters within the same Azure region. Each zone has independent power, cooling, and networking. By deploying resources across multiple Availability Zones, applications can continue running even if an entire datacenter becomes unavailable. Availability Zones protect against datacenter-level failures, but not against failures of an entire Azure region."
+},{
+  "question": "You plan to extend your company's network to Azure. The network contains a VPN appliance that uses an IP address of 131.107.200.1. You need to create an Azure resource that defines the VPN appliance in Azure. Which Azure resource should you create?",
+  "options": [
+    "NAT gateways",
+    "Application gateways",
+    "Local network gateways",
+    "Virtual network gateways",
+    "On-premises Data Gateways",
+    "Azure Data Box Gateway",
+    "Azure Stack Edge / Data Box Gateway",
+    "Web Application Firewall policies"
+  ],
+  "answer": 2,
+  "explanation": "A Local Network Gateway is used to represent the on-premises network and VPN device in Azure. It stores the public IP address of the VPN appliance and the address ranges of the on-premises network. Azure uses this information when establishing a site-to-site VPN connection between the on-premises network and an Azure Virtual Network."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals.\n\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single datacenter fails.\n\nSolution: You deploy the virtual machines to two or more resource groups.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Resource groups are logical containers used to organize and manage Azure resources. They do not provide fault isolation, high availability, or protection against datacenter failures. To ensure that virtual machines remain available if a datacenter fails, resources should be deployed across Availability Zones or other high-availability solutions rather than simply placing them in multiple resource groups."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals.\n\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single datacenter fails.\n\nSolution: You deploy the virtual machines to a scale set.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "A Virtual Machine Scale Set (VMSS) provides automated deployment, management, and scaling of multiple virtual machine instances. However, deploying virtual machines to a scale set alone does not guarantee availability during a datacenter failure. To protect against datacenter-level failures, virtual machines must be distributed across Availability Zones or another high-availability architecture."
+},{
+    "question": "An Azure subscription can be associated to multiple Azure Active Directory (Azure AD) tenants.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "An Azure subscription can be associated with only one Azure Active Directory (Azure AD) tenant at a time. Although a tenant can contain multiple subscriptions, a single subscription cannot be linked to multiple tenants simultaneously."
+  },
+  {
+    "question": "You can change the Azure Active Directory (Azure AD) tenant to which an Azure subscription is associated.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "An Azure subscription can be transferred to a different Azure Active Directory (Azure AD) tenant. This process changes the directory associated with the subscription while preserving the subscription itself."
+  },
+  {
+    "question": "When an Azure subscription expires, the associated Azure Active Directory (Azure AD) tenant is deleted automatically.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Active Directory (Azure AD), now known as Microsoft Entra ID, is a separate service from an Azure subscription. Expiration or cancellation of a subscription does not automatically delete the associated tenant."
+  },{
+  "question": "This question requires that you evaluate the underlined text to determine if it is correct.\nResource groups provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions.\nInstructions: Review the underlined text. If it makes the statement correct, select 'No change is needed'. If the statement is incorrect, select the answer choice that makes the statement correct.",
+  "options": [
+    "No change is needed",
+    "Management groups",
+    "Azure policies",
+    "Azure App Service plans"
+  ],
+  "answer": 1,
+  "explanation": "Resource groups organize resources within a single subscription and do not provide compliance management across multiple subscriptions. Management groups provide a governance scope above subscriptions, allowing organizations to manage compliance, policies, and access controls consistently across multiple Azure subscriptions."
+},{
+  "question": "Your company plans to migrate to Azure. The company has several departments. All the Azure resources used by each department will be managed by a department administrator. What are two possible techniques to segment Azure for the departments? Each correct answer presents a complete solution.",
+  "options": [
+    "Multiple subscriptions",
+    "Multiple Azure Active Directory (Azure AD) directories",
+    "Multiple regions",
+    "Multiple resource groups"
+  ],
+  "answer": [
+    0,
+    3
+  ],
+  "explanation": "Azure can be segmented for different departments by using multiple subscriptions or multiple resource groups. Separate subscriptions provide strong administrative and billing boundaries, while resource groups provide logical grouping and access control for resources within a subscription. Multiple Azure AD directories are used for identity management rather than departmental resource segmentation, and multiple regions are used for geographic distribution rather than administrative separation."
+}, {
+    "question": "A single Microsoft account can be used to manage multiple Azure subscriptions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A single Microsoft account or Microsoft Entra ID (Azure AD) user account can be assigned administrative roles on multiple Azure subscriptions, allowing the same account to manage resources across those subscriptions."
+  },
+  {
+    "question": "Two Azure subscriptions can be merged into a single subscription.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure does not provide a feature to merge two existing subscriptions into a single subscription. Resources can be moved between subscriptions in some cases, but the subscriptions themselves cannot be merged."
+  },
+  {
+    "question": "A company can use resources from multiple subscriptions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Organizations commonly use multiple Azure subscriptions to separate departments, projects, environments, or billing. Resources can be deployed and managed across multiple subscriptions within the organization."
+  },{
+  "question": "You have several virtual machines in an Azure subscription. You create a new subscription.",
+  "options": [
+    "The virtual machines cannot be moved to the new subscription.",
+    "The virtual machines can be moved to the new subscription.",
+    "The virtual machines can be moved to the new subscription only if they are all in the same resource group.",
+    "The virtual machines can be moved to the new subscription only if they run Windows Server 2016."
+  ],
+  "answer": 1,
+  "explanation": "Azure supports moving many resource types, including virtual machines, between subscriptions within the same Microsoft Entra ID (Azure AD) tenant. The ability to move a virtual machine does not depend on the operating system version, and virtual machines are not required to be in the same resource group solely for subscription migration."
+},{
+  "question": "You have an Azure environment that contains multiple Azure virtual machines. You plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines. You need to recommend which Azure resources must be created for the planned solution. Which two Azure resources should you include in the recommendation?",
+  "options": [
+    "A virtual network gateway",
+    "A load balancer",
+    "An application gateway",
+    "A virtual network",
+    "A gateway subnet"
+  ],
+  "answer": [
+    0,
+    4
+  ],
+  "explanation": "To enable communication between an on-premises network and Azure virtual machines, a Site-to-Site VPN connection can be used. This requires a Virtual Network Gateway, which provides the VPN endpoint in Azure, and a Gateway Subnet, which is a dedicated subnet used to host the gateway resources. Load Balancer and Application Gateway are used for traffic distribution, not VPN connectivity."
+},{
+  "question": "You attempt to create several managed Microsoft SQL Server instances in an Azure environment and receive a message that you must increase your Azure subscription limits. What should you do to increase the limits?",
+  "options": [
+    "Create a service health alert",
+    "Upgrade your support plan",
+    "Modify an Azure policy",
+    "Create a new support request"
+  ],
+  "answer": 3,
+  "explanation": "When you reach an Azure subscription quota or service limit, you can request an increase by creating a support request through the Azure portal. Azure provides a quota increase process under Help + Support, where users can submit requests to raise subscription limits for supported resources and services."
+},{
+    "question": "Each Azure subscription can contain multiple account administrators.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "An Azure subscription has a single Account Administrator who is responsible for billing and subscription ownership. Although multiple users can be granted administrative access through Azure RBAC roles such as Owner or Contributor, there can only be one Account Administrator per subscription."
+  },
+  {
+    "question": "Each Azure subscription can be managed by using a Microsoft account only.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure subscriptions can be managed by Microsoft accounts as well as Microsoft Entra ID (Azure AD) work or school accounts. Therefore, management is not limited to Microsoft accounts only."
+  },
+  {
+    "question": "An Azure resource group contains multiple Azure subscriptions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A resource group belongs to a single Azure subscription and cannot contain multiple subscriptions. Resources within a resource group must reside in the same subscription."
+  }, {
+    "question": "Availability zones can be implemented in all Azure regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Availability Zones are not available in every Azure region. They are supported only in selected Azure regions that have multiple physically separate datacenters."
+  },
+  {
+    "question": "Only virtual machines that run Windows Server can be created in availability zones.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Availability Zones support many Azure resources, including both Windows and Linux virtual machines, managed disks, load balancers, and other Azure services. They are not limited to Windows Server virtual machines."
+  },
+  {
+    "question": "Availability zones are used to replicate data and applications to multiple regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Availability Zones provide fault isolation by distributing resources across separate datacenters within the same Azure region. Replication across multiple regions is achieved through services such as geo-redundant storage, region pairs, and Azure Site Recovery."
+  }
+]

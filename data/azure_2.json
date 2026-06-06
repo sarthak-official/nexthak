@@ -510,5 +510,439 @@
     ],
     "answer": 1,
     "explanation": "Availability Zones provide fault isolation by distributing resources across separate datacenters within the same Azure region. Replication across multiple regions is achieved through services such as geo-redundant storage, region pairs, and Azure Site Recovery."
+  },{
+  "question": "You plan to create an Azure virtual machine. You need to identify which storage service must be used to store the unmanaged data disks of the virtual machine.",
+  "options": [
+    "Containers",
+    "File shares",
+    "Tables",
+    "Queues"
+  ],
+  "answer": 0,
+  "explanation": "Unmanaged Azure virtual machine disks are stored as VHD files in Azure Blob Storage. Blob Storage organizes data into containers, and unmanaged VM disks are stored as page blobs within these containers. Azure Files (file shares) uses the SMB protocol and is intended for shared file storage, not VM unmanaged disks."
+},{
+  "question": "Your company plans to move several servers to Azure. The company's compliance policy states that a server named FinServer must be on a separate network segment. You are evaluating which Azure services can be used to meet the compliance policy requirements. Which Azure solution should you recommend?",
+  "options": [
+    "A resource group for FinServer and another resource group for all the other servers",
+    "A virtual network for FinServer and another virtual network for all the other servers",
+    "A VPN for FinServer and a virtual network gateway for each other server",
+    "One resource group for all the servers and a resource lock for FinServer"
+  ],
+  "answer": 1,
+  "explanation": "A Virtual Network (VNet) provides network isolation and segmentation in Azure. To ensure that FinServer is placed on a separate network segment, it should be deployed in its own VNet, while the remaining servers are deployed in a different VNet. Resource groups and resource locks provide administrative organization and protection but do not create network isolation."
+},{
+  "question": "You plan to map a network drive from several computers that run Windows 10 to Azure Storage. You need to create a storage solution in Azure for the planned mapped drive. What should you create?",
+  "options": [
+    "An Azure SQL database",
+    "A virtual machine data disk",
+    "A File service in a storage account",
+    "A Blob service in a storage account"
+  ],
+  "answer": 2,
+  "explanation": "Azure Files provides fully managed file shares that support the SMB (Server Message Block) protocol. Windows 10 computers can map an Azure file share as a network drive, making Azure Files the appropriate storage solution for this requirement. Azure SQL Database, VM data disks, and Blob Storage cannot be directly mapped as Windows network drives."
+},{
+  "question": "You plan to implement an Azure database solution. You need to implement a database solution that meets the following requirements:\n- Can add data concurrently from multiple regions\n- Can store JSON documents\n\nWhich database service should you deploy?",
+  "options": [
+    "Azure Cosmos DB",
+    "Azure SQL Database",
+    "Azure Database for MySQL",
+    "Azure Database for PostgreSQL",
+    "SQL Managed Instance"
+  ],
+  "answer": 0,
+  "explanation": "Azure Cosmos DB is a globally distributed NoSQL database service that natively stores JSON documents and supports multi-region writes. It enables applications to add data concurrently from multiple Azure regions while providing low latency, high availability, and automatic replication."
+},{
+  "question": "Your company plans to start using Azure and will migrate all its network resources to Azure. You need to start the planning process by exploring Azure. What should you create first?",
+  "options": [
+    "An Azure subscription",
+    "A resource group",
+    "A virtual network",
+    "A virtual machine"
+  ],
+  "answer": 0,
+  "explanation": "An Azure subscription is the fundamental unit for accessing and using Azure services. Before creating resource groups, virtual networks, or virtual machines, you must have a subscription. It provides access to the Azure portal, resource management, billing, and service usage, making it the first step in exploring and planning an Azure deployment."
+},{
+    "question": "All the Azure resources deployed to a resource group must use the same Azure region.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Resources in a resource group can reside in different Azure regions. A resource group is a logical container and is not limited to resources from a single region."
+  },
+  {
+    "question": "If you assign a tag to a resource group, all the Azure resources in that resource group are assigned to the same tag.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Tags applied to a resource group are not automatically inherited by the resources within that resource group. Tags must be applied directly to resources or inherited through Azure Policy."
+  },
+  {
+    "question": "If you assign permissions for a user to manage a resource group, the user can manage all the Azure resources in that resource group.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure RBAC permissions assigned at the resource group level are inherited by the resources within that resource group. Therefore, a user with appropriate permissions on the resource group can manage the resources contained in it."
+  },{
+  "question": "Data that is stored in the Archive access tier of an Azure Storage account ________.",
+  "options": [
+    "Can be accessed at any time by using azcopy.exe",
+    "Can only be read by using Azure Backup",
+    "Must be restored before the data can be accessed",
+    "Must be rehydrated before the data can be accessed"
+  ],
+  "answer": 3,
+  "explanation": "The Archive access tier is designed for rarely accessed data and stores blobs in an offline state. Before archived data can be read or downloaded, it must be rehydrated by moving it to the Hot or Cool access tier. Rehydration can take several hours depending on the selected priority."
+},{
+  "question": "What is the minimum number of virtual machines and availability zones required to achieve 99.99% availability for an Azure VM deployment?",
+  "options": [
+    "1 VM, 1 Availability Zone",
+    "1 VM, 2 Availability Zone",
+    "2 VMs, 2 Availability Zones",
+    "2 VM, 1 Availability Zone",
+    "3 VMs, 3 Availability Zones"
+  ],
+  "answer": 2,
+  "explanation": "Azure provides a 99.99% SLA when at least two virtual machines are deployed across two Availability Zones."
+},{
+  "question": "Which Azure service should you use to collect events from multiple resources into a centralized repository?",
+  "options": [
+    "Azure Event Hubs",
+    "Azure Analysis Services",
+    "Azure Monitor",
+    "Azure Stream Analytics"
+  ],
+  "answer": 0,
+  "explanation": "Azure Event Hubs is a highly scalable event ingestion service that can collect and centralize millions of events from multiple applications, devices, and Azure resources. It acts as a centralized event streaming platform before the data is processed, analyzed, or stored."
+},{
+  "question": "An Availability Zone in Azure has physically separate locations ______.",
+  "options": [
+    "Across two continents",
+    "Within a single Azure region",
+    "Within multiple Azure regions",
+    "Within a single Azure datacenter"
+  ],
+  "answer": 1,
+  "explanation": "Azure Availability Zones are physically separate datacenters located within the same Azure region. Each zone has independent power, cooling, and networking infrastructure, providing protection against datacenter-level failures while maintaining low-latency connectivity within the region."
+},{
+    "question": "Data that is stored in an Azure Storage account automatically has at least three copies.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Storage automatically maintains at least three copies of data through Locally Redundant Storage (LRS). These copies are stored within a single datacenter to provide durability and protection against hardware failures."
+  },
+  {
+    "question": "All data that is copied to an Azure Storage account is backed up automatically to another Azure datacenter.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Replication to another datacenter depends on the selected redundancy option. Locally Redundant Storage (LRS) keeps data within a single datacenter, while options such as GRS and GZRS replicate data to another region. Therefore, not all data is automatically backed up to another datacenter."
+  },
+  {
+    "question": "An Azure Storage account can contain up to 2 TB of data and up to one million files.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Storage accounts support significantly more than 2 TB of data and can store far more than one million files. Azure Storage is designed to scale to very large capacities and workloads."
+  },{
+    "question": "If you have Azure resources deployed to every region, you can implement availability zones in all the regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Availability Zones are available only in selected Azure regions. Not every Azure region supports Availability Zones, so they cannot be implemented in all regions."
+  },
+  {
+    "question": "Only virtual machines that run Windows Server can be created in availability zones.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Availability Zones support many Azure resources, including both Windows and Linux virtual machines. They are not limited to Windows Server workloads."
+  },
+  {
+    "question": "Availability zones are used to replicate data and applications to multiple regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Availability Zones provide fault isolation and high availability within a single Azure region by using separate datacenters. Replication across multiple regions is achieved through services such as geo-redundant storage, region pairs, and Azure Site Recovery."
+  },{
+    "question": "North America is represented by a single Azure region.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "North America contains multiple Azure regions, including East US, East US 2, Central US, West US, Canada Central, and others. Therefore, North America is not represented by a single Azure region."
+  },
+  {
+    "question": "Every Azure region has multiple datacenters.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "An Azure region is a geographic area that contains multiple datacenters connected through a low-latency network. This design provides redundancy, scalability, and high availability for Azure services."
+  },
+  {
+    "question": "Data transfers between Azure services located in different Azure regions are always free.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Data transfers between Azure regions generally incur bandwidth charges. While some specific scenarios may be free, cross-region data transfer is not always free."
+  },{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals.\n\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single datacenter fails.\n\nSolution: You deploy the virtual machines to two or more scale sets.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Deploying virtual machines to two or more Virtual Machine Scale Sets does not by itself provide protection against a datacenter failure. Scale Sets are designed for automated deployment, management, and scaling of virtual machines. To ensure availability during a datacenter outage, the virtual machines must be distributed across Availability Zones or another datacenter-resilient architecture. Therefore, the solution does not meet the goal."
+},{
+  "question": "You need to be notified when Microsoft plans to perform maintenance that can affect the resources deployed to an Azure subscription. What should you use?",
+  "options": [
+    "Azure Monitor",
+    "Azure Service Health",
+    "Azure Advisor",
+    "Microsoft Trust Center"
+  ],
+  "answer": 1,
+  "explanation": "Azure Service Health provides personalized alerts and guidance regarding Azure service issues, planned maintenance, and health advisories that may affect resources in your Azure subscriptions. It helps administrators stay informed about upcoming maintenance events and service disruptions."
+},{
+    "question": "Which Azure service is a managed service that provides bidirectional communication between IoT devices and Azure?",
+    "options": [
+      "Azure Sphere",
+      "IoT Central",
+      "IoT Hub"
+    ],
+    "answer": 2,
+    "explanation": "Azure IoT Hub is a managed service that enables secure, reliable, bidirectional communication between IoT devices and Azure. It supports both device-to-cloud and cloud-to-device messaging."
+  },
+  {
+    "question": "Which Azure service is a fully managed software as a service (SaaS) solution to connect, monitor, and manage IoT devices at scale?",
+    "options": [
+      "Azure Sphere",
+      "IoT Central",
+      "IoT Hub"
+    ],
+    "answer": 1,
+    "explanation": "Azure IoT Central is a fully managed SaaS solution that simplifies connecting, monitoring, and managing IoT devices without requiring extensive cloud solution development."
+  },
+  {
+    "question": "Which Azure service is a software and hardware solution that provides communication and security features for IoT devices?",
+    "options": [
+      "Azure Sphere",
+      "IoT Central",
+      "IoT Hub"
+    ],
+    "answer": 0,
+    "explanation": "Azure Sphere is a comprehensive IoT security solution that includes certified microcontroller hardware, a secured operating system, and a cloud-based security service to protect IoT devices."
+  }, {
+    "question": "A Windows Virtual Desktop session host can run Windows 10 only.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Windows Virtual Desktop (Azure Virtual Desktop) session hosts can run Windows 10/11 Enterprise multi-session as well as supported Windows Server operating systems. Therefore, they are not limited to Windows 10 only."
+  },
+  {
+    "question": "A Windows Virtual Desktop host pool that includes 20 session hosts supports a maximum of 20 simultaneous user connections.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A session host can support multiple user sessions simultaneously, depending on the VM size and configuration. Therefore, a host pool with 20 session hosts can support more than 20 concurrent users."
+  },
+  {
+    "question": "Windows Virtual Desktop supports desktop and app virtualization.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Windows Virtual Desktop (Azure Virtual Desktop) supports both full desktop virtualization and application virtualization, allowing users to access complete desktops or individual remote applications."
+  },{
+  "question": "Which tool can calculate cost savings due to reduced electricity consumption as a result of migrating on-premises Microsoft SQL Servers to Azure?",
+  "options": [
+    "The Azure Migrate: Server Assessment tool",
+    "The Azure Total Cost of Ownership (TCO) calculator",
+    "The Database Migration Assistant",
+    "The pricing calculator in Azure"
+  ],
+  "answer": 1,
+  "explanation": "The Azure Total Cost of Ownership (TCO) Calculator helps organizations estimate potential savings when migrating from on-premises infrastructure to Azure. It compares on-premises costs, including hardware, software, maintenance, power consumption, cooling, and datacenter expenses, against projected Azure costs."
+},{
+    "question": "You can use Availability Zones in Azure to protect Azure virtual machines from a datacenter failure.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Availability Zones are physically separate datacenters within the same Azure region. Deploying virtual machines across multiple Availability Zones protects them from a single datacenter failure."
+  },
+  {
+    "question": "You can use Availability Zones in Azure to protect Azure virtual machines from a region failure.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Availability Zones provide fault isolation within a single Azure region. They do not protect against an entire region becoming unavailable. Region-level protection requires multiple regions or disaster recovery solutions."
+  },
+  {
+    "question": "You can use Availability Zones in Azure to protect Azure managed disks from a datacenter failure.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure supports Availability Zone-aware managed disks and zone-redundant storage options that help protect managed disks from datacenter-level failures within a region."
+  },{
+    "question": "An Azure subscription can have multiple account administrators.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "An Azure subscription has a single Account Administrator who is responsible for billing and subscription ownership. Although multiple users can be assigned administrative roles through Azure RBAC, there can be only one Account Administrator."
+  },
+  {
+    "question": "An Azure subscription can be managed by using a Microsoft account only.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure subscriptions can be managed by both Microsoft accounts and Microsoft Entra ID (Azure AD) work or school accounts. Therefore, management is not limited to Microsoft accounts only."
+  },
+  {
+    "question": "An Azure resource group can contain multiple Azure subscriptions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A resource group belongs to a single Azure subscription. While a subscription can contain multiple resource groups, a resource group cannot contain multiple subscriptions."
+  },{
+  "question": "A cloud service that supports a maximum of 20 instances is more ______ than a service that supports a maximum of five instances.",
+  "options": [
+    "Distributed",
+    "Scalable",
+    "Secure"
+  ],
+  "answer": 1,
+  "explanation": "Scalability is the ability of a system to increase or decrease resources to meet demand. A cloud service that supports up to 20 instances can handle a larger workload than one limited to 5 instances, making it more scalable."
+},{
+    "question": "To use Azure Active Directory (Azure AD) credentials to sign in to a computer that runs Windows 10, the computer must be joined to Azure AD.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "To sign in directly to a Windows 10 device using Azure AD (Microsoft Entra ID) credentials, the device must be Azure AD joined or hybrid Azure AD joined."
+  },
+  {
+    "question": "Users in Azure Active Directory (Azure AD) are organized by using resource groups.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Resource groups are used to organize Azure resources, not Azure AD users. Users are managed within an Azure AD tenant and can be organized using groups."
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) groups support dynamic membership rules.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure AD groups support dynamic membership rules that automatically add or remove users and devices based on defined attributes and conditions."
+  },{
+  "question": "You plan to deploy several Azure virtual machines. You need to ensure that the services running on the virtual machines remain available if a single datacenter fails. What are two possible solutions?",
+  "options": [
+    "Deploy the virtual machines to two or more availability zones.",
+    "Deploy the virtual machines to two or more resource groups.",
+    "Deploy the virtual machines to a scale set.",
+    "Deploy the virtual machines to two or more regions."
+  ],
+  "answer": [
+    0,
+    3
+  ],
+  "explanation": "Availability Zones provide protection against datacenter failures by placing virtual machines in physically separate datacenters within the same region. Deploying virtual machines across multiple regions also provides resilience against datacenter and regional failures. Resource groups are only logical containers and do not provide availability. A VM Scale Set alone does not guarantee protection from a datacenter failure because its instances may still reside within the same datacenter infrastructure."
+},{
+    "question": "Which Azure service is a fully managed data warehouse that has integral security at every level of scale at no extra cost?",
+    "options": [
+      "Azure Cosmos DB",
+      "Azure HDInsight",
+      "Azure Synapse Analytics"
+    ],
+    "answer": 2,
+    "explanation": "Azure Synapse Analytics is an enterprise analytics service that combines data warehousing and big data analytics. It provides built-in security, scalability, and performance for large-scale data workloads."
+  },
+  {
+    "question": "Which Azure service is a globally distributed database that supports NoSQL?",
+    "options": [
+      "Azure Cosmos DB",
+      "Azure HDInsight",
+      "Azure Synapse Analytics"
+    ],
+    "answer": 0,
+    "explanation": "Azure Cosmos DB is a globally distributed NoSQL database service that supports multiple data models, automatic replication, low latency, and multi-region writes."
+  },
+  {
+    "question": "Which Azure service provides managed Apache Hadoop clusters in the cloud that enable you to process massive amounts of data?",
+    "options": [
+      "Azure Cosmos DB",
+      "Azure HDInsight",
+      "Azure Synapse Analytics"
+    ],
+    "answer": 1,
+    "explanation": "Azure HDInsight is a fully managed cloud service that provides Apache Hadoop, Spark, Hive, Kafka, and HBase clusters for big data processing and analytics."
+  },{
+    "question": "The Archive access tier is set at the storage account level.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The Archive access tier is applied at the individual blob level, not at the storage account level. Storage accounts can have Hot or Cool as their default access tier, but Archive is configured per blob."
+  },
+  {
+    "question": "The Hot access tier is recommended for data that is accessed and modified frequently.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The Hot access tier is optimized for data that is accessed and updated frequently. It has the highest storage cost but the lowest access cost."
+  },
+  {
+    "question": "The Cool access tier is recommended for long term backups.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The Cool access tier is intended for infrequently accessed data that still requires relatively fast retrieval. For long-term backup and archival scenarios, the Archive access tier is the recommended option."
   }
 ]

@@ -1,0 +1,645 @@
+[
+{
+  "question": "You plan to deploy 20 virtual machines to an Azure environment. To ensure that a virtual machine named VM1 cannot connect to the other virtual machines, VM1 must ______.",
+  "options": [
+    "Be deployed to a separate virtual network.",
+    "Run a different operating system than the other virtual machines.",
+    "Be deployed to a separate resource group.",
+    "Have two network interfaces."
+  ],
+  "answer": 0,
+  "explanation": "Azure Virtual Networks (VNets) provide network isolation. Deploying VM1 to a separate virtual network prevents it from communicating with the other virtual machines unless connectivity is explicitly configured through VNet peering, VPN gateways, or other networking solutions. Resource groups, operating systems, and multiple network interfaces do not provide network isolation."
+},{
+  "question": "What is the most severe failure from which an Azure Availability Zone can be used to protect access to Azure services?",
+  "options": [
+    "A physical server failure",
+    "An Azure region failure",
+    "A storage failure",
+    "An Azure data center failure"
+  ],
+  "answer": 3,
+  "explanation": "Azure Availability Zones are physically separate datacenters within the same Azure region. They provide protection against datacenter-level failures by distributing resources across independent power, cooling, and networking infrastructure. Availability Zones do not protect against an entire Azure region failure."
+},{
+  "question": "You need to purchase a third-party virtual security appliance that you will deploy to an Azure subscription. What should you use?",
+  "options": [
+    "Azure subscriptions",
+    "Azure Security Center",
+    "Azure Marketplace",
+    "Microsoft Store"
+  ],
+  "answer": 2,
+  "explanation": "Azure Marketplace is an online catalog of Microsoft and third-party solutions that can be deployed directly into Azure. It includes virtual security appliances, firewalls, networking solutions, databases, and other enterprise applications from vendors such as Palo Alto Networks, Fortinet, Check Point, and Cisco."
+},{
+    "question": "Which serverless solution executes code?",
+    "options": [
+      "Azure Functions",
+      "Azure Logic Apps"
+    ],
+    "answer": 0,
+    "explanation": "Azure Functions is a serverless compute service that runs event-driven code written in languages such as C#, Java, Python, and JavaScript."
+  },
+  {
+    "question": "Which serverless solution is always stateful?",
+    "options": [
+      "Azure Functions",
+      "Azure Logic Apps"
+    ],
+    "answer": 1,
+    "explanation": "Azure Logic Apps are designed to orchestrate workflows and business processes. They maintain workflow state and track progress across multiple steps and connectors."
+  },
+  {
+    "question": "Which serverless solution runs only in the cloud?",
+    "options": [
+      "Azure Functions",
+      "Azure Logic Apps"
+    ],
+    "answer": 1,
+    "explanation": "Azure Logic Apps is a cloud-based workflow automation service. Azure Functions can also run outside the Azure cloud in certain environments, whereas Logic Apps are designed as a cloud service."
+  },
+  {
+    "question": "Which Azure feature can restrict which virtual machine types can be created in a subscription?",
+    "options": [
+      "Azure Blueprints",
+      "Azure Policy",
+      "Azure Resource Locks",
+      "Azure Tags"
+    ],
+    "answer": 1,
+    "explanation": "Azure Policy is used to enforce organizational standards and compliance requirements. It can restrict the types and sizes of virtual machines that users are allowed to create."
+  },
+  {
+    "question": "Which Azure feature can identify Azure resources that are associated with specific cost centers?",
+    "options": [
+      "Azure Blueprints",
+      "Azure Policy",
+      "Azure Resource Locks",
+      "Azure Tags"
+    ],
+    "answer": 3,
+    "explanation": "Azure Tags are name-value pairs applied to resources for categorization and organization. They are commonly used to track costs by department, project, or cost center."
+  },{
+  "question": "An Availability Zone in Azure has physically separate locations ______.",
+  "options": [
+    "Across two continents",
+    "Within a single Azure region",
+    "Within multiple Azure regions",
+    "Within a single Azure datacenter"
+  ],
+  "answer": 1,
+  "explanation": "Azure Availability Zones are physically separate datacenters located within the same Azure region. They provide fault isolation and high availability by using independent power, cooling, and networking infrastructure."
+},{
+    "question": "Which Azure feature can deploy a complete Azure application environment including resource configuration and role assignments?",
+    "options": [
+      "Azure Blueprints",
+      "Azure Policy",
+      "Azure Resource Locks",
+      "Azure Tags"
+    ],
+    "answer": 0,
+    "explanation": "Azure Blueprints enable the deployment of complete environments by packaging resource groups, ARM templates, Azure Policies, and RBAC role assignments into a reusable definition."
+  },{
+    "question": "Which Azure service provides operating system virtualization?",
+    "options": [
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Virtual Machines",
+      "Azure Container Instances"
+    ],
+    "answer": 2,
+    "explanation": "Azure Virtual Machines provide full operating system virtualization, allowing users to run and manage Windows or Linux operating systems in Azure."
+  },
+  {
+    "question": "Which Azure service provides a portable environment for virtualized applications?",
+    "options": [
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Virtual Machines",
+      "Azure Container Instances"
+    ],
+    "answer": 3,
+    "explanation": "Azure Container Instances run containerized applications in a portable and isolated environment without requiring virtual machine management."
+  },
+  {
+    "question": "Which Azure service is used to build, deploy, and scale web apps?",
+    "options": [
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Virtual Machines",
+      "Azure Container Instances"
+    ],
+    "answer": 1,
+    "explanation": "Azure App Service is a fully managed platform for building, deploying, and scaling web applications, APIs, and mobile back ends."
+  },
+  {
+    "question": "Which Azure service provides a platform for serverless code?",
+    "options": [
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Virtual Machines",
+      "Azure Container Instances"
+    ],
+    "answer": 0,
+    "explanation": "Azure Functions is a serverless compute service that allows developers to run event-driven code without managing infrastructure."
+  },{
+  "question": "You have several virtual machines in an Azure subscription. You create a new subscription.",
+  "options": [
+    "The virtual machines cannot be moved to the new subscription.",
+    "The virtual machines can be moved to the new subscription.",
+    "The virtual machines can be moved to the new subscription only if they are all in the same resource group.",
+    "The virtual machines can be moved to the new subscription only if they run Windows Server 2019."
+  ],
+  "answer": 1,
+  "explanation": "Azure supports moving many resource types, including virtual machines, between subscriptions within the same Microsoft Entra ID (Azure AD) tenant. The operating system version does not affect the ability to move the VM, and virtual machines are not required to be in the same resource group solely for subscription migration."
+},{
+  "question": "_____ is a highly secure IoT solution that includes a microcontroller unit (MCU) and a customized Linux operating system.",
+  "options": [
+    "Azure Arc",
+    "Azure IoT Central",
+    "Azure IoT Hub",
+    "Azure Sphere"
+  ],
+  "answer": 3,
+  "explanation": "Azure Sphere is a highly secure IoT platform that includes a microcontroller unit (MCU), a customized Linux-based operating system, and a cloud-based security service. It is designed to secure IoT devices from hardware to cloud. Azure Arc manages hybrid resources, Azure IoT Central is an IoT SaaS application platform, and Azure IoT Hub is a service for connecting and managing IoT devices."
+},{
+  "question": "You plan to deploy a service to Azure virtual machines. You need to ensure that the service will be available if a datacenter fails. What should you use as part of the virtual machine deployment?",
+  "options": [
+    "Availability sets",
+    "Proximity placement groups",
+    "Host groups",
+    "Availability zones"
+  ],
+  "answer": 3,
+  "explanation": "Availability Zones are physically separate datacenters within an Azure region. By deploying virtual machines across multiple availability zones, the service remains available even if an entire datacenter fails. Availability Sets protect against hardware failures within a single datacenter, Proximity Placement Groups are used to reduce network latency between resources, and Host Groups are used to manage dedicated hosts."
+},{
+  "question": "Your company has an Azure subscription that contains resources in several regions. You need to ensure that administrators can only create resources in those regions. What should you use?",
+  "options": [
+    "A read-only lock",
+    "An Azure Policy",
+    "A management group",
+    "A reservation"
+  ],
+  "answer": 1,
+  "explanation": "Azure Policy is used to enforce organizational standards and govern resource deployments. You can create a policy that restricts resource creation to specific Azure regions. If an administrator attempts to deploy a resource in a region that is not allowed by the policy, the deployment will be denied. A read-only lock only prevents modifications or deletions, a management group organizes subscriptions for governance purposes, and a reservation is used to reduce costs by reserving Azure resources."
+},{
+  "question": "An Azure region _____",
+  "options": [
+    "contains one or more datacenters that are connected by using a low-latency network.",
+    "is found in each country where Microsoft has a subsidiary office.",
+    "can be found in every country in Europe and the Americas only.",
+    "contains one or more datacenters that are connected by using a high-latency network."
+  ],
+  "answer": 0,
+  "explanation": "An Azure region is a geographic area that contains one or more datacenters connected through a low-latency network. These datacenters work together to provide high availability, scalability, and resilience for Azure services. Azure regions are not available in every country and are not limited to Europe and the Americas. The datacenters within a region are connected by a low-latency network, not a high-latency network."
+},{
+  "question": "You can use the Azure File Sync agent to sync on-premises data to an Azure _____.",
+  "options": [
+    "Blob container",
+    "Data Lake Storage container",
+    "File share",
+    "Queue"
+  ],
+  "answer": 2,
+  "explanation": "Azure File Sync enables you to centralize your organization's file shares in Azure Files while keeping the flexibility, performance, and compatibility of an on-premises Windows Server. The Azure File Sync agent synchronizes data between on-premises Windows Servers and an Azure Files file share. Blob containers store unstructured object data, Data Lake Storage containers are designed for analytics workloads, and queues are used for message storage and processing."
+},{
+  "question": "What is the function of a Site-to-Site VPN?",
+  "options": [
+    "Provides a secure connection between a computer on a public network and the corporate network",
+    "Provides a dedicated private connection to Azure that does NOT travel over the internet",
+    "Provides a connection from an on-premises VPN device to an Azure VPN gateway"
+  ],
+  "answer": 2,
+  "explanation": "A Site-to-Site (S2S) VPN creates a secure, encrypted connection between an on-premises network and an Azure virtual network through an Azure VPN Gateway. It is commonly used to connect an organization's datacenter to Azure. Option A describes a Point-to-Site (P2S) VPN, which connects an individual client device to Azure. Option B describes Azure ExpressRoute, which provides a dedicated private connection that does not travel over the public internet."
+},{
+    "question": "Azure App Service belongs to which cloud service model?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
+    ],
+    "answer": 1,
+    "explanation": "Azure App Service is a Platform as a Service (PaaS) offering that provides a managed environment for building, deploying, and scaling web applications without managing the underlying infrastructure."
+  },
+  {
+    "question": "Azure Virtual Machines belong to which cloud service model?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
+    ],
+    "answer": 0,
+    "explanation": "Azure Virtual Machines are an Infrastructure as a Service (IaaS) offering that provides virtualized computing resources. Customers are responsible for managing the operating system, applications, and data."
+  },
+  {
+    "question": "Microsoft Dynamics 365 belongs to which cloud service model?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
+    ],
+    "answer": 2,
+    "explanation": "Microsoft Dynamics 365 is a Software as a Service (SaaS) application that is fully managed by Microsoft and delivered to users over the internet."
+  }, {
+    "question": "A cloud-based file server belongs to which cloud service model?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
+    ],
+    "answer": 0,
+    "explanation": "A cloud-based file server is an Infrastructure as a Service (IaaS) solution because it provides virtualized infrastructure resources that customers manage and configure."
+  },
+  {
+    "question": "A cloud-based service for custom apps belongs to which cloud service model?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
+    ],
+    "answer": 1,
+    "explanation": "A cloud-based service for custom applications is a Platform as a Service (PaaS) offering because it provides a managed platform for developing, deploying, and running applications."
+  },
+  {
+    "question": "A cloud-based accounting system belongs to which cloud service model?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
+    ],
+    "answer": 2,
+    "explanation": "A cloud-based accounting system is a Software as a Service (SaaS) application because it is a complete software solution delivered and managed by the provider over the internet."
+  },{
+  "question": "You need to manage containers. Which two services can you use? Each correct answer presents a complete solution.",
+  "options": [
+    "Azure Virtual Desktop",
+    "Azure Virtual Machines",
+    "Azure Functions",
+    "Azure Container Instances (ACI)",
+    "Azure Kubernetes Service (AKS)"
+  ],
+  "answer": [3, 4],
+  "explanation": "Azure Container Instances (ACI) and Azure Kubernetes Service (AKS) are Azure services specifically designed for running and managing containers. ACI provides a simple way to run containers without managing servers, while AKS provides a managed Kubernetes environment for container orchestration at scale. Azure Virtual Desktop is used for virtual desktop infrastructure, Azure Functions is a serverless compute service, and Azure Virtual Machines are general-purpose compute resources rather than dedicated container management services."
+},{
+  "question": "When you need to delegate permissions to several Azure virtual machines simultaneously, you must deploy the Azure virtual machines _____.",
+  "options": [
+    "to the same Azure region",
+    "by using the same Azure Resource Manager template",
+    "to the same resource group",
+    "to the same availability zone"
+  ],
+  "answer": 2,
+  "explanation": "Azure Role-Based Access Control (Azure RBAC) allows permissions to be assigned at different scopes, including management groups, subscriptions, resource groups, and individual resources. By deploying multiple virtual machines to the same resource group, you can assign permissions at the resource group level, and those permissions will automatically apply to all virtual machines within that resource group. The Azure region, Resource Manager template, and availability zone do not provide a scope for delegating permissions."
+},{
+  "question": "You plan to deploy several Azure virtual machines. You need to ensure that the services running on the virtual machines are available if a single data center fails. Solution: You deploy the virtual machines to two or more availability zones. Does this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Availability Zones are physically separate datacenters within an Azure region. By deploying virtual machines across two or more Availability Zones, the services remain available even if one datacenter fails. Therefore, the proposed solution meets the goal of ensuring availability during a single datacenter failure."
+},{
+  "question": "This question requires that you evaluate the underlined text to determine if it is correct.\nOne of the benefits of Azure SQL Data Warehouse is that high availability is built into the platform.\nInstructions: Review the underlined text. If it makes the statement correct, select 'No change is needed'. If the statement is incorrect, select the answer choice that makes the statement correct.",
+  "options": [
+    "No change is needed",
+    "automatic scaling",
+    "data compression",
+    "versioning"
+  ],
+  "answer": 0,
+  "explanation": "Azure SQL Data Warehouse (now part of Azure Synapse Analytics) is a PaaS service that provides built-in high availability. Therefore, the statement is already correct."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nYou plan to deploy several Azure virtual machines.\nYou need to ensure that the services running on the virtual machines are available if a single data center fails.\n\nSolution: You deploy the virtual machines to two or more regions.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Deploying virtual machines to two or more Azure regions ensures that the services remain available even if a single datacenter fails. Since regions are geographically separate and contain independent datacenters, a failure in one datacenter will not affect virtual machines running in another region. Therefore, the proposed solution meets the goal."
+},{
+  "question": "An Azure container instance is an example of an Azure _____.",
+  "options": [
+    "compute service",
+    "identity service",
+    "networking service",
+    "storage service"
+  ],
+  "answer": 0,
+  "explanation": "Azure Container Instances (ACI) is a compute service that enables you to run containers on Azure without managing virtual machines or container orchestration infrastructure. It provides serverless container execution and is categorized as an Azure compute service."
+},{
+  "question": "At which OSI layer does ExpressRoute operate?",
+  "options": [
+    "Layer 2",
+    "Layer 3",
+    "Layer 5",
+    "Layer 7"
+  ],
+  "answer": 1,
+  "explanation": "Azure ExpressRoute operates at the OSI Network Layer (Layer 3). It provides private connectivity between on-premises networks and Microsoft cloud services and uses Border Gateway Protocol (BGP) for routing. Since IP routing and addressing occur at Layer 3, ExpressRoute is considered a Layer 3 service."
+},{
+  "question": "Application Insights is a feature of _____.",
+  "options": [
+    "Azure Advisor",
+    "Azure Application Gateway",
+    "Azure Arc",
+    "Azure Monitor"
+  ],
+  "answer": 3,
+  "explanation": "Application Insights is a feature of Azure Monitor that provides application performance monitoring (APM). It helps developers monitor the availability, performance, and usage of web applications and services by collecting telemetry data such as requests, dependencies, exceptions, and performance metrics."
+},{
+    "question": "Azure resources can only access other resources in the same resource group.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure resources are not limited to accessing resources within the same resource group. Resources can communicate with resources in other resource groups, subscriptions, or regions, provided that the appropriate networking and access permissions are configured."
+  },
+  {
+    "question": "If you delete a resource group, all the resources in the resource group will be deleted.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A resource group is a logical container for Azure resources. When a resource group is deleted, all resources contained within that resource group are also deleted."
+  },
+  {
+    "question": "A resource group can contain resources from multiple Azure regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A resource group is not restricted to a single Azure region. Resources located in different Azure regions can belong to the same resource group."
+  },{
+  "question": "You plan to store 20 TB of data in Azure. The data will be accessed infrequently and visualized by using Microsoft Power BI.\nYou need to recommend a storage solution for the data.\n\nWhich two solutions should you recommend? Each correct answer presents a complete solution.\n\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "Azure Data Lake",
+    "Azure Cosmos DB",
+    "Azure SQL Data Warehouse",
+    "Azure SQL Database",
+    "Azure Database for PostgreSQL"
+  ],
+  "answer": [0, 2],
+  "explanation": "Azure Data Lake is designed to store massive amounts of structured and unstructured data and is well suited for large datasets that are accessed infrequently. Azure SQL Data Warehouse (now part of Azure Synapse Analytics) is optimized for large-scale analytics and integrates with Power BI for reporting and visualization. Azure Cosmos DB is a globally distributed NoSQL database, while Azure SQL Database and Azure Database for PostgreSQL are transactional databases that are not optimized for large-scale analytical data warehousing workloads."
+}, {
+    "question": "Which subdomain is used to access the Azure portal?",
+    "options": [
+      "admin.",
+      "portal.",
+      "www."
+    ],
+    "answer": 1,
+    "explanation": "The Azure portal is accessed by using the subdomain 'portal', resulting in the URL https://portal.azure.com."
+  },
+  {
+    "question": "Which domain is used in the Azure portal URL?",
+    "options": [
+      "azure.",
+      "azurewebsites.",
+      "microsoft."
+    ],
+    "answer": 0,
+    "explanation": "The Azure portal URL uses the domain 'azure', resulting in the URL https://portal.azure.com."
+  },{
+    "question": "Which Azure storage redundancy option provides the least redundancy?",
+    "options": [
+      "Locally-redundant storage (LRS)",
+      "Zone-redundant storage (ZRS)",
+      "Geo-redundant storage (GRS)"
+    ],
+    "answer": 0,
+    "explanation": "Locally-redundant storage (LRS) stores multiple copies of data within a single datacenter in a region. It provides the lowest level of redundancy among the listed options."
+  },
+  {
+    "question": "Which Azure storage redundancy option provides more redundancy than LRS but less than GRS?",
+    "options": [
+      "Locally-redundant storage (LRS)",
+      "Zone-redundant storage (ZRS)",
+      "Geo-redundant storage (GRS)"
+    ],
+    "answer": 1,
+    "explanation": "Zone-redundant storage (ZRS) replicates data across multiple Availability Zones within the same Azure region, providing higher redundancy than LRS."
+  },
+  {
+    "question": "Which Azure storage redundancy option provides the highest redundancy among the following options?",
+    "options": [
+      "Locally-redundant storage (LRS)",
+      "Zone-redundant storage (ZRS)",
+      "Geo-redundant storage (GRS)"
+    ],
+    "answer": 2,
+    "explanation": "Geo-redundant storage (GRS) replicates data to a secondary Azure region in addition to local replication, providing the highest level of redundancy among the listed options."
+  },{
+  "question": "Azure Blob Storage is a _____.",
+  "options": [
+    "data store for queuing and reliably delivering messages between applications",
+    "file share that can be mapped as a network drive",
+    "key/attribute store for non-relational, structured data",
+    "storage service optimized for very large objects, such as video files and bitmaps"
+  ],
+  "answer": 3,
+  "explanation": "Azure Blob Storage is a storage service designed for storing large amounts of unstructured data, such as images, videos, audio files, backups, and documents. It is optimized for very large objects and provides scalable object storage. Queue Storage is used for messaging, Azure Files provides network file shares, and Table Storage provides a NoSQL key/attribute store."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nAn Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\n\nSolution: Run the script from a computer that runs Linux and has the Azure CLI tools installed.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "The solution does not meet the goal. The requirement is to run a PowerShell script, but the proposed solution only specifies that Azure CLI tools are installed. Azure CLI and Azure PowerShell are different tools. To run a PowerShell script that creates Azure resources, Azure PowerShell must be installed. Therefore, the proposed solution does not guarantee that the PowerShell script can be executed."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nAn Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\n\nSolution: Run the script from a computer that runs Chrome OS and uses Azure Cloud Shell.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Azure Cloud Shell is a browser-based command-line environment that can be accessed from any operating system, including Chrome OS. Cloud Shell includes Azure PowerShell and Azure CLI preinstalled, allowing administrators to run PowerShell scripts that create and manage Azure resources. Therefore, the proposed solution meets the goal."
+},{
+    "question": "From Azure Service Health, an administrator can view the health of all the services in an Azure environment.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Service Health provides personalized information about the health of Azure services, including service issues, planned maintenance, and health advisories that affect resources in an Azure environment."
+  },
+  {
+    "question": "From Azure Service Health, an administrator can create a rule to be alerted if an Azure service fails.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Service Health supports alerts and notifications. Administrators can configure alert rules and action groups to receive notifications about service incidents, planned maintenance, and health advisories."
+  },
+  {
+    "question": "From Azure Service Health, an administrator can prevent a service failure.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Service Health provides visibility into service issues and notifications about Azure service health. However, it cannot prevent service failures; it only helps administrators monitor and respond to them."
+  },{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nAn Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\n\nSolution: Run the script from a computer that runs macOS and has PowerShell Core 6.0 installed.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "PowerShell Core 6.0 is a cross-platform version of PowerShell that runs on macOS, Linux, and Windows. Azure PowerShell supports PowerShell Core, allowing administrators to run PowerShell scripts that create and manage Azure resources from a macOS computer. Therefore, the proposed solution meets the goal."
+},{
+  "question": "HOTSPOT -\nYou need to view a list of planned maintenance events that can affect the availability of an Azure subscription.\nWhich blade should you use from the Azure portal?",
+  "options": [
+    "Dashboard",
+    "All resources",
+    "Resource groups",
+    "Service Health"
+  ],
+  "answer": 3,
+  "explanation": "Azure Service Health provides personalized information about the health of Azure services and resources. It includes planned maintenance events, service issues, and health advisories that may affect the availability of an Azure subscription. Therefore, the correct blade to view planned maintenance events is Service Health."
+},{
+    "question": "Which Azure service is an integrated solution for the deployment of code?",
+    "options": [
+      "Azure Advisor",
+      "Azure Cognitive Services",
+      "Azure Application Insights",
+      "Azure DevOps"
+    ],
+    "answer": 3,
+    "explanation": "Azure DevOps provides development and deployment tools, including source control, CI/CD pipelines, testing, and project management. It is an integrated solution for building and deploying code."
+  },
+  {
+    "question": "Which Azure service provides guidance and recommendations to improve an Azure environment?",
+    "options": [
+      "Azure Advisor",
+      "Azure Cognitive Services",
+      "Azure Application Insights",
+      "Azure DevOps"
+    ],
+    "answer": 0,
+    "explanation": "Azure Advisor analyzes Azure resources and configurations and provides recommendations to improve reliability, security, performance, operational excellence, and cost efficiency."
+  },
+  {
+    "question": "Which Azure service is a simplified tool to build intelligent Artificial Intelligence (AI) applications?",
+    "options": [
+      "Azure Advisor",
+      "Azure Cognitive Services",
+      "Azure Application Insights",
+      "Azure DevOps"
+    ],
+    "answer": 1,
+    "explanation": "Azure Cognitive Services provides prebuilt AI capabilities such as vision, speech, language, and decision-making APIs that enable developers to add intelligent features to applications."
+  },
+  {
+    "question": "Which Azure service is used to monitor web applications?",
+    "options": [
+      "Azure Advisor",
+      "Azure Cognitive Services",
+      "Azure Application Insights",
+      "Azure DevOps"
+    ],
+    "answer": 2,
+    "explanation": "Azure Application Insights is an application performance monitoring service that helps developers monitor the availability, performance, and usage of web applications."
+  },{
+    "question": "Which Azure service is a managed relational cloud database service?",
+    "options": [
+      "Azure HDInsight",
+      "Azure Data Lake Analytics",
+      "Azure SQL Synapse Analytics",
+      "Azure SQL Database"
+    ],
+    "answer": 3,
+    "explanation": "Azure SQL Database is a fully managed relational database service that provides high availability, scalability, security, and performance without requiring infrastructure management."
+  },
+  {
+    "question": "Which Azure service is a cloud-based service that leverages massively parallel processing (MPP) to quickly run complex queries across petabytes of data in a relational database?",
+    "options": [
+      "Azure HDInsight",
+      "Azure Data Lake Analytics",
+      "Azure SQL Synapse Analytics",
+      "Azure SQL Database"
+    ],
+    "answer": 2,
+    "explanation": "Azure SQL Synapse Analytics (formerly Azure SQL Data Warehouse) uses Massively Parallel Processing (MPP) architecture to distribute query execution across multiple compute nodes, enabling fast analytics on very large relational datasets."
+  },
+  {
+    "question": "Which Azure service can run massively parallel data transformation and processing programs across petabytes of data?",
+    "options": [
+      "Azure HDInsight",
+      "Azure Data Lake Analytics",
+      "Azure SQL Synapse Analytics",
+      "Azure SQL Database"
+    ],
+    "answer": 1,
+    "explanation": "Azure Data Lake Analytics is designed for large-scale data processing and transformation. It can execute distributed analytics jobs across petabytes of data without requiring infrastructure management."
+  },
+  {
+    "question": "Which Azure service is an open-source framework for the distributed processing and analysis of big data sets in clusters?",
+    "options": [
+      "Azure HDInsight",
+      "Azure Data Lake Analytics",
+      "Azure SQL Synapse Analytics",
+      "Azure SQL Database"
+    ],
+    "answer": 0,
+    "explanation": "Azure HDInsight is a managed cloud service that supports open-source frameworks such as Hadoop, Spark, Hive, HBase, and Kafka for distributed processing and analysis of large-scale data."
+  },{
+    "question": "Which Azure portal service should you use to monitor the health of Azure services?",
+    "options": [
+      "Monitor",
+      "Subscriptions",
+      "Marketplace",
+      "Advisor"
+    ],
+    "answer": 0,
+    "explanation": "Azure Monitor provides monitoring and observability for Azure resources and services. It includes access to service health information and alerts related to Azure services."
+  },
+  {
+    "question": "Which Azure portal service should you use to browse available virtual machine images?",
+    "options": [
+      "Monitor",
+      "Subscriptions",
+      "Marketplace",
+      "Advisor"
+    ],
+    "answer": 2,
+    "explanation": "Azure Marketplace provides a catalog of virtual machine images, applications, and services that can be deployed to Azure."
+  },
+  {
+    "question": "Which Azure portal service should you use to view security recommendations?",
+    "options": [
+      "Monitor",
+      "Subscriptions",
+      "Marketplace",
+      "Advisor"
+    ],
+    "answer": 3,
+    "explanation": "Azure Advisor analyzes Azure resources and provides recommendations to improve security, reliability, performance, operational excellence, and cost efficiency."
+  },{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nYou have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating system.\n\nSolution: You use Bash in Azure Cloud Shell.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Azure Cloud Shell is a browser-based command-line environment that can be accessed from any device with a supported web browser, including an Android tablet. The Bash environment in Cloud Shell includes Azure CLI tools that can be used to create and manage Azure virtual machines. Therefore, the proposed solution meets the goal."
+},{
+  "question": "You have an on-premises application that sends email notifications automatically based on a rule.\nYou plan to migrate the application to Azure.\nYou need to recommend a serverless computing solution for the application.\n\nWhat should you include in the recommendation?",
+  "options": [
+    "a web app",
+    "a server image in Azure Marketplace",
+    "a logic app",
+    "an API app"
+  ],
+  "answer": 2,
+  "explanation": "Azure Logic Apps is a serverless service that enables you to automate workflows and integrate applications, data, services, and systems. It is ideal for rule-based processes such as automatically sending email notifications when specific conditions are met. Web Apps and API Apps host applications and APIs, while a server image in Azure Marketplace is not a serverless solution."
+}
+]

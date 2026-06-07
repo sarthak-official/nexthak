@@ -1,0 +1,145 @@
+[{
+  "question": "Your company has several business units.\nEach business unit requires 20 different Azure resources for daily operation. All the business units require the same type of Azure resources.\nYou need to recommend a solution to automate the creation of the Azure resources.\n\nWhat should you include in the recommendations?",
+  "options": [
+    "Azure Resource Manager templates",
+    "virtual machine scale sets",
+    "the Azure API Management service",
+    "management groups"
+  ],
+  "answer": 0,
+  "explanation": "Azure Resource Manager (ARM) templates provide an Infrastructure as Code (IaC) solution that enables consistent, repeatable, and automated deployment of Azure resources. Since all business units require the same set of Azure resources, ARM templates can be used to automate the creation of those resources across multiple business units."
+},{
+    "question": "You can use Azure Cost Management to view costs associated to resource groups.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Cost Management can analyze and filter costs by resource group, allowing administrators to view spending associated with specific resource groups."
+  },
+  {
+    "question": "You can use Azure Cost Management to view the usage of virtual machines during the last three months.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Cost Management provides historical usage and cost analysis data. Administrators can review virtual machine usage and associated costs over custom time periods, including the last three months."
+  },{
+  "question": "What can you use to identify underutilized or unused Azure virtual machines?",
+  "options": [
+    "Azure Advisor",
+    "Azure Cost Management + Billing",
+    "Azure reservations",
+    "Azure Policy"
+  ],
+  "answer": 0,
+  "explanation": "Azure Advisor analyzes Azure resource usage and configuration and provides recommendations to improve cost, security, reliability, operational excellence, and performance. It can identify underutilized or unused virtual machines and recommend resizing or shutting them down to reduce costs."
+},{
+  "question": "HOTSPOT -\nWhich node in the Azure portal should you use to assign a user the Reader role for a resource group?\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "Overview",
+    "Activity log",
+    "Access control (IAM)",
+    "Tags",
+    "Resource visualizer",
+    "Events",
+    "Resource costs",
+    "Deployments",
+    "Security",
+    "Policies",
+    "Properties"
+  ],
+  "answer": [0, 2],
+  "explanation": "To assign a user the Reader role for a resource group, you first open the resource group from the Overview page and then navigate to Access control (IAM). Azure RBAC role assignments are managed through Access control (IAM), where you can add a role assignment and select the Reader role for the user."
+},{
+  "question": "_____ is an Apache Spark-based analytics service.",
+  "options": [
+    "Azure Databricks",
+    "Azure Data Factory",
+    "Azure DevOps",
+    "Azure Synapse Analytics"
+  ],
+  "answer": 0,
+  "explanation": "Azure Databricks is an Apache Spark-based analytics service optimized for the Microsoft Azure cloud platform. It provides a collaborative environment for big data processing, data engineering, machine learning, and analytics using Apache Spark."
+},{
+    "question": "You must have internet connectivity to manage cloud services.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Cloud services are managed through cloud-based platforms and management interfaces that require internet connectivity. Without internet access, administrators cannot connect to and manage cloud resources."
+  },
+  {
+    "question": "You must install a management app to manage cloud services.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A management application is not required to manage cloud services. Services such as Microsoft Azure can be managed through browser-based portals like the Azure portal."
+  },
+  {
+    "question": "You can manage cloud services from any modern web browser.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Cloud platforms provide web-based management portals that can be accessed from modern web browsers, allowing administrators to manage cloud resources without installing specialized software."
+  },{
+    "question": "_____ Provides the platform for serverless code",
+    "options": [
+      "Azure Databricks",
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Application Insights"
+    ],
+    "answer": 1,
+    "explanation": "Azure Functions is a serverless compute service that enables developers to run code on demand without managing infrastructure."
+  },
+  {
+    "question": "_____ A big data analysis service for machine learning",
+    "options": [
+      "Azure Databricks",
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Application Insights"
+    ],
+    "answer": 0,
+    "explanation": "Azure Databricks is an Apache Spark-based analytics platform used for big data processing, data engineering, and machine learning workloads."
+  },
+  {
+    "question": "_____ Detects and diagnoses anomalies in web apps",
+    "options": [
+      "Azure Databricks",
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Application Insights"
+    ],
+    "answer": 3,
+    "explanation": "Azure Application Insights is an application performance monitoring service that helps detect, diagnose, and troubleshoot performance issues and anomalies in web applications."
+  },
+  {
+    "question": "_____ Hosts web apps",
+    "options": [
+      "Azure Databricks",
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Application Insights"
+    ],
+    "answer": 2,
+    "explanation": "Azure App Service is a Platform as a Service (PaaS) offering used to host, build, deploy, and scale web applications."
+  },{
+  "question": "A team of developers at your company plans to deploy, and then remove, 50 customized virtual machines each week. Thirty of the virtual machines run Windows Server 2016 and 20 of the virtual machines run Ubuntu Linux.\nYou need to recommend which Azure service will minimize the administrative effort required to deploy and remove the virtual machines.\n\nWhat should you recommend?",
+  "options": [
+    "Azure Reserved Virtual Machines (VM) Instances",
+    "Azure virtual machine scale sets",
+    "Azure DevTest Labs",
+    "Microsoft Managed Desktop"
+  ],
+  "answer": 2,
+  "explanation": "Azure DevTest Labs is designed for development and testing scenarios and helps automate the creation, management, and deletion of virtual machines. It supports customized Windows and Linux VM environments, reusable templates, and policies, which significantly reduces the administrative effort required to frequently deploy and remove virtual machines."
+}
+]

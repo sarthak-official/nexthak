@@ -38,7 +38,6 @@
 },{
   "question": "HOTSPOT -\nWhich node in the Azure portal should you use to assign a user the Reader role for a resource group?\nNOTE: Each correct selection is worth one point.",
   "options": [
-    "Overview",
     "Activity log",
     "Access control (IAM)",
     "Tags",
@@ -50,7 +49,7 @@
     "Policies",
     "Properties"
   ],
-  "answer": [0, 2],
+  "answer": 1,
   "explanation": "To assign a user the Reader role for a resource group, you first open the resource group from the Overview page and then navigate to Access control (IAM). Azure RBAC role assignments are managed through Access control (IAM), where you can add a role assignment and select the Reader role for the user."
 },{
   "question": "_____ is an Apache Spark-based analytics service.",

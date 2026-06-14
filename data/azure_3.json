@@ -815,7 +815,7 @@
     "Yes",
     "No"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "The command shown is an Azure CLI command because it begins with 'az'. Azure CLI commands are intended to be run in the Bash environment of Azure Cloud Shell. The proposed solution specifies selecting PowerShell and then running the Azure CLI command. Therefore, the solution does not correctly match the command type and does not meet the goal."
 },{
   "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nYou have an Azure subscription named Subscription1. You sign in to the Azure portal and create a resource group named RG1.\nFrom Azure documentation, you have the following command that creates a virtual machine named VM1:\n\naz vm create --resource-group RG1 --name VM1 --image UbuntuLTS --generate-ssh-keys\n\nYou need to create VM1 in Subscription1 by using the command.\n\nSolution: From a computer that runs Windows 10, install Azure CLI. From PowerShell, sign in to Azure and then run the command.\n\nDoes this meet the goal?",

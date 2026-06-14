@@ -397,7 +397,7 @@
     0,
     3
   ],
-  "explanation": "Azure can be segmented for different departments by using multiple subscriptions or multiple resource groups. Separate subscriptions provide strong administrative and billing boundaries, while resource groups provide logical grouping and access control for resources within a subscription. Multiple Azure AD directories are used for identity management rather than departmental resource segmentation, and multiple regions are used for geographic distribution rather than administrative separation."
+  "explanation": "an be segmented for different departments by using multiple subscriptions or multiple resource groups. Separate subscriptions provide strong administrative and billing boundaries, while resource groups provide logical grouping and access control for resources within a subscription. Multiple Azure AD directories are used for identity management rather than departmental resource segmentation, and multiple regions are used for geographic distribution rather than administrative separation."
 }, {
     "question": "A single Microsoft account can be used to manage multiple Azure subscriptions.",
     "options": [

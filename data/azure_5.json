@@ -1,0 +1,591 @@
+[
+  {
+  "question": "You can view your company's regulatory compliance report from ____.",
+  "options": [
+    "Azure Advisor",
+    "Azure Analysis Services",
+    "Azure Monitor",
+    "Azure Security Center"
+  ],
+  "answer": 3,
+  "explanation": "Azure Security Center (now Microsoft Defender for Cloud) provides regulatory compliance reports and dashboards that help organizations assess and monitor compliance against standards such as ISO 27001, PCI DSS, and NIST. Azure Advisor provides best-practice recommendations, Azure Monitor is used for monitoring and logging, and Azure Analysis Services is used for data modeling and analytics."
+},{
+  "question": "What should you use to evaluate whether your company's Azure environment meets regulatory requirements?",
+  "options": [
+    "Azure Service Health",
+    "Azure Knowledge Center",
+    "Azure Security Center",
+    "Azure Advisor"
+  ],
+  "answer": 2,
+  "explanation": "Azure Security Center (now Microsoft Defender for Cloud) provides a Regulatory Compliance dashboard that helps organizations assess whether their Azure environment meets regulatory and industry standards such as ISO 27001, PCI DSS, and NIST. Azure Service Health monitors Azure service incidents and outages, Azure Knowledge Center is not used for compliance evaluation, and Azure Advisor provides recommendations for cost, performance, reliability, and security improvements."
+},{
+  "question": "Your company implements ____ to automatically add a watermark to Microsoft Word documents that contain credit card information.",
+  "options": [
+    "Azure policies",
+    "DDoS protection",
+    "Azure Information Protection",
+    "Azure Active Directory (Azure AD) Identity Protection"
+  ],
+  "answer": 2,
+  "explanation": "Azure Information Protection (AIP) is used to classify, label, and protect documents and emails. It can automatically identify sensitive information such as credit card numbers and apply protection actions including watermarks, headers, footers, encryption, and access restrictions. Azure Policy is used for resource governance, DDoS Protection mitigates denial-of-service attacks, and Azure AD Identity Protection focuses on identity-based security risks."
+},{
+    "question": "Azure Active Directory (Azure AD) requires the implementation of domain controllers on Azure virtual machines.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure AD is a cloud-based identity and access management service managed by Microsoft. It does not require you to deploy domain controllers on Azure virtual machines."
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) provides authentication services for resources hosted in Azure and Microsoft 365.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure AD provides authentication and authorization services for Azure resources, Microsoft 365, and many third-party SaaS applications."
+  },
+  {
+    "question": "Each user account in Azure Active Directory (Azure AD) can be assigned only one license.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A user account in Azure AD can be assigned multiple licenses, such as Microsoft 365, Power BI, Dynamics 365, and Enterprise Mobility + Security licenses."
+  },{
+  "question": "Which two types of customers are eligible to use Azure Government to develop a cloud solution?",
+  "options": [
+    "a Canadian government contractor",
+    "a European government contractor",
+    "a United States government entity",
+    "a United States government contractor",
+    "a European government entity"
+  ],
+  "answer": [
+    2,
+    3
+  ],
+  "explanation": "Azure Government is a dedicated cloud environment designed for U.S. federal, state, local, and tribal government agencies, as well as their partners and contractors. Access is restricted to screened United States government entities and United States government contractors. Canadian and European government organizations and contractors are not eligible for Azure Government."
+},{
+    "question": "To implement an Azure Multi-Factor Authentication (MFA) solution, you must sync on-premises identities to the cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Multi-Factor Authentication can be used with cloud-only Azure AD accounts. Synchronizing on-premises identities to the cloud is not required."
+  },
+  {
+    "question": "Two valid methods for Azure Multi-Factor Authentication (MFA) are picture identification and a passport number.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Valid Azure MFA methods include the Microsoft Authenticator app, phone calls, SMS text messages, and OATH tokens. Picture identification and passport numbers are not valid MFA methods."
+  },
+  {
+    "question": "Azure Multi-Factor Authentication (MFA) can be required for administrative and non-administrative user accounts.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure MFA can be enforced for any user account, including both administrative and non-administrative users, to improve account security."
+  },{
+  "question": "You need to ensure that when Azure Active Directory (Azure AD) users connect to Azure AD from the Internet by using an anonymous IP address, the users are prompted automatically to change their password.\nWhich Azure service should you use?",
+  "options": [
+    "Azure AD Connect Health",
+    "Azure AD Privileged Identity Management",
+    "Azure Advanced Threat Protection (ATP)",
+    "Azure AD Identity Protection"
+  ],
+  "answer": 3,
+  "explanation": "Azure AD Identity Protection detects risky sign-ins, including sign-ins from anonymous IP addresses, unfamiliar locations, and other suspicious activities. Risk-based policies can automatically require users to change their password when a risky sign-in is detected. Azure AD Connect Health monitors synchronization infrastructure, Azure AD Privileged Identity Management manages privileged access, and Azure Advanced Threat Protection focuses on detecting identity-based threats."
+},{
+    "question": "An organization that defines international standards across all industries.",
+    "options": [
+      "Azure Government",
+      "GDPR",
+      "ISO",
+      "NIST"
+    ],
+    "answer": 2,
+    "explanation": "ISO (International Organization for Standardization) develops and publishes international standards across a wide range of industries and sectors."
+  },
+  {
+    "question": "An organization that defines standards used by the United States government.",
+    "options": [
+      "Azure Government",
+      "GDPR",
+      "ISO",
+      "NIST"
+    ],
+    "answer": 3,
+    "explanation": "NIST (National Institute of Standards and Technology) develops standards, guidelines, and frameworks that are widely used by United States government agencies."
+  },
+  {
+    "question": "A European policy that regulates data privacy and data protection.",
+    "options": [
+      "Azure Government",
+      "GDPR",
+      "ISO",
+      "NIST"
+    ],
+    "answer": 1,
+    "explanation": "GDPR (General Data Protection Regulation) is a European Union regulation that governs data privacy and protection for individuals within the EU."
+  },
+  {
+    "question": "A dedicated public cloud for federal and state agencies in the United States.",
+    "options": [
+      "Azure Government",
+      "GDPR",
+      "ISO",
+      "NIST"
+    ],
+    "answer": 0,
+    "explanation": "Azure Government is a dedicated cloud environment designed specifically for U.S. federal, state, local, and tribal government agencies and their partners."
+  },{
+  "question": "To what should an application connect to retrieve security tokens?",
+  "options": [
+    "an Azure Storage account",
+    "Azure Active Directory (Azure AD)",
+    "a certificate store",
+    "an Azure key vault"
+  ],
+  "answer": 1,
+  "explanation": "Azure Active Directory (Azure AD) is the identity provider that authenticates users and applications and issues security tokens. Applications connect to Azure AD to obtain tokens that are used to access protected resources. Azure Storage accounts store data, certificate stores hold certificates, and Azure Key Vault securely stores secrets, keys, and certificates, but none of these services issue security tokens."
+},{
+  "question": "Your network contains an Active Directory forest. The forest contains 5,000 user accounts.\nYour company plans to migrate all network resources to Azure and to decommission the on-premises data center.\nYou need to recommend a solution to minimize the impact on users after the planned migration.\nWhat should you recommend?",
+  "options": [
+    "Implement Azure Multi-Factor Authentication (MFA)",
+    "Sync all the Active Directory user accounts to Azure Active Directory (Azure AD)",
+    "Instruct all users to change their password",
+    "Create a guest user account in Azure Active Directory (Azure AD) for each user"
+  ],
+  "answer": 1,
+  "explanation": "Synchronizing all Active Directory user accounts to Azure Active Directory (Azure AD) allows users to continue using their existing identities after the migration. This minimizes disruption and provides a seamless transition when moving resources to Azure and decommissioning the on-premises data center. Implementing MFA improves security but does not reduce migration impact, forcing password changes creates unnecessary disruption, and guest accounts are intended for external users rather than internal user migration."
+}, {
+    "question": "You can configure the Azure Active Directory (Azure AD) activity logs to appear in Azure Monitor.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure AD audit logs and sign-in logs can be sent to Azure Monitor by using diagnostic settings, allowing centralized monitoring and analysis."
+  },
+  {
+    "question": "From Azure Monitor, you can monitor resources across multiple Azure subscriptions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Monitor can collect, analyze, and visualize monitoring data from resources located across multiple Azure subscriptions."
+  },
+  {
+    "question": "From Azure Monitor, you can create alerts.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Monitor supports alert rules that can notify administrators when specified conditions are met, helping to proactively monitor resources and services."
+  },{
+  "question": "You create a resource group named RG1 in Azure Resource Manager.\nYou need to prevent the accidental deletion of the resources in RG1.\nWhich setting should you use?",
+  "options": [
+    "Quickstart",
+    "Resource costs",
+    "Deployments",
+    "Policies",
+    "Properties",
+    "Locks",
+    "Export template"
+  ],
+  "answer": 5,
+  "explanation": "Azure Resource Locks are used to prevent accidental deletion or modification of resources. Applying a CanNotDelete lock to a resource group ensures that resources cannot be deleted, even by users who have permission to manage them. Policies are used for governance and compliance, but Locks are the primary mechanism for protecting resources from accidental deletion."
+},{
+  "question": "You have a resource group named RG1.\nYou need to prevent the creation of virtual machines in RG1. The solution must ensure that other objects can be created in RG1.\nWhat should you use?",
+  "options": [
+    "a lock",
+    "an Azure role",
+    "a tag",
+    "an Azure policy"
+  ],
+  "answer": 3,
+  "explanation": "Azure Policy can enforce rules that deny the creation of specific resource types, such as virtual machines, within a resource group while still allowing other resource types to be created. Resource locks prevent deletion or modification, Azure roles control user permissions, and tags are used for organizing and categorizing resources."
+},{
+  "question": "You have an Azure subscription and 100 Windows 10 devices.\nYou need to ensure that only users whose devices have the latest security patches installed can access Azure Active Directory (Azure AD)-integrated applications.\nWhat should you implement?",
+  "options": [
+    "a conditional access policy",
+    "Azure Bastion",
+    "Azure Firewall",
+    "Azure Policy"
+  ],
+  "answer": 0,
+  "explanation": "Azure AD Conditional Access can enforce access requirements based on device compliance. When integrated with Microsoft Intune, Conditional Access can ensure that only devices meeting compliance requirements, such as having the latest security patches installed, can access Azure AD-integrated applications. Azure Bastion provides secure VM access, Azure Firewall filters network traffic, and Azure Policy governs Azure resource compliance rather than application access."
+},{
+  "question": "What can Azure Information Protection encrypt?",
+  "options": [
+    "network traffic",
+    "documents and email messages",
+    "an Azure Storage account",
+    "an Azure SQL database"
+  ],
+  "answer": 1,
+  "explanation": "Azure Information Protection (AIP) is used to classify, label, and protect sensitive information. It can encrypt documents and email messages to help prevent unauthorized access and data leakage. Network traffic is typically encrypted using TLS/SSL, Azure Storage accounts use Storage Service Encryption, and Azure SQL databases use features such as Transparent Data Encryption (TDE) and Always Encrypted."
+},{
+  "question": "What should you use to evaluate whether your company's Azure environment meets regulatory requirements?",
+  "options": [
+    "the Knowledge Center website",
+    "the Advisor blade from the Azure portal",
+    "Compliance Manager from the Service Trust Portal",
+    "the Solutions blade from the Azure portal"
+  ],
+  "answer": 2,
+  "explanation": "Compliance Manager in the Microsoft Service Trust Portal helps organizations evaluate and track their compliance posture against regulatory standards and requirements. It provides compliance reports, audit documentation, risk assessments, and guidance for meeting regulatory obligations. The Knowledge Center website provides documentation, the Advisor blade offers recommendations for Azure resources, and the Solutions blade is used to deploy and manage Azure solutions rather than assess compliance."
+},{
+  "question": "_____ enables users to authenticate to multiple applications by using single sign-on (SSO).",
+  "options": [
+    "Application security groups in Azure",
+    "Azure Active Directory (Azure AD)",
+    "Azure Key Vault",
+    "Azure Security Center"
+  ],
+  "answer": 1,
+  "explanation": "Azure Active Directory (Azure AD) provides Single Sign-On (SSO) capabilities that allow users to authenticate once and access multiple applications without needing to sign in repeatedly. Application security groups are used for network security management, Azure Key Vault stores secrets and certificates, and Azure Security Center provides security posture management and threat protection."
+},{
+  "question": "You have an Azure subscription.\nWhere will you find details on the personal data collected by Microsoft, how Microsoft uses the data, and what the data is used for?",
+  "options": [
+    "the Data Protection Addendum",
+    "the Microsoft Online Services Terms",
+    "the Microsoft Privacy Statement",
+    "Azure Security Center"
+  ],
+  "answer": 2,
+  "explanation": "The Microsoft Privacy Statement explains what personal data Microsoft collects, how the data is collected and used, why it is collected, how it is shared and protected, and the choices users have regarding their personal data. The Data Protection Addendum focuses on Microsoft's data processing commitments, the Online Services Terms define service usage and licensing terms, and Azure Security Center is a security management service."
+},{
+    "question": "Azure Active Directory (Azure AD) can be used to manage access to on-premises applications.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure AD can be used to manage access to on-premises applications through features such as Azure AD Application Proxy, enabling secure remote access and centralized identity management."
+  },
+  {
+    "question": "Azure Active Directory (Azure AD) provides single sign-on (SSO).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure AD provides Single Sign-On (SSO), allowing users to authenticate once and access multiple cloud and on-premises applications without signing in repeatedly."
+  },
+  {
+    "question": "iOS devices can be registered in Azure Active Directory (Azure AD).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure AD supports device registration for various device platforms, including iOS, Android, Windows, and macOS devices."
+  },{
+  "question": "You have an Azure virtual network named VNET1 in a resource group named RG1.\nYou assign the Azure Policy definition of Not Allowed Resource Types and specify that virtual networks are not an allowed resource type in RG1.\nVNET1 _____",
+  "options": [
+    "is deleted automatically",
+    "is moved automatically to another resource group",
+    "continues to function normally",
+    "is now a read-only object"
+  ],
+  "answer": 2,
+  "explanation": "Azure Policy is not retroactive. When the Not Allowed Resource Types policy is assigned, it prevents the creation of new resources of the specified type but does not affect existing resources. Therefore, the existing virtual network VNET1 remains unchanged and continues to function normally."
+}, {
+    "question": "Trust Center is part of the Azure Security Center.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Microsoft Trust Center is a separate public resource that provides information about Microsoft's security, privacy, compliance, and transparency practices. It is not part of Azure Security Center."
+  },
+  {
+    "question": "Trust Center can only be accessed by users that have an Azure subscription.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Microsoft Trust Center is publicly accessible and does not require an Azure subscription or Azure account."
+  },
+  {
+    "question": "Trust Center provides information about the Azure compliance offerings.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft Trust Center provides information about Azure compliance offerings, certifications, regulatory standards, privacy commitments, security controls, and transparency practices."
+  },{
+    "question": "You can use Azure Policy to apply tags to resources.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Policy includes built-in policies that can automatically apply, inherit, or enforce tags on Azure resources. Examples include Append a tag, Inherit a tag from the resource group, and Require a tag."
+  },
+  {
+    "question": "You can add multiple tags to the same Azure resource.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure resources can have multiple tags. Each tag is a name/value pair that helps organize, manage, and report on resources."
+  },
+  {
+    "question": "An Azure resource inherits tags from the resource group to which the resource is deployed.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Tags are not automatically inherited from a resource group. To ensure resources inherit tags from their resource group, you must use Azure Policy."
+  },{
+    "question": "Describes which personal data is collected, how the data is used, and what the data is used for.",
+    "options": [
+      "Data Protection Addendum",
+      "Microsoft Privacy Statement",
+      "Online Services Terms"
+    ],
+    "answer": 1,
+    "explanation": "The Microsoft Privacy Statement explains what personal data Microsoft collects, how the data is used, why it is collected, how it is shared, and the choices users have regarding their personal data."
+  },
+  {
+    "question": "A legal agreement that details the obligations between Microsoft and a customer regarding the processing and security of customer data and personal data.",
+    "options": [
+      "Data Protection Addendum",
+      "Microsoft Privacy Statement",
+      "Online Services Terms"
+    ],
+    "answer": 0,
+    "explanation": "The Data Protection Addendum (DPA) is a legal agreement that defines Microsoft's commitments and obligations regarding the processing, security, and protection of customer data and personal data."
+  },
+  {
+    "question": "Defines the data processing and security terms for online services, including the disclosure of processed data and the transfer, retention, and deletion of data.",
+    "options": [
+      "Data Protection Addendum",
+      "Microsoft Privacy Statement",
+      "Online Services Terms"
+    ],
+    "answer": 2,
+    "explanation": "The Online Services Terms (OST) define the terms governing Microsoft's online services, including data processing, security, disclosure, transfer, retention, and deletion of customer data."
+  },{
+  "question": "Requiring a user to enter a password and answer a security question when signing-in to Azure Active Directory (Azure AD) is an example of _____",
+  "options": [
+    "business-to-customer (B2C) identity services",
+    "managed identities",
+    "multi-factor authentication (MFA)",
+    "role-based access control (RBAC)"
+  ],
+  "answer": 2,
+  "explanation": "Multi-factor authentication (MFA) requires users to provide more than one form of verification when signing in. In this scenario, the user must enter a password and answer a security question, which represents multiple authentication factors used to verify identity. B2C identity services are used for customer-facing applications, managed identities provide Azure services with identities for authentication, and RBAC controls permissions and access to resources."
+},{
+  "question": "Azure China _____",
+  "options": [
+    "is operated by Microsoft.",
+    "has feature parity with Azure global.",
+    "services can be accessed from China only.",
+    "is a distinct separate instance of Microsoft Azure."
+  ],
+  "answer": 3,
+  "explanation": "Azure China is a separate cloud environment designed to meet Chinese regulatory requirements. It is operated by 21Vianet under a partnership with Microsoft and is physically and logically separate from Azure Global. Azure China does not have complete feature parity with Azure Global, and it is not operated directly by Microsoft."
+},{
+  "question": "What should you use to evaluate whether your company's Azure environment meets regulatory requirements?",
+  "options": [
+    "Azure Service Health",
+    "Azure Knowledge Center",
+    "Microsoft Defender for Cloud",
+    "Azure Advisor"
+  ],
+  "answer": 2,
+  "explanation": "Microsoft Defender for Cloud (formerly Azure Security Center) provides a Regulatory Compliance dashboard that helps organizations assess their Azure environment against standards such as ISO 27001, PCI DSS, NIST, SOC, and CIS benchmarks. It continuously evaluates resources, provides compliance scores, and offers recommendations to improve compliance. Azure Service Health monitors service incidents, Azure Knowledge Center is not used for compliance evaluation, and Azure Advisor provides operational recommendations rather than regulatory compliance assessments."
+},{
+  "question": "You can review audit reports and compliance-related information for Azure services from _____",
+  "options": [
+    "Microsoft Defender for Cloud",
+    "the Microsoft Defender for Identity admin center",
+    "the Microsoft 365 Compliance center",
+    "the Microsoft Service Trust Portal"
+  ],
+  "answer": 3,
+  "explanation": "The Microsoft Service Trust Portal (STP) provides access to audit reports, compliance documentation, certification reports, privacy information, and security resources for Microsoft cloud services, including Azure. It is the primary location for reviewing Microsoft's compliance evidence and audit documentation. Microsoft Defender for Cloud assesses compliance within your Azure environment, while Microsoft Defender for Identity and the Microsoft 365 Compliance center serve different purposes."
+},{
+    "question": "The Microsoft Service Trust Portal can be accessed by using a Microsoft cloud services account.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The Microsoft Service Trust Portal (STP) is available to Microsoft cloud service customers and can be accessed by using a Microsoft cloud services account, such as an Azure or Microsoft 365 account."
+  },
+  {
+    "question": "Compliance Manager can be used to track your company's regulatory compliance activities related to Microsoft cloud services.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Compliance Manager helps organizations assess, track, and manage regulatory compliance requirements and activities across Microsoft cloud services."
+  },
+  {
+    "question": "The My Library feature can be used to save Microsoft Service Trust Portal documents and resources in a single location.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The My Library feature in the Microsoft Service Trust Portal allows users to save, organize, and quickly access documents, reports, and other compliance-related resources in one location."
+  },{
+  "question": "Your company has an Azure subscription that contains resources in several regions.\nYou need to create the Azure resource that must be used to meet the policy requirement.\nWhat should you create?",
+  "options": [
+    "a read-only lock",
+    "an Azure policy",
+    "a management group",
+    "a reservation"
+  ],
+  "answer": 1,
+  "explanation": "Azure Policy is used to create, assign, and manage policies that enforce organizational standards and assess compliance across Azure resources. Policies can restrict resource deployments, enforce configurations, require tags, and limit the regions where resources can be created. Read-only locks prevent modifications, management groups organize subscriptions, and reservations provide discounted pricing but do not enforce governance requirements."
+},{
+  "question": "This question requires that you evaluate the underlined text to determine if it is correct.\n\nFrom Azure Cloud Shell, you can track your company's regulatory standards and regulations, such as ISO 27001.\n\nInstructions: Review the underlined text. If it makes the statement correct, select 'No change is needed.' If the statement is incorrect, select the answer choice that makes the statement correct.",
+  "options": [
+    "No change is needed.",
+    "the Microsoft Cloud Partner Portal",
+    "Compliance Manager",
+    "the Trust Center"
+  ],
+  "answer": 2,
+  "explanation": "Azure Cloud Shell is a browser-based command-line environment used to manage Azure resources and run scripts. It is not used to track regulatory compliance. Compliance Manager is the appropriate tool for assessing, tracking, and managing an organization's compliance activities against standards and regulations such as ISO 27001, GDPR, NIST, and PCI DSS. The Trust Center provides information about Microsoft's compliance offerings but does not track an organization's compliance activities."
+},{
+    "question": "You can create Group Policies in Azure Active Directory (Azure AD).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Traditional Group Policy Objects (GPOs) are a feature of Active Directory Domain Services (AD DS) and are not available in Azure Active Directory. Azure AD uses other management solutions such as Microsoft Intune and configuration policies."
+  },
+  {
+    "question": "You can join Windows 10 devices to Azure Active Directory (Azure AD).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Windows 10 and later devices can be Azure AD joined, allowing users to sign in using Azure AD credentials and access cloud-based resources."
+  },
+  {
+    "question": "You can join Android devices to Azure Active Directory (Azure AD).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Android devices can be registered with Azure AD and managed through services such as Microsoft Intune, but they cannot be Azure AD joined. Azure AD Join is supported for Windows devices."
+  },{
+  "question": "The _____ explains what data Microsoft processes, how Microsoft processes the data, and the purpose of processing the data.",
+  "options": [
+    "Microsoft Online Services Privacy Statement",
+    "Microsoft Product Terms",
+    "Microsoft Online Service Level Agreement",
+    "Online Subscription Agreement for Microsoft Azure"
+  ],
+  "answer": 0,
+  "explanation": "The Microsoft Online Services Privacy Statement describes what data Microsoft collects and processes, how the data is processed, and the purposes for which the data is used. Microsoft Product Terms define licensing and usage rights, the Service Level Agreement (SLA) defines service availability commitments, and the Online Subscription Agreement outlines the contractual terms for Azure subscriptions."
+},{
+  "question": "_____ is the process of verifying a user's credentials.",
+  "options": [
+    "Authorization",
+    "Authentication",
+    "Federation",
+    "Ticketing"
+  ],
+  "answer": 1,
+  "explanation": "Authentication is the process of verifying a user's identity by validating credentials such as usernames, passwords, PINs, certificates, biometrics, or other authentication factors. Authorization determines what an authenticated user is allowed to access, federation establishes trust between identity providers, and ticketing refers to mechanisms such as Kerberos tickets used after authentication."
+},{
+  "question": "An Azure Policy initiative definition is a _____",
+  "options": [
+    "collection of policy definitions",
+    "collection of Azure Policy definition assignments",
+    "group of Azure Blueprints definitions",
+    "group of role-based access control (RBAC) role assignments"
+  ],
+  "answer": 0,
+  "explanation": "An Azure Policy initiative definition, also known as a policy set, is a collection of Azure Policy definitions grouped together to achieve a specific governance or compliance objective. Initiatives simplify the assignment and management of multiple related policies. Policy assignments apply policies to scopes, Azure Blueprints are separate governance artifacts, and RBAC role assignments manage permissions rather than policy compliance."
+},{
+  "question": "_____ provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions.",
+  "options": [
+    "Resource groups",
+    "Management groups",
+    "Azure policies",
+    "Azure App Service plans"
+  ],
+  "answer": 1,
+  "explanation": "Management groups provide a governance scope above Azure subscriptions, allowing organizations to organize multiple subscriptions and apply Azure Policy, RBAC, and compliance controls consistently across them. Resource groups organize resources within a single subscription, Azure Policy defines compliance rules but does not provide cross-subscription organization by itself, and Azure App Service plans are used to host web applications."
+},{  "question": "General Data Protection Regulation (GDPR) defines data protection and privacy rules.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "GDPR is a European Union regulation that establishes rules for the collection, processing, storage, and protection of personal data, as well as privacy rights for individuals."
+  },
+  {
+    "question": "General Data Protection Regulation (GDPR) applies to companies that offer goods or services to individuals in the EU.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "GDPR applies to organizations that offer goods or services to individuals in the European Union or monitor their behavior, regardless of where the organization is located."
+  },
+  {
+    "question": "Azure can be used to build a General Data Protection Regulation (GDPR)-compliant infrastructure.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft Azure provides security, privacy, governance, and compliance features that help organizations build and maintain infrastructures that support GDPR compliance requirements."
+  },{
+    "question": "You can add an Azure Resource Manager template to an Azure blueprint.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Blueprints can include Azure Resource Manager (ARM) templates as blueprint artifacts, allowing resources to be deployed as part of a standardized environment."
+  },
+  {
+    "question": "You can assign an Azure blueprint to a resource group.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Blueprints are assigned at the subscription level, not directly to resource groups. The blueprint can then create and configure resource groups and resources within the assigned subscription."
+  },
+  {
+    "question": "You can use Azure Blueprints to grant permissions to a resource.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Blueprints support Role Assignment artifacts, which can assign Azure RBAC roles and grant permissions as part of the blueprint deployment."
+  }
+]

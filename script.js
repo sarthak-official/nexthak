@@ -37,11 +37,11 @@ function startTest() {
 
     const studentName =
         document.getElementById("studentName")
-        ?.value.trim();
+            ?.value.trim();
 
     const studentEmail =
         document.getElementById("studentEmail")
-        ?.value.trim();
+            ?.value.trim();
 
     if (!studentName) {
         alert("Please enter your full name");
@@ -87,7 +87,7 @@ async function initializeTest() {
     const studentName = localStorage.getItem("studentName");
     const selectedQuiz = localStorage.getItem("selectedQuiz");
 
-    
+
 
     if (!studentName || !selectedQuiz) {
         window.location.href = "index.html";
@@ -106,6 +106,10 @@ async function initializeTest() {
 
             questions = shuffleArray(questions);
 
+            questions = questions.map(q =>
+                shuffleOptions(q)
+            );
+
             const testQuestionCount = Math.min(50, questions.length);
             questions = questions.slice(0, testQuestionCount);
 
@@ -113,12 +117,12 @@ async function initializeTest() {
         }
 
         userAnswers =
-    JSON.parse(localStorage.getItem("userAnswers")) ||
-    questions.map(q =>
-        Array.isArray(q.answer)
-            ? []
-            : null
-    );
+            JSON.parse(localStorage.getItem("userAnswers")) ||
+            questions.map(q =>
+                Array.isArray(q.answer)
+                    ? []
+                    : null
+            );
 
         markedQuestions =
             JSON.parse(localStorage.getItem("markedQuestions")) ||
@@ -164,8 +168,8 @@ function saveProgress() {
     localStorage.setItem("currentQuestion", currentQuestion);
 
     localStorage.setItem(
-    "questionTimes",
-    JSON.stringify(questionTimes)
+        "questionTimes",
+        JSON.stringify(questionTimes)
     );
 }
 
@@ -221,7 +225,7 @@ function renderQuestion() {
                     if (
                         !Array.isArray(
                             userAnswers[
-                                currentQuestion
+                            currentQuestion
                             ]
                         )
                     ) {
@@ -232,7 +236,7 @@ function renderQuestion() {
 
                     const answers =
                         userAnswers[
-                            currentQuestion
+                        currentQuestion
                         ];
 
                     const pos =
@@ -262,7 +266,7 @@ function renderQuestion() {
 
                 if (
                     userAnswers[
-                        currentQuestion
+                    currentQuestion
                     ] === index
                 ) {
                     btn.classList.add(
@@ -387,37 +391,36 @@ function updatePalette() {
         if (markedQuestions[index]) {
             btn.classList.add("marked");
         } else if (
-                    (
-                    Array.isArray(
-                        userAnswers[index]
-                    )
-                    &&
+            (
+                Array.isArray(
                     userAnswers[index]
-                        .length > 0
-                    )
-                    ||
-                    (
-                    !Array.isArray(
-                        userAnswers[index]
-                    )
-                    &&
-                    userAnswers[index] !== null
-                    )
-                ) 
-        {
+                )
+                &&
+                userAnswers[index]
+                    .length > 0
+            )
+            ||
+            (
+                !Array.isArray(
+                    userAnswers[index]
+                )
+                &&
+                userAnswers[index] !== null
+            )
+        ) {
             btn.classList.add("answered");
         }
 
-       btn.onclick = () => {
+        btn.onclick = () => {
 
-    saveCurrentQuestionTime();
+            saveCurrentQuestionTime();
 
-    currentQuestion = index;
+            currentQuestion = index;
 
-    saveProgress();
+            saveProgress();
 
-    renderQuestion();
-};
+            renderQuestion();
+        };
 
         palette.appendChild(btn);
     });
@@ -426,14 +429,14 @@ function updatePalette() {
 /* PROGRESS */
 function updateProgress() {
     const answered =
-    userAnswers.filter(
-        ans =>
+        userAnswers.filter(
+            ans =>
             (
                 Array.isArray(ans)
                     ? ans.length > 0
                     : ans !== null
             )
-    ).length;
+        ).length;
     const progress = (answered / questions.length) * 100;
 
     document.getElementById("progressBar").style.width = `${progress}%`;
@@ -514,18 +517,18 @@ function submitTest(showConfirm = true) {
     let score = 0;
 
     questions.forEach(
-    (q, index) => {
+        (q, index) => {
 
-        if (
-            isCorrect(
-                q,
-                userAnswers[index]
-            )
-        ) {
-            score++;
+            if (
+                isCorrect(
+                    q,
+                    userAnswers[index]
+                )
+            ) {
+                score++;
+            }
         }
-    }
-);
+    );
 
     localStorage.setItem("score", score);
     localStorage.setItem("totalQuestions", questions.length);
@@ -546,20 +549,20 @@ function submitTest(showConfirm = true) {
 
     const formData = new FormData();
 
-formData.append("name", studentName);
-formData.append("email", studentEmail);
-formData.append("quiz", quizName);
-formData.append("score", score);
-formData.append("total", questions.length);
-formData.append("time", 3600 - timeLeft);
+    formData.append("name", studentName);
+    formData.append("email", studentEmail);
+    formData.append("quiz", quizName);
+    formData.append("score", score);
+    formData.append("total", questions.length);
+    formData.append("time", 3600 - timeLeft);
 
-fetch(SHEET_URL, {
-    method: "POST",
-    body: formData
-})
-.then(() => {
-    window.location.href = "result.html";
-});
+    fetch(SHEET_URL, {
+        method: "POST",
+        body: formData
+    })
+        .then(() => {
+            window.location.href = "result.html";
+        });
 }
 function saveCurrentQuestionTime() {
 
@@ -575,7 +578,7 @@ function saveCurrentQuestionTime() {
     saveProgress();
 }
 
-function scrollQuiz(button,direction){
+function scrollQuiz(button, direction) {
 
     const wrapper =
         button.parentElement;
@@ -594,45 +597,101 @@ function scrollQuiz(button,direction){
 function updateArrowVisibility() {
 
     document.querySelectorAll(".quiz-wrapper")
-    .forEach(wrapper => {
+        .forEach(wrapper => {
 
-        const grid =
-            wrapper.querySelector(".quiz-grid");
+            const grid =
+                wrapper.querySelector(".quiz-grid");
 
-        const leftBtn =
-            wrapper.querySelector(".left");
+            const leftBtn =
+                wrapper.querySelector(".left");
 
-        const rightBtn =
-            wrapper.querySelector(".right");
+            const rightBtn =
+                wrapper.querySelector(".right");
 
-        if (!grid || !leftBtn || !rightBtn)
-            return;
+            if (!grid || !leftBtn || !rightBtn)
+                return;
 
-        leftBtn.style.display =
-            grid.scrollLeft <= 5
-            ? "none"
-            : "flex";
+            leftBtn.style.display =
+                grid.scrollLeft <= 5
+                    ? "none"
+                    : "flex";
 
-        rightBtn.style.display =
-            grid.scrollLeft >=
-            grid.scrollWidth -
-            grid.clientWidth - 5
-            ? "none"
-            : "flex";
-    });
+            rightBtn.style.display =
+                grid.scrollLeft >=
+                    grid.scrollWidth -
+                    grid.clientWidth - 5
+                    ? "none"
+                    : "flex";
+        });
 }
 
 window.addEventListener("load", () => {
 
     document
-    .querySelectorAll(".quiz-grid")
-    .forEach(grid => {
+        .querySelectorAll(".quiz-grid")
+        .forEach(grid => {
 
-        grid.addEventListener(
-            "scroll",
-            updateArrowVisibility
-        );
-    });
+            grid.addEventListener(
+                "scroll",
+                updateArrowVisibility
+            );
+        });
 
     updateArrowVisibility();
 });
+
+function shuffleOptions(question) {
+
+    const optionsWithIndex =
+        question.options.map((option, index) => ({
+            option,
+            originalIndex: index
+        }));
+
+    for (
+        let i = optionsWithIndex.length - 1;
+        i > 0;
+        i--
+    ) {
+        const j =
+            Math.floor(Math.random() * (i + 1));
+
+        [
+            optionsWithIndex[i],
+            optionsWithIndex[j]
+        ] = [
+                optionsWithIndex[j],
+                optionsWithIndex[i]
+            ];
+    }
+
+    const newOptions =
+        optionsWithIndex.map(item => item.option);
+
+    let newAnswer;
+
+    if (Array.isArray(question.answer)) {
+
+        newAnswer =
+            question.answer.map(oldIndex =>
+                optionsWithIndex.findIndex(
+                    item =>
+                        item.originalIndex === oldIndex
+                )
+            );
+
+    } else {
+
+        newAnswer =
+            optionsWithIndex.findIndex(
+                item =>
+                    item.originalIndex === question.answer
+            );
+    }
+
+    return {
+        ...question,
+        options: newOptions,
+        answer: newAnswer
+    };
+}

@@ -587,5 +587,345 @@
     ],
     "answer": 0,
     "explanation": "Azure Blueprints support Role Assignment artifacts, which can assign Azure RBAC roles and grant permissions as part of the blueprint deployment."
-  }
+  },{
+    "question": "Azure China is operated by Microsoft.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure China is operated by 21Vianet under a partnership with Microsoft. It is a separate instance of Azure designed to meet Chinese regulatory requirements."
+  },
+  {
+    "question": "Azure Government is operated by Microsoft.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Government is a sovereign cloud operated by Microsoft and designed specifically for U.S. government agencies and approved partners."
+  },
+  {
+    "question": "Azure Government is available only to US government agencies and their partners.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Government is available only to screened U.S. federal, state, local, and tribal government agencies, as well as their approved partners and contractors."
+  },{
+    "question": "An Azure resource can have multiple Delete locks.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "An Azure resource can have multiple CanNotDelete (Delete) locks applied at different scopes, such as the resource, resource group, and subscription levels. Any applicable Delete lock will prevent the resource from being deleted."
+  },
+  {
+    "question": "An Azure resource inherits locks from its resource group.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure resources inherit management locks from their parent resource group. If a lock is applied to a resource group, all resources within that resource group inherit the lock."
+  },
+  {
+    "question": "If an Azure resource has a Read-only lock, you can add a Delete lock to the resource.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A resource can have both a ReadOnly lock and a CanNotDelete lock. When multiple locks exist, the most restrictive lock takes precedence. Since ReadOnly is more restrictive than CanNotDelete, the resource remains read-only."
+  },{
+  "question": "Your company plans to migrate all on-premises data to Azure.\nYou need to identify whether Azure complies with the company's regional requirements.\nWhat should you use?",
+  "options": [
+    "the Knowledge Center",
+    "Azure Marketplace",
+    "the MyApps portal",
+    "the Trust Center"
+  ],
+  "answer": 3,
+  "explanation": "The Microsoft Trust Center provides information about Azure compliance offerings, regional compliance requirements, data residency, privacy, security, and regulatory certifications. Organizations can use the Trust Center to determine whether Azure meets specific regional and regulatory requirements. The Knowledge Center provides documentation, Azure Marketplace offers applications and services, and the MyApps portal is used to access assigned applications."
+},{
+    "question": "Authorization to access Azure resources can be provided only to Azure Active Directory (Azure AD) users.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Authorization to Azure resources is not limited to Azure AD users. Azure RBAC can grant access to users, groups, service principals, and managed identities."
+  },
+  {
+    "question": "Identities stored in Azure Active Directory (Azure AD), third-party cloud services, and on-premises Active Directory can be used to access Azure resources.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure supports identities from Azure AD, federated identity providers, third-party identity services, and on-premises Active Directory environments that are synchronized or federated with Azure AD."
+  },
+  {
+    "question": "Azure has built-in authentication and authorization services that provide secure access to Azure resources.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Active Directory (Azure AD) provides built-in authentication and authorization services that help secure access to Azure resources, applications, and services."
+  },{
+  "question": "If a resource group named RG1 has a delete lock, _____ can delete RG1.",
+  "options": [
+    "only a member of the global administrators group",
+    "the delete lock must be removed before an administrator",
+    "an Azure policy must be modified before an administrator",
+    "an Azure tag must be added before an administrator"
+  ],
+  "answer": 1,
+  "explanation": "A Delete lock (CanNotDelete lock) prevents a resource group or resource from being deleted, even by users who have sufficient permissions. Before an administrator can delete the resource group, the delete lock must first be removed. Neither Global Administrator privileges, Azure Policy changes, nor tags can override a resource lock."
+},{
+  "question": "_____ is the process of establishing the identity of a user or service that wants to access a resource.",
+  "options": [
+    "Authentication",
+    "Authorization",
+    "Conditional Access",
+    "Synchronization"
+  ],
+  "answer": 0,
+  "explanation": "Authentication is the process of verifying and establishing the identity of a user, application, or service before access to a resource is granted. Authorization determines what an authenticated identity is allowed to do, Conditional Access applies access controls based on conditions, and Synchronization is used to replicate identity information between directories."
+}, {
+    "question": "Single sign-on (SSO) requires that all users sign in by using the Microsoft Authenticator app.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Single sign-on (SSO) allows users to sign in once and access multiple applications without re-entering credentials. It does not require the Microsoft Authenticator app."
+  },
+  {
+    "question": "Authentication is the process of establishing which level of access an authenticated user or service has.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "This statement describes authorization, not authentication. Authentication verifies identity, while authorization determines what actions or resources an authenticated user or service can access."
+  },
+  {
+    "question": "Conditional Access uses signals collected from a user during the sign-in process to decide whether to allow or deny access requests.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Conditional Access evaluates signals such as user identity, location, device compliance, application, and risk level during sign-in to determine whether access should be allowed, blocked, or require additional controls such as MFA."
+  },{
+  "question": "What is guaranteed in an Azure Service Level Agreement (SLA) for virtual machines?",
+  "options": [
+    "uptime",
+    "feature availability",
+    "bandwidth",
+    "performance"
+  ],
+  "answer": 0,
+  "explanation": "An Azure Service Level Agreement (SLA) guarantees a specified level of service availability, typically expressed as a percentage of uptime over a billing period. For Azure Virtual Machines, Microsoft commits to maintaining a certain level of availability when the deployment meets the SLA requirements. SLAs do not guarantee specific features, bandwidth, or performance levels."
+},{
+  "question": "An Azure service is available to all Azure customers when it is in _____",
+  "options": [
+    "public preview",
+    "private preview",
+    "development",
+    "an Enterprise Agreement (EA) subscription"
+  ],
+  "answer": 0,
+  "explanation": "A service in Public Preview is available to all Azure customers for testing and evaluation. Private Preview is limited to selected customers by invitation, Development is an internal stage not available to customers, and an Enterprise Agreement (EA) subscription is a subscription type rather than a service release stage."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nYour company plans to purchase an Azure subscription.\nThe company's support policy states that the Azure environment must provide an option to access support engineers by phone or email.\nYou need to recommend which support plan meets the support policy requirement.\n\nSolution: Recommend a Basic support plan.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "The Basic support plan does not provide technical support from support engineers by phone or email. It includes billing and subscription support, documentation, community support, and Azure Advisor recommendations. To access support engineers by phone or email, a higher-tier support plan such as Developer, Standard, or Professional Direct is required. Therefore, the proposed solution does not meet the stated requirement."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nYour company plans to purchase an Azure subscription.\nThe company's support policy states that the Azure environment must provide an option to access support engineers by phone or email.\nYou need to recommend which support plan meets the support policy requirement.\n\nSolution: Recommend a Standard support plan.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "The Standard support plan provides access to Azure support engineers through phone and email/web support channels. Since the requirement is to provide an option to access support engineers by phone or email, recommending a Standard support plan satisfies the support policy requirement."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nYour company plans to purchase an Azure subscription.\nThe company's support policy states that the Azure environment must provide an option to access support engineers by phone or email.\nYou need to recommend which support plan meets the support policy requirement.\n\nSolution: Recommend a Premier support plan.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "A Premier support plan provides direct access to Microsoft support engineers through phone and email channels and includes advanced support services. Since the requirement is to provide an option to access support engineers by phone or email, the Premier support plan satisfies and exceeds the stated support policy requirement."
+},{
+  "question": "Your company plans to request an architectural review of an Azure environment from Microsoft.\n\nThe company currently has a Basic support plan.\n\nYou need to recommend a new support plan for the company. The solution must minimize costs.\n\nWhich support plan should you recommend?",
+  "options": [
+    "Premier",
+    "Developer",
+    "Professional Direct",
+    "Standard"
+  ],
+  "answer": 2,
+  "explanation": "Professional Direct provides advisory support, architecture guidance, and proactive services from Microsoft while costing less than the Premier support plan. Developer and Standard plans do not include architectural review services. Therefore, Professional Direct is the lowest-cost support plan that meets the requirement."
+},{
+    "question": "Most Azure services are introduced in private preview before being introduced in public preview, and then in general availability.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The typical Azure service release lifecycle is Private Preview, followed by Public Preview, and then General Availability (GA). While not every service follows every stage, this is the standard release process for most Azure services."
+  },
+  {
+    "question": "Azure services in public preview can be managed only by using the Azure CLI.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure services in public preview can often be managed through multiple tools, including the Azure portal, Azure CLI, PowerShell, ARM templates, and REST APIs. They are not limited to Azure CLI."
+  },
+  {
+    "question": "The cost of an Azure service in private preview decreases when the service becomes generally available.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "There is no guarantee that the cost of an Azure service will decrease when it reaches General Availability. Pricing may change, remain the same, or the preview service may have been offered without charges."
+  },{
+  "question": "Your Azure trial account expired last week.\n\nYou are now unable to _____",
+  "options": [
+    "Create additional Azure Active Directory (Azure AD) user accounts",
+    "start an existing Azure virtual machine",
+    "access your data stored in Azure",
+    "access the Azure portal"
+  ],
+  "answer": 1,
+  "explanation": "When an Azure trial subscription expires, virtual machines are stopped and cannot be started until the subscription is upgraded or reactivated. Access to the Azure portal is still available, and data is typically retained for a limited period after expiration. Therefore, the action that is no longer possible is starting an existing Azure virtual machine."
+},{
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\n\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\n\nYour company plans to purchase an Azure subscription.\nThe company's support policy states that the Azure environment must provide an option to access support engineers by phone or email.\nYou need to recommend which support plan meets the support policy requirement.\n\nSolution: Recommend a Professional Direct support plan.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "The Professional Direct support plan provides access to Microsoft support engineers through phone and email support channels. It also includes faster response times and advisory support services. Since the requirement is to provide an option to access support engineers by phone or email, the Professional Direct support plan satisfies the support policy requirement."
+},{
+  "question": "Your company has a Software Assurance agreement that includes Microsoft SQL Server licenses.\n\nYou plan to deploy SQL Server on Azure virtual machines.\n\nWhat should you do to minimize licensing costs for the deployment?",
+  "options": [
+    "Deallocate the virtual machines during off hours.",
+    "Use Azure Hybrid Benefit.",
+    "Configure Azure Cost Management budgets.",
+    "Use Azure reservations."
+  ],
+  "answer": 1,
+  "explanation": "Azure Hybrid Benefit allows organizations with existing SQL Server licenses that are covered by Software Assurance to use those licenses in Azure. This reduces or eliminates the SQL Server licensing portion of Azure Virtual Machine costs. Deallocating VMs reduces compute costs, Azure Cost Management budgets help track spending, and Azure reservations reduce compute costs through long-term commitments, but neither directly provides the SQL Server licensing savings available through Azure Hybrid Benefit."
+},{
+  "question": "Your company has 10 departments.\n\nThe company plans to implement an Azure environment.\n\nYou need to ensure that each department can use a different payment option for the Azure services it consumes.\n\nWhat should you create for each department?",
+  "options": [
+    "a reservation",
+    "a subscription",
+    "a resource group",
+    "a container instance"
+  ],
+  "answer": 1,
+  "explanation": "Azure subscriptions are the primary billing boundary in Azure. Each subscription can have its own payment method, billing relationship, and cost reporting. Creating a separate subscription for each department allows each department to use a different payment option and independently track Azure costs. Resource groups organize resources within a subscription, reservations provide discounted pricing, and container instances are compute resources that do not affect billing organization."
+},{
+    "question": "An Azure free account has a spending limit.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Free Accounts include a spending limit that prevents charges beyond the available free credits and free service allocations. Resources are disabled when the spending limit is reached unless the subscription is upgraded."
+  },
+  {
+    "question": "An Azure free account has a limit of 2TB of data that can be uploaded to Azure.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "There is no general Azure Free Account restriction limiting uploads to 2 TB of data. Storage and data transfer limits depend on the specific Azure service being used."
+  },
+  {
+    "question": "An Azure free account can contain an unlimited number of web apps.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Free Accounts are subject to subscription quotas, service limits, and resource restrictions. Therefore, they cannot contain an unlimited number of web apps."
+  },{
+    "question": "An Azure service in private preview is released to all Azure customers.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Private Preview is available only to a limited set of selected customers, typically by invitation. It is not released to all Azure customers."
+  },
+  {
+    "question": "An Azure service in public preview is released to all Azure customers.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Public Preview is available to all Azure customers for testing and evaluation before the service reaches General Availability (GA)."
+  },
+  {
+    "question": "An Azure service in general availability is released to a subset of Azure customers.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "General Availability (GA) means the service is fully released, supported, and available to all Azure customers, not just a subset."
+  }, {
+    "question": "With a consumption-based plan, you pay a fixed rate for all data sent to or from virtual machines hosted in the cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Consumption-based pricing is based on actual resource usage. Costs vary depending on how much of a service is consumed, rather than being a fixed rate for all data transfers."
+  },
+  {
+    "question": "With a consumption-based plan, you reduce overall costs by paying only for extra capacity when it is required.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Consumption-based pricing allows organizations to pay only for the resources they use. This can reduce costs because additional capacity is paid for only when it is needed."
+  },
+  {
+    "question": "Serverless computing is an example of a consumption-based plan.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Serverless computing services, such as Azure Functions, use a consumption-based pricing model in which customers are charged based on actual executions and resource usage."
+  },{
+  "question": "You have an application that is comprised of an Azure web app that has a Service Level Agreement (SLA) of 99.95 percent and an Azure SQL database that has an SLA of 99.99 percent.\n\nThe composite SLA for the application is _____",
+  "options": [
+    "the product of both SLAs, which equals 99.94 percent",
+    "the lowest SLA associated to the application, which is 99.95 percent",
+    "the highest SLA associated to the application, which is 99.99 percent",
+    "the difference between the two SLAs, which is 0.05 percent"
+  ],
+  "answer": 0,
+  "explanation": "When an application depends on multiple Azure services, the composite SLA is calculated by multiplying the individual SLAs. For a web app with an SLA of 99.95% (0.9995) and an Azure SQL Database with an SLA of 99.99% (0.9999), the composite SLA is 0.9995 × 0.9999 = 0.99940005, which is approximately 99.94%. Therefore, the composite SLA is the product of both SLAs."
+}
 ]

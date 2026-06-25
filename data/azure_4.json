@@ -275,8 +275,8 @@
       "Yes",
       "No"
     ],
-    "answer": 0,
-    "explanation": "Azure Monitor uses Action Groups to send notifications when alerts are triggered. Notifications can be sent to users and groups associated with Azure Active Directory."
+    "answer": 1,
+    "explanation": "comming soon....."
   },
   {
     "question": "Azure Monitor can trigger alerts based on data in an Azure Log Analytics workspace.",

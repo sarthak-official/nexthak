@@ -16,8 +16,8 @@
     "Yes",
     "No"
   ],
-  "answer": 1,
-  "explanation": "The solution does not meet the goal. Although the Professional Direct support plan provides architecture and design guidance, it is not the most cost-effective option. The requirement is to obtain Azure environment design assessment functionality while keeping costs to a minimum. A lower-tier support plan that includes advisory support would satisfy the requirement at a lower cost. Therefore, recommending Professional Direct does not meet the goal."
+  "answer": 0,
+  "explanation": "Comming Soon......."
 },
   {
   "question": "Note: The question is included in a number of questions that depict the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\n\nYou are tasked with deploying Azure virtual machines for your company.\nYou need to make use of the appropriate cloud deployment solution.\n\nSolution: You should make use of Software as a Service (SaaS).\n\nDoes the solution meet the goal?",

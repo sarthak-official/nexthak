@@ -1,0 +1,674 @@
+[
+  {
+    "question": "The cost of Azure resources can vary between regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure resource pricing can vary by region due to factors such as local infrastructure costs, operational expenses, taxes, regulations, and market conditions. Therefore, the same Azure service may have different prices in different regions."
+  },
+  {
+    "question": "An Azure reservation is used to reserve server capacity at a specific data center.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Reservations are primarily a billing and cost-saving mechanism that provides discounted pricing in exchange for a one-year or three-year commitment. They do not reserve server capacity at a specific data center."
+  },
+  {
+    "question": "You can stop an Azure SQL Database instance to decrease costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure SQL Database is a platform-as-a-service (PaaS) offering and generally cannot be stopped or deallocated like a virtual machine to avoid charges. Costs continue based on the selected service tier and allocated resources."
+  }, {
+    "question": "The Service Level Agreement (SLA) guaranteed uptime for paid Azure services is at least 99.9 percent.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft provides financially backed Service Level Agreements (SLAs) for paid Azure services. In AZ-900 training material, paid Azure services are typically described as having an uptime guarantee of at least 99.9%."
+  },
+  {
+    "question": "Companies can increase the Service Level Agreement (SLA) guaranteed uptime by adding Azure resources to multiple regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Deploying resources across multiple Azure regions increases redundancy and fault tolerance. This can improve the overall composite SLA and reduce the impact of regional outages."
+  },
+  {
+    "question": "Companies can increase the Service Level Agreement (SLA) guaranteed uptime by purchasing multiple subscriptions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Simply purchasing multiple Azure subscriptions does not increase availability or SLA. Higher availability is achieved through architectural design choices such as redundancy, availability zones, and multi-region deployments."
+  },{
+  "question": "HOTSPOT -\nYou need to request that Microsoft increase a subscription quota limit for your company.\n\nWhich blade should you use from the Azure portal?",
+  "options": [
+    "Advisor",
+    "Monitor",
+    "Cost Management",
+    "Help + Support"
+  ],
+  "answer": 3,
+  "explanation": "To request an increase to an Azure subscription quota, such as vCPU limits, networking limits, or other service quotas, you must create a support request from the Azure portal. This is done through the Help + Support blade by creating a new support request and selecting the quota increase option. Advisor provides recommendations, Monitor is used for monitoring resources, and Cost Management is used for analyzing and controlling costs."
+},{
+  "question": "You can use _____ in Azure to send email alerts when the cost of the current billing period for an Azure subscription exceeds a specified limit.",
+  "options": [
+    "Advisor recommendations",
+    "Access control (IAM)",
+    "Budget alerts",
+    "Compliance"
+  ],
+  "answer": 2,
+  "explanation": "Azure Budget alerts allow organizations to define spending thresholds and receive email notifications when actual or forecasted costs exceed those thresholds. This helps monitor and control Azure spending. Advisor recommendations provide optimization guidance, Access control (IAM) manages permissions, and Compliance is used for governance and regulatory requirements."
+},
+  {
+    "question": "From the Azure portal, you can distinguish between services that are generally available and services that are in public preview.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The Azure portal identifies preview services with labels such as Preview, allowing users to distinguish public preview services from generally available (GA) services."
+  },
+  {
+    "question": "After an Azure service becomes generally available, the service is no longer updated with new features.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "General Availability (GA) means a service is production-ready and fully supported. Microsoft continues to add new features, enhancements, security updates, and performance improvements after a service reaches GA."
+  },
+  {
+    "question": "When you create Azure resources for a service in public preview, you must recreate the resources once the service becomes generally available.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Resources created during a public preview generally continue to function when the service reaches General Availability. In most cases, recreating resources is not required unless Microsoft specifically announces a migration requirement."
+  },{
+    "question": "When using an Azure ExpressRoute connection, inbound data traffic from an on-premises network to Azure is always free.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Data transferred from an on-premises network to Azure through ExpressRoute is inbound traffic. Inbound data transfer to Azure is generally free of charge."
+  },
+  {
+    "question": "Outbound data traffic from Azure to an on-premises network is always free.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Data transferred from Azure to an on-premises network is outbound (egress) traffic. Depending on the ExpressRoute billing model, outbound data transfer may incur charges. Therefore, it is not always free."
+  },
+  {
+    "question": "Data traffic between Azure services within the same Azure region is always free.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Data transfer between Azure services located within the same Azure region is generally free and does not incur data transfer charges."
+  },{
+  "question": "Your company has an Azure subscription that contains the following unused resources:\n\n- 20 user accounts in Azure Active Directory (Azure AD)\n- Five groups in Azure AD\n- 10 public IP addresses\n- 10 network interfaces\n\nYou need to reduce the Azure costs for the company.\n\nWhich unused resources should you remove?",
+  "options": [
+    "the network interfaces",
+    "the public IP addresses",
+    "the groups",
+    "the user accounts"
+  ],
+  "answer": 1,
+  "explanation": "Unused public IP addresses can incur Azure charges, particularly when they are allocated but not associated with active resources. Removing unused public IP addresses can help reduce costs. Azure AD user accounts and groups do not generally incur direct charges simply because they exist, and unused network interfaces typically do not generate significant costs."
+},{
+  "question": "If an Azure virtual machine has a status of Stopped (deallocated), you will continue to pay for _____",
+  "options": [
+    "compute capacity",
+    "I/O operations",
+    "networking",
+    "storage"
+  ],
+  "answer": 3,
+  "explanation": "When an Azure virtual machine is in the Stopped (deallocated) state, compute charges for CPU and memory stop because the VM is no longer consuming compute resources. However, the VM's operating system disk and any attached data disks remain stored in Azure. As a result, storage charges continue until the disks are deleted."
+},{
+    "question": "Storing 1 TB of data in Azure Blob storage will always cost the same, regardless of the Azure region in which the data is located.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Storage pricing varies by region. Factors such as infrastructure costs, operational expenses, and regional pricing differences mean that storing the same amount of data can cost different amounts in different Azure regions."
+  },
+  {
+    "question": "When you use a general-purpose v2 Azure Storage account, you are only charged for the amount of data that is stored. All read and write operations are free.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "General-purpose v2 (GPv2) storage accounts are billed not only for stored data but also for transactions such as read and write operations, as well as data transfer where applicable. Read and write operations are not free."
+  },
+  {
+    "question": "Transferring data between Azure Storage accounts in different Azure regions is free.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Data transfer between Azure Storage accounts located in different Azure regions incurs bandwidth and data transfer charges. Cross-region data movement is not free."
+  },{
+    "question": "Adding resource groups in an Azure subscription generates additional costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Resource Groups are logical containers used to organize and manage Azure resources. Creating or maintaining Resource Groups does not incur any additional Azure charges."
+  },
+  {
+    "question": "Copying 10 GB of data to Azure from an on-premises network over a VPN generates additional Azure data transfer costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Data transferred into Azure from an on-premises network is considered inbound traffic. Inbound data transfer to Azure is generally free and does not generate additional Azure data transfer charges."
+  },
+  {
+    "question": "Copying 10 GB of data from Azure to an on-premises network over a VPN generates additional Azure data transfer costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Data transferred from Azure to an on-premises network is considered outbound (egress) traffic. Outbound data transfer can incur Azure bandwidth and data transfer charges."
+  },{
+  "question": "Who can use the Azure Total Cost of Ownership (TCO) calculator?",
+  "options": [
+    "billing readers for an Azure subscription only",
+    "owners for an Azure subscription only",
+    "anyone",
+    "all users who have an account in Azure Active Directory (Azure AD) that is linked to an Azure subscription only"
+  ],
+  "answer": 2,
+  "explanation": "The Azure Total Cost of Ownership (TCO) Calculator is a free public tool provided by Microsoft to help organizations estimate the potential cost savings of migrating workloads from on-premises infrastructure to Azure. It can be accessed and used by anyone without requiring an Azure subscription, Azure AD account, or any Azure role assignments."
+},{
+  "question": "You deploy an Azure resource. The resource becomes unavailable for an extended period due to a service outage.\n\nMicrosoft will _____",
+  "options": [
+    "refund your bank account",
+    "migrate the resource to another subscription",
+    "credit your Azure account",
+    "send you a coupon code that you can redeem for Azure credits"
+  ],
+  "answer": 2,
+  "explanation": "If Microsoft fails to meet the uptime commitment specified in an Azure Service Level Agreement (SLA), eligible customers may receive service credits. These credits are applied to the customer's Azure account and can be used against future Azure charges. SLA compensation is not provided as a direct bank refund, automatic resource migration, or coupon codes."
+},{
+  "question": "Which task can you perform by using Azure Advisor?",
+  "options": [
+    "Integrate Active Directory and Azure Active Directory (Azure AD).",
+    "Estimate the costs of an Azure solution.",
+    "Confirm that Azure subscription security follows best practices.",
+    "Evaluate which on-premises resources can be migrated to Azure."
+  ],
+  "answer": 2,
+  "explanation": "Azure Advisor is a personalized cloud consultant that analyzes Azure resource configurations and usage telemetry to provide recommendations for improving reliability, security, performance, operational excellence, and cost optimization. It can identify security issues and recommend actions to help ensure that Azure subscriptions follow security best practices. Active Directory integration is performed using Azure AD Connect, cost estimation uses the Azure Pricing Calculator or TCO Calculator, and migration assessments are performed using Azure Migrate."
+},  {
+    "question": "If your company uses an Azure free account, you will only be able to use a subset of Azure services.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Free Accounts provide access to selected Azure services, free service tiers, and trial credits. Not all Azure services and features are available without limitations."
+  },
+  {
+    "question": "You can create up to 10 Azure free accounts by using the same Microsoft account.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A Microsoft account is generally eligible for only one Azure Free Account. Creating multiple free accounts with the same Microsoft account is not supported."
+  },{
+  "question": "You have an Azure application that uses the following services:\n\nAzure Virtual Machines - 99.9% SLA\nAzure SQL Database - 99.99% SLA\n\nHow should you calculate the composite SLA for the application?",
+  "options": [
+    "0.999 × 0.9999 = 0.9989001 = 99.89001%",
+    "0.999 ÷ 0.9999 = 0.9991 = 99.91%",
+    "Max(0.999, 0.9999) = 0.9999 = 99.99%",
+    "Min(0.999, 0.9999) = 0.999 = 99.9%"
+  ],
+  "answer": 0,
+  "explanation": "When an application depends on multiple Azure services, the composite SLA is calculated by multiplying the individual SLAs. For Azure Virtual Machines with a 99.9% SLA (0.999) and Azure SQL Database with a 99.99% SLA (0.9999), the composite SLA is 0.999 × 0.9999 = 0.9989001, which equals 99.89001%. Therefore, option A is correct."
+},{
+  "question": "_____ provide access to unused Azure compute capacity at deep discounts.",
+  "options": [
+    "Azure Container Instances",
+    "Azure Reserved Virtual Machine Instances",
+    "Azure Spot virtual machine instances",
+    "Azure virtual machine scale sets"
+  ],
+  "answer": 2,
+  "explanation": "Azure Spot Virtual Machines provide access to unused Azure compute capacity at significantly reduced prices. They are ideal for workloads that can tolerate interruptions because Azure can evict the VM when the capacity is needed elsewhere. Reserved VM Instances provide savings through long-term commitments, Virtual Machine Scale Sets provide automatic scaling, and Azure Container Instances run containers without managing virtual machines."
+},{
+  "question": "To save on the costs of an unused Azure virtual machine that runs Windows 10, you should _____",
+  "options": [
+    "disconnect the virtual machine during a Remote Desktop session",
+    "put the virtual machine in sleep mode from a Remote Desktop session",
+    "select Stop for the virtual machine from the Azure portal",
+    "shut down the virtual machine from a Remote Desktop session"
+  ],
+  "answer": 2,
+  "explanation": "To minimize costs for an unused Azure virtual machine, you should stop (deallocate) the VM from the Azure portal. Deallocating the VM releases the compute resources and stops compute charges. Disconnecting from Remote Desktop or shutting down the operating system from within the VM does not necessarily deallocate the VM, so compute charges may continue. Storage charges for the VM's disks continue even after the VM is deallocated."
+},{
+  "question": "All Azure services that are in public preview are _____",
+  "options": [
+    "provided without any documentation",
+    "only configurable from Azure CLI",
+    "excluded from the Service Level Agreements",
+    "only configurable from the Azure portal"
+  ],
+  "answer": 2,
+  "explanation": "Azure services in Public Preview are available for customers to evaluate and test before General Availability (GA). However, Public Preview services are typically not covered by Microsoft's Service Level Agreements (SLAs). They may have limited support and are subject to change. Public Preview services can generally be configured through multiple management tools such as the Azure portal, Azure CLI, PowerShell, and REST APIs."
+},{
+  "question": "If an Azure virtual machine has a status of Stopped (deallocated), you will continue to pay for _____",
+  "options": [
+    "compute capacity",
+    "I/O operations",
+    "networking",
+    "storage"
+  ],
+  "answer": 3,
+  "explanation": "When an Azure virtual machine is in the Stopped (deallocated) state, Azure releases the compute resources, so compute charges stop. However, the virtual machine's operating system disk and any attached data disks remain stored in Azure. Therefore, storage charges continue until the disks are deleted. Networking and I/O operations are not the primary ongoing charges in this scenario."
+},{
+  "question": "The _____ explains what data Microsoft processes, how Microsoft processes the data, and the purpose of processing the data.",
+  "options": [
+    "Microsoft Online Services Privacy Statement",
+    "Microsoft Product Terms",
+    "Microsoft Online Service Level Agreement",
+    "Online Subscription Agreement for Microsoft Azure"
+  ],
+  "answer": 0,
+  "explanation": "The Microsoft Online Services Privacy Statement explains what customer and personal data Microsoft collects, how Microsoft processes that data, the purpose of processing it, and how Microsoft protects customer information. Microsoft Product Terms define licensing and usage rights, the Microsoft Online Service Level Agreement specifies service availability guarantees and service credits, and the Online Subscription Agreement for Microsoft Azure contains the legal terms governing Azure subscriptions."
+},{
+  "question": "You can access Compliance Manager from the _____",
+  "options": [
+    "Azure Active Directory admin center",
+    "Azure portal",
+    "Microsoft 365 admin center",
+    "Microsoft Service Trust Portal"
+  ],
+  "answer": 2,
+  "explanation": "Compliance Manager is currently accessed through the Microsoft 365 admin center via the Microsoft Purview compliance portal. It helps organizations assess regulatory compliance, manage compliance activities, track compliance scores, and receive recommendations for improving their compliance posture. The Azure Active Directory admin center is used for identity management, the Azure portal is used to manage Azure resources, and the Microsoft Service Trust Portal provides audit reports and compliance documentation but is no longer the primary location for Compliance Manager."
+},{
+  "question": "You have 1,000 virtual machines hosted on the Hyper-V hosts in a data center.\n\nYou plan to migrate all the virtual machines to an Azure pay-as-you-go subscription.\n\nYou need to identify which expenditure model to use for the planned Azure solution.\n\nWhich expenditure model should you identify?",
+  "options": [
+    "scalable",
+    "operational",
+    "elastic",
+    "capital"
+  ],
+  "answer": 1,
+  "explanation": "An Azure Pay-As-You-Go subscription uses an Operational Expenditure (OpEx) model. Instead of making a large upfront investment in physical hardware, organizations pay only for the Azure resources they consume. Capital expenditure (CapEx) applies to purchasing and maintaining on-premises infrastructure, while scalability and elasticity are cloud characteristics rather than expenditure models."
+},{
+  "question": "_____ is an Apache Spark-based analytics service.",
+  "options": [
+    "Azure Databricks",
+    "Azure Data Factory",
+    "Azure DevOps",
+    "Azure Synapse Analytics"
+  ],
+  "answer": 0,
+  "explanation": "Azure Databricks is a fully managed Apache Spark-based analytics service designed for big data processing, machine learning, and artificial intelligence workloads. It provides a collaborative environment for data engineers, data scientists, and analysts. Azure Data Factory is used for data integration and ETL/ELT workflows, Azure DevOps is used for application lifecycle management and CI/CD, and Azure Synapse Analytics is a unified analytics platform that includes SQL and Spark capabilities but is not specifically described as the Apache Spark-based analytics service in AZ-900."
+},{
+    "question": "A company has complete control of the resources and security for its private cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "In a private cloud, the organization has exclusive control over the infrastructure, including hardware, networking, security, and resource management. This provides greater control and customization compared to a public cloud."
+  },
+  {
+    "question": "A hybrid cloud solution enables a company to control whether its applications run on-premises or in the cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A hybrid cloud combines on-premises infrastructure with public cloud services, allowing organizations to choose where applications and workloads run based on business, performance, security, or compliance requirements."
+  },
+  {
+    "question": "Companies are responsible for capital expenditure when they scale up a virtual machine hosted in a public cloud.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Scaling a virtual machine in a public cloud uses an Operational Expenditure (OpEx) model. Organizations pay only for the additional cloud resources they consume and do not need to purchase physical hardware, which would be a Capital Expenditure (CapEx)."
+  },{
+  "question": "_____ in Azure Firewall enables users on the internet to access a server on a virtual network.",
+  "options": [
+    "Application rules",
+    "Network Address Translation (NAT) rules",
+    "Network rules",
+    "Service tags"
+  ],
+  "answer": 1,
+  "explanation": "Azure Firewall Network Address Translation (NAT) rules enable inbound internet traffic to reach servers hosted in an Azure virtual network. NAT rules perform Destination NAT (DNAT), translating the firewall's public IP address and port to the private IP address and port of a server in the virtual network. Application rules filter outbound web traffic based on FQDNs, Network rules filter traffic based on IP addresses, ports, and protocols, and Service tags simplify the management of Azure service IP ranges."
+},{
+    "question": "The cost of outbound traffic from Azure is the same for all Azure regions.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Outbound (egress) data transfer pricing varies by Azure region. Different Azure regions may have different bandwidth and data transfer costs, so outbound traffic does not cost the same across all regions."
+  },
+  {
+    "question": "Purchasing Azure services through an Enterprise Agreement (EA) requires you to spend a predetermined amount.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "An Enterprise Agreement (EA) is intended for organizations with significant Azure usage and typically includes a monetary commitment, requiring the customer to commit to a predetermined spending amount over the agreement term."
+  },
+  {
+    "question": "Microsoft defines the pricing structure of all third-party services sold through Azure Marketplace.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Third-party publishers determine the pricing for their own products and services offered through Azure Marketplace. Microsoft provides the marketplace platform but does not set the pricing for all third-party offerings."
+  },{
+    "question": "Pay-As-You-Go (PAYG) is a consumption-based model.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The Pay-As-You-Go (PAYG) pricing model is a consumption-based model in which customers pay only for the Azure resources they use. There are no upfront costs or long-term commitments required."
+  },
+  {
+    "question": "Payments to cloud service providers are considered capital expenditures (CapEx).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Payments made to cloud service providers are considered Operational Expenditures (OpEx), not Capital Expenditures (CapEx). Customers pay for services as they consume them rather than purchasing and maintaining physical infrastructure."
+  },
+  {
+    "question": "The services provided through a consumption-based model are considered operational expenditures (OpEx).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Consumption-based cloud services, such as Azure Pay-As-You-Go, are classified as Operational Expenditures (OpEx) because organizations incur ongoing usage-based costs instead of making large upfront capital investments."
+  },{
+  "question": "What is the longest term you can purchase for Azure Reserved VM instances?",
+  "options": [
+    "one year",
+    "five years",
+    "four years",
+    "three years"
+  ],
+  "answer": 3,
+  "explanation": "Azure Reserved Virtual Machine (VM) Instances can be purchased for one-year or three-year terms. The longest available reservation term is three years. Choosing a longer reservation term provides greater cost savings compared to the Pay-As-You-Go pricing model."
+},{
+    "question": "All Azure services in private preview must be accessed by using a separate Azure portal.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure services in Private Preview are available only to selected customers by invitation. They are accessed through the standard Azure management tools and do not require a separate Azure portal."
+  },
+  {
+    "question": "Azure services in public preview can be used in production environments.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure services in Public Preview can technically be used in production environments. However, Microsoft does not recommend using them for critical production workloads because preview features may change, have limited support, and are not covered by a Service Level Agreement (SLA)."
+  },
+  {
+    "question": "Azure services in public preview are subject to a Service Level Agreement (SLA).",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure services in Public Preview are not covered by a Service Level Agreement (SLA). SLA coverage begins only after a service reaches General Availability (GA)."
+  },{
+  "question": "Your company has 10 offices. You plan to generate several billing reports from the Azure portal. Each report will contain the Azure resource utilization of each office.\n\nWhich Azure Resource Manager feature should you use before you generate the reports?",
+  "options": [
+    "tags",
+    "templates",
+    "locks",
+    "policies"
+  ],
+  "answer": 0,
+  "explanation": "Azure Resource Manager tags allow you to organize and categorize Azure resources by assigning key-value pairs, such as Office=Mumbai or Office=Delhi. Tags can be used to group resources and generate billing and cost management reports by department, office, project, or cost center. Templates automate resource deployment, locks prevent accidental deletion or modification, and policies enforce organizational standards and compliance but do not categorize resources for billing reports."
+},{
+  "question": "This question requires that you evaluate the underlined text to determine if it is correct.\n\nIf Microsoft plans to end support for an Azure service that does NOT have a successor service, Microsoft will provide notification at least 12 months before.\n\nInstructions: Review the underlined text. If it makes the statement correct, select 'No change is needed'. If the statement is incorrect, select the answer choice that makes the statement correct.",
+  "options": [
+    "No change is needed",
+    "6 months",
+    "90 days",
+    "30 days"
+  ],
+  "answer": 0,
+  "explanation": "Under Microsoft's Modern Lifecycle Policy, if an Azure service is retired and there is no successor service, Microsoft provides customers with at least 12 months' notice before ending support. Therefore, the statement is already correct, and no change is needed."
+},{
+    "question": "A user who is assigned the Owner role can transfer ownership of an Azure subscription.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A user assigned the Owner role has full management permissions for an Azure subscription, including managing access. Depending on the subscription and billing account type, an Owner can transfer the billing ownership of the Azure subscription to another user."
+  },
+  {
+    "question": "You can convert the Azure subscription of your company from Free Trial to Pay-As-You-Go.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "An Azure Free Trial subscription can be upgraded to a Pay-As-You-Go subscription. This allows you to continue using Azure services after the trial credits expire without losing your existing resources."
+  },
+  {
+    "question": "The Azure spending limit is fixed and cannot be increased or decreased.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The Azure spending limit is not permanently fixed. For eligible subscriptions, such as Azure Free Trial, the spending limit can be removed by upgrading to a Pay-As-You-Go subscription. Therefore, the statement is false."
+  },{
+    "question": "With Azure Reservations, you pay less for virtual machines than with pay-as-you-go pricing.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Reservations (Reserved VM Instances) provide discounted pricing compared to the Pay-As-You-Go model. By committing to a one-year or three-year reservation term, customers can significantly reduce virtual machine costs."
+  },
+  {
+    "question": "Two Azure virtual machines that use the B2s size have the same monthly costs.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Using the same VM size (B2s) does not guarantee the same monthly cost. Pricing can vary based on factors such as the Azure region, operating system (Windows or Linux), attached managed disks, Azure Hybrid Benefit, reservations, and outbound data transfer."
+  },
+  {
+    "question": "When an Azure virtual machine is stopped, you continue to pay storage costs for the virtual machine.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "When an Azure virtual machine is stopped (deallocated), compute charges stop because the compute resources are released. However, you continue to pay for the storage associated with the virtual machine, including the operating system disk and any attached data disks, until they are deleted."
+  },{
+  "question": "Your company has an Azure subscription that contains the following unused resources:\n- 20 user accounts in Azure Active Directory (Azure AD)\n- Five groups in Azure AD\n- 10 public IP addresses\n- 10 network interfaces\n\nYou need to reduce the Azure costs for the company.\n\nSolution: You remove the unused network interfaces.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Removing unused network interfaces (NICs) does not reduce Azure costs because network interfaces themselves do not incur charges. The resources that typically generate costs are unused public IP addresses (especially Standard Public IPs). Azure AD users and groups also do not incur charges simply because they exist. Therefore, removing only the unused network interfaces does not meet the goal of reducing Azure costs."
+},{
+  "question": "Your company has an Azure subscription that contains the following unused resources:\n- 20 user accounts in Azure Active Directory (Azure AD)\n- Five groups in Azure AD\n- 10 public IP addresses\n- 10 network interfaces\n\nYou need to reduce the Azure costs for the company.\n\nSolution: You remove the unused public IP addresses.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Removing unused public IP addresses helps reduce Azure costs because public IP addresses, particularly Standard Public IP addresses, can incur charges even when they are not associated with a running resource. Azure AD users, Azure AD groups, and network interfaces do not incur charges simply for existing. Therefore, removing the unused public IP addresses meets the goal of reducing Azure costs."
+},{
+  "question": "How should you calculate the monthly uptime percentage?",
+  "options": [
+    "(Downtime in Minutes / Maximum Available Minutes) × 100",
+    "((Maximum Available Minutes - Downtime in Minutes) / Maximum Available Minutes) × 100",
+    "(Maximum Available Minutes / Downtime in Minutes) × 100",
+    "((Maximum Available Minutes - Downtime in Minutes) / 1440) × 99.99"
+  ],
+  "answer": 1,
+  "explanation": "The monthly uptime percentage is calculated by subtracting the downtime from the maximum available minutes, dividing the result by the maximum available minutes, and multiplying by 100. Formula: ((Maximum Available Minutes - Downtime in Minutes) / Maximum Available Minutes) × 100."
+},{
+    "question": "By creating additional resource groups in an Azure subscription, additional costs are incurred.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Resource Groups are logical containers used to organize and manage Azure resources. Microsoft does not charge for creating or using resource groups. You are charged only for the resources deployed within the resource groups."
+  },
+  {
+    "question": "By copying several gigabits of data to Azure from an on-premises network over a VPN, additional data transfer costs are incurred.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Inbound data transfer (ingress) to Azure is free. Uploading data from an on-premises network to Azure over a VPN does not incur Azure data transfer charges, although VPN Gateway usage charges may still apply."
+  },
+  {
+    "question": "By copying several GB of data from Azure to an on-premises network over a VPN, additional data transfer costs are incurred.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Outbound data transfer (egress) from Azure is generally charged. Copying data from Azure to an on-premises network over a VPN incurs Azure outbound data transfer charges."
+  },{
+  "question": "This question requires that you evaluate the underlined text to determine if it is correct.\n\nA support plan solution that gives you best practice information, health status and notifications, and 24/7 access to billing information at the lowest possible cost is a Standard support plan.\n\nInstructions: Review the underlined text. If it makes the statement correct, select 'No change is needed'. If the statement is incorrect, select the answer choice that makes the statement correct.",
+  "options": [
+    "No change is needed",
+    "Developer",
+    "Basic",
+    "Premier"
+  ],
+  "answer": 2,
+  "explanation": "The statement is incorrect because the Basic support plan is the lowest-cost (free) support plan. It provides best practice information, health status and service notifications, and 24/7 access to billing and subscription support. The Standard, Developer, and Premier support plans are paid support plans."
+},{
+  "question": "In which Azure support plans can you open a new support request?",
+  "options": [
+    "Premier and Professional Direct only",
+    "Premier, Professional Direct, and Standard only",
+    "Premier, Professional Direct, Standard, and Developer only",
+    "Premier, Professional Direct, Standard, Developer, and Basic"
+  ],
+  "answer": 3,
+  "explanation": "You can open a new support request with all Azure support plans. The Basic support plan allows billing and subscription support requests, while Developer, Standard, Professional Direct, and Premier (Unified) plans also provide technical support. Since the question asks about opening a support request in general, the correct answer includes Basic."
+},{
+  "question": "This question requires that you evaluate the underlined text to determine if it is correct.\n\nYou can create an Azure support request from support.microsoft.com.\n\nInstructions: Review the underlined text. If it makes the statement correct, select 'No change is needed'. If the statement is incorrect, select the answer choice that makes the statement correct.",
+  "options": [
+    "No change is needed",
+    "the Azure portal",
+    "the Knowledge Center",
+    "the Security & Compliance admin center"
+  ],
+  "answer": 1,
+  "explanation": "The statement is incorrect because Azure support requests are created from the Azure portal. Navigate to Azure Portal → Help + Support → New support request to create and manage support requests. The Knowledge Center provides documentation, and the Security & Compliance admin center is used for Microsoft 365 security and compliance management."
+},{
+  "question": "Your company has an Azure subscription that contains the following unused resources:\n- 20 user accounts in Azure Active Directory (Azure AD)\n- Five groups in Azure AD\n- 10 public IP addresses\n- 10 network interfaces\n\nYou need to reduce the Azure costs for the company.\n\nSolution: You remove the unused groups.\n\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Removing unused Azure AD groups does not reduce Azure costs because Azure AD groups are logical containers used for organizing users and managing permissions. They do not incur charges simply for existing. Among the listed resources, unused public IP addresses are the primary resources that can generate Azure charges. Therefore, removing only the unused groups does not meet the goal of reducing Azure costs."
+},{
+  "question": "This question requires that you evaluate the underlined text to determine if it is correct.\n\nThe Azure Standard support plan is the lowest cost option to receive 24x7 access to support engineers by phone.\n\nInstructions: Review the underlined text. If it makes the statement correct, select 'No change is needed'. If the statement is incorrect, select the answer choice that makes the statement correct.",
+  "options": [
+    "No change is needed",
+    "Developer",
+    "Basic",
+    "Professional Direct"
+  ],
+  "answer": 0,
+  "explanation": "The statement is correct based on the current Azure support plans. The Standard support plan is the lowest-cost Azure support plan that provides 24x7 access to technical support engineers by phone. The Developer plan provides technical support only during business hours, Basic does not include technical support, and Professional Direct also provides 24x7 support but at a higher cost than Standard."
+},{
+  "question": "All Azure services that are in public preview are _____.",
+  "options": [
+    "provided without any documentation",
+    "only configurable from Azure CLI",
+    "excluded from the Service Level Agreements",
+    "only configurable from the Azure portal"
+  ],
+  "answer": 2,
+  "explanation": "Azure services in Public Preview are excluded from the Service Level Agreements (SLAs). They are released for evaluation and testing purposes, may change before General Availability (GA), and are not covered by Microsoft's uptime guarantees. Public Preview services are typically documented and can be configured using various Azure management tools, depending on the service."
+},{
+  "question": "_____ can calculate cost savings due to reduced electricity consumption as a result of migrating on-premises Microsoft SQL Servers to Azure.",
+  "options": [
+    "The Azure Migrate: Server Assessment tool",
+    "The Azure Total Cost of Ownership (TCO) calculator",
+    "The Database Migration Assistant",
+    "The pricing calculator in Azure"
+  ],
+  "answer": 1,
+  "explanation": "The Azure Total Cost of Ownership (TCO) calculator estimates the potential cost savings of migrating on-premises workloads to Azure. It compares on-premises infrastructure costs with Azure costs, including hardware, software, electricity, cooling, facilities, and IT maintenance expenses. Azure Migrate: Server Assessment evaluates migration readiness, the Database Migration Assistant assists with SQL Server migrations, and the Azure Pricing Calculator estimates Azure service costs without comparing them to on-premises expenses."
+},{
+  "question": "You need to compare a company's cloud usage to industry standard best practices.\n\nWhat should you use?",
+  "options": [
+    "Azure Monitor",
+    "Azure Service Health",
+    "Application Insights in Azure Monitor",
+    "Azure Advisor"
+  ],
+  "answer": 3,
+  "explanation": "Azure Advisor analyzes your Azure environment and provides personalized recommendations based on Microsoft and industry best practices. It helps optimize cost, improve security, increase reliability, enhance performance, and achieve operational excellence. Azure Monitor collects metrics and logs, Azure Service Health reports Azure service incidents and maintenance events, and Application Insights monitors application performance rather than evaluating cloud usage against best practices."
+},{
+  "question": "You need to start Azure Cloud Shell.\n\nWhat should you use?",
+  "options": [
+    "the Azure portal",
+    "Azure Command-Line Interface (CLI)",
+    "Azure PowerShell",
+    "an Azure Resource Manager (ARM) template"
+  ],
+  "answer": 0,
+  "explanation": "Azure Cloud Shell is a browser-based interactive shell that is started from the Azure portal by selecting the Cloud Shell icon. It provides a preconfigured environment with Azure CLI and Azure PowerShell already installed. Azure CLI and Azure PowerShell are command-line tools available within Cloud Shell, while Azure Resource Manager (ARM) templates are used to deploy Azure resources."
+}
+
+]

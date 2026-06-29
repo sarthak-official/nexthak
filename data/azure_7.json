@@ -1,0 +1,1105 @@
+[{
+  "question": "When a cloud app can allocate and release resources, it has _____.",
+  "options": [
+    "Elasticity",
+    "Governance",
+    "High availability",
+    "Predictability",
+    "Reliability"
+  ],
+  "answer": 0,
+  "explanation": "Elasticity is the ability of a cloud application to automatically allocate (scale out) and release (scale in) resources based on demand. It allows applications to efficiently handle changing workloads while optimizing costs."
+},{
+  "question": "_____ runs application code in Azure without requiring a server.",
+  "options": [
+    "An Azure DevOps pipeline",
+    "An Azure Resource Manager template",
+    "Azure Application Gateway",
+    "Azure Functions"
+  ],
+  "answer": 3,
+  "explanation": "Azure Functions is a serverless compute service that enables you to run application code without provisioning or managing servers. Azure automatically handles the infrastructure, scaling, and resource management, allowing you to focus on writing code."
+},{
+  "question": "The Archive access tier for Azure Storage can be set at the account level.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "The Archive access tier can only be applied at the blob level, not at the storage account level. A storage account can only have Hot or Cool as its default access tier."
+},{
+  "question": "The Cool access tier offers the lowest costs for storing blobs in Azure Storage.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "The Archive access tier provides the lowest storage cost. The Cool tier is less expensive than the Hot tier but more expensive than the Archive tier for storage."
+},{
+  "question": "After blobs are uploaded to an Azure Storage container, the access tier of the storage account can be changed.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "For a General-purpose v2 (GPv2) storage account, the default access tier can be changed between Hot and Cool after the storage account is created. Existing blobs can also have their access tier changed individually."
+},{
+  "question": "Which Azure storage service is used for reliable messaging between applications?",
+  "options": [
+    "Azure Blob Storage",
+    "Azure Files",
+    "Azure Queue Storage",
+    "Azure Disk Storage"
+  ],
+  "answer": 2,
+  "explanation": "Azure Queue Storage is a messaging service that enables reliable communication between different applications and services by storing and processing messages asynchronously."
+},{
+  "question": "Which Azure storage service can be accessed as a network share from a Windows device?",
+  "options": [
+    "Azure Blob Storage",
+    "Azure Files",
+    "Azure Queue Storage",
+    "Azure Disk Storage"
+  ],
+  "answer": 1,
+  "explanation": "Azure Files provides fully managed file shares that use the SMB and NFS protocols. Windows devices can map an Azure file share as a network drive."
+},{
+  "question": "Which Azure storage service can be configured to use the Archive access tier?",
+  "options": [
+    "Azure Blob Storage",
+    "Azure Files",
+    "Azure Queue Storage",
+    "Azure Disk Storage"
+  ],
+  "answer": 0,
+  "explanation": "The Archive access tier is available only for Azure Blob Storage. It is designed for data that is rarely accessed and offers the lowest storage cost with higher retrieval latency."
+},{
+  "question": "Premium storage accounts can be configured as Azure file shares.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Premium storage accounts support Premium Azure Files through the FileStorage account type. These SSD-backed file shares provide high performance and low latency."
+},{
+  "question": "Premium storage accounts can be configured as block blobs storage.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Premium storage accounts support Block Blob Storage through the BlockBlobStorage account type. It is optimized for workloads that require high transaction rates and low latency."
+},{
+  "question": "Premium storage accounts can be configured as StorageV2 storage.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "StorageV2 (General-purpose v2) is a separate storage account type. Premium storage accounts cannot be configured as StorageV2 accounts."
+},{
+  "question": "Premium block blobs storage accounts only support _____ redundancy.",
+  "options": [
+    "Geo-redundant storage (GRS)",
+    "Geo-zone-redundant storage (GZRS)",
+    "Locally-redundant storage (LRS)",
+    "Zone-redundant storage (ZRS)"
+  ],
+  "answer": 2,
+  "explanation": "Premium BlockBlobStorage accounts support Locally-redundant storage (LRS) by default. They do not support Geo-redundant storage (GRS) or Geo-zone-redundant storage (GZRS). Although Zone-redundant storage (ZRS) is available in some Azure regions, LRS is the standard and expected answer for AZ-900 exam questions."
+},{
+  "question": "You have an Azure web app.\nYou need to manage the settings of the web app from an iPhone.\nWhat are two Azure management tools that you can use?\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "Windows PowerShell",
+    "Azure Cloud Shell",
+    "The Azure portal",
+    "Azure Storage Explorer"
+  ],
+  "answer": [
+    1,
+    2
+  ],
+  "explanation": "Azure Cloud Shell is a browser-based command-line environment that can be accessed from any device, including an iPhone, without installing software. The Azure portal is also web-based and can be used from a mobile browser to manage Azure resources. Windows PowerShell is a Windows application and cannot run natively on an iPhone. Azure Storage Explorer is a desktop application for managing Azure Storage resources and cannot be used to manage Azure Web Apps from an iPhone."
+},{
+  "question": "You need to create a new Azure file share. What should you use?",
+  "options": [
+    "A resource group",
+    "A storage account",
+    "A virtual network",
+    "An Azure virtual machine"
+  ],
+  "answer": 1,
+  "explanation": "Azure Files is a service within an Azure Storage Account. Before creating a file share, you must first create or use an existing storage account. A resource group is used to organize Azure resources, a virtual network provides network connectivity, and an Azure virtual machine is a compute resource."
+},{
+  "question": "You can deploy Azure Resource Manager (ARM) templates by using the Azure portal.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Azure Resource Manager (ARM) templates can be deployed through the Azure portal using the 'Deploy a custom template' option. They can also be deployed by using Azure CLI, Azure PowerShell, REST API, and Azure DevOps."
+},{
+  "question": "Azure Resource Manager (ARM) templates can define infrastructure by using code.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "ARM templates are Infrastructure as Code (IaC) files written in JSON. They define Azure resources and their configurations, enabling consistent and repeatable deployments."
+},{
+  "question": "Each Azure resource to be deployed requires a separate Azure Resource Manager (ARM) template.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "A single ARM template can deploy multiple Azure resources, such as virtual machines, storage accounts, virtual networks, and app services, in a single deployment. A separate template is not required for each resource."
+},{
+  "question": "What should you use to prevent traffic from an Azure virtual network from being routed to an Azure Storage account via the internet?",
+  "options": [
+    "A network security group (NSG)",
+    "A public endpoint",
+    "Azure VPN Gateway",
+    "A service endpoint"
+  ],
+  "answer": 3,
+  "explanation": "A service endpoint enables secure connectivity from an Azure virtual network to supported Azure services, such as Azure Storage, over the Microsoft Azure backbone network instead of the public internet. A network security group (NSG) filters network traffic but does not change the network path. A public endpoint allows internet access to the storage account, and Azure VPN Gateway is used to connect on-premises networks to Azure or connect virtual networks."
+},{
+  "question": "Which service can replace a resource lock automatically if the lock is removed?",
+  "options": [
+    "Azure Information Protection (AIP)",
+    "Azure Blueprints",
+    "Azure Backup",
+    "Azure Advisor"
+  ],
+  "answer": 1,
+  "explanation": "Azure Blueprints enables organizations to define and deploy a repeatable set of Azure resources, policies, role assignments, and resource locks. If a resource lock that is part of a blueprint assignment is removed, Azure Blueprints can reapply it during blueprint enforcement or reassignment. Azure Information Protection (AIP) protects documents and emails, Azure Backup provides backup and recovery, and Azure Advisor offers recommendations for optimizing Azure resources."
+},{
+  "question": "You need to create a new user for an Azure subscription. What should you use?",
+  "options": [
+    "Subscriptions",
+    "Azure Active Directory",
+    "Resource groups",
+    "Virtual machines"
+  ],
+  "answer": 1,
+  "explanation": "To create a new user for an Azure subscription, you use Azure Active Directory (now called Microsoft Entra ID). Users, groups, and identities are managed in Microsoft Entra ID, after which appropriate Azure RBAC roles can be assigned to grant access to Azure subscriptions and resources."
+},{
+  "question": "Azure Resource Manager (ARM) templates use the _____.",
+  "options": [
+    "CSV format",
+    "HTML format",
+    "JSON format",
+    "XML format"
+  ],
+  "answer": 2,
+  "explanation": "Azure Resource Manager (ARM) templates are written in JSON (JavaScript Object Notation). ARM templates are Infrastructure as Code (IaC) files that define Azure resources, their properties, dependencies, and deployment configurations in a consistent and repeatable manner."
+},{
+  "question": "You plan to collect and analyze event details for five Azure virtual machines.\nYou need to run queries to compare the event details collected from all the virtual machines.\nWhich two tools should you use?\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "Azure Service Health",
+    "Azure Service Bus",
+    "Azure Monitor",
+    "Azure Advisor",
+    "Log Analytics"
+  ],
+  "answer": [
+    2,
+    4
+  ],
+  "explanation": "Azure Monitor collects monitoring data, including metrics, logs, and events from Azure virtual machines and other Azure resources. Log Analytics is used to query, analyze, and compare the collected log data by using Kusto Query Language (KQL). Azure Service Health provides information about Azure service issues, Azure Service Bus is a messaging service, and Azure Advisor provides best practice recommendations."
+},{
+  "question": "An Azure SLA is a formal agreement between Microsoft and a customer that defines _____.",
+  "options": [
+    "A commitment to deliver the features on a technology roadmap",
+    "A commitment to performance standards",
+    "The maximum scalability limits of an available infrastructure",
+    "The minimum scalability limits of an available infrastructure"
+  ],
+  "answer": 1,
+  "explanation": "A Service Level Agreement (SLA) is a formal agreement between Microsoft and a customer that defines the expected service availability and performance standards for Azure services. It specifies uptime commitments, service performance targets, and the service credits customers may receive if Microsoft fails to meet the agreed service levels. An SLA does not define future features or scalability limits."
+},{
+  "question": "You have an Azure subscription.\nYou plan to create a virtual machine.\nWhere will the virtual machine be placed in Azure?",
+  "options": [
+    "In a storage account",
+    "In a resource group",
+    "In an administrative unit",
+    "In an application group"
+  ],
+  "answer": 1,
+  "explanation": "Every Azure resource, including a virtual machine, must be deployed into a resource group. A resource group is a logical container that holds related Azure resources such as virtual machines, storage accounts, virtual networks, and databases. Storage accounts are used for storing data, administrative units organize users and groups in Microsoft Entra ID, and application groups are used with Azure Virtual Desktop."
+},{
+  "question": "When planning to migrate a public website to Azure, you must plan to _____.",
+  "options": [
+    "Deploy a VPN",
+    "Pay monthly usage costs",
+    "Pay to transfer all the website data to Azure",
+    "Reduce the number of connections to the website"
+  ],
+  "answer": 1,
+  "explanation": "Azure uses a pay-as-you-go pricing model, where customers are billed based on the resources they consume, typically on a monthly basis. Migrating a public website to Azure does not require deploying a VPN, Azure generally does not charge for inbound data transfers (ingress), and there is no requirement to reduce the number of website connections."
+},{
+  "question": "_____ provides a global view of the status of Azure services, regions, and specific resources.",
+  "options": [
+    "Application Insights",
+    "Azure Advisor",
+    "Azure Service Health"
+  ],
+  "answer": 2,
+  "explanation": "Azure Service Health provides a personalized and global view of the health of Azure services, regions, and your specific Azure resources. It informs users about service issues, planned maintenance, health advisories, and outages that may affect their Azure environment. Application Insights monitors application performance, while Azure Advisor provides recommendations to optimize Azure resources."
+},{
+  "question": "You plan to reduce ongoing Azure expenditures.\nYou need to identify which factors affect the costs of a resource.\nWhich three factors should you identify?\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "The volume of outbound data",
+    "The volume of inbound data",
+    "The service tier",
+    "The Azure region",
+    "The type of processed data"
+  ],
+  "answer": [
+    0,
+    2,
+    3
+  ],
+  "explanation": "Azure resource costs are affected by several factors, including the volume of outbound (egress) data transferred, the selected service tier, and the Azure region where the resource is deployed. Inbound (ingress) data transfer is generally free, and Azure pricing is not based on the type of data being processed."
+},{
+  "question": "Your company has an Azure subscription that contains several resources.\nYou need to identify which department is responsible for the cost of each resource.\nWhat should you use?",
+  "options": [
+    "Budgets",
+    "Alerts",
+    "Tags"
+  ],
+  "answer": 2,
+  "explanation": "Tags are key-value pairs that can be assigned to Azure resources to organize and categorize them by attributes such as department, project, environment, or cost center. Azure Cost Management can use these tags to track and analyze costs for each department. Budgets are used to monitor spending and trigger alerts, while alerts notify users when specified conditions are met."
+},{
+  "question": "Azure Cosmos DB is an example of a _____ offering.",
+  "options": [
+    "Platform as a Service (PaaS)",
+    "Infrastructure as a Service (IaaS)",
+    "Content as a Service",
+    "Software as a Service (SaaS)"
+  ],
+  "answer": 0,
+  "explanation": "Azure Cosmos DB is a fully managed NoSQL database service provided by Microsoft. It is a Platform as a Service (PaaS) offering because Microsoft manages the underlying infrastructure, operating system, maintenance, updates, and scalability, while customers manage their data and applications."
+},{
+  "question": "Data that is stored in the Archive access tier of an Azure Storage account _____.",
+  "options": [
+    "Can be accessed at any time by using azcopy.exe",
+    "Can only be read by using Azure Backup",
+    "Must be restored before the data can be accessed",
+    "Must be rehydrated before the data can be accessed"
+  ],
+  "answer": 3,
+  "explanation": "The Archive access tier stores data in an offline state for long-term retention. Before archived data can be read or downloaded, it must be rehydrated by moving it to the Hot or Cool access tier. This process can take several hours depending on the selected rehydration priority."
+},{
+  "question": "An Azure Virtual Desktop session host can run Windows 10 or Windows 11 only.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Azure Virtual Desktop session hosts can run Windows 10 Enterprise, Windows 11 Enterprise, Windows 10/11 Enterprise multi-session, and supported Windows Server operating systems. Therefore, they are not limited to Windows 10 or Windows 11 only."
+},{
+  "question": "An Azure Virtual Desktop host pool that includes 20 session hosts supports a maximum of 20 simultaneous user connections.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "A session host can support multiple concurrent user sessions, depending on the virtual machine size and workload. Therefore, a host pool with 20 session hosts can support more than 20 simultaneous user connections."
+},{
+  "question": "Azure Virtual Desktop supports desktop and app virtualization.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Azure Virtual Desktop supports both desktop virtualization and application virtualization. Users can access a full Windows desktop or individual published applications (RemoteApp) from virtually any device."
+},{
+  "question": "In an Azure virtual machine scale set, the virtual machines are configured identically.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Azure Virtual Machine Scale Sets (VMSS) create and manage a group of virtual machines that are configured identically. Each VM instance is created from the same image and configuration, ensuring consistency across the scale set."
+},{
+  "question": "The number of Azure virtual machines in a virtual machine scale set can increase automatically.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Azure Virtual Machine Scale Sets support autoscaling. Azure can automatically increase (scale out) the number of virtual machines based on metrics such as CPU utilization, memory usage, network traffic, or scheduled rules."
+},{
+  "question": "The number of Azure virtual machines in a virtual machine scale set can decrease automatically.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 0,
+  "explanation": "Azure Virtual Machine Scale Sets support automatic scale in. Azure can automatically remove virtual machine instances when demand decreases, helping optimize resource usage and reduce costs."
+},{
+  "question": "You can have two Azure Storage accounts that have the same name in the same Azure subscription.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Azure Storage account names must be globally unique across all of Azure. Therefore, two storage accounts cannot have the same name, even within the same Azure subscription."
+},{
+  "question": "You can have two Azure Storage accounts that have the same name in different Azure regions.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Azure Storage account names are globally unique across all Azure regions. Creating two storage accounts with the same name in different regions is not allowed."
+},{
+  "question": "You can have two Azure Storage accounts that have the same name in two different Azure subscriptions.",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "answer": 1,
+  "explanation": "Azure Storage account names must be globally unique across all Azure subscriptions and tenants. A storage account name can only be used once across the entire Azure platform."
+},{
+      "question": "Azure Advisor provides personalized recommendations.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Advisor analyzes your Azure resources and usage to provide personalized recommendations that help improve cost optimization, security, reliability, operational excellence, and performance."
+    },
+    {
+      "question": "Azure Advisor can provide cost recommendations for virtual machines.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Advisor provides cost optimization recommendations for virtual machines, such as identifying underutilized VMs, recommending resizing, shutting down unused VMs, or purchasing Azure Reserved VM Instances to reduce costs."
+    },
+    {
+      "question": "Azure Advisor can provide recommendations across multiple Azure subscriptions.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Advisor can analyze resources across multiple Azure subscriptions and provide consolidated recommendations, helping organizations optimize costs, performance, security, reliability, and operational excellence across their Azure environment."
+    },{
+      "question": "You can assign an Azure policy to a virtual machine.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Policy can be assigned at multiple scopes, including management groups, subscriptions, resource groups, and individual resources such as virtual machines."
+    },
+    {
+      "question": "If an Azure policy is assigned to a resource group, noncompliant resources are removed from the group.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Azure Policy does not automatically remove or delete noncompliant resources. Depending on the policy effect, it can audit, deny, modify, append, or remediate resources, but it does not delete existing resources."
+    },
+    {
+      "question": "If an Azure policy is assigned to a resource group, only compliant resources can be deployed to the group.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "When an Azure Policy with the Deny effect is assigned to a resource group, Azure blocks the deployment of resources that do not comply with the policy requirements."
+    },{
+  "question": "You have on-premises servers that run Windows Server.\nWhat should you implement to manage the servers by using the Azure portal?",
+  "options": [
+    "Azure Kubernetes Service (AKS)",
+    "Azure Arc",
+    "Docker",
+    "Role-based access control (RBAC)"
+  ],
+  "answer": 1,
+  "explanation": "Azure Arc extends Azure management capabilities to on-premises, multi-cloud, and edge environments. It enables you to manage Windows Server and Linux servers directly from the Azure portal as if they were native Azure resources. Azure Kubernetes Service (AKS) is used to manage Kubernetes clusters, Docker is a container platform, and RBAC controls access permissions to Azure resources but does not manage on-premises servers."
+},{
+  "question": "You can use _____ in Azure to send email alerts when the cost of the current billing period for an Azure subscription exceeds a specified limit.",
+  "options": [
+    "Advisor recommendations",
+    "Access control (IAM)",
+    "Budget alerts",
+    "Compliance"
+  ],
+  "answer": 2,
+  "explanation": "Budget alerts, a feature of Azure Cost Management, allow you to create budgets and configure email notifications when spending reaches or exceeds specified thresholds. Advisor recommendations provide optimization suggestions, IAM manages access permissions, and Compliance helps assess regulatory and policy compliance."
+},{
+  "question": "If Windows Server or Microsoft SQL Server licenses are covered by _____, you can repurpose the licenses on Azure virtual machines.",
+  "options": [
+    "An End User License Agreement (EULA)",
+    "Microsoft Lifecycle Policy",
+    "Software Assurance"
+  ],
+  "answer": 2,
+  "explanation": "Software Assurance enables Azure Hybrid Benefit, which allows customers to reuse eligible Windows Server and Microsoft SQL Server licenses on Azure virtual machines. This helps reduce Azure licensing costs. An End User License Agreement (EULA) defines software usage terms, while the Microsoft Lifecycle Policy specifies product support timelines."
+},{
+  "question": "You have a web app that runs in Azure.\nYou need to identify the amount of time it takes for web pages to load in a user's browser.\nWhat should you use?",
+  "options": [
+    "Azure Monitor alerts",
+    "Application Insights in Azure Monitor",
+    "Log Analytics",
+    "Azure Network Watcher"
+  ],
+  "answer": 1,
+  "explanation": "Application Insights is an Application Performance Management (APM) feature of Azure Monitor that monitors web applications. It provides detailed performance metrics such as page load times, server response times, failed requests, exceptions, user behavior, and application availability. Azure Monitor alerts send notifications, Log Analytics is used for querying and analyzing logs, and Azure Network Watcher is used for network monitoring and diagnostics."
+},{
+  "question": "_____ ensures access to cloud resources in the event of a service failure.",
+  "options": [
+    "High availability",
+    "Predictability",
+    "Reliability",
+    "Scalability"
+  ],
+  "answer": 0,
+  "explanation": "High availability ensures that cloud resources remain accessible even when a service or infrastructure component fails. Azure achieves high availability through features such as Availability Zones, Availability Sets, Load Balancers, and geo-redundancy to minimize downtime and maintain service continuity."
+},{
+  "question": "What should a desktop application use to interact with Azure and manage resources?",
+  "options": [
+    "APIs",
+    "Azure Resource Manager (ARM) templates",
+    "Azure Command-Line Interface (CLI)",
+    "Azure Cloud Shell"
+  ],
+  "answer": 0,
+  "explanation": "Desktop applications interact with Azure programmatically by using Azure APIs, such as the Azure REST APIs or Azure SDKs. These APIs allow applications to create, manage, monitor, and delete Azure resources. ARM templates are used for infrastructure deployment, Azure CLI is a command-line management tool, and Azure Cloud Shell is a browser-based command-line environment."
+},{
+      "question": "Which cloud benefit provides the ability to dynamically scale the resources available to a cloud application?",
+      "options": [
+        "Agility",
+        "Elasticity",
+        "Disaster recovery"
+      ],
+      "answer": 1,
+      "explanation": "Elasticity is the ability of a cloud application to automatically increase or decrease resources based on demand, ensuring efficient resource utilization and cost optimization."
+    },
+    {
+      "question": "Which cloud benefit provides the ability to use cloud-based backup services to restore resources in the event of an outage?",
+      "options": [
+        "Elasticity",
+        "Disaster recovery",
+        "Agility"
+      ],
+      "answer": 1,
+      "explanation": "Disaster recovery enables organizations to recover applications, data, and services after failures or outages by using backups, replication, and recovery mechanisms."
+    },
+    {
+      "question": "Which cloud benefit provides the ability to quickly deploy and configure cloud-based resources as application requirements change?",
+      "options": [
+        "Disaster recovery",
+        "Agility",
+        "Elasticity"
+      ],
+      "answer": 1,
+      "explanation": "Agility is the ability to rapidly deploy and configure cloud resources to adapt to changing business and application requirements."
+    },{
+      "question": "Which security component includes software updates and patches?",
+      "options": [
+        "Compute",
+        "Identity and access",
+        "Physical security"
+      ],
+      "answer": 0,
+      "explanation": "Software updates and patches are part of compute security. Regularly updating operating systems and applications helps protect Azure virtual machines and other compute resources from known vulnerabilities."
+    },
+    {
+      "question": "Which security component includes Multifactor Authentication (MFA)?",
+      "options": [
+        "Physical security",
+        "Identity and access",
+        "Compute"
+      ],
+      "answer": 1,
+      "explanation": "Multifactor Authentication (MFA) is an identity and access security feature that requires users to provide two or more forms of verification before gaining access to resources."
+    },
+    {
+      "question": "Which security component includes surveillance cameras?",
+      "options": [
+        "Identity and access",
+        "Compute",
+        "Physical security"
+      ],
+      "answer": 2,
+      "explanation": "Surveillance cameras are part of physical security. Azure datacenters use physical security controls such as cameras, security personnel, biometric access, and controlled entry points to protect infrastructure."
+    },{
+      "question": "The Hot access tier is available for blob data that uses Standard storage.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "The Hot access tier is available for blob data stored in Standard storage accounts, such as General-purpose v2 (StorageV2) and BlobStorage accounts. It is designed for data that is accessed frequently."
+    },
+    {
+      "question": "The Cool access tier is available for file shares in Premium storage.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Premium Azure Files use SSD-backed storage and do not support Hot, Cool, or Archive access tiers. The Cool access tier is available only for Standard Azure Files."
+    },
+    {
+      "question": "The Cool access tier can be configured at the storage account level.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "For General-purpose v2 (StorageV2) accounts, the default access tier (Hot or Cool) can be configured at the storage account level. Individual blobs can also have their own access tier."
+    },{
+  "question": "Which two features or services can be integrated with Azure Monitor?\nNOTE: Each correct answer is worth one point.",
+  "options": [
+    "Azure Status",
+    "Application Insights",
+    "Azure Advisor",
+    "Log Analytics",
+    "Azure Service Health"
+  ],
+  "answer": [
+    1,
+    3
+  ],
+  "explanation": "Azure Monitor integrates with Application Insights and Log Analytics to provide comprehensive monitoring and diagnostics. Application Insights is an Application Performance Management (APM) service that monitors application performance, availability, and user interactions. Log Analytics collects, stores, and analyzes log data from Azure resources using Kusto Query Language (KQL). Azure Status provides global Azure service status, Azure Service Health provides personalized health information, and Azure Advisor offers optimization recommendations."
+},{
+  "question": "What provides a unified way to project and manage non-Azure resources in Azure Resource Manager (ARM)?",
+  "options": [
+    "Azure Migrate",
+    "Azure AD Connect",
+    "Azure Arc",
+    "Azure Front Door"
+  ],
+  "answer": 2,
+  "explanation": "Azure Arc extends Azure Resource Manager (ARM) capabilities to on-premises, multi-cloud, and edge resources. It enables organizations to project and manage non-Azure servers, Kubernetes clusters, and SQL Servers directly from the Azure portal using Azure management services such as Azure Policy, Azure Monitor, and Role-Based Access Control (RBAC). Azure Migrate is used for migration, Azure AD Connect synchronizes identities, and Azure Front Door is a global application delivery service."
+},{
+      "question": "AzCopy is a command-line utility used to copy blobs or files to or from a storage account.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "AzCopy is a command-line utility designed for high-performance data transfers between local storage and Azure Storage. It supports copying data to and from Azure Blob Storage and Azure Files."
+    },
+    {
+      "question": "Azure Storage Explorer is a cloud-hosted migration service used to transfer large amounts of data.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Azure Storage Explorer is a desktop application used to manage Azure Storage resources, including blobs, files, queues, and tables. It is not a cloud-hosted migration service. Azure Data Box is the Azure service designed to transfer large amounts of data."
+    },
+    {
+      "question": "Azure File Sync syncs files and folders between Azure Files and Windows file servers.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure File Sync synchronizes files and folders between Azure Files and on-premises Windows Server file shares. It enables centralized file storage in Azure while allowing local access through Windows file servers."
+    },{
+  "question": "_____ is a physical migration service used to transfer large amounts of data in a quick, inexpensive, and reliable way.",
+  "options": [
+    "Azure Data Box",
+    "Azure Databricks",
+    "Azure File Sync",
+    "Azure Migrate"
+  ],
+  "answer": 0,
+  "explanation": "Azure Data Box is a physical data transfer service that enables organizations to move large amounts of data to Azure quickly, securely, and cost-effectively. Customers copy data to a Microsoft-provided physical device, ship it back to Microsoft, and Microsoft uploads the data to Azure. Azure Databricks is a big data analytics platform, Azure File Sync synchronizes files between Azure Files and Windows Server, and Azure Migrate is used to assess and migrate workloads to Azure over the network."
+},{
+  "question": "Your company has an Azure subscription and three business units.\nYou plan to deploy new resources for each business unit.\nYou need to ensure that the new resources are deployed by using a repeatable and reliable method that applies the same configurations to each resource.\nWhat should you use?",
+  "options": [
+    "Azure Policy",
+    "Azure Arc",
+    "A resource group",
+    "Azure Resource Manager (ARM) templates"
+  ],
+  "answer": 3,
+  "explanation": "Azure Resource Manager (ARM) templates are Infrastructure as Code (IaC) files written in JSON that define Azure resources and their configurations. They enable consistent, repeatable, and automated deployments, ensuring that resources are deployed with the same configuration every time. Azure Policy enforces compliance, Azure Arc manages non-Azure resources, and a resource group is a logical container for Azure resources."
+},{
+      "question": "ExpressRoute uses Border Gateway Protocol (BGP).",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure ExpressRoute uses Border Gateway Protocol (BGP) to exchange routing information dynamically between the on-premises network and Microsoft Azure."
+    },
+    {
+      "question": "ExpressRoute uses the internet to connect an on-premises network to Azure.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Azure ExpressRoute provides a private, dedicated connection between an on-premises network and Azure. It does not use the public internet, unlike a VPN Gateway connection."
+    },
+    {
+      "question": "You can configure multiple ExpressRoute circuits to connect an on-premises datacenter to Azure.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure supports multiple ExpressRoute circuits to provide redundancy, increased bandwidth, and connectivity from multiple on-premises locations to Azure."
+    },{
+      "question": "Azure Arc can manage physical servers that run Linux.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Arc enables centralized management of Windows and Linux servers running on-premises, in other cloud providers, or at edge locations through the Azure portal."
+    },
+    {
+      "question": "Azure Arc can manage Azure Kubernetes Service (AKS) clusters at scale.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Arc can manage Kubernetes clusters, including Azure Kubernetes Service (AKS), providing centralized governance, Azure Policy, monitoring, and configuration management across multiple clusters."
+    },
+    {
+      "question": "Azure Arc can manage a third-party database solution hosted outside of Azure.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Azure Arc supports Azure Arc-enabled SQL Server and Azure Arc-enabled data services, but it does not provide general management for arbitrary third-party database solutions hosted outside Azure."
+    },{
+  "question": "_____ extends Azure compliance and monitoring to hybrid and multicloud configurations.",
+  "options": [
+    "Azure AD Connect",
+    "Azure Arc",
+    "Azure Front Door",
+    "Azure Policy"
+  ],
+  "answer": 1,
+  "explanation": "Azure Arc extends Azure management capabilities to hybrid and multicloud environments by enabling Azure services such as Azure Policy, Azure Monitor, Microsoft Defender for Cloud, and Azure Update Manager to manage and govern resources running outside Azure. Azure AD Connect synchronizes identities, Azure Front Door provides global application delivery, and Azure Policy enforces compliance rules but does not extend Azure management to non-Azure resources."
+},{
+  "question": "Where does Azure Monitor store event data?",
+  "options": [
+    "An Azure Blob Storage account",
+    "Azure Storage Queue",
+    "Azure SQL Database",
+    "A Log Analytics workspace"
+  ],
+  "answer": 3,
+  "explanation": "Azure Monitor stores log and event data in a Log Analytics workspace. A Log Analytics workspace centralizes logs from Azure resources and enables querying, analysis, alerting, and visualization using Kusto Query Language (KQL). Azure Blob Storage is used for archiving exported logs, Azure Storage Queue is a messaging service, and Azure SQL Database is a relational database service."
+},{
+  "question": "You deploy an Azure resource. The resource becomes unavailable for an extended period due to a service outage. Microsoft will _____.",
+  "options": [
+    "Refund your bank account",
+    "Migrate the resource to another subscription",
+    "Credit your Azure account",
+    "Send you a coupon code that you can redeem for Azure credits"
+  ],
+  "answer": 2,
+  "explanation": "If Microsoft does not meet the uptime guarantee defined in the Azure Service Level Agreement (SLA), eligible customers may receive service credits. These credits are applied directly to the customer's Azure account and can be used to offset future Azure charges. Microsoft does not provide direct cash refunds, coupon codes, or automatically migrate resources to another subscription."
+},{
+  "question": "When planning to migrate a public website to Azure, you must plan to _____.",
+  "options": [
+    "Deploy a VPN",
+    "Pay monthly usage costs",
+    "Pay to transfer all the website data to Azure",
+    "Reduce the number of connections to the website"
+  ],
+  "answer": 1,
+  "explanation": "Azure uses a pay-as-you-go pricing model. When hosting a public website in Azure, you are charged for the Azure resources you consume, such as App Service, Virtual Machines, Storage, databases, and bandwidth. A VPN is not required for a public website, there is no separate fee to migrate website data to Azure, and reducing website connections is not necessary."
+},{
+  "question": "If a resource group named RG1 has a delete lock, _____ can delete RG1.",
+  "options": [
+    "Only a member of the Global Administrators group",
+    "The delete lock must be removed before an administrator",
+    "An Azure Policy must be modified before an administrator",
+    "An Azure tag must be added before an administrator"
+  ],
+  "answer": 1,
+  "explanation": "A Delete (CanNotDelete) lock prevents a resource or resource group from being deleted, even by administrators. Before an administrator can delete the resource group, the delete lock must first be removed. Azure Policy, Azure tags, and Microsoft Entra Global Administrator privileges do not override Azure resource locks."
+},{
+  "question": "_____ provide a common platform for deploying objects to a cloud infrastructure and for implementing consistency across the Azure environment.",
+  "options": [
+    "Azure policies provide",
+    "Resource groups provide",
+    "Azure Resource Manager templates provide",
+    "Management groups provide"
+  ],
+  "answer": 2,
+  "explanation": "Azure Resource Manager (ARM) templates are Infrastructure as Code (IaC) templates written in JSON. They enable consistent, repeatable, and automated deployments of Azure resources by defining infrastructure and configurations as code. Azure Policy enforces compliance, Resource Groups organize resources, and Management Groups organize subscriptions."
+},{
+  "question": "An Azure administrator plans to run a PowerShell script that creates Azure resources.\nYou need to recommend which computer configuration to use to run the script.\nNOTE: Each correct answer is worth one point.",
+  "options": [
+    "A computer that runs Windows 11 and has the Azure CLI tools installed",
+    "A computer that runs Linux and has the Azure CLI tools installed",
+    "A computer that runs macOS and has PowerShell Core 6.0 installed",
+    "A computer that runs Chrome OS and uses Azure Cloud Shell",
+    "A computer that runs Windows 10 and has the Azure PowerShell module installed"
+  ],
+  "answer": [
+    2,
+    3,
+    4
+  ],
+  "explanation": "Azure PowerShell scripts require a PowerShell environment. PowerShell Core is cross-platform and can run on macOS. Azure Cloud Shell provides a browser-based environment with Azure PowerShell preinstalled, making it accessible from Chrome OS. Windows 10 with the Azure PowerShell module installed can also run Azure PowerShell scripts. Azure CLI alone is designed to run Azure CLI (az) commands and cannot execute Azure PowerShell cmdlets without PowerShell."
+}, {
+      "question": "Azure AD requires domain controllers on Azure virtual machines.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Microsoft Entra ID (formerly Azure AD) is a cloud-based identity and access management service that does not require domain controllers running on Azure virtual machines. Domain controllers are required for Active Directory Domain Services (AD DS), not Microsoft Entra ID."
+    },
+    {
+      "question": "Azure AD provides authentication services for Azure and Microsoft 365.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Microsoft Entra ID provides authentication and identity services for Azure, Microsoft 365, and thousands of SaaS applications. It supports features such as Single Sign-On (SSO), Multi-Factor Authentication (MFA), and Conditional Access."
+    },
+    {
+      "question": "Each user account in Azure AD can be assigned only one Microsoft 365 license.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "A Microsoft Entra ID user can be be assigned multiple Microsoft 365 licenses, provided the licenses are compatible. For example, a user can have Microsoft 365, Power BI Pro, Teams Phone, and Project licenses simultaneously."
+    },{
+  "question": "In the infrastructure as a service (IaaS) cloud service model, which two components are the responsibility of the cloud service provider?\nNOTE: Each correct answer is worth one point.",
+  "options": [
+    "The configuration and maintenance of storage",
+    "The installation and configuration of the operating system",
+    "Maintaining the hardware",
+    "The network configuration",
+    "Physical security of the datacenter infrastructure"
+  ],
+  "answer": [
+    2,
+    4
+  ],
+  "explanation": "In the IaaS model, the cloud service provider is responsible for the underlying physical infrastructure, including maintaining the hardware and ensuring the physical security of datacenter facilities. The customer is responsible for installing and managing the operating system, configuring virtual networking, managing storage usage, applications, and data."
+},{
+  "question": "The Cool access tier is optimized _____.",
+  "options": [
+    "For data that is accessed infrequently and stored for at least 30 days",
+    "For data that is accessed rarely, is stored for at least 180 days, and has flexible latency requirements",
+    "For storing data that is accessed frequently"
+  ],
+  "answer": 0,
+  "explanation": "The Cool access tier is designed for data that is accessed infrequently but must remain immediately available. It is optimized for data that is stored for at least 30 days, offering lower storage costs than the Hot tier but higher access costs. The Archive tier is intended for data accessed rarely and stored for at least 180 days, while the Hot tier is optimized for frequently accessed data."
+},{
+  "question": "_____ provides a health overview of Azure services and regions.",
+  "options": [
+    "Azure Monitor",
+    "Azure Resource Health",
+    "Azure Service Health",
+    "Azure Status"
+  ],
+  "answer": 3,
+  "explanation": "Azure Status is the public webpage that provides a global health overview of Azure services and regions. It displays the current status of Azure services worldwide and can be accessed without signing in. Azure Service Health provides personalized information about service issues, planned maintenance, and health advisories that affect your Azure subscriptions."
+},{
+      "question": "For the platform as a service (PaaS) cloud service, updating the operating system is the responsibility of the customer.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "In the Platform as a Service (PaaS) model, Microsoft manages the operating system, runtime, middleware, and infrastructure. Customers are responsible for their applications and data, not operating system updates."
+    },
+    {
+      "question": "For the infrastructure as a service (IaaS) cloud service, network control is the responsibility of Microsoft.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "In the Infrastructure as a Service (IaaS) model, Microsoft manages the physical networking infrastructure, but customers are responsible for configuring and controlling virtual networking components such as Virtual Networks (VNets), Network Security Groups (NSGs), routes, and firewalls."
+    },
+    {
+      "question": "For the software as a service (SaaS) cloud service, identity management is a shared responsibility between the customer and Microsoft.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "In the Software as a Service (SaaS) model, identity management is a shared responsibility. Microsoft manages the identity platform, while customers manage user accounts, passwords, Multi-Factor Authentication (MFA), and access policies."
+    },{
+  "question": "When using _____, you can group virtual machines into an update domain or a fault domain.",
+  "options": [
+    "Availability sets",
+    "Availability zones",
+    "Azure Load Balancer",
+    "Azure Virtual Machine Scale Sets"
+  ],
+  "answer": 0,
+  "explanation": "Availability Sets improve the availability of Azure virtual machines by distributing them across update domains and fault domains. Update domains ensure that not all virtual machines are restarted during planned maintenance, while fault domains protect against hardware failures such as server, rack, or power failures. Availability Zones distribute resources across separate datacenters, Azure Load Balancer distributes network traffic, and Virtual Machine Scale Sets automatically scale identical virtual machines."
+},{
+  "question": "You have an Azure Storage account named storage1.\nYou need to ensure that containers can be created in, but not deleted from, storage1.\nWhat should you do?",
+  "options": [
+    "Create a ReadOnly lock for storage1",
+    "Create a delete lock for storage1",
+    "Enable container soft delete",
+    "Enable blob soft delete"
+  ],
+  "answer": 1,
+  "explanation": "A Delete (CanNotDelete) lock prevents resources from being deleted while still allowing them to be created and modified. A ReadOnly lock prevents creating and modifying resources. Container soft delete allows deleted containers to be recovered but does not prevent deletion, and blob soft delete protects only blobs, not containers."
+},{
+  "question": "You have an Azure subscription.\nYou need to use Azure Cloud Shell to run a deployment script.\nWhat should you use to access Cloud Shell?",
+  "options": [
+    "Azure Resource Manager (ARM)",
+    "Microsoft Visual Studio",
+    "A Windows command prompt",
+    "A web browser"
+  ],
+  "answer": 3,
+  "explanation": "Azure Cloud Shell is a browser-based command-line environment that is accessed through the Azure portal using a web browser. It includes Azure CLI and Azure PowerShell without requiring local installation. Azure Resource Manager is a deployment service, Visual Studio is an IDE, and Windows Command Prompt is a local command-line tool."
+}, {
+      "question": "Adding more RAM to a virtual machine is an example of Horizontal scaling.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Adding more RAM or CPU to an existing virtual machine is an example of Vertical scaling (Scale Up), not Horizontal scaling. Horizontal scaling involves adding more virtual machines instead of increasing the resources of a single virtual machine."
+    },
+    {
+      "question": "Adding an additional virtual machine based upon demand is an example of Vertical scaling.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Adding another virtual machine to handle increased demand is an example of Horizontal scaling (Scale Out). Vertical scaling involves increasing or decreasing the resources, such as CPU or RAM, of an existing virtual machine."
+    },
+    {
+      "question": "Horizontal scaling can occur automatically or manually.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Horizontal scaling can be performed automatically using services such as Azure Virtual Machine Scale Sets with autoscaling, or manually by adding or removing virtual machines as needed."
+    }, {
+      "question": "Creating and configuring a virtual network is part of the platform as a service (PaaS) cloud service model.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Creating and configuring a virtual network (VNet) is an Infrastructure as a Service (IaaS) responsibility. In the PaaS model, Microsoft manages the underlying infrastructure, while customers focus on their applications and data."
+    },
+    {
+      "question": "In the platform as a service (PaaS) cloud service model, updating code for an Azure web app is the customer's responsibility.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "In the Platform as a Service (PaaS) model, Microsoft manages the infrastructure, operating system, runtime, and middleware. The customer is responsible for developing, deploying, and updating the application code."
+    },
+    {
+      "question": "Configuring user access to a platform as a service (PaaS) cloud service model is the customer's responsibility.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "In the Platform as a Service (PaaS) model, customers are responsible for managing identity and access, including configuring user accounts, permissions, authentication, and authorization for their applications."
+    },{
+  "question": "You need to migrate an on-premises server by using a lift-and-shift migration.\nTo which type of cloud service should you migrate?",
+  "options": [
+    "Infrastructure as a Service (IaaS)",
+    "Software as a Service (SaaS)",
+    "Platform as a Service (PaaS)"
+  ],
+  "answer": 0,
+  "explanation": "A lift-and-shift (rehosting) migration moves an existing server or application to the cloud with little or no modification. Infrastructure as a Service (IaaS) is the best choice because it provides virtual machines that closely match on-premises servers, allowing applications to run without being redesigned. PaaS typically requires application changes, while SaaS provides ready-to-use software managed by the cloud provider."
+},{
+      "question": "Only one tag can be assigned to an Azure resource.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "An Azure resource can have multiple tags. Azure supports up to 50 name-value tag pairs per resource, allowing organizations to categorize resources for cost management, automation, and organization."
+    },
+    {
+      "question": "Tags can be assigned to Azure resources by using Azure Resource Manager (ARM) templates.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Resource Manager (ARM) templates support assigning tags during resource deployment. Tags can also be added using the Azure portal, Azure CLI, Azure PowerShell, Bicep, and REST APIs."
+    },
+    {
+      "question": "Tags can be used to enforce naming standards for Azure resources.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Tags are used to organize and categorize Azure resources but cannot enforce naming standards. Azure Policy is the service used to enforce naming conventions and other governance requirements."
+    },{
+  "question": "_____ evaluates signals to allow or deny sign-ins to Azure AD.",
+  "options": [
+    "A managed identity",
+    "Conditional Access",
+    "Microsoft Intune"
+  ],
+  "answer": 1,
+  "explanation": "Conditional Access is a Microsoft Entra ID feature that evaluates signals such as user identity, location, device compliance, application, and sign-in risk to determine whether to allow, block, or require additional verification (such as Multi-Factor Authentication) for sign-ins. Managed identities provide identities for Azure resources, and Microsoft Intune is used for device management."
+}, {
+      "question": "Which Azure compute service provides software emulation of a physical computer?",
+      "options": [
+        "Azure App Service",
+        "Azure Container Instances",
+        "Azure Functions",
+        "Azure Virtual Machine Scale Sets"
+      ],
+      "answer": 1,
+      "explanation": "Azure Container Instances provide software emulation of a physical computer."
+    },
+    {
+      "question": "Which Azure compute service provides operating system virtualization?",
+      "options": [
+        "Azure App Service",
+        "Azure Container Instances",
+        "Azure Functions",
+        "Azure Virtual Machine Scale Sets"
+      ],
+      "answer": 3,
+      "explanation": "Azure Virtual Machine Scale Sets provide operating system virtualization."
+    }, {
+      "question": "Azure Advisor supports alerts.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Advisor integrates with Azure Monitor to support Advisor alerts. These alerts notify administrators when new or updated Azure Advisor recommendations are available."
+    },
+    {
+      "question": "Azure Advisor recommendations can be filtered by Administrative unit.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Azure Advisor recommendations can be filtered by subscription, resource group, resource, and recommendation category. Administrative units are not supported as a filter."
+    },
+    {
+      "question": "Azure Advisor provides recommendations on improving the performance of resources.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure Advisor analyzes Azure resources and provides recommendations to improve performance, cost, reliability, security, and operational excellence."
+    },{
+      "question": "You must install Azure Cloud Shell on your computer before you can use it.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Azure Cloud Shell is a browser-based command-line environment that does not require installation. It can be accessed through the Azure portal or shell.azure.com and includes Azure CLI and Azure PowerShell."
+    },
+    {
+      "question": "The Azure Command-Line Interface (CLI) is installed by default in Windows 11.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Azure CLI is not included with Windows 11 by default. It must be installed manually or accessed through Azure Cloud Shell."
+    },
+    {
+      "question": "Azure PowerShell can be used on computers that run Windows, Linux, or macOS.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "Azure PowerShell is built on PowerShell and is cross-platform. It can be installed and used on Windows, Linux, and macOS to manage Azure resources."
+    },
+    {
+      "question": "The Total Cost of Ownership (TCO) Calculator displays the cost of running workloads in a datacenter.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "The Azure Total Cost of Ownership (TCO) Calculator estimates the cost of running workloads in an on-premises datacenter and compares those costs with the estimated cost of running the same workloads in Azure."
+    },
+    {
+      "question": "The Total Cost of Ownership (TCO) Calculator displays the cost of running workloads in Azure.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "The Azure TCO Calculator includes estimated Azure costs when comparing them with on-premises datacenter costs, helping organizations evaluate the financial benefits of migrating to Azure."
+    },
+    {
+      "question": "The Total Cost of Ownership (TCO) Calculator generates graphical reports.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "The Azure TCO Calculator generates graphical reports and visual comparisons that help organizations understand the cost differences and potential savings between on-premises infrastructure and Azure."
+    },{
+      "question": "Network security groups (NSGs) can contain multiple inbound and outbound security rules.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "An Azure Network Security Group (NSG) can contain multiple inbound and outbound security rules that allow or deny network traffic based on source, destination, port, and protocol."
+    },
+    {
+      "question": "A VM that performs a particular function such as running a firewall is also called a Network Virtual Appliance (NVA).",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "A Network Virtual Appliance (NVA) is a virtual machine that performs specialized network functions such as a firewall, router, VPN gateway, or intrusion detection system."
+    },
+    {
+      "question": "A user-defined route (UDR) can only control network traffic between subnets of a single virtual network.",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "User-defined routes (UDRs) allow you to customize Azure's default routing behavior. They can direct traffic to virtual appliances, VPN gateways, ExpressRoute, or other destinations and are not limited to traffic between subnets within a single virtual network."
+    },{
+  "question": "Microsoft 365 is an example of which cloud service model?",
+  "options": [
+    "Infrastructure as a Service (IaaS)",
+    "Platform as a Service (PaaS)",
+    "Software as a Service (SaaS)"
+  ],
+  "answer": 2,
+  "explanation": "Microsoft 365 is a Software as a Service (SaaS) offering. Microsoft manages the application, operating system, infrastructure, updates, and maintenance, while customers simply access and use the applications over the internet."
+}
+]

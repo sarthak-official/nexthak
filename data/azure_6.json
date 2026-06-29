@@ -501,8 +501,8 @@
       "Yes",
       "No"
     ],
-    "answer": 1,
-    "explanation": "The Azure spending limit is not permanently fixed. For eligible subscriptions, such as Azure Free Trial, the spending limit can be removed by upgrading to a Pay-As-You-Go subscription. Therefore, the statement is false."
+    "answer": 0,
+    "explanation": "Comming soon."
   },{
     "question": "With Azure Reservations, you pay less for virtual machines than with pay-as-you-go pricing.",
     "options": [
@@ -669,6 +669,259 @@
   ],
   "answer": 0,
   "explanation": "Azure Cloud Shell is a browser-based interactive shell that is started from the Azure portal by selecting the Cloud Shell icon. It provides a preconfigured environment with Azure CLI and Azure PowerShell already installed. Azure CLI and Azure PowerShell are command-line tools available within Cloud Shell, while Azure Resource Manager (ARM) templates are used to deploy Azure resources."
+},{
+  "question": "How many copies of data are maintained by an Azure Storage account that uses locally-redundant storage (LRS)?",
+  "options": [
+    "3",
+    "4",
+    "6",
+    "9"
+  ],
+  "answer": 0,
+  "explanation": "Locally-Redundant Storage (LRS) maintains three synchronous copies of data within a single physical datacenter in the selected Azure region. LRS protects against disk, server, and rack failures, but it does not protect against the failure of an entire datacenter or region."
+},{
+  "question": "What enables a cloud service to adapt quickly to changing requirements?",
+  "options": [
+    "high availability",
+    "predictability",
+    "manageability",
+    "agility"
+  ],
+  "answer": 3,
+  "explanation": "Agility is a key benefit of cloud computing that enables organizations to rapidly adapt to changing business requirements. It allows resources and services to be deployed, modified, and scaled quickly in response to demand. High availability ensures minimal downtime, predictability provides consistent performance and cost expectations, and manageability simplifies the administration of cloud resources."
+},{
+  "question": "What is an example of vertical scaling in a cloud environment?",
+  "options": [
+    "adding an additional CPU to an existing Azure virtual machine",
+    "adding an additional Azure virtual machine",
+    "adding an additional Azure Virtual Desktop session host",
+    "adding an additional Azure App Service instance automatically"
+  ],
+  "answer": 0,
+  "explanation": "Vertical scaling, also known as scaling up or scaling down, involves increasing or decreasing the resources of an existing virtual machine, such as adding more CPUs or RAM. Adding an additional virtual machine, Azure Virtual Desktop session host, or Azure App Service instance represents horizontal scaling (scaling out), where more instances are added to handle increased workloads."
+}, {
+    "question": "Microsoft Defender for Cloud can monitor Azure resources and on-premises resources.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft Defender for Cloud can monitor and protect Azure resources, on-premises resources, hybrid environments, and supported multi-cloud resources. It provides security posture management and threat protection across these environments."
+  },
+  {
+    "question": "All Microsoft Defender for Cloud features are free.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Microsoft Defender for Cloud includes both free and paid features. The free tier provides Secure Score and basic security recommendations, while the paid Microsoft Defender plans provide advanced threat protection, vulnerability assessments, and workload protection."
+  },
+  {
+    "question": "For Microsoft Defender for Cloud, you can download a Regulatory Compliance report.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft Defender for Cloud includes a Regulatory Compliance dashboard that evaluates resources against compliance standards such as Azure Security Benchmark, ISO 27001, PCI DSS, NIST, and CIS. Compliance reports can be viewed and downloaded."
+  },{
+    "question": "Cloud computing offers lower capital expenditure (CAPEX) costs than on-premises deployments.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Cloud computing reduces capital expenditure (CAPEX) because organizations do not need to purchase and maintain physical infrastructure. Instead, they typically pay for cloud services on a consumption-based operational expenditure (OpEx) model."
+  },
+  {
+    "question": "Cloud computing provides the same configuration options as on-premises deployments.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Cloud computing does not provide the same configuration options as on-premises deployments. Cloud providers manage much of the underlying infrastructure, so customers have less low-level control compared to on-premises environments."
+  },
+  {
+    "question": "Cloud computing can scale when a business requires change.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Cloud computing supports scalability, allowing organizations to quickly increase or decrease resources based on changing business requirements and workload demands."
+  },{
+  "question": "What additional resource is required by an Azure virtual machine?",
+  "options": [
+    "a virtual network",
+    "a service endpoint",
+    "Azure Firewall",
+    "a public IP address"
+  ],
+  "answer": 0,
+  "explanation": "An Azure virtual machine must be connected to a virtual network (VNet) through a network interface (NIC). The virtual network enables communication with other Azure resources and networks. A service endpoint, Azure Firewall, and a public IP address are optional resources depending on the deployment requirements."
+}, {
+    "question": "Azure Functions is an example of a platform as a service (PaaS) cloud service model.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Functions is a serverless compute service that is classified as Platform as a Service (PaaS). Microsoft manages the underlying infrastructure, operating system, and runtime, allowing developers to focus on writing and deploying code."
+  },
+  {
+    "question": "Microsoft 365 is an example of a software as a service (SaaS) cloud service model.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft 365 is a Software as a Service (SaaS) offering. Microsoft manages the application, platform, and infrastructure, while users access the applications over the internet without managing the underlying resources."
+  },
+  {
+    "question": "An Azure virtual machine is an example of an infrastructure as a service (IaaS) cloud service model.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Azure Virtual Machines are an Infrastructure as a Service (IaaS) offering. Microsoft manages the physical infrastructure, while customers are responsible for managing the operating system, applications, networking configuration, and data."
+  },{
+  "question": "How many copies of data are maintained by an Azure Storage account that uses geo-redundant storage (GRS)?",
+  "options": [
+    "3",
+    "4",
+    "6",
+    "9"
+  ],
+  "answer": 2,
+  "explanation": "Geo-Redundant Storage (GRS) maintains six copies of data. Three copies are stored synchronously in the primary Azure region using Locally Redundant Storage (LRS), and three additional copies are replicated asynchronously to a paired secondary region. This provides protection against both datacenter failures and regional outages."
+},{
+  "question": "What is used to grant permission to Azure Virtual Desktop resources?",
+  "options": [
+    "tags",
+    "role-based access control (RBAC) roles",
+    "resource groups",
+    "application security groups"
+  ],
+  "answer": 1,
+  "explanation": "Azure Role-Based Access Control (Azure RBAC) is used to grant permissions to Azure Virtual Desktop resources. RBAC enables administrators to assign built-in or custom roles to users, groups, service principals, or managed identities, controlling what actions they can perform on Azure resources. Tags are used for organizing resources, resource groups are logical containers, and application security groups are used to simplify network security rules."
+},{
+    "question": "Azure virtual networks deployed to the same Azure region are connected by default.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure Virtual Networks (VNets) are isolated by default, even if they are deployed in the same Azure region. To enable communication between VNets, you must configure VNet Peering, VPN Gateway, or another networking solution."
+  },
+  {
+    "question": "Virtual networks created in the same resource group must have unique names.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Virtual network names must be unique within the same resource group. You cannot create two virtual networks with the same name in a single resource group."
+  },
+  {
+    "question": "The Azure virtual network's address space must be unique within a subscription.",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Azure virtual networks in the same subscription can have overlapping address spaces. However, if you want to connect them using VNet Peering or a VPN, their address spaces must not overlap."
+  }, {
+    "question": "Which Azure cloud benefit provides a continuous user experience in the event of a resource failure?",
+    "options": [
+      "Disaster recovery",
+      "Geo-distribution",
+      "High availability",
+      "Scalability"
+    ],
+    "answer": 2,
+    "explanation": "High availability ensures that applications and services remain available even if a resource fails by using redundancy and failover mechanisms to minimize downtime."
+  },
+  {
+    "question": "Which Azure cloud benefit enables you to deploy apps and data to regional datacenters that are located close to users?",
+    "options": [
+      "Disaster recovery",
+      "Geo-distribution",
+      "High availability",
+      "Scalability"
+    ],
+    "answer": 1,
+    "explanation": "Geo-distribution allows applications and data to be deployed across multiple Azure regions, placing resources closer to users to reduce latency and improve performance."
+  },
+  {
+    "question": "Which Azure cloud benefit allows compute capacity to be increased dynamically by adding RAM or CPU to a virtual machine?",
+    "options": [
+      "Disaster recovery",
+      "Geo-distribution",
+      "High availability",
+      "Scalability"
+    ],
+    "answer": 3,
+    "explanation": "Scalability enables resources to be increased or decreased based on demand. Adding CPU or RAM to an existing virtual machine is an example of vertical scaling."
+  },{
+    "question": "Which Azure service extends on-premises networks to the Microsoft cloud via a private connection?",
+    "options": [
+      "ExpressRoute",
+      "Virtual network peering",
+      "VPN gateway"
+    ],
+    "answer": 0,
+    "explanation": "Azure ExpressRoute extends on-premises networks to Microsoft Azure through a private, dedicated connection. Unlike VPN Gateway, ExpressRoute does not use the public Internet, providing higher reliability, lower latency, and enhanced security."
+  },
+  {
+    "question": "Which Azure service combines two or more Azure virtual networks into a single logical virtual network?",
+    "options": [
+      "ExpressRoute",
+      "Virtual network peering",
+      "VPN gateway"
+    ],
+    "answer": 1,
+    "explanation": "Azure Virtual Network Peering connects two or more Azure virtual networks, enabling them to communicate with each other over the Microsoft backbone network as if they were part of the same network."
+  },
+  {
+    "question": "Which Azure service provides an encrypted connection from on-premises networks to Azure via a public network?",
+    "options": [
+      "ExpressRoute",
+      "Virtual network peering",
+      "VPN gateway"
+    ],
+    "answer": 2,
+    "explanation": "Azure VPN Gateway provides an encrypted VPN connection between an on-premises network and an Azure virtual network over the public Internet. It offers secure communication without requiring a dedicated private connection."
+  },{
+  "question": "Which cloud computing benefit ensures that you can calculate how much a cloud service will cost?",
+  "options": [
+    "Agility",
+    "Elasticity",
+    "High availability",
+    "Predictability"
+  ],
+  "answer": 3,
+  "explanation": "Predictability is a key benefit of cloud computing that enables organizations to estimate and forecast the cost and performance of cloud services. Azure provides tools such as the Pricing Calculator and Cost Management to help predict expenses before and after deploying resources. Agility enables rapid adaptation to changing requirements, Elasticity automatically adjusts resources based on demand, and High Availability ensures services remain accessible with minimal downtime."
+},{
+  "question": "Which cloud service model minimizes the management responsibility of a customer?",
+  "options": [
+    "infrastructure as a service (IaaS)",
+    "platform as a service (PaaS)",
+    "software as a service (SaaS)"
+  ],
+  "answer": 2,
+  "explanation": "Software as a Service (SaaS) minimizes the customer's management responsibilities. The cloud provider manages the infrastructure, networking, storage, servers, operating system, middleware, runtime, and the application itself. The customer simply uses the application and manages their data and user settings. Infrastructure as a Service (IaaS) requires the customer to manage the operating system and applications, while Platform as a Service (PaaS) requires the customer to manage only the applications and data."
+},{
+  "question": "An organization that hosts its own infrastructure _____ no longer requires a data center.",
+  "options": [
+    "in a private cloud",
+    "in a hybrid cloud",
+    "in the public cloud",
+    "on a Hyper-V host"
+  ],
+  "answer": 2,
+  "explanation": "An organization that hosts its infrastructure in the public cloud no longer needs to maintain its own physical data center because the cloud provider (such as Microsoft Azure) owns, operates, and manages the underlying infrastructure. In contrast, private clouds, hybrid clouds, and Hyper-V hosts require organizations to maintain or have access to physical infrastructure."
 }
-
 ]

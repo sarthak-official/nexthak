@@ -483,8 +483,8 @@
       "Yes",
       "No"
     ],
-    "answer": 0,
-    "explanation": "A user assigned the Owner role has full management permissions for an Azure subscription, including managing access. Depending on the subscription and billing account type, an Owner can transfer the billing ownership of the Azure subscription to another user."
+    "answer": 1,
+    "explanation": "comming soon"
   },
   {
     "question": "You can convert the Azure subscription of your company from Free Trial to Pay-As-You-Go.",

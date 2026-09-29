@@ -881,27 +881,5 @@
     ],
     "answer": 3,
     "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
-  },
-  {
-    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource\nManager template.\nYou need to ensure that NGINX is available on all the virtual machines after they are deployed.\nWhat should you use?",
-    "options": [
-      "a Desired State Configuration (DSC) extension",
-      "the New-AzConfigurationAssignment cmdlet",
-      "Azure Application Insights",
-      "a Microsoft Endpoint Manager device configuration profile"
-    ],
-    "answer": 0,
-    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
-  },
-  {
-    "question": "You need to configure an Azure web app named contoso.azurewebsites.net to host www.contoso.com.\nWhat should you do first?",
-    "options": [
-      "Create A records named www.contoso.com and asuid.contoso.com.",
-      "Create a TXT record named asuid that contains the domain verification ID.",
-      "Create a CNAME record named asuid that contains the domain verification ID.",
-      "Create a TXT record named www.contoso.com that has a value of contoso.azurewebsites.net."
-    ],
-    "answer": 2,
-    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
   }
 ]

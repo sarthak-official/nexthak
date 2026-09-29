@@ -517,5 +517,478 @@
     ],
     "answer": 2,
     "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Your company has a Microsoft Azure subscription. The company has datacenters in Los Angeles and New York. You are configuring the two datacenters as geo-clustered sites for site resiliency. You need to recommend an Azure storage redundancy option. You have the following data storage requirements: Data must be stored on multiple nodes. Data must be stored on nodes in separate geographic locations. Data can be read from the secondary location as well as from the primary location. Which of the following Azure stored redundancy options should you recommend?",
+    "options": [
+      "Geo-redundant storage",
+      "Read-only geo-redundant storage",
+      "Zone-redundant storage",
+      "Locally redundant storage"
+    ],
+    "answer": 1,
+    "explanation": "RA-GRS allows you to have higher read availability for your storage account by providing “read only” access to the data replicated to the secondary location. Once you enable this feature, the secondary location may be used to achieve higher availability in the event the data is not available in the primary region. This is an “opt-in” feature which requires the storage account be geo-replicated. Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy"
+  },
+  {
+    "question": "You have an Azure Storage account named storage1 that contains a blob container named container1. You need to prevent new content added to container1 from being modified for one year. What should you configure?",
+    "options": [
+      "the access tier",
+      "an access policy",
+      "the Access control (IAM) settings",
+      "the access level"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/storage/blobs/immutable-storage-overview?tabs=azure-portal"
+  },
+  {
+    "question": "You have an on-premises server that contains a folder named D:\\Folder1. You need to copy the contents of D:\\Folder1 to the public container in an Azure Storage account named contosodata. Which command should you run?",
+    "options": [
+      "https://contosodata.blob.core.windows.net/public",
+      "azcopy sync D:\\folder1 https://contosodata.blob.core.windows.net/public -- snapshot",
+      "azcopy copy D:\\folder1 https://contosodata.blob.core.windows.net/public -- recursive",
+      "az storage blob copy start-batch D:\\Folder1 https:// contosodata.blob.core.windows.net/public"
+    ],
+    "answer": 2,
+    "explanation": "The azcopy copy command copies a directory (and all of the files in that directory) to a blob container. The result is a directory in the container by the same name. Incorrect Answers: B: The azcopy sync command replicates the source location to the destination location. However, the file is skipped if the last modified time in the destination is more recent. D: The az storage blob copy start-batch command copies multiple blobs to a blob container. Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-blobs https://docs.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy-copy"
+  },
+  {
+    "question": "You have an Azure subscription. In the Azure portal, you plan to create a storage account named storage1 that will have the following settings: Performance: Standard Replication: Zone-redundant storage (ZRS) Access tier (default): Cool Hierarchical namespace: Disabled You need to ensure that you can set Account kind for storage1 to BlockBlobStorage. Which setting should you modify first?",
+    "options": [
+      "Performance",
+      "Replication",
+      "Access tier (default)",
+      "Hierarchical namespace"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-performance-tiers"
+  },
+  {
+    "question": "You have Azure subscription that includes data in following locations: You plan to export data by using Azure import/export job named Export1. You need to identify the data that can be exported by using Export1. Which data should you identify?",
+    "options": [
+      "DB1",
+      "container1",
+      "share1",
+      "Table1"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer (container1). No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure subscription that contains a storage account named account1. You plan to upload the disk files of a virtual machine to account1 from your on-premises network. The on- premises network uses a public IP address space of 131.107.1.0/24. You plan to use the disk files to provision an Azure virtual machine named VM1. VM1 will be attached to a virtual network named VNet1. VNet1 uses an IP address space of 192.168.0.0/24. You need to configure account1 to meet the following requirements: Ensure that you can upload the disk files to account1. Ensure that you can attach the disks to VM1. Prevent all other access to account1. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "From the Firewalls and virtual networks blade of account1, select Selected networks.",
+      "From the Firewalls and virtual networks blade of account1, select Allow trusted Microsoft services to access this storage account.",
+      "From the Firewalls and virtual networks blade of account1, add the 131.107.1.0/24 IP address range.",
+      "From the Firewalls and virtual networks blade of account1, add VNet1.",
+      "From the Service endpoints blade of VNet1, add a service endpoint."
+    ],
+    "answer": [
+      0,
+      4
+    ],
+    "explanation": "A: By default, storage accounts accept connections from clients on any network. To limit access to selected networks, you must first change the default action. Azure portal Navigate to the storage account you want to secure. Click on the settings menu called Firewalls and virtual networks. To deny access by default, choose to allow access from 'Selected networks'. To allow traffic from all networks, choose to allow access from 'All networks'. Click Save to apply your changes. E: Grant access from a Virtual Network Storage accounts can be configured to allow access only from specific Azure Virtual Networks. By enabling a Service Endpoint for Azure Storage within the Virtual Network, traffic is ensured an optimal route to the Azure Storage service. The identities of the virtual network and the subnet are also transmitted with each request. Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security"
+  },
+  {
+    "question": "You plan to use the Azure Import/Export service to copy files to a storage account. Which two files should you create before you prepare the drives for the import job? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "an XML manifest file",
+      "a dataset CSV file",
+      "a JSON configuration file",
+      "a PowerShell PS1 file",
+      "a driveset CSV file"
+    ],
+    "answer": [
+      1,
+      4
+    ],
+    "explanation": "B: Modify the dataset.csv file in the root folder where the tool resides. Depending on whether you want to import a file or folder or both, add entries in the dataset.csv file E: Modify the driveset.csv file in the root folder where the tool resides. Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-data-to-files"
+  },
+  {
+    "question": "You have a Recovery Service vault that you use to test backups. The test backups contain two protected virtual machines. You need to delete the Recovery Services vault. What should you do first?",
+    "options": [
+      "From the Recovery Service vault, delete the backup data.",
+      "Modify the disaster recovery properties of each virtual machine.",
+      "Modify the locks of each virtual machine.",
+      "From the Recovery Service vault, stop the backup of each backup item."
+    ],
+    "answer": 3,
+    "explanation": "You can't delete a Recovery Services vault if it is registered to a server and holds backup data. If you try to delete a vault, but can't, the vault is still configured to receive backup data. Remove vault dependencies and delete vault In the vault dashboard menu, scroll down to the Protected Items section, and click Backup Items. In this menu, you can stop and delete Azure File Servers, SQL Servers in Azure VM, and Azure virtual machines. Reference: https://docs.microsoft.com/en-us/azure/backup/backup-azure-delete-vault"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You have 5 TB of data that you need to transfer to Subscription1. You plan to use an Azure Import/Export job. What can you use as the destination of the imported data?",
+    "options": [
+      "a virtual machine",
+      "an Azure Cosmos DB database",
+      "Azure File Storage",
+      "the Azure File Sync Storage Sync Service"
+    ],
+    "answer": 2,
+    "explanation": "Azure Import/Export service is used to securely import large amounts of data to Azure Blob storage and Azure Files by shipping disk drives to an Azure datacenter. The maximum size of an Azure Files Resource of a file share is 5 TB. Note: There are several versions of this question in the exam. The question has two correct answers: Azure File Storage Azure Blob Storage The question can have other incorrect answer options, including the following: Azure Data Lake Store Azure SQL Database Azure Data Factory Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-service"
+  },
+  {
+    "question": "You have an Azure Storage account named storage1. You plan to use AzCopy to copy data to storage1. You need to identify the storage services in storage1 to which you can copy the data. Which storage services should you identify?",
+    "options": [
+      "blob, file, table, and queue",
+      "blob and file only",
+      "file and table only",
+      "file only",
+      "blob, table, and queue only"
+    ],
+    "answer": 1,
+    "explanation": "AzCopy is a command-line utility that you can use to copy blobs or files to or from a storage account. Incorrect Answers: A, C, E: AzCopy does not support table and queue storage services. D: AzCopy supports file storage services, as well as blob storage services. Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10"
+  },
+  {
+    "question": "You have an Azure subscription that contains an Azure Storage account. You plan to create an Azure container instance named container1 that will use a Docker image named Image1. Image1 contains a Microsoft SQL Server instance that requires persistent storage. You need to configure a storage service for Container1. What should you use?",
+    "options": [
+      "Azure Files",
+      "Azure Blob storage",
+      "Azure Queue storage",
+      "Azure Table storage"
+    ],
+    "answer": 3,
+    "explanation": "The PDF marks D as the correct answer (Azure Table storage). No further explanation is provided in the source."
+  },
+  {
+    "question": "You need to move the blueprint files to Azure. What should you do?",
+    "options": [
+      "Generate an access key. Map a drive, and then copy the files by using File Explorer.",
+      "Use Azure Storage Explorer to copy the files.",
+      "Use the Azure Import/Export service.",
+      "Generate a shared access signature (SAS). Map a drive, and then copy the files by using File Explorer."
+    ],
+    "answer": 1,
+    "explanation": "Azure Storage Explorer is a free tool from Microsoft that allows you to work with Azure Storage data on Windows, macOS, and Linux. You can use it to upload and download data from Azure blob storage. Scenario: Planned Changes include: move the existing product blueprint files to Azure Blob storage. Technical Requirements include: Copy the blueprint files to Azure over the Internet. Reference: https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/move-data-to-azure- blob-using-azure-storage-explorer"
+  },
+  {
+    "question": "Your company has a Microsoft Azure subscription. The company has datacenters in Los Angeles and New York. You are configuring the two datacenters as geo-clustered sites for site resiliency. You need to recommend an Azure storage redundancy option. You have the following data storage requirements: • Data must be stored on multiple nodes. • Data must be stored on nodes in separate geographic locations. • Data can be read from the secondary location as well as from the primary location. Which of the following Azure stored redundancy options should you recommend?",
+    "options": [
+      "Geo-redundant storage",
+      "Read-only geo-redundant storage",
+      "Zone-redundant storage",
+      "Locally redundant storage"
+    ],
+    "answer": 1,
+    "explanation": "RA-GRS allows you to have higher read availability for your storage account by providing “read only” access to the data replicated to the secondary location. Once you enable this feature, the secondary location may be used to achieve higher availability in the event the data is not available in the primary region. This is an “opt-in” feature which requires the storage account be geo-replicated."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company has an azure subscription that includes a storage account, a resource group, a blob container and a file share. A colleague named Jon Ross makes use of a solitary Azure Resource Manager (ARM) template to deploy a virtual machine and an additional Azure Storage account. You want to review the ARM template that was used by Jon Ross. Solution: You access the Virtual Machine blade. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You should use the Resource Group blade"
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company has an azure subscription that includes a storage account, a resource group, a blob container and a file share. A colleague named Jon Ross makes use of a solitary Azure Resource Manager (ARM) template to deploy a virtual machine and an additional Azure Storage account. You want to review the ARM template that was used by Jon Ross. Solution: You access the Resource Group blade. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "To view a template from deployment history: 1. Go to the resource group for your new resource group. Notice that the portal shows the result of the last deployment. Select this link. 2. You see a history of deployments for the group. In your case, the portal probably lists only one deployment. Select this deployment. 3. The portal displays a summary of the deployment. The summary includes the status of the deployment and its operations and the values that you provided for parameters. To see the template that you used for the deployment, select View template."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company has an azure subscription that includes a storage account, a resource group, a blob container and a file share. A colleague named Jon Ross makes use of a solitary Azure Resource Manager (ARM) template to deploy a virtual machine and an additional Azure Storage account. You want to review the ARM template that was used by Jon Ross. Solution: You access the Container blade. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You should use the Resource Group blade"
+  },
+  {
+    "question": "You have an Azure subscription that contains a storage account named storage1. The storage1 account contains a file share named share1. The subscription is linked to a hybrid Azure Active Directory (Azure AD) tenant that contains a security group named Group1. You need to grant Group1 the Storage File Data SMB Share Elevated Contributor role for share1. What should you do first?",
+    "options": [
+      "Enable Active Directory Domain Service (AD DS) authentication for storage1.",
+      "Grant share-level permissions by using File Explorer.",
+      "Mount share1 by using File Explorer.",
+      "Create a private endpoint."
+    ],
+    "answer": 0,
+    "explanation": "Before you enable Azure AD over SMB for Azure file shares, make sure you have completed the following prerequisites: 1. Select or create an Azure AD tenant. 2. To support authentication with Azure AD credentials, you must enable Azure AD Domain Services for your Azure AD tenant. Etc. Note: The Storage File Data SMB Share Elevated Contributor allows read, write, delete and modify NTFS permissions in Azure Storage file shares over SMB."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Contoso, Ltd. is a manufacturing company that has offices worldwide. Contoso works with partner organizations to bring products to market. Contoso products are manufactured by using blueprint files that the company authors and maintains. Existing Environment Currently, Contoso uses multiple types of servers for business operations, including the following: • File servers • Domain controllers • Microsoft SQL Server servers Your network contains an Active Directory forest named contoso.com. All servers and client computers are joined to Active Directory. You have a public-facing application named App1. App1 is comprised of the following three tiers: • A SQL database • A web front end • A processing middle tier Each tier is comprised of five virtual machines. Users access the web front end by using HTTPS only. Requirements Planned Changes Contoso plans to implement the following changes to the infrastructure: • Move all the tiers of App1 to Azure. • Move the existing product blueprint files to Azure Blob storage. • Create a hybrid directory to support an upcoming Microsoft 365 migration project. Technical Requirements Contoso must meet the following technical requirements: • Move all the virtual machines for App1 to Azure. • Minimize the number of open ports between the App1 tiers. • Ensure that all the virtual machines for App1 are protected by backups. • Copy the blueprint files to Azure over the Internet. • Ensure that the blueprint files are stored in the archive storage tier. • Ensure that partner access to the blueprint files is secured and temporary. • Prevent user passwords or hashes of passwords from being stored in Azure. • Use unmanaged standard storage for the hard disks of the virtual machines. • Ensure that when users join devices to Azure Active Directory (Azure AD), the users use a mobile phone to verify their identity. • Minimize administrative effort whenever possible. User Requirements Contoso identifies the following requirements for users: • Ensure that only users who are part of a group named Pilot can join devices to Azure AD. • Designate a new user named Admin1 as the service admin for the Azure subscription. • Admin1 must receive email alerts regarding service outages. • Ensure that a new user named User3 can create network objects for the Azure subscription. You need to meet the user requirement for Admin1. What should you do?",
+    "options": [
+      "From the Azure Active Directory blade, modify the Groups",
+      "From the Azure Active Directory blade, modify the Properties",
+      "From the Subscriptions blade, select the subscription, and then modify the Access control (IAM) settings",
+      "From the Subscriptions blade, select the subscription, and then modify the Properties"
+    ],
+    "answer": 3,
+    "explanation": "Scenario: • Designate a new user named Admin1 as the service admin for the Azure subscription. • Admin1 must receive email alerts regarding service outages. Follow these steps to change the Service Administrator in the Azure portal. 1. Make sure your scenario is supported by checking the limitations for changing the Service Administrator. 2. Sign in to the Azure portal as the Account Administrator. 3. Open Cost Management + Billing and select a subscription. 4. In the left navigation, click Properties. 5. Click Service Admin."
+  },
+  {
+    "question": "This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview General Overview Contoso, Ltd. is a consulting company that has a main office in Montreal and branch offices in Seattle and New York. Environment Existing Environment Contoso has an Azure subscription named Sub1 that is linked to an Azure Active Directory (Azure AD) tenant. The network contains an on-premises Active Directory domain that syncs to the Azure AD tenant. The Azure AD tenant contains the users shown in the following table. Sub1 contains two resource groups named RG1 and RG2 and the virtual networks shown in the following table. User1 manages the resources in RG1. User4 manages the resources in RG2. Sub1 contains virtual machines that run Windows Server 2019 as shown in the following table No network security groups (NSGs) are associated to the network interfaces or the subnets. Sub1 contains the storage accounts shown in the following table. Requirements Planned Changes Contoso plans to implement the following changes: • Create a blob container named container1 and a file share named share1 that will use the Cool storage tier. • Create a storage account named storage5 and configure storage replication for the Blob service. • Create an NSG named NSG1 that will have the custom inbound security rules shown in the following table. • Associate NSG1 to the network interface of VM1. • Create an NSG named NSG2 that will have the custom outbound security rules shown in the following table. • Associate NSG2 to VNET1/Subnet2. Technical Requirements Contoso must meet the following technical requirements: • Create container1 and share1. • Use the principle of least privilege. • Create an Azure AD security group named Group4. • Back up the Azure file shares and virtual machines by using Azure Backup. • Trigger an alert if VM1 or VM2 has less than 20 GB of free space on volume C. • Enable User1 to create Azure policy definitions and User2 to assign Azure policies to RG1. • Create an internal Basic Azure Load Balancer named LB1 and connect the load balancer to VNET1/Subnet1 • Enable flow logging for IP traffic from VM5 and retain the flow logs for a period of eight months. • Whenever possible, grant Group4 Azure role-based access control (Azure RBAC) read-only permissions to the Azure file shares. You need to ensure that you can grant Group4 Azure RBAC read only permissions to all the Azure file shares. What should you do?",
+    "options": [
+      "On storage2, enable identity-based access for the file shares.",
+      "Recreate storage2 and set Hierarchical namespace to Enabled.",
+      "On storage1 and storage4, change the Account kind type to StorageV2 (general purpose v2).",
+      "Create a shared access signature (SAS) for storage1, storage2, and storage4."
+    ],
+    "answer": 0,
+    "explanation": "Azure Files supports identity-based authentication over Server Message Block (SMB) through on- premises Active Directory Domain Services (AD DS) and Azure Active Directory Domain Services (Azure AD DS)."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains the storage accounts shown in the following table: You plan to use the Azure Import/Export service to export data from Subscription1. You need to identify which storage account can be used to export the data. What should you identify?",
+    "options": [
+      "storage1",
+      "storage2",
+      "storage3",
+      "storage4"
+    ],
+    "answer": 3,
+    "explanation": "Azure Import/Export service supports the following of storage accounts: • Standard General Purpose v2 storage accounts (recommended for most scenarios) • Blob Storage accounts • General Purpose v1 storage accounts (both Classic or Azure Resource Manager deployments), Azure Import/Export service supports the following storage types: • Import supports Azure Blob storage and Azure File storage • Export supports Azure Blob storage"
+  },
+  {
+    "question": "You have Azure subscription that includes data in following locations: You plan to export data by using Azure import/export job named Export1. You need to identify the data that can be exported by using Export1. Which data should you identify?",
+    "options": [
+      "DB1",
+      "container1",
+      "share1",
+      "Table1"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources in the following table. Store1 contains a file share named data. Data contains 5,000 files. You need to synchronize the files in the file share named data to an on-premises server named Server1. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Create a container instance",
+      "Register Server1",
+      "Install the Azure File Sync agent on Server1",
+      "Download an automation script",
+      "Create a sync group"
+    ],
+    "answer": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Step 1 (C): Install the Azure File Sync agent on Server1 The Azure File Sync agent is a downloadable package that enables Windows Server to be synced with an Azure file share Step 2 (B): Register Server1. Register Windows Server with Storage Sync Service Registering your Windows Server with a Storage Sync Service establishes a trust relationship between your server (or cluster) and the Storage Sync Service. Step 3 (E): Create a sync group and a cloud endpoint. A sync group defines the sync topology for a set of files. Endpoints within a sync group are kept in sync with each other. A sync group must contain one cloud endpoint, which represents an Azure file share and one or more server endpoints. A server endpoint represents a path on registered server."
+  },
+  {
+    "question": "You have an Azure subscription that contains the storage accounts shown in the following table. You need to identify which storage account can be converted to zone-redundant storage (ZRS) replication by requesting a live migration from Azure support. What should you identify?",
+    "options": [
+      "storage1",
+      "storage2",
+      "storage3",
+      "storage4"
+    ],
+    "answer": 1,
+    "explanation": "ZRS currently supports standard general-purpose v2, FileStorage and BlockBlobStorage storage account types. Incorrect Answers: A, not C: Live migration is supported only for storage accounts that use LRS replication. If your account uses GRS or RA-GRS, then you need to first change your account's replication type to LRS before proceeding. This intermediary step removes the secondary endpoint provided by GRS/RA-GRS. Also, only standard storage account types support live migration. Premium storage accounts must be migrated manually. D: ZRS currently supports standard general-purpose v2, FileStorage and BlockBlobStorage storage account types."
+  },
+  {
+    "question": "You have an Azure subscription that contains a storage account named account1. You plan to upload the disk files of a virtual machine to account1 from your on-premises network. The on-premises network uses a public IP address space of 131.107.1.0/24. You plan to use the disk files to provision an Azure virtual machine named VM1. VM1 will be attached to a virtual network named VNet1. VNet1 uses an IP address space of 192.168.0.0/24. You need to configure account1 to meet the following requirements: • Ensure that you can upload the disk files to account1. • Ensure that you can attach the disks to VM1. • Prevent all other access to account1. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "From the Networking blade of account1, select Selected networks.",
+      "From the Networking blade of account1, select Allow trusted Microsoft services to access this storage account.",
+      "From the Networking blade of account1, add the 131.107.1.0/24 IP address range.",
+      "From the Networking blade of account1, add VNet1.",
+      "From the Service endpoints blade of VNet1, add a service endpoint."
+    ],
+    "answer": [
+      0,
+      4
+    ],
+    "explanation": "A: By default, storage accounts accept connections from clients on any network. To limit access to selected networks, you must first change the default action. Azure portal 1. Navigate to the storage account you want to secure. 2. Click on the settings menu called Firewalls and virtual networks. 3. To deny access by default, choose to allow access from 'Selected networks'. To allow traffic from all networks, choose to allow access from 'All networks'. 4. Click Save to apply your changes. E: Grant access from a Virtual Network Storage accounts can be configured to allow access only from specific Azure Virtual Networks. By enabling a Service Endpoint for Azure Storage within the Virtual Network, traffic is ensured an optimal route to the Azure Storage service. The identities of the virtual network and the subnet are also transmitted with each request."
+  },
+  {
+    "question": "You plan to use the Azure Import/Export service to copy files to a storage account. Which two files should you create before you prepare the drives for the import job? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "an XML manifest file",
+      "a dataset CSV file",
+      "a JSON configuration file",
+      "a PowerShell PS1 file",
+      "a driveset CSV file"
+    ],
+    "answer": [
+      1,
+      4
+    ],
+    "explanation": "B: Modify the dataset.csv file in the root folder where the tool resides. Depending on whether you want to import a file or folder or both, add entries in the dataset.csv file E: Modify the driveset.csv file in the root folder where the tool resides."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You have 5 TB of data that you need to transfer to Subscription1. You plan to use an Azure Import/Export job. What can you use as the destination of the imported data?",
+    "options": [
+      "a virtual machine",
+      "an Azure Cosmos DB database",
+      "Azure File Storage",
+      "the Azure File Sync Storage Sync Service"
+    ],
+    "answer": 2,
+    "explanation": "Azure Import/Export service is used to securely import large amounts of data to Azure Blob storage and Azure Files by shipping disk drives to an Azure datacenter. The maximum size of an Azure Files Resource of a file share is 5 TB. Note: There are several versions of this question in the exam. The question has two correct answers: 1. Azure File Storage 2. Azure Blob Storage The question can have other incorrect answer options, including the following: • Azure Data Lake Store • Azure SQL Database • Azure Data Factory"
+  },
+  {
+    "question": "You have an Azure Storage account named storage1. You plan to use AzCopy to copy data to storage1. You need to identify the storage services in storage1 to which you can copy the data. Which storage services should you identify?",
+    "options": [
+      "blob, file, table, and queue",
+      "blob and file only",
+      "file and table only",
+      "file only",
+      "blob, table, and queue only"
+    ],
+    "answer": 1,
+    "explanation": "AzCopy is a command-line utility that you can use to copy blobs or files to or from a storage account. Incorrect Answers: A, C, E: AzCopy does not support table and queue storage services. D: AzCopy supports file storage services, as well as blob storage services."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You have 5 TB of data that you need to transfer to Subscription1. You plan to use an Azure Import/Export job. What can you use as the destination of the imported data?",
+    "options": [
+      "an Azure Cosmos DB database",
+      "Azure Blob Storage",
+      "Azure Data Lake Store",
+      "the Azure File Sync Storage Sync Service"
+    ],
+    "answer": 1,
+    "explanation": "Azure Import/Export service is used to securely import large amounts of data to Azure Blob storage and Azure Files by shipping disk drives to an Azure datacenter. Note: There are several versions of this question in the exam. The question has two correct answers: 1. Azure File Storage 2. Azure Blob Storage The question can have other incorrect answer options, including the following: • a virtual machine • Azure SQL Database • Azure Data Factory"
+  },
+  {
+    "question": "You have a general-purpose v1 Azure Storage account named storage1 that uses locally-redundant storage (LRS). You need to ensure that the data in the storage account is protected if a zone fails. The solution must minimize costs and administrative effort. What should you do first?",
+    "options": [
+      "Create a new storage account.",
+      "Configure object replication rules.",
+      "Upgrade the account to general-purpose v2.",
+      "Modify the Replication setting of storage1."
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy"
+  },
+  {
+    "question": "You have an Azure subscription that contains the storage accounts shown in the following table. You plan to manage the data stored in the accounts by using lifecycle management rules. To which storage accounts can you apply lifecycle management rules?",
+    "options": [
+      "storage1 only",
+      "storage1 and storage2 only",
+      "storage3 and storage4 only",
+      "storage1, storage2, and storage3 only",
+      "storage1, storage2, storage3, and storage4"
+    ],
+    "answer": 3,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure- portal"
+  },
+  {
+    "question": "You create an Azure Storage account named contosostorage. You plan to create a file share named data. Users need to map a drive to the data file share from home computers that run Windows 10. Which outbound port should you open between the home computers and the data file share?",
+    "options": [
+      "80",
+      "443",
+      "445",
+      "3389"
+    ],
+    "answer": 2,
+    "explanation": "Server Message Block (SMB) is used to connect to an Azure file share over the internet. The SMB protocol requires TCP port 445 to be open. Incorrect Answers: A: Port 80 is required for HTTP to a web server B: Port 443 is required for HTTPS to a web server D: Port 3389443 is required for Remote desktop protocol (RDP) connections"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You have 5 TB of data that you need to transfer to Subscription1. You plan to use an Azure Import/Export job. What can you use as the destination of the imported data?",
+    "options": [
+      "Azure File Storage",
+      "an Azure Cosmos DB database",
+      "Azure Data Factory",
+      "Azure SQL Database"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/import-export/storage-import-export-service"
+  },
+  {
+    "question": "You have an Azure subscription that contains a storage account named storage1. You have the devices shown in the following table. From which devices can you use AzCopy to copy data to storage1?",
+    "options": [
+      "Device 1 only",
+      "Device1, Device2 and Device3",
+      "Device1 and Device2 only",
+      "Device1 and Device3 only"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure Storage account named storage1 that contains a blob container named container1. You need to prevent new content added to container1 from being modified for one year. What should you configure?",
+    "options": [
+      "the access tier",
+      "an access policy",
+      "the Access control (IAM) settings",
+      "the access level"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/storage/blobs/immutable-storage-overview?tabs=azure-portal"
+  },
+  {
+    "question": "You are configuring Azure Active Directory (Azure AD) authentication for an Azure Storage account named storage1. You need to ensure that the members of a group named Group1 can upload files by using the Azure portal. The solution must use the principle of least privilege. Which two roles should you configure for storage1? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Storage Account Contributor",
+      "Storage Blob Data Contributor",
+      "Reader",
+      "Contributor",
+      "Storage Blob Data Reader"
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "explanation": "To access blob data in the Azure portal with Azure AD credentials, a user must have the following role assignments: * A data access role, such as Storage Blob Data Reader or Storage Blob Data Contributor * The Azure Resource Manager Reader role, at a minimum The Reader role is an Azure Resource Manager role that permits users to view storage account resources, but not modify them. It does not provide read permissions to data in Azure Storage, but only to account management resources. The Reader role is necessary so that users can navigate to blob containers in the Azure portal. Note: in order from least to greatest permissions: The Reader and Data Access role The Storage Account Contributor role The Azure Resource Manager Contributor role The Azure Resource Manager Owner role"
+  },
+  {
+    "question": "You have an on-premises server that contains a folder named D:\\Folder1. You need to copy the contents of D:\\Folder1 to the public container in an Azure Storage account named contosodata. Which command should you run?",
+    "options": [
+      "https://contosodata.blob.core.windows.net/public",
+      "azcopy sync D:\\folder1 https://contosodata.blob.core.windows.net/public --snapshot",
+      "azcopy copy D:\\folder1 https://contosodata.blob.core.windows.net/public --recursive",
+      "az storage blob copy start-batch D:\\Folder1 https://contosodata.blob.core.windows.net/public"
+    ],
+    "answer": 2,
+    "explanation": "The azcopy copy command copies a directory (and all of the files in that directory) to a blob container. The result is a directory in the container by the same name. Incorrect Answers: B: The azcopy sync command replicates the source location to the destination location. However, the file is skipped if the last modified time in the destination is more recent. D: The az storage blob copy start-batch command copies multiple blobs to a blob container."
+  },
+  {
+    "question": "You have an Azure subscription. In the Azure portal, you plan to create a storage account named storage1 that will have the following settings: • Performance: Standard • Replication: Zone-redundant storage (ZRS) • Access tier (default): Cool • Hierarchical namespace: Disabled You need to ensure that you can set Account kind for storage1 to BlockBlobStorage. Which setting should you modify first?",
+    "options": [
+      "Performance",
+      "Replication",
+      "Access tier (default)",
+      "Hierarchical namespace"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-performance-tiers"
+  },
+  {
+    "question": "You create an Azure Storage account. You plan to add 10 blob containers to the storage account. For one of the containers, you need to use a different key to encrypt data at rest. What should you do before you create the container?",
+    "options": [
+      "Generate a shared access signature (SAS).",
+      "Modify the minimum TLS version.",
+      "Rotate the access keys.",
+      "Create an encryption scope."
+    ],
+    "answer": 3,
+    "explanation": "Encryption scopes enable you to manage encryption with a key that is scoped to a container or an individual blob. You can use encryption scopes to create secure boundaries between data that resides in the same storage account but belongs to different customers."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Contoso, Ltd. is a manufacturing company that has offices worldwide. Contoso works with partner organizations to bring products to market. Contoso products are manufactured by using blueprint files that the company authors and maintains. Existing Environment Currently, Contoso uses multiple types of servers for business operations, including the following: • File servers • Domain controllers • Microsoft SQL Server servers Your network contains an Active Directory forest named contoso.com. All servers and client computers are joined to Active Directory. You have a public-facing application named App1. App1 is comprised of the following three tiers: • A SQL database • A web front end • A processing middle tier Each tier is comprised of five virtual machines. Users access the web front end by using HTTPS only. Requirements Planned Changes Contoso plans to implement the following changes to the infrastructure: • Move all the tiers of App1 to Azure. • Move the existing product blueprint files to Azure Blob storage. • Create a hybrid directory to support an upcoming Microsoft 365 migration project. Technical Requirements Contoso must meet the following technical requirements: • Move all the virtual machines for App1 to Azure. • Minimize the number of open ports between the App1 tiers. • Ensure that all the virtual machines for App1 are protected by backups. • Copy the blueprint files to Azure over the Internet. • Ensure that the blueprint files are stored in the archive storage tier. • Ensure that partner access to the blueprint files is secured and temporary. • Prevent user passwords or hashes of passwords from being stored in Azure. • Use unmanaged standard storage for the hard disks of the virtual machines. • Ensure that when users join devices to Azure Active Directory (Azure AD), the users use a mobile phone to verify their identity. • Minimize administrative effort whenever possible. User Requirements Contoso identifies the following requirements for users: • Ensure that only users who are part of a group named Pilot can join devices to Azure AD. • Designate a new user named Admin1 as the service admin for the Azure subscription. • Admin1 must receive email alerts regarding service outages. • Ensure that a new user named User3 can create network objects for the Azure subscription. You need to implement a backup solution for App1 after the application is moved. What should you create first?",
+    "options": [
+      "a recovery plan",
+      "an Azure Backup Server",
+      "a backup policy",
+      "a Recovery Services vault"
+    ],
+    "answer": 3,
+    "explanation": "A Recovery Services vault is a logical container that stores the backup data for each protected resource, such as Azure VMs. When the backup job for a protected resource runs, it creates a recovery point inside the Recovery Services vault. Scenario: There are three application tiers, each with five virtual machines. Move all the virtual machines for App1 to Azure. Ensure that all the virtual machines for App1 are protected by backups."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Contoso, Ltd. is a manufacturing company that has offices worldwide. Contoso works with partner organizations to bring products to market. Contoso products are manufactured by using blueprint files that the company authors and maintains. Existing Environment Currently, Contoso uses multiple types of servers for business operations, including the following: • File servers • Domain controllers • Microsoft SQL Server servers Your network contains an Active Directory forest named contoso.com. All servers and client computers are joined to Active Directory. You have a public-facing application named App1. App1 is comprised of the following three tiers: • A SQL database • A web front end • A processing middle tier Each tier is comprised of five virtual machines. Users access the web front end by using HTTPS only. Requirements Planned Changes Contoso plans to implement the following changes to the infrastructure: • Move all the tiers of App1 to Azure. • Move the existing product blueprint files to Azure Blob storage. • Create a hybrid directory to support an upcoming Microsoft 365 migration project. Technical Requirements Contoso must meet the following technical requirements: • Move all the virtual machines for App1 to Azure. • Minimize the number of open ports between the App1 tiers. • Ensure that all the virtual machines for App1 are protected by backups. • Copy the blueprint files to Azure over the Internet. • Ensure that the blueprint files are stored in the archive storage tier. • Ensure that partner access to the blueprint files is secured and temporary. • Prevent user passwords or hashes of passwords from being stored in Azure. • Use unmanaged standard storage for the hard disks of the virtual machines. • Ensure that when users join devices to Azure Active Directory (Azure AD), the users use a mobile phone to verify their identity. • Minimize administrative effort whenever possible. User Requirements Contoso identifies the following requirements for users: • Ensure that only users who are part of a group named Pilot can join devices to Azure AD. • Designate a new user named Admin1 as the service admin for the Azure subscription. • Admin1 must receive email alerts regarding service outages. • Ensure that a new user named User3 can create network objects for the Azure subscription. You need to move the blueprint files to Azure. What should you do?",
+    "options": [
+      "Generate an access key. Map a drive, and then copy the files by using File Explorer.",
+      "Use Azure Storage Explorer to copy the files.",
+      "Use the Azure Import/Export service.",
+      "Generate a shared access signature (SAS). Map a drive, and then copy the files by using File Explorer."
+    ],
+    "answer": 1,
+    "explanation": "Azure Storage Explorer is a free tool from Microsoft that allows you to work with Azure Storage data on Windows, macOS, and Linux. You can use it to upload and download data from Azure blob storage. Scenario: Planned Changes include: move the existing product blueprint files to Azure Blob storage. Technical Requirements include: Copy the blueprint files to Azure over the Internet."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview General Overview Contoso, Ltd. is a consulting company that has a main office in Montreal and branch offices in Seattle and New York. Environment Existing Environment Contoso has an Azure subscription named Sub1 that is linked to an Azure Active Directory (Azure AD) tenant. The network contains an on-premises Active Directory domain that syncs to the Azure AD tenant. The Azure AD tenant contains the users shown in the following table. Sub1 contains two resource groups named RG1 and RG2 and the virtual networks shown in the following table. User1 manages the resources in RG1. User4 manages the resources in RG2. Sub1 contains virtual machines that run Windows Server 2019 as shown in the following table No network security groups (NSGs) are associated to the network interfaces or the subnets. Sub1 contains the storage accounts shown in the following table. Requirements Planned Changes Contoso plans to implement the following changes: • Create a blob container named container1 and a file share named share1 that will use the Cool storage tier. • Create a storage account named storage5 and configure storage replication for the Blob service. • Create an NSG named NSG1 that will have the custom inbound security rules shown in the following table. • Associate NSG1 to the network interface of VM1. • Create an NSG named NSG2 that will have the custom outbound security rules shown in the following table. • Associate NSG2 to VNET1/Subnet2. Technical Requirements Contoso must meet the following technical requirements: • Create container1 and share1. • Use the principle of least privilege. • Create an Azure AD security group named Group4. • Back up the Azure file shares and virtual machines by using Azure Backup. • Trigger an alert if VM1 or VM2 has less than 20 GB of free space on volume C. • Enable User1 to create Azure policy definitions and User2 to assign Azure policies to RG1. • Create an internal Basic Azure Load Balancer named LB1 and connect the load balancer to VNET1/Subnet1 • Enable flow logging for IP traffic from VM5 and retain the flow logs for a period of eight months. • Whenever possible, grant Group4 Azure role-based access control (Azure RBAC) read-only permissions to the Azure file shares. You need to identify which storage account to use for the flow logging of IP traffic from VM5. The solution must meet the retention requirements. Which storage account should you identify?",
+    "options": [
+      "storage1",
+      "storage2",
+      "storage3",
+      "storage4"
+    ],
+    "answer": 2,
+    "explanation": "We use the BlobStorage account storage3 for retention. Storage lifecycle management offers a rule-based policy that you can use to transition blob data to the appropriate access tiers or to expire data at the end of the data lifecycle. Note: Enable flow logging for IP traffic from VM5 and retain the flow logs for a period of eight months."
   }
 ]

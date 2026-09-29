@@ -1,0 +1,887 @@
+[
+  {
+    "question": "You have two Azure virtual machines named VM1 and VM2. You have two Recovery Services vaults named RSV1 and RSV2. VM2 is backed up to RSV1. You need to back up VM2 to RSV2. What should you do first?",
+    "options": [
+      "From the RSV1 blade, click Backup items and stop the VM2 backup",
+      "From the RSV2 blade, click Backup. From the Backup blade, select the backup for the virtual machine, and then click Backup",
+      "From the VM2 blade, click Disaster recovery, click Replication settings, and then select RSV2 as the Recovery Services vault",
+      "From the RSV1 blade, click Backup Jobs and export the VM2 job"
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm"
+  },
+  {
+    "question": "You have a general-purpose v1 Azure Storage account named storage1 that uses locally-redundant storage (LRS). You need to ensure that the data in the storage account is protected if a zone fails. The solution must minimize costs and administrative effort. What should you do first?",
+    "options": [
+      "Create a new storage account.",
+      "Configure object replication rules.",
+      "Upgrade the account to general-purpose v2.",
+      "Modify the Replication setting of storage1."
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy"
+  },
+  {
+    "question": "You need to implement a backup solution for App1 after the application is moved. What should you create first?",
+    "options": [
+      "a recovery plan",
+      "an Azure Backup Server",
+      "a backup policy",
+      "a Recovery Services vault"
+    ],
+    "answer": 3,
+    "explanation": "A Recovery Services vault is a logical container that stores the backup data for each protected resource, such as Azure VMs. When the backup job for a protected resource runs, it creates a recovery point inside the Recovery Services vault. Scenario: There are three application tiers, each with five virtual machines. Move all the virtual machines for App1 to Azure. Ensure that all the virtual machines for App1 are protected by backups. Reference: https://docs.microsoft.com/en-us/azure/backup/quick-backup-vm-portal"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an Azure Log Analytics workspace and configure the data settings. You add the Microsoft Monitoring Agent VM extension to VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You must install the Microsoft Monitoring Agent on VM1, and not the Microsoft Monitoring Agent VM extension. Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agents-overview"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an Azure Log Analytics workspace and configure the data settings. You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Alerts in Azure Monitor can identify important information in your Log Analytics repository. They are created by alert rules that automatically run log searches at regular intervals, and if results of the log search match particular criteria, then an alert record is created and it can be configured to perform an automated response. The Log Analytics agent collects monitoring data from the guest operating system and workloads of virtual machines in Azure, other cloud providers, and on-premises. It collects data into a Log Analytics workspace. Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-response https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agents-overview"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1 that contains the resources shown in the following table. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1. You need to create a new network interface named NIC2 for VM1. Solution: You create NIC2 in RG1 and West US. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The virtual machine you attach a network interface to and the virtual network you connect it to must exist in the same location, here West US, also referred to as a region. Reference: https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1 that contains the resources shown in the following table. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1. You need to create a new network interface named NIC2 for VM1. Solution: You create NIC2 in RG2 and Central US. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The virtual machine you attach a network interface to and the virtual network you connect it to must exist in the same location, here West US, also referred to as a region. Reference: https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an Azure storage account and configure shared access signatures (SASs). You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the storage account as the source. Does that meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead: You create an Azure Log Analytics workspace and configure the data settings. You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source. Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agents-overview"
+  },
+  {
+    "question": "You download an Azure Resource Manager template based on an existing virtual machine. The template will be used to deploy 100 virtual machines. You need to modify the template to reference an administrative password. You must prevent the password from being stored in plain text. What should you create to store the password?",
+    "options": [
+      "an Azure Key Vault and an access policy",
+      "an Azure Storage account and an access policy",
+      "a Recovery Services vault and a backup policy",
+      "Azure Active Directory (AD) Identity Protection and an Azure policy"
+    ],
+    "answer": 0,
+    "explanation": "You can use a template that allows you to deploy a simple Windows VM by retrieving the password that is stored in a Key Vault. Therefore, the password is never put in plain text in the template parameter file. Reference: https://azure.microsoft.com/en-us/resources/templates/101-vm-secure-password/"
+  },
+  {
+    "question": "You plan to automate the deployment of a virtual machine scale set that uses the Windows Server 2016 Datacenter image. You need to ensure that when the scale set virtual machines are provisioned, they have web server components installed. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Upload a configuration script",
+      "Create an automation account",
+      "Create an Azure policy",
+      "Modify the extensionProfile section of the Azure Resource Manager template",
+      "Create a new virtual machine scale set in the Azure portal"
+    ],
+    "answer": [
+      3,
+      4
+    ],
+    "explanation": "Virtual Machine Scale Sets can be used with the Azure Desired State Configuration (DSC) extension handler. Virtual machine scale sets provide a way to deploy and manage large numbers of virtual machines, and can elastically scale in and out in response to load. DSC is used to configure the VMs as they come online so they are running the production software. Reference: https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-dsc"
+  },
+  {
+    "question": "You have an Azure Resource Manager template named Template1 that is used to deploy an Azure virtual machine. Template1 contains the following text: The variables section in Template1 contains the following text: \"location\": \"westeurope\" The resources section in Template1 contains the following text: You need to deploy the virtual machine to the West US location by using Template1. What should you do?",
+    "options": [
+      "Modify the location in the resources section to westus",
+      "Select West US during the deployment",
+      "Modify the location in the variables section to westus"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer (Modify the location in the resources section to westus). No further explanation is provided in the source."
+  },
+  {
+    "question": "You create an App Service plan named Plan1 and an Azure web app named webapp1. You discover that the option to create a staging slot is unavailable. You need to create a staging slot for Plan1. What should you do first?",
+    "options": [
+      "From Plan1, scale up the App Service plan",
+      "From webapp1, modify the Application settings",
+      "From webapp1, add a custom domain",
+      "From Plan1, scale out the App Service plan"
+    ],
+    "answer": 0,
+    "explanation": "The app must be running in the Standard, Premium, or Isolated tier in order for you to enable multiple deployment slots. If the app isn't already in the Standard, Premium, or Isolated tier, you receive a message that indicates the supported tiers for enabling staged publishing. At this point, you have the option to select Upgrade and go to the Scale tab of your app before continuing. Scale up: Get more CPU, memory, disk space, and extra features like dedicated virtual machines (VMs), custom domains and certificates, staging slots, autoscaling, and more. Incorrect: Scale out: Increase the number of VM instances that run your app. You can scale out to as many as 30 instances Reference: https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots https://docs.microsoft.com/en-us/azure/app-service/manage-scale-up"
+  },
+  {
+    "question": "You plan to move a distributed on-premises app named App1 to an Azure subscription. After the planned move, App1 will be hosted on several Azure virtual machines. You need to ensure that App1 always runs on at least eight virtual machines during planned Azure maintenance. What should you create?",
+    "options": [
+      "one virtual machine scale set that has 10 virtual machines instances",
+      "one Availability Set that has three fault domains and one update domain",
+      "one Availability Set that has 10 update domains and one fault domain",
+      "one virtual machine scale set that has 12 virtual machines instances"
+    ],
+    "answer": 2,
+    "explanation": "An update domain is a logical group of underlying hardware that can undergo maintenance or be rebooted at the same time. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these update domains. This approach ensures that at least one instance of your application always remains running as the Azure platform undergoes periodic maintenance. Reference: http://www.thatlazyadmin.com/azure-fault-update-domains/"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Update management blade, you click Enable. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You would need to redeploy the VM. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/redeploy-to-new-node"
+  },
+  {
+    "question": "You have an Azure subscription that contains a web app named webapp1. You need to add a custom domain named www.contoso.com to webapp1. What should you do first?",
+    "options": [
+      "Create a DNS record",
+      "Add a connection string",
+      "Upload a certificate.",
+      "Stop webapp1."
+    ],
+    "answer": 0,
+    "explanation": "You can use either a CNAME record or an A record to map a custom DNS name to App Service. Reference: https://docs.microsoft.com/en-us/Azure/app-service/app-service-web-tutorial-custom-domain"
+  },
+  {
+    "question": "You have a deployment template named Template1 that is used to deploy 10 Azure web apps. You need to identify what to deploy before you deploy Template1. The solution must minimize Azure costs. What should you identify?",
+    "options": [
+      "five Azure Application Gateways",
+      "one App Service plan",
+      "10 App Service plans",
+      "one Azure Traffic Manager",
+      "one Azure Application Gateway"
+    ],
+    "answer": 1,
+    "explanation": "You create Azure web apps in an App Service plan. Reference: https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans"
+  },
+  {
+    "question": "You have an Azure subscription that contains a virtual machine named VM1. VM1 hosts a line-of-business application that is available 24 hours a day. VM1 has one network interface and one managed disk. VM1 uses the D4s v3 size. You plan to make the following changes to VM1: Change the size to D8s v3. Add a 500-GB managed disk. Add the Puppet Agent extension. Enable Desired State Configuration Management. Which change will cause downtime for VM1?",
+    "options": [
+      "Enable Desired State Configuration Management",
+      "Add a 500-GB managed disk",
+      "Change the size to D8s v3",
+      "Add the Puppet Agent extension"
+    ],
+    "answer": 2,
+    "explanation": "While resizing the VM it must be in a stopped state. Reference: https://azure.microsoft.com/en-us/blog/resize-virtual-machines/"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that has the following providers registered: Authorization Automation Resources Compute KeyVault Network Storage Billing Web Subscription1 contains an Azure virtual machine named VM1 that has the following configurations: Private IP address: 10.0.0.4 (dynamic) Network security group (NSG): NSG1 Public IP address: None Availability set: AVSet Subnet: 10.0.0.0/24 Managed disks: No Location: East US You need to record all the successful and failed connection attempts to VM1. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Enable Azure Network Watcher in the East US Azure region.",
+      "Add an Azure Network Watcher connection monitor.",
+      "Register the MicrosoftLogAnalytics provider.",
+      "Create an Azure Storage account.",
+      "Register the Microsoft.Insights resource provider.",
+      "Enable Azure Network Watcher flow logs."
+    ],
+    "answer": [
+      0,
+      4,
+      5
+    ],
+    "explanation": "You can log network traffic that flows through an NSG with Network Watcher's NSG flow log capability. In the Azure portal, enable Network Watcher Register Insights provider. NSG flow logging requires the Microsoft.Insights provider. Enable NSG flow log. NSG flow log data is written to an Azure Storage account, Subscription1 has storage. Reference: https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-portal"
+  },
+  {
+    "question": "You need to deploy an Azure virtual machine scale set that contains five instances as quickly as possible. What should you do?",
+    "options": [
+      "Deploy five virtual machines. Modify the Availability Zones settings for each virtual machine.",
+      "Deploy five virtual machines. Modify the Size setting for each virtual machine.",
+      "Deploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode.",
+      "Deploy one virtual machine scale set that is set to ScaleSetVM orchestration mode."
+    ],
+    "answer": 3,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/orchestration-modes"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using templates. You need to view the date and time when the resources were created in RG1. Solution: From the Subscriptions blade, you select the subscription, and then click Programmatic deployment. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "From the RG1 blade, click Deployments. You see a history of deployment for the resource group. Reference: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-first- template?tabs=azure-powershell"
+  },
+  {
+    "question": "You have an Azure Kubernetes Service (AKS) cluster named AKS1. You need to configure cluster autoscaler for AKS1. Which two tools should you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "the kubectl command",
+      "the az aks command",
+      "the Set-AzVm cmdlet",
+      "the Azure portal",
+      "the Set-AzAks cmdlet"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "A: The following example uses the kubectl autoscale command to autoscale the number of pods in the azure-vote-front deployment. If average CPU utilization across all pods exceeds 50% of their requested usage, the autoscaler increases the pods up to a maximum of 10 instances. A minimum of 3 instances is then defined for the deployment: kubectl autoscale deployment azure-vote-front --cpu-percent=50 --min=3 --max=10 B: Use the az aks update command to enable and configure the cluster autoscaler on the node pool for the existing cluster. Reference: https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-scale https://docs.microsoft.com/en-us/azure/aks/cluster-autoscaler"
+  },
+  {
+    "question": "You create the following resources in an Azure subscription: An Azure Container Registry instance named Registry1 An Azure Kubernetes Service (AKS) cluster named Cluster1 You create a container image named App1 on your administrative workstation. You need to deploy App1 to Cluster1. What should you do first?",
+    "options": [
+      "Run the docker push command.",
+      "Create an App Service plan.",
+      "Run the az acr build command.",
+      "Run the az aks create command."
+    ],
+    "answer": 2,
+    "explanation": "You should sign in and push a container image to Container Registry. Run the az acr build command to build and push the container image. az acr build \\ --image contoso-website \\ --registry $ACR_NAME \\ --file Dockerfile . Reference: https://docs.microsoft.com/en-us/learn/modules/aks-deploy-container-app/5-exercise-deploy-app"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using templates. You need to view the date and time when the resources were created in RG1. Solution: From the Subscriptions blade, you select the subscription, and then click Resource providers. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer (No). No further explanation is provided in the source."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using templates. You need to view the date and time when the resources were created in RG1. Solution: From the RG1 blade, you click Automation script. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "From the RG1 blade, click Deployments. You see a history of deployment for the resource group. Reference: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-first- template?tabs=azure-powershell"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using templates. You need to view the date and time when the resources were created in RG1. Solution: From the RG1 blade, you click Deployments. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "From the RG1 blade, click Deployments. You see a history of deployment for the resource group. Reference: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-first- template?tabs=azure-powershell"
+  },
+  {
+    "question": "You plan to deploy three Azure virtual machines named VM1, VM2, and VM3. The virtual machines will host a web app named App1. You need to ensure that at least two virtual machines are available if a single Azure datacenter becomes unavailable. What should you deploy?",
+    "options": [
+      "all three virtual machines in a single Availability Zone",
+      "all virtual machines in a single Availability Set",
+      "each virtual machine in a separate Availability Zone",
+      "each virtual machine in a separate Availability Set"
+    ],
+    "answer": 2,
+    "explanation": "Use availability zones to protect from datacenter level failures. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/manage-availability https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-availability-sets"
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1 that runs Windows Server 2019. You save VM1 as a template named Template1 to the Azure Resource Manager library. You plan to deploy a virtual machine named VM2 from Template1. What can you configure during the deployment of VM2?",
+    "options": [
+      "operating system",
+      "administrator username",
+      "virtual machine size",
+      "resource group"
+    ],
+    "answer": 1,
+    "explanation": "When deploying a virtual machine from a template, you must specify: the Resource Group name and location for the VM the administrator username and password an unique DNS name for the public IP Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/ps-template"
+  },
+  {
+    "question": "You have an Azure subscription that contains an Azure virtual machine named VM1. VM1 runs a financial reporting app named App1 that does not support multiple active instances. At the end of each month, CPU usage for VM1 peaks when App1 runs. You need to create a scheduled runbook to increase the processor performance of VM1 at the end of each month. What task should you include in the runbook?",
+    "options": [
+      "Add the Azure Performance Diagnostics agent to VM1.",
+      "Modify the VM size property of VM1.",
+      "Add VM1 to a scale set.",
+      "Increase the vCPU quota for the subscription.",
+      "Add a Desired State Configuration (DSC) extension to VM1."
+    ],
+    "answer": 4,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/automation/automation-quickstart-dsc-configuration"
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource Manager template. You need to ensure that NGINX is available on all the virtual machines after they are deployed. What should you use?",
+    "options": [
+      "Deployment Center in Azure App Service",
+      "A Desired State Configuration (DSC) extension",
+      "the New-AzConfigurationAssignment cmdlet",
+      "a Microsoft Intune device configuration profile"
+    ],
+    "answer": 1,
+    "explanation": "Azure virtual machine extensions are small packages that run post-deployment configuration and automation on Azure virtual machines. In the following example, the Azure CLI is used to deploy a custom script extension to an existing virtual machine, which installs a Nginx webserver. az vm extension set \\ --resource-group myResourceGroup \\ --vm-name myVM --name customScript \\ --publisher Microsoft.Azure.Extensions \\ --settings '{\"commandToExecute\": \"apt-get install -y nginx\"} Note: There are several versions of this question in the exam. The question has two correct answers: a Desired State Configuration (DSC) extension Azure Custom Script Extension The question can have other incorrect answer options, including the following: the Publish-AzVMDscConfiguration cmdlet Azure Application Insights Reference: https://docs.microsoft.com/en-us/azure/architecture/framework/devops/automation-configuration"
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1 that runs Windows Server 2019. The VM was deployed using default drive settings. You sign in to VM1 as a user named User1 and perform the following actions: Create files on drive C. Create files on drive D. Modify the screen saver timeout. Change the desktop background. You plan to redeploy VM1. Which changes will be lost after you redeploy VM1?",
+    "options": [
+      "the modified screen saver timeout",
+      "the new desktop background",
+      "the new files on drive D",
+      "the new files on drive C"
+    ],
+    "answer": 2,
+    "explanation": "The PDF marks C as the correct answer (the new files on drive D). No further explanation is provided in the source."
+  },
+  {
+    "question": "You plan to back up an Azure virtual machine named VM1. You discover that the Backup Pre-Check status displays a status of Warning. What is a possible cause of the Warning status?",
+    "options": [
+      "VM1 is stopped.",
+      "VM1 does not have the latest version of the Azure VM Agent (WaAppAgent.exe) installed.",
+      "VM1 has an unmanaged disk.",
+      "A Recovery Services vault is unavailable."
+    ],
+    "answer": 1,
+    "explanation": "The Warning state indicates one or more issues in VM’s configuration that might lead to backup failures and provides recommended steps to ensure successful backups. Not having the latest VM Agent installed, for example, can cause backups to fail intermittently and falls in this class of issues. Reference: https://azure.microsoft.com/en-us/blog/azure-vm-backup-pre-checks/"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Overview blade, you move the virtual machine to a different resource group. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You would need to redeploy the VM. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/redeploy-to-new-node"
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource Manager template. You need to ensure that NGINX is available on all the virtual machines after they are deployed. What should you use?",
+    "options": [
+      "the Publish-AzVMDscConfiguration cmdlet",
+      "Azure Application Insights",
+      "Azure Custom Script Extension",
+      "the New-AzConfigurationAssignement cmdlet"
+    ],
+    "answer": 2,
+    "explanation": "Note: There are several versions of this question in the exam. The question has two correct answers: a Desired State Configuration (DSC) extension Azure Custom Script Extension The question can have other incorrect answer options, including the following: Deployment Center in Azure App Service a Microsoft Intune device configuration profile Reference: https://docs.microsoft.com/en-us/azure/architecture/framework/devops/automation-configuration"
+  },
+  {
+    "question": "Your company has three offices. The offices are located in Miami, Los Angeles, and New York. Each office contains datacenter. You have an Azure subscription that contains resources in the East US and West US Azure regions. Each region contains a virtual network. The virtual networks are peered. You need to connect the datacenters to the subscription. The solution must minimize network latency between the datacenters. What should you create?",
+    "options": [
+      "three Azure Application Gateways and one On-premises data gateway",
+      "three virtual hubs and one virtual WAN",
+      "three virtual WANs and one virtual hub",
+      "three On-premises data gateways and one Azure Application Gateway"
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about"
+  },
+  {
+    "question": "You are planning to deploy an Ubuntu Server virtual machine to your company’s Azure subscription. You are required to implement a custom deployment that includes adding a particular trusted root certification authority (CA). Which of the following should you use to create the virtual machine?",
+    "options": [
+      "The New-AzureRmVm cmdlet.",
+      "The New-AzVM cmdlet.",
+      "The Create-AzVM cmdlet.",
+      "The az vm create command."
+    ],
+    "answer": 2,
+    "explanation": "Once Cloud-init.txt has been created, you can deploy the VM with az vm create cmdlet, using the -- custom-data parameter to provide the full path to the cloud-init.txt file."
+  },
+  {
+    "question": "Your company has three virtual machines (VMs) that are included in an availability set. You try to resize one of the VMs, which returns an allocation failure message. It is imperative that the VM is resized. Which of the following actions should you take?",
+    "options": [
+      "You should only stop one of the VMs.",
+      "You should stop two of the VMs.",
+      "You should stop all three VMs.",
+      "You should remove the necessary VM from the availability set."
+    ],
+    "answer": 2,
+    "explanation": "If the VM you wish to resize is part of an availability set, then you must stop all VMs in the availability set before changing the size of any VM in the availability set. The reason all VMs in the availability set must be stopped before performing the resize operation to a size that requires different hardware is that all running VMs in the availability set must be using the same physical hardware cluster. Therefore, if a change of physical hardware cluster is required to change the VM size then all VMs must be first stopped and then restarted one-by-one to a different physical hardware clusters."
+  },
+  {
+    "question": "You have an Azure virtual machine (VM) that has a single data disk. You have been tasked with attaching this data disk to another Azure VM. You need to make sure that your strategy allows for the virtual machines to be offline for the least amount of time possible. Which of the following is the action you should take FIRST?",
+    "options": [
+      "Stop the VM that includes the data disk.",
+      "Stop the VM that the data disk must be attached to.",
+      "Detach the data disk.",
+      "Delete the VM that includes the data disk."
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/detach-disk https://docs.microsoft.com/en-us/azure/lab-services/devtest-lab-attach-detach-data-disk"
+  },
+  {
+    "question": "Your company has an Azure subscription. You need to deploy a number of Azure virtual machines (VMs) using Azure Resource Manager (ARM) templates. You have been informed that the VMs will be included in a single availability set. You are required to make sure that the ARM template you configure allows for as many VMs as possible to remain accessible in the event of fabric failure or maintenance. Which of the following is the value that you should configure for the platformFaultDomainCount property?",
+    "options": [
+      "10",
+      "30",
+      "Min Value",
+      "Max Value"
+    ],
+    "answer": 3,
+    "explanation": "The number of fault domains for managed availability sets varies by region - either two or three per region."
+  },
+  {
+    "question": "Your company has an Azure subscription. You need to deploy a number of Azure virtual machines (VMs) using Azure Resource Manager (ARM) templates. You have been informed that the VMs will be included in a single availability set. You are required to make sure that the ARM template you configure allows for as many VMs as possible to remain accessible in the event of fabric failure or maintenance. Which of the following is the value that you should configure for the platformUpdateDomainCount property?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "answer": 1,
+    "explanation": "Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. For a given availability set, five non-user-configurable update domains are assigned by default (Resource Manager deployments can then be increased to provide up to 20 update domains) to indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time."
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) tenant that is configured for hybrid coexistence with the on-premises Active Directory domain. The on-premise virtual environment consists of virtual machines (VMs) running on Windows Server 2012 R2 Hyper-V host servers. You have created some PowerShell scripts to automate the configuration of newly created VMs. You plan to create several new VMs. You need a solution that ensures the scripts are run on the new VMs. Which of the following is the best solution?",
+    "options": [
+      "Configure a SetupComplete.cmd batch file in the %windir%\\setup\\scripts directory.",
+      "Configure a Group Policy Object (GPO) to run the scripts as logon scripts.",
+      "Configure a Group Policy Object (GPO) to run the scripts as startup scripts.",
+      "Place the scripts in a new virtual hard disk (VHD)."
+    ],
+    "answer": 0,
+    "explanation": "After you deploy a Virtual Machine you typically need to make some changes before it’s ready to use. This is something you can do manually or you could use Remote PowerShell to automate the configuration of your VM after deployment for example. But now there’s a third alternative available allowing you customize your VM: the CustomScriptextension. This CustomScript extension is executed by the VM Agent and it’s very straightforward: you specify which files it needs to download from your storage account and which file it needs to execute. You can even specify arguments that need to be passed to the script. The only requirement is that you execute a .ps1 file."
+  },
+  {
+    "question": "You have an app named App1 that runs on two Azure virtual machines named VM1 and VM2. You plan to implement an Azure Availability Set for App1. The solution must ensure that App1 is available during planned maintenance of the hardware hosting VM1 and VM2. What should you include in the Availability Set?",
+    "options": [
+      "one update domain",
+      "two fault domains",
+      "one fault domain",
+      "two update domains"
+    ],
+    "answer": 3,
+    "explanation": "Microsoft updates, which Microsoft refers to as planned maintenance events, sometimes require that VMs be rebooted to complete the update. To reduce the impact on VMs, the Azure fabric is divided into update domains to ensure that not all VMs are rebooted at the same time. Incorrect Answers: A: An update domain is a group of VMs and underlying physical hardware that can be rebooted at the same time. B, C: A fault domain shares common storage as well as a common power source and network switch. It is used to protect against unplanned system failure."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You deploy an Azure Kubernetes Service (AKS) cluster named AKS1. You need to deploy a YAML file to AKS1. Solution: From Azure CLI, you run az aks. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You deploy an Azure Kubernetes Service (AKS) cluster named AKS1. You need to deploy a YAML file to AKS1. Solution: From Azure CLI, you run the kubectl client. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You deploy an Azure Kubernetes Service (AKS) cluster named AKS1. You need to deploy a YAML file to AKS1. Solution: From Azure CLI, you run azcopy. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough"
+  },
+  {
+    "question": "You download an Azure Resource Manager template based on an existing virtual machine. The template will be used to deploy 100 virtual machines. You need to modify the template to reference an administrative password. You must prevent the password from being stored in plain text. What should you create to store the password?",
+    "options": [
+      "an Azure Key Vault and an access policy",
+      "an Azure Storage account and an access policy",
+      "a Recovery Services vault and a backup policy",
+      "Azure Active Directory (AD) Identity Protection and an Azure policy"
+    ],
+    "answer": 0,
+    "explanation": "You can use a template that allows you to deploy a simple Windows VM by retrieving the password that is stored in a Key Vault. Therefore, the password is never put in plain text in the template parameter file."
+  },
+  {
+    "question": "You have an Azure Resource Manager template named Template1 that is used to deploy an Azure virtual machine. Template1 contains the following text: The variables section in Template1 contains the following text: \"location\": \"westeurope\" The resources section in Template1 contains the following text: You need to deploy the virtual machine to the West US location by using Template1. What should you do?",
+    "options": [
+      "Modify the location in the resources section to westus",
+      "Select West US during the deployment",
+      "Modify the location in the variables section to westus"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You create an App Service plan named Plan1 and an Azure web app named webapp1. You discover that the option to create a staging slot is unavailable. You need to create a staging slot for Plan1. What should you do first?",
+    "options": [
+      "From Plan1, scale up the App Service plan",
+      "From webapp1, modify the Application settings",
+      "From webapp1, add a custom domain",
+      "From Plan1, scale out the App Service plan"
+    ],
+    "answer": 0,
+    "explanation": "The app must be running in the Standard, Premium, or Isolated tier in order for you to enable multiple deployment slots. If the app isn't already in the Standard, Premium, or Isolated tier, you receive a message that indicates the supported tiers for enabling staged publishing. At this point, you have the option to select Upgrade and go to the Scale tab of your app before continuing. Scale up: Get more CPU, memory, disk space, and extra features like dedicated virtual machines (VMs), custom domains and certificates, staging slots, autoscaling, and more. Incorrect: Scale out: Increase the number of VM instances that run your app. You can scale out to as many as 30 instances"
+  },
+  {
+    "question": "You plan to move a distributed on-premises app named App1 to an Azure subscription. After the planned move, App1 will be hosted on several Azure virtual machines. You need to ensure that App1 always runs on at least eight virtual machines during planned Azure maintenance. What should you create?",
+    "options": [
+      "one virtual machine scale set that has 10 virtual machines instances",
+      "one Availability Set that has three fault domains and one update domain",
+      "one Availability Set that has 10 update domains and one fault domain",
+      "one virtual machine scale set that has 12 virtual machines instances"
+    ],
+    "answer": 2,
+    "explanation": "An update domain is a logical group of underlying hardware that can undergo maintenance or be rebooted at the same time. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these update domains. This approach ensures that at least one instance of your application always remains running as the Azure platform undergoes periodic maintenance."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an event subscription on VM1. You create an alert in Azure Monitor and specify VM1 as the source Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead: You create an Azure Log Analytics workspace and configure the data settings. You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Overview blade, you move the virtual machine to a different subscription. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You would need to redeploy the VM."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Redeploy blade, you click Redeploy. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "When you redeploy a VM, it moves the VM to a new node within the Azure infrastructure and then powers it back on, retaining all your configuration options and associated resources."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Update management blade, you click Enable. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You would need to redeploy the VM."
+  },
+  {
+    "question": "You have an Azure subscription that contains a web app named webapp1. You need to add a custom domain named www.contoso.com to webapp1. What should you do first?",
+    "options": [
+      "Create a DNS record",
+      "Add a connection string",
+      "Upload a certificate.",
+      "Stop webapp1."
+    ],
+    "answer": 0,
+    "explanation": "You can use either a CNAME record or an A record to map a custom DNS name to App Service."
+  },
+  {
+    "question": "You have a deployment template named Template1 that is used to deploy 10 Azure web apps. You need to identify what to deploy before you deploy Template1. The solution must minimize Azure costs. What should you identify?",
+    "options": [
+      "five Azure Application Gateways",
+      "one App Service plan",
+      "10 App Service plans",
+      "one Azure Traffic Manager",
+      "one Azure Application Gateway"
+    ],
+    "answer": 1,
+    "explanation": "You create Azure web apps in an App Service plan."
+  },
+  {
+    "question": "You have an Azure subscription that contains a virtual machine named VM1. VM1 hosts a line-of- business application that is available 24 hours a day. VM1 has one network interface and one managed disk. VM1 uses the D4s v3 size. You plan to make the following changes to VM1: • Change the size to D8s v3. • Add a 500-GB managed disk. • Add the Puppet Agent extension. • Enable Desired State Configuration Management. Which change will cause downtime for VM1?",
+    "options": [
+      "Enable Desired State Configuration Management",
+      "Add a 500-GB managed disk",
+      "Change the size to D8s v3",
+      "Add the Puppet Agent extension"
+    ],
+    "answer": 2,
+    "explanation": "While resizing the VM it must be in a stopped state."
+  },
+  {
+    "question": "You have an app named App1 that runs on an Azure web app named webapp1. The developers at your company upload an update of App1 to a Git repository named Git1. Webapp1 has the deployment slots shown in the following table. You need to ensure that the App1 update is tested before the update is made available to users. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Swap the slots",
+      "Deploy the App1 update to webapp1-prod, and then test the update",
+      "Stop webapp1-prod",
+      "Deploy the App1 update to webapp1-test, and then test the update",
+      "Stop webapp1-test"
+    ],
+    "answer": [
+      0,
+      3
+    ],
+    "explanation": "The PDF marks A, D as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You need to deploy an Azure virtual machine scale set that contains five instances as quickly as possible. What should you do?",
+    "options": [
+      "Deploy five virtual machines. Modify the Availability Zones settings for each virtual machine.",
+      "Deploy five virtual machines. Modify the Size setting for each virtual machine.",
+      "Deploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode.",
+      "Deploy one virtual machine scale set that is set to ScaleSetVM orchestration mode."
+    ],
+    "answer": 3,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/orchestration-modes"
+  },
+  {
+    "question": "You plan to create the Azure web apps shown in the following table. What is the minimum number of App Service plans you should create for the web apps?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure Kubernetes Service (AKS) cluster named AKS1. You need to configure cluster autoscaler for AKS1. Which two tools should you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "the kubectl command",
+      "the az aks command",
+      "the Set-AzVm cmdlet",
+      "the Azure portal",
+      "the Set-AzAks cmdlet"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "A: The following example uses the kubectl autoscale command to autoscale the number of pods in the azure-vote-front deployment. If average CPU utilization across all pods exceeds 50% of their requested usage, the autoscaler increases the pods up to a maximum of 10 instances. A minimum of 3 instances is then defined for the deployment: kubectl autoscale deployment azure-vote-front --cpu-percent=50 --min=3 --max=10 B: Use the az aks update command to enable and configure the cluster autoscaler on the node pool for the existing cluster."
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources shown in the following table. You need to configure a proximity placement group for VMSS1. Which proximity placement groups should you use?",
+    "options": [
+      "Proximity2 only",
+      "Proximity1, Proximity2, and Proximity3",
+      "Proximity1 only",
+      "Proximity1 and Proximity3 only"
+    ],
+    "answer": 0,
+    "explanation": "Resource Group location of VMSS1 is the RG2 location, which is West US. Only Proximity2, which also in RG2, is located in West US Note: When you assign your virtual machines to a proximity placement group, the virtual machines are placed in the same data center, resulting in lower and deterministic latency for your applications."
+  },
+  {
+    "question": "You plan to deploy three Azure virtual machines named VM1, VM2, and VM3. The virtual machines will host a web app named App1. You need to ensure that at least two virtual machines are available if a single Azure datacenter becomes unavailable. What should you deploy?",
+    "options": [
+      "all three virtual machines in a single Availability Zone",
+      "all virtual machines in a single Availability Set",
+      "each virtual machine in a separate Availability Zone",
+      "each virtual machine in a separate Availability Set"
+    ],
+    "answer": 2,
+    "explanation": "Use availability zones to protect from datacenter level failures."
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1 that runs Windows Server 2019. You save VM1 as a template named Template1 to the Azure Resource Manager library. You plan to deploy a virtual machine named VM2 from Template1. What can you configure during the deployment of VM2?",
+    "options": [
+      "operating system",
+      "administrator username",
+      "virtual machine size",
+      "resource group"
+    ],
+    "answer": 1,
+    "explanation": "When deploying a virtual machine from a template, you must specify: • the Resource Group name and location for the VM • the administrator username and password • an unique DNS name for the public IP"
+  },
+  {
+    "question": "You have an Azure subscription that contains an Azure virtual machine named VM1. VM1 runs a financial reporting app named App1 that does not support multiple active instances. At the end of each month, CPU usage for VM1 peaks when App1 runs. You need to create a scheduled runbook to increase the processor performance of VM1 at the end of each month. What task should you include in the runbook?",
+    "options": [
+      "Add the Azure Performance Diagnostics agent to VM1.",
+      "Modify the VM size property of VM1.",
+      "Add VM1 to a scale set.",
+      "Increase the vCPU quota for the subscription.",
+      "Add a Desired State Configuration (DSC) extension to VM1."
+    ],
+    "answer": 4,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/automation/automation-quickstart-dsc-configuration"
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource Manager template. You need to ensure that NGINX is available on all the virtual machines after they are deployed. What should you use?",
+    "options": [
+      "Deployment Center in Azure App Service",
+      "a Desired State Configuration (DSC) extension",
+      "the New-AzConfigurationAssignment cmdlet",
+      "a Microsoft Intune device configuration profile"
+    ],
+    "answer": 1,
+    "explanation": "Azure virtual machine extensions are small packages that run post-deployment configuration and automation on Azure virtual machines. In the following example, the Azure CLI is used to deploy a custom script extension to an existing virtual machine, which installs a Nginx webserver. az vm extension set \\ --resource-group myResourceGroup \\ --vm-name myVM --name customScript \\ --publisher Microsoft.Azure.Extensions \\ --settings '{\"commandToExecute\": \"apt-get install -y nginx\"} Note: There are several versions of this question in the exam. The question has two correct answers: 1. a Desired State Configuration (DSC) extension 2. Azure Custom Script Extension The question can have other incorrect answer options, including the following: • the Publish-AzVMDscConfiguration cmdlet • Azure Application Insights"
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1 that runs Windows Server 2019. The VM was deployed using default drive settings. You sign in to VM1 as a user named User1 and perform the following actions: • Create files on drive C. • Create files on drive D. • Modify the screen saver timeout. • Change the desktop background. You plan to redeploy VM1. Which changes will be lost after you redeploy VM1?",
+    "options": [
+      "the modified screen saver timeout",
+      "the new desktop background",
+      "the new files on drive D",
+      "the new files on drive C"
+    ],
+    "answer": 2,
+    "explanation": "The PDF marks C as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure web app named App1. App1 has the deployment slots shown in the following table: In webapp1-test, you test several changes to App1. You back up App1. You swap webapp1-test for webapp1-prod and discover that App1 is experiencing performance issues. You need to revert to the previous version of App1 as quickly as possible. What should you do?",
+    "options": [
+      "Redeploy App1",
+      "Swap the slots",
+      "Clone App1",
+      "Restore the backup of App1"
+    ],
+    "answer": 1,
+    "explanation": "When you swap deployment slots, Azure swaps the Virtual IP addresses of the source and destination slots, thereby swapping the URLs of the slots. We can easily revert the deployment by swapping back."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Overview blade, you move the virtual machine to a different resource group. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You would need to redeploy the VM."
+  },
+  {
+    "question": "You have web apps in the West US, Central US and East US Azure regions. You have the App Service plans shown in the following table. You plan to create an additional App Service plan named ASP5 that will use the Linux operating system. You need to identify in which of the currently used locations you can deploy ASP5. What should you recommend?",
+    "options": [
+      "West US, Central US, or East US",
+      "Central US only",
+      "East US only",
+      "West US only"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage"
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource Manager template. You need to ensure that NGINX is available on all the virtual machines after they are deployed. What should you use?",
+    "options": [
+      "the New-AzConfigurationAssignment cmdlet",
+      "a Desired State Configuration (DSC) extension",
+      "Azure Active Directory (Azure AD) Application Proxy",
+      "Azure Application Insights"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some questions sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You deploy an Azure Kubernetes Service (AKS) cluster named AKS1. You need to deploy a YAML file to AKS1. Solution: From Azure Cloud Shell, you run az aks. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "To deploy a YAML file, the command is: kubectl apply -f <file_name>.yaml"
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource Manager template. You need to ensure that NGINX is available on all the virtual machines after they are deployed. What should you use?",
+    "options": [
+      "the Publish-AzVMDscConfiguration cmdlet",
+      "Azure Application Insights",
+      "Azure Custom Script Extension",
+      "a Microsoft Endpoint Manager device configuration profile"
+    ],
+    "answer": 2,
+    "explanation": "Use Azure Resource Manager templates to install applications into virtual machine scale sets with the Custom Script Extension. Note: The Custom Script Extension downloads and executes scripts on Azure VMs. This extension is useful for post deployment configuration, software installation, or any other configuration / management task. To see the Custom Script Extension in action, create a scale set that installs the NGINX web server and outputs the hostname of the scale set VM instance."
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources shown in the following table. You need to configure a proximity placement group for VMSS1. Which proximity placement groups should you use?",
+    "options": [
+      "Proximity2 only",
+      "Proximity1, Proximity2, and Proximity3",
+      "Proximity1 only",
+      "Proximity1 and Proximity3 only"
+    ],
+    "answer": 2,
+    "explanation": "Resource Group location of VMSS1 is the RG2 location, which is West US. Only Proximity1, which also in RG2, is located in West US Note: When you assign your virtual machines to a proximity placement group, the virtual machines are placed in the same data center, resulting in lower and deterministic latency for your applications."
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource Manager template. You need to ensure that NGINX is available on all the virtual machines after they are deployed. What should you use?",
+    "options": [
+      "the Publish-AzVMDscConfiguration cmdlet",
+      "Azure Application Insights",
+      "Azure Custom Script Extension",
+      "the New-AzConfigurationAssignement cmdlet"
+    ],
+    "answer": 2,
+    "explanation": "Note: There are several versions of this question in the exam. The question has two correct answers: 1. a Desired State Configuration (DSC) extension 2. Azure Custom Script Extension The question can have other incorrect answer options, including the following: • Deployment Center in Azure App Service • a Microsoft Intune device configuration profile"
+  },
+  {
+    "question": "You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource\nManager template.\nYou need to ensure that NGINX is available on all the virtual machines after they are deployed.\nWhat should you use?",
+    "options": [
+      "a Desired State Configuration (DSC) extension",
+      "the New-AzConfigurationAssignment cmdlet",
+      "Azure Application Insights",
+      "a Microsoft Endpoint Manager device configuration profile"
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You need to configure an Azure web app named contoso.azurewebsites.net to host www.contoso.com.\nWhat should you do first?",
+    "options": [
+      "Create A records named www.contoso.com and asuid.contoso.com.",
+      "Create a TXT record named asuid that contains the domain verification ID.",
+      "Create a CNAME record named asuid that contains the domain verification ID.",
+      "Create a TXT record named www.contoso.com that has a value of contoso.azurewebsites.net."
+    ],
+    "answer": 2,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },{
+    "question": "You are planning to deploy an Ubuntu Server virtual machine to your company’s Azure subscription. You are required to implement a custom deployment that includes adding a particular trusted root certification authority (CA). Which of the following should you use to create the virtual machine?",
+    "options": [
+      "The New-AzureRmVm cmdlet.",
+      "The New-AzVM cmdlet.",
+      "The Create-AzVM cmdlet.",
+      "The az vm create command."
+    ],
+    "answer": 2,
+    "explanation": "Once Cloud-init.txt has been created, you can deploy the VM with az vm create cmdlet, using the --custom- data parameter to provide the full path to the cloud-init.txt file. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-automate-vm-deployment"
+  },
+  {
+    "question": "Your company has three virtual machines (VMs) that are included in an availability set. You try to resize one of the VMs, which returns an allocation failure message. It is imperative that the VM is resized. Which of the following actions should you take?",
+    "options": [
+      "You should only stop one of the VMs.",
+      "You should stop two of the VMs.",
+      "You should stop all three VMs.",
+      "You should remove the necessary VM from the availability set."
+    ],
+    "answer": 2,
+    "explanation": "If the VM you wish to resize is part of an availability set, then you must stop all VMs in the availability set before changing the size of any VM in the availability set. The reason all VMs in the availability set must be stopped before performing the resize operation to a size that requires different hardware is that all running VMs in the availability set must be using the same physical hardware cluster. Therefore, if a change of physical hardware cluster is required to change the VM size then all VMs must be first stopped and then restarted one-by-one to a different physical hardware clusters. Reference: https://azure.microsoft.com/es-es/blog/resize-virtual-machines/"
+  },
+  {
+    "question": "You have an Azure virtual machine (VM) that has a single data disk. You have been tasked with attaching this data disk to another Azure VM. You need to make sure that your strategy allows for the virtual machines to be offline for the least amount of time possible. Which of the following is the action you should take FIRST?",
+    "options": [
+      "Stop the VM that includes the data disk.",
+      "Stop the VM that the data disk must be attached to.",
+      "Detach the data disk.",
+      "Delete the VM that includes the data disk."
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/detach-disk https://docs.microsoft.com/en-us/azure/lab-services/devtest-lab-attach-detach-data-disk"
+  },
+  {
+    "question": "Your company has an Azure subscription. You need to deploy a number of Azure virtual machines (VMs) using Azure Resource Manager (ARM) templates. You have been informed that the VMs will be included in a single availability set. You are required to make sure that the ARM template you configure allows for as many VMs as possible to remain accessible in the event of fabric failure or maintenance. Which of the following is the value that you should configure for the platformUpdateDomainCount property?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "answer": 3,
+    "explanation": "Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. For a given availability set, five non-user-configurable update domains are assigned by default (Resource Manager deployments can then be increased to provide up to 20 update domains) to indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/manage-availability"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 and an on-premises deployment of Microsoft System Center Service Manager. Subscription1 contains a virtual machine named VM1. You need to ensure that an alert is set in Service Manager when the amount of available memory on VM1 is below 10 percent. What should you do first?",
+    "options": [
+      "Create an automation runbook",
+      "Deploy a function app",
+      "Deploy the IT Service Management Connector (ITSM)",
+      "Create a notification"
+    ],
+    "answer": 2,
+    "explanation": "The IT Service Management Connector (ITSMC) allows you to connect Azure and a supported IT Service Management (ITSM) product/service, such as the Microsoft System Center Service Manager. With ITSMC, you can create work items in ITSM tool, based on your Azure alerts (metric alerts, Activity Log alerts and Log Analytics alerts). Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/itsmc-overview"
+  },
+  {
+    "question": "You have an app named App1 that runs on two Azure virtual machines named VM1 and VM2. You plan to implement an Azure Availability Set for App1. The solution must ensure that App1 is available during planned maintenance of the hardware hosting VM1 and VM2. What should you include in the Availability Set?",
+    "options": [
+      "one update domain",
+      "two fault domains",
+      "one fault domain",
+      "two update domains"
+    ],
+    "answer": 3,
+    "explanation": "Microsoft updates, which Microsoft refers to as planned maintenance events, sometimes require that VMs be rebooted to complete the update. To reduce the impact on VMs, the Azure fabric is divided into update domains to ensure that not all VMs are rebooted at the same time. Incorrect Answers: A: An update domain is a group of VMs and underlying physical hardware that can be rebooted at the same time. B, C: A fault domain shares common storage as well as a common power source and network switch. It is used to protect against unplanned system failure. References: https://petri.com/understanding-azure-availability-sets https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-availability-sets"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You have 5 TB of data that you need to transfer to Subscription1. You plan to use an Azure Import/Export job. What can you use as the destination of the imported data?",
+    "options": [
+      "an Azure Cosmos DB database",
+      "Azure Blob storage",
+      "Azure Data Lake Store",
+      "the Azure File Sync Storage Sync Service"
+    ],
+    "answer": 1,
+    "explanation": "Azure Import/Export service is used to securely import large amounts of data to Azure Blob storage and Azure Files by shipping disk drives to an Azure datacenter. Note: There are several versions of this question in the exam. The question has two correct answers: Azure File Storage Azure Blob Storage The question can have other incorrect answer options, including the following: a virtual machine Azure SQL Database Azure Data Factory Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-service"
+  }
+]

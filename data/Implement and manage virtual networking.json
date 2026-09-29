@@ -1238,38 +1238,5 @@
     ],
     "answer": 2,
     "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
-  },
-  {
-    "question": "You have a subnet named Subnet1 that contains Azure virtual machines. A network security group (NSG) named NSG1 is associated to Subnet1.\nNSG1 only contains the default rules.\nYou need to create a rule in NSG1 to prevent the hosts on Subnet1 form connecting to the Azure portal. The hosts must be able to connect to\nother internet hosts.\nTo what should you set Destination in the rule?",
-    "options": [
-      "Application security group",
-      "IP Addresses",
-      "Service Tag",
-      "Any"
-    ],
-    "answer": 2,
-    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
-  },
-  {
-    "question": "You have an Azure subscription that contains eight virtual machines and the resources shown in the following table.\nYou need to configure access for VNET1. The solution must meet the following requirements:\n• The virtual machines connected to VNET1 must be able to communicate with the virtual machines connected to VNET2 by using the Microsoft\nbackbone.\n• The virtual machines connected to VNET1 must be able to access storage1, storage2, and Azure AD by using the Microsoft backbone.\nWhat is the minimum number of service endpoints you should add to VNET1?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "5"
-    ],
-    "answer": 3,
-    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
-  },
-  {
-    "question": "You need to ensure that VM1 can communicate with VM4. The solution must minimize administrative effort.\nWhat should you do?",
-    "options": [
-      "Create a user-defined route from VNET1 to VNET3.",
-      "Create an NSG and associate the NSG to VM1 and VM4.",
-      "Assign VM4 an IP address of 10.0.1.5/24.",
-      "Establish peering between VNET1 and VNET3."
-    ],
-    "answer": 3,
-    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
   }
 ]

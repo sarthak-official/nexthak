@@ -586,5 +586,560 @@
       2
     ],
     "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Your company’s Azure subscription includes Azure virtual machines (VMs) that run Windows Server 2016. One of the VMs is backed up every day using Azure Backup Instant Restore. When the VM becomes infected with data encrypting ransomware, you decide to recover the VM’s files. Which of the following is TRUE in this scenario?",
+    "options": [
+      "You can only recover the files to the infected VM.",
+      "You can recover the files to any VM within the company’s subscription.",
+      "You can only recover the files to a new VM.",
+      "You will not be able to recover the files."
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer (You can only recover the files to the infected VM.). No further explanation is provided in the source."
+  },
+  {
+    "question": "Your company’s Azure subscription includes Azure virtual machines (VMs) that run Windows Server 2016. One of the VMs is backed up every day using Azure Backup Instant Restore. When the VM becomes infected with data encrypting ransomware, you are required to restore the VM. Which of the following actions should you take?",
+    "options": [
+      "You should restore the VM after deleting the infected VM.",
+      "You should restore the VM to any VM within the company’s subscription.",
+      "You should restore the VM to a new Azure VM.",
+      "You should restore the VM to an on-premise Windows device."
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer (You should restore the VM to any VM within the company’s subscription.). No further explanation is provided in the source."
+  },
+  {
+    "question": "You administer a solution in Azure that is currently having performance issues. You need to find the cause of the performance issues pertaining to metrics on the Azure infrastructure. Which of the following is the tool you should use?",
+    "options": [
+      "Azure Traffic Analytics",
+      "Azure Monitor",
+      "Azure Activity Log",
+      "Azure Advisor"
+    ],
+    "answer": 1,
+    "explanation": "Metrics in Azure Monitor are stored in a time-series database which is optimized for analyzing time- stamped data. This makes metrics particularly suited for alerting and fast detection of issues. Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform"
+  },
+  {
+    "question": "Your company has an Azure subscription that includes a Recovery Services vault. You want to use Azure Backup to schedule a backup of your company's virtual machines (VMs) to the Recovery Services vault. Which of the following VMs can you back up? Choose all that apply.",
+    "options": [
+      "VMs that run Windows 10.",
+      "VMs that run Windows Server 2012 or higher.",
+      "VMs that have NOT been shut down.",
+      "VMs that run Debian 8.2+.",
+      "VMs that have been shut down."
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Azure Backup supports backup of 64-bit Windows server operating system from Windows Server 2008. Azure Backup supports backup of 64-bit Windows 10 operating system. Azure Backup supports backup of 64-bit Debian operating system from Debian 7.9+. Azure Backup supports backup of VM that are shutdown or offline. Reference: https://docs.microsoft.com/en-us/azure/backup/backup-support-matrix-iaas https://docs.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros Manage Azure identities and governance Question Set 1"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1. You need to view the error events from a table named Event. Which query should you run in Workspace1?",
+    "options": [
+      "Get-Event Event | where {$_.EventType == \"error\"}",
+      "search in (Event) \"error\"",
+      "select * from Event where EventType == \"error\"",
+      "search in (Event) * | where EventType -eq \"error\""
+    ],
+    "answer": 1,
+    "explanation": "To search a term in a specific table, add the table-name just after the search operator Note: There are several versions of this question in the exam. The question has two possible correct answers: Event | search \"error\" Event | where EventType == \"error\" search in (Event) \"error\" Other incorrect answer options you may see on the exam include the following: Get-Event Event | where {$_.EventTye –eq \"error\"} Event | where EventType is \"error\" search in (Event) * | where EventType –eq \"error\" select * from Event where EventType is \"error\" Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/searchoperator? pivots=azuredataexplorer"
+  },
+  {
+    "question": "You have an Azure subscription. You have 100 Azure virtual machines. You need to quickly identify underutilized virtual machines that can have their service tier changed to a less expensive offering. Which blade should you use?",
+    "options": [
+      "Monitor",
+      "Advisor",
+      "Metrics",
+      "Customer insights"
+    ],
+    "answer": 1,
+    "explanation": "Advisor helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard. Reference: https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1. You need to view the error events from a table named Event. Which query should you run in Workspace1?",
+    "options": [
+      "Get-Event Event | where {$_.EventType == \"error\"}",
+      "Event | search \"error\"",
+      "select * from Event where EventType == \"error\"",
+      "Event | where EventType is \"error\""
+    ],
+    "answer": 1,
+    "explanation": "The search operator provides a multi-table/multi-column search experience. The syntax is: Table_name | search \"search term\" Note: There are several versions of this question in the exam. The question has three possible correct answers: search in (Event) \"error\" Event | search \"error\" Event | where EventType == \"error\" Other incorrect answer options you may see on the exam include the following: Get-Event Event | where {$_.EventTye –eq \"error\"} Event | where EventType is \"error\" select * from Event where EventType is \"error\" search in (Event) * | where EventType –eq \"error\" Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/searchoperator? pivots=azuredataexplorer"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an event subscription on VM1. You create an alert in Azure Monitor and specify VM1 as the source Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead: You create an Azure Log Analytics workspace and configure the data settings. You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source. Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/agents-overview"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Overview blade, you move the virtual machine to a different subscription. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You would need to redeploy the VM. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/redeploy-to-new-node"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1. VM1 was deployed by using a custom Azure Resource Manager template named ARM1.json. You receive a notification that VM1 will be affected by maintenance. You need to move VM1 to a different host immediately. Solution: From the Redeploy blade, you click Redeploy. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "When you redeploy a VM, it moves the VM to a new node within the Azure infrastructure and then powers it back on, retaining all your configuration options and associated resources. References: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/redeploy-to-new-node"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You deploy a Linux virtual machine named VM1 to Subscription1. You need to monitor the metrics and the logs of VM1. What should you use?",
+    "options": [
+      "Azure HDInsight",
+      "Linux Diagnostic Extension (LAD) 3.0",
+      "the AzurePerformanceDiagnostics extension",
+      "Azure Analysis Services"
+    ],
+    "answer": 2,
+    "explanation": "You can use extensions to configure diagnostics on your VMs to collect additional metric data. The basic host metrics are available, but to see more granular and VM-specific metrics, you need to install the Azure diagnostics extension on the VM. The Azure diagnostics extension allows additional monitoring and diagnostics data to be retrieved from the VM. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-monitoring"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Performance Monitor, you create a Data Collector Set (DCS). Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Use the Connection Monitor feature of Azure Network Watcher. Reference: https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Azure Monitor, you create a metric on Network In and Network Out. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-connection-monitor- in-all-public-regions/"
+  },
+  {
+    "question": "You have an existing Azure subscription that contains 10 virtual machines. You need to monitor the latency between your on-premises network and the virtual machines. What should you use?",
+    "options": [
+      "Service Map",
+      "Connection troubleshoot",
+      "Network Performance Monitor",
+      "Effective routes"
+    ],
+    "answer": 2,
+    "explanation": "Network Performance Monitor is a cloud-based hybrid network monitoring solution that helps you monitor network performance between various points in your network infrastructure. It also helps you monitor network connectivity to service and application endpoints and monitor the performance of Azure ExpressRoute. You can monitor network connectivity across cloud deployments and on-premises locations, multiple data centers, and branch offices and mission-critical multitier applications or microservices. With Performance Monitor, you can detect network issues before users complain. Reference: https://docs.microsoft.com/en-us/azure/azure-monitor/insights/network-performance-monitor"
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1. Azure collects events from VM1. You are creating an alert rule in Azure Monitor to notify an administrator when an error is logged in the System event log of VM1. Which target resource should you monitor in the alert rule?",
+    "options": [
+      "virtual machine extension",
+      "virtual machine",
+      "metric alert",
+      "Azure Log Analytics workspace"
+    ],
+    "answer": 3,
+    "explanation": "For the first step to create the new alert tule, under the Create Alert section, you are going to select your Log Analytics workspace as the resource, since this is a log based alert signal. Reference: https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/configure-azure-monitor"
+  },
+  {
+    "question": "You have an Azure subscription that contains 100 virtual machines. You regularly create and delete virtual machines. You need to identify unattached disks that can be deleted. What should you do?",
+    "options": [
+      "From Azure Cost Management, view Cost Analysis",
+      "From Azure Advisor, modify the Advisor configuration",
+      "From Microsoft Azure Storage Explorer, view the Account Management properties",
+      "From Azure Cost Management, view Advisor Recommendations"
+    ],
+    "answer": 3,
+    "explanation": "From Home –> Cost Management + Billing –> Cost Management, scroll down on the options and select View Recommendations: Azure Cost Management / Advisor From here you will see the recommendations for your subscription, if you have orphaned disks, they will be listed. Reference: https://codeserendipity.com/2020/07/08/microsoft-azure-find-unattached-disks-that-can-be-deleted-and- other-recommendations/"
+  },
+  {
+    "question": "You have an Azure web app named webapp1. Users report that they often experience HTTP 500 errors when they connect to webapp1. You need to provide the developers of webapp1 with real-time access to the connection errors. The solution must provide all the connection error details. What should you do first?",
+    "options": [
+      "From webapp1, enable Web server logging",
+      "From Azure Monitor, create a workbook",
+      "From Azure Monitor, create a Service Health alert",
+      "From webapp1, turn on Application Logging"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer (From webapp1, enable Web server logging). No further explanation is provided in the source."
+  },
+  {
+    "question": "Your company’s Azure subscription includes Azure virtual machines (VMs) that run Windows Server 2016. One of the VMs is backed up every day using Azure Backup Instant Restore. When the VM becomes infected with data encrypting ransomware, you decide to recover the VM’s files. Which of the following is TRUE in this scenario?",
+    "options": [
+      "You can only recover the files to the infected VM.",
+      "You can recover the files to any VM within the company’s subscription.",
+      "You can only recover the files to a new VM.",
+      "You will not be able to recover the files."
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "Your company’s Azure subscription includes Azure virtual machines (VMs) that run Windows Server 2016. One of the VMs is backed up every day using Azure Backup Instant Restore. When the VM becomes infected with data encrypting ransomware, you are required to restore the VM. Which of the following actions should you take?",
+    "options": [
+      "You should restore the VM after deleting the infected VM.",
+      "You should restore the VM to any VM within the company’s subscription.",
+      "You should restore the VM to a new Azure VM.",
+      "You should restore the VM to an on-premise Windows device."
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You administer a solution in Azure that is currently having performance issues. You need to find the cause of the performance issues pertaining to metrics on the Azure infrastructure. Which of the following is the tool you should use?",
+    "options": [
+      "Azure Traffic Analytics",
+      "Azure Monitor",
+      "Azure Activity Log",
+      "Azure Advisor"
+    ],
+    "answer": 1,
+    "explanation": "Metrics in Azure Monitor are stored in a time-series database which is optimized for analyzing time- stamped data. This makes metrics particularly suited for alerting and fast detection of issues."
+  },
+  {
+    "question": "Your company has an Azure subscription that includes a Recovery Services vault. You want to use Azure Backup to schedule a backup of your company's virtual machines (VMs) to the Recovery Services vault. Which of the following VMs can you back up? Choose all that apply.",
+    "options": [
+      "VMs that run Windows 10.",
+      "VMs that run Windows Server 2012 or higher.",
+      "VMs that have NOT been shut down.",
+      "VMs that run Debian 8.2+.",
+      "VMs that have been shut down."
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Azure Backup supports backup of 64-bit Windows server operating system from Windows Server 2008. Azure Backup supports backup of 64-bit Windows 10 operating system. Azure Backup supports backup of 64-bit Debian operating system from Debian 7.9+. Azure Backup supports backup of VM that are shutdown or offline."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 and an on-premises deployment of Microsoft System Center Service Manager. Subscription1 contains a virtual machine named VM1. You need to ensure that an alert is set in Service Manager when the amount of available memory on VM1 is below 10 percent. What should you do first?",
+    "options": [
+      "Create an automation runbook",
+      "Deploy a function app",
+      "Deploy the IT Service Management Connector (ITSM)",
+      "Create a notification"
+    ],
+    "answer": 2,
+    "explanation": "The IT Service Management Connector (ITSMC) allows you to connect Azure and a supported IT Service Management (ITSM) product/service, such as the Microsoft System Center Service Manager. With ITSMC, you can create work items in ITSM tool, based on your Azure alerts (metric alerts, Activity Log alerts and Log Analytics alerts)."
+  },
+  {
+    "question": "You have an Azure subscription that contains a resource group named RG26. RG26 is set to the West Europe location and is used to create temporary resources for a project. RG26 contains the resources shown in the following table. SQLDB01 is backed up to RGV1. When the project is complete, you attempt to delete RG26 from the Azure portal. The deletion fails. You need to delete RG26. What should you do first?",
+    "options": [
+      "Delete VM1",
+      "Stop VM1",
+      "Stop the backup of SQLDB01",
+      "Delete sa001"
+    ],
+    "answer": 2,
+    "explanation": "The PDF marks C as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1. You need to view the error events from a table named Event. Which query should you run in Workspace1?",
+    "options": [
+      "Get-Event Event | where {$_.EventType == \"error\"}",
+      "search in (Event) \"error\"",
+      "select * from Event where EventType == \"error\"",
+      "search in (Event) * | where EventType -eq \"error\""
+    ],
+    "answer": 1,
+    "explanation": "To search a term in a specific table, add the table-name just after the search operator Note: There are several versions of this question in the exam. The question has two possible correct answers: 1. Event | search \"error\" 2. Event | where EventType == \"error\" 3. search in (Event) \"error\" Other incorrect answer options you may see on the exam include the following: 1. Get-Event Event | where {$_.EventTye –eq \"error\"} 2. Event | where EventType is \"error\" 3. search in (Event) * | where EventType –eq \"error\" 4. select * from Event where EventType is \"error\""
+  },
+  {
+    "question": "You have an Azure subscription. You have 100 Azure virtual machines. You need to quickly identify underutilized virtual machines that can have their service tier changed to a less expensive offering. Which blade should you use?",
+    "options": [
+      "Monitor",
+      "Advisor",
+      "Metrics",
+      "Customer insights"
+    ],
+    "answer": 1,
+    "explanation": "Advisor helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an Azure subscription. Solution: You assign the Network Contributor role at the subscription level to Admin1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an Azure subscription. Solution: You assign the Owner role at the subscription level to Admin1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an Azure subscription. Solution: You assign the Reader role at the subscription level to Admin1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1. You need to view the error events from a table named Event. Which query should you run in Workspace1?",
+    "options": [
+      "Get-Event Event | where {$_.EventType == \"error\"}",
+      "Event | search \"error\"",
+      "select * from Event where EventType == \"error\"",
+      "search in (Event) * | where EventType –eq “error”"
+    ],
+    "answer": 1,
+    "explanation": "The search operator provides a multi-table/multi-column search experience. The syntax is: Table_name | search \"search term\" Note: There are several versions of this question in the exam. The question has three possible correct answers: 1. search in (Event) \"error\" 2. Event | search \"error\" 3. Event | where EventType == \"error\" Other incorrect answer options you may see on the exam include the following: 1. Get-Event Event | where {$_.EventTye –eq \"error\"} 2. Event | where EventType is \"error\" 3. select * from Event where EventType is \"error\" 4. search in (Event) * | where EventType –eq \"error\""
+  },
+  {
+    "question": "You have a Recovery Service vault that you use to test backups. The test backups contain two protected virtual machines. You need to delete the Recovery Services vault. What should you do first?",
+    "options": [
+      "From the Recovery Service vault, delete the backup data.",
+      "Modify the disaster recovery properties of each virtual machine.",
+      "Modify the locks of each virtual machine.",
+      "From the Recovery Service vault, stop the backup of each backup item."
+    ],
+    "answer": 3,
+    "explanation": "You can't delete a Recovery Services vault if it is registered to a server and holds backup data. If you try to delete a vault, but can't, the vault is still configured to receive backup data. Remove vault dependencies and delete vault In the vault dashboard menu, scroll down to the Protected Items section, and click Backup Items. In this menu, you can stop and delete Azure File Servers, SQL Servers in Azure VM, and Azure virtual machines."
+  },
+  {
+    "question": "You have two Azure virtual machines named VM1 and VM2. You have two Recovery Services vaults named RSV1 and RSV2. VM2 is backed up to RSV1. You need to back up VM2 to RSV2. What should you do first?",
+    "options": [
+      "From the RSV1 blade, click Backup items and stop the VM2 backup",
+      "From the RSV2 blade, click Backup. From the Backup blade, select the backup for the virtual machine, and then click Backup",
+      "From the VM2 blade, click Disaster recovery, click Replication settings, and then select RSV2 as the Recovery Services vault",
+      "From the RSV1 blade, click Backup Jobs and export the VM2 job"
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an Azure storage account and configure shared access signatures (SASs). You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the storage account as the source. Does that meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead: You create an Azure Log Analytics workspace and configure the data settings. You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains the resources shown in the following table. You create virtual machines in Subscription1 as shown in the following table. You plan to use Vault1 for the backup of as many virtual machines as possible. Which virtual machines can be backed up to Vault1?",
+    "options": [
+      "VM1 only",
+      "VM3 and VMC only",
+      "VM1, VM2, VM3, VMA, VMB, and VMC",
+      "VM1, VM3, VMA, and VMC only",
+      "VM1 and VM3 only"
+    ],
+    "answer": 3,
+    "explanation": "To create a vault to protect virtual machines, the vault must be in the same region as the virtual machines. If you have virtual machines in several regions, create a Recovery Services vault in each region."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1. You deploy a Linux virtual machine named VM1 to Subscription1. You need to monitor the metrics and the logs of VM1. What should you use?",
+    "options": [
+      "Azure HDInsight",
+      "Linux Diagnostic Extension (LAD) 3.0",
+      "the AzurePerformanceDiagnostics extension",
+      "Azure Analysis Services"
+    ],
+    "answer": 1,
+    "explanation": "The Linux Diagnostic Extension should be used which downloads the Diagnostic Extension (LAD) agent on Linux server."
+  },
+  {
+    "question": "You plan to back up an Azure virtual machine named VM1. You discover that the Backup Pre-Check status displays a status of Warning. What is a possible cause of the Warning status?",
+    "options": [
+      "VM1 is stopped.",
+      "VM1 does not have the latest version of the Azure VM Agent (WaAppAgent.exe) installed.",
+      "VM1 has an unmanaged disk.",
+      "A Recovery Services vault is unavailable."
+    ],
+    "answer": 1,
+    "explanation": "The Warning state indicates one or more issues in VM’s configuration that might lead to backup failures and provides recommended steps to ensure successful backups. Not having the latest VM Agent installed, for example, can cause backups to fail intermittently and falls in this class of issues."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an Azure Log Analytics workspace and configure the Agent configuration settings. You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Alerts in Azure Monitor can identify important information in your Log Analytics repository. They are created by alert rules that automatically run log searches at regular intervals, and if results of the log search match particular criteria, then an alert record is created and it can be configured to perform an automated response. The Log Analytics agent collects monitoring data from the guest operating system and workloads of virtual machines in Azure, other cloud providers, and on-premises. It collects data into a Log Analytics workspace."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an Azure Log Analytics workspace and configure the data settings. You add the Microsoft Monitoring Agent VM extension to VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You must install the Microsoft Monitoring Agent on VM1, and not the Microsoft Monitoring Agent VM extension."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure virtual machine named VM1 that runs Windows Server 2016. You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour. Solution: You create an Azure Log Analytics workspace and configure the data settings. You install the Microsoft Monitoring Agent on VM1. You create an alert in Azure Monitor and specify the Log Analytics workspace as the source. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Alerts in Azure Monitor can identify important information in your Log Analytics repository. They are created by alert rules that automatically run log searches at regular intervals, and if results of the log search match particular criteria, then an alert record is created and it can be configured to perform an automated response. The Log Analytics agent collects monitoring data from the guest operating system and workloads of virtual machines in Azure, other cloud providers, and on-premises. It collects data into a Log Analytics workspace."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Azure Network Watcher, you create a packet capture. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Network Watcher variable packet capture allows you to create packet capture sessions to track traffic to and from a virtual machine. Packet capture helps to diagnose network anomalies both reactively and proactively. Other uses include gathering network statistics, gaining information on network intrusions, to debug client-server communications and much more."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Azure Network Watcher, you create a connection monitor. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-connection- monitor-in-all-public-regions/"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Performance Monitor, you create a Data Collector Set (DCS). Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Use the Connection Monitor feature of Azure Network Watcher."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Azure Monitor, you create a metric on Network In and Network Out. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Use the Connection Monitor feature of Azure Network Watcher."
+  },
+  {
+    "question": "You have an Azure subscription that has a Recovery Services vault named Vault1. The subscription contains the virtual machines shown in the following table: You plan to schedule backups to occur every night at 23:00. Which virtual machines can you back up by using Azure Backup?",
+    "options": [
+      "VM1 and VM3 only",
+      "VM1, VM2, VM3 and VM4",
+      "VM1 and VM2 only",
+      "VM1 only"
+    ],
+    "answer": 1,
+    "explanation": "Azure Backup supports backup of 64-bit Windows server operating system from Windows Server 2008. Azure Backup supports backup of 64-bit Windows 10 operating system. Azure Backup supports backup of 64-bit Ubuntu Server operating system from Ubuntu 12.04. Azure Backup supports backup of VM that are shutdown or offline."
+  },
+  {
+    "question": "You have the Azure virtual machines shown in the following table: You have a Recovery Services vault that protects VM1 and VM2. You need to protect VM3 and VM4 by using Recovery Services. What should you do first?",
+    "options": [
+      "Create a new Recovery Services vault",
+      "Create a storage account",
+      "Configure the extensions for VM3 and VM4",
+      "Create a new backup policy"
+    ],
+    "answer": 0,
+    "explanation": "A Recovery Services vault is a storage entity in Azure that houses data. The data is typically copies of data, or configuration information for virtual machines (VMs), workloads, servers, or workstations. You can use Recovery Services vaults to hold backup data for various Azure services"
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1. You use Azure Backup to create a backup of VM1 named Backup1. After creating Backup1, you perform the following changes to VM1: • Modify the size of VM1. • Copy a file named Budget.xls to a folder named Data. • Reset the password for the built-in administrator account. • Add a data disk to VM1. An administrator uses the Replace existing option to restore VM1 from Backup1. You need to ensure that all the changes to VM1 are restored. Which change should you perform again?",
+    "options": [
+      "Modify the size of VM1.",
+      "Reset the password for the built-in administrator account.",
+      "Add a data disk.",
+      "Copy Budget.xls to Data."
+    ],
+    "answer": 3,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/backup/about-azure-vm-restore"
+  },
+  {
+    "question": "You have an existing Azure subscription that contains 10 virtual machines. You need to monitor the latency between your on-premises network and the virtual machines. What should you use?",
+    "options": [
+      "Service Map",
+      "Connection troubleshoot",
+      "Network Performance Monitor",
+      "Effective routes"
+    ],
+    "answer": 2,
+    "explanation": "Network Performance Monitor is a cloud-based hybrid network monitoring solution that helps you monitor network performance between various points in your network infrastructure. It also helps you monitor network connectivity to service and application endpoints and monitor the performance of Azure ExpressRoute. You can monitor network connectivity across cloud deployments and on-premises locations, multiple data centers, and branch offices and mission-critical multitier applications or microservices. With Performance Monitor, you can detect network issues before users complain."
+  },
+  {
+    "question": "You have an Azure virtual machine named VM1. Azure collects events from VM1. You are creating an alert rule in Azure Monitor to notify an administrator when an error is logged in the System event log of VM1. Which target resource should you monitor in the alert rule?",
+    "options": [
+      "virtual machine extension",
+      "virtual machine",
+      "metric alert",
+      "Azure Log Analytics workspace"
+    ],
+    "answer": 3,
+    "explanation": "For the first step to create the new alert tule, under the Create Alert section, you are going to select your Log Analytics workspace as the resource, since this is a log based alert signal."
+  },
+  {
+    "question": "You have an Azure subscription that contains 100 virtual machines. You regularly create and delete virtual machines. You need to identify unattached disks that can be deleted. What should you do?",
+    "options": [
+      "From Azure Cost Management, view Cost Analysis",
+      "From Azure Advisor, modify the Advisor configuration",
+      "From Microsoft Azure Storage Explorer, view the Account Management properties",
+      "From Azure Cost Management, view Advisor Recommendations"
+    ],
+    "answer": 3,
+    "explanation": "From Home –> Cost Management + Billing –> Cost Management, scroll down on the options and select View Recommendations: Azure Cost Management / Advisor From here you will see the recommendations for your subscription, if you have orphaned disks, they will be listed."
+  },
+  {
+    "question": "You have an Azure web app named webapp1. Users report that they often experience HTTP 500 errors when they connect to webapp1. You need to provide the developers of webapp1 with real-time access to the connection errors. The solution must provide all the connection error details. What should you do first?",
+    "options": [
+      "From webapp1, enable Web server logging",
+      "From Azure Monitor, create a workbook",
+      "From Azure Monitor, create a Service Health alert",
+      "From webapp1, turn on Application Logging"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure web app named App1. You need to monitor the availability of App1 by using a multi-step web test. What should you use in Azure Monitor?",
+    "options": [
+      "Azure Service Health",
+      "Azure Application Insights",
+      "the Diagnostic settings",
+      "metrics"
+    ],
+    "answer": 1,
+    "explanation": "Upload the web test 1. In the Application Insights portal on the Availability pane select Add Classic test, then select Multi-step as the SKU. 2. Upload your multi-step web test. 3. Set the test locations, frequency, and alert parameters. 4. Select Create."
+  },
+  {
+    "question": "You have a Recovery Services vault named RSV1. RSV1 has a backup policy that retains instant snapshots for five days and daily backup for 14 days. RSV1 performs daily backups of VM1. VM1 hosts a static website that was updated eight days ago. You need to recover VM1 to a point eight days ago. The solution must minimize downtime. What should you do first?",
+    "options": [
+      "Deallocate VM1.",
+      "Restore VM1 by using the Replace existing restore configuration option.",
+      "Delete VM1.",
+      "Restore VM1 by using the Create new restore configuration option."
+    ],
+    "answer": 1,
+    "explanation": "Replace existing: You can restore a disk, and use it to replace a disk on the existing VM. The current VM must exist. If it's been deleted, this option can't be used. Azure Backup takes a snapshot of the existing VM before replacing the disk, and stores it in the staging location you specify. Existing disks connected to the VM are replaced with the selected restore point. The snapshot is copied to the vault, and retained in accordance with the retention policy. After the replace disk operation, the original disk is retained in the resource group. You can choose to manually delete the original disks if they aren't needed."
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant that is linked to 10 Azure subscriptions. You need to centrally monitor user activity across all the subscriptions. What should you use?",
+    "options": [
+      "Azure Application Insights Profiler",
+      "access reviews",
+      "Activity log filters",
+      "a Log Analytics workspace"
+    ],
+    "answer": 3,
+    "explanation": "The PDF marks D as the correct answer. No further explanation is provided in the source."
   }
 ]

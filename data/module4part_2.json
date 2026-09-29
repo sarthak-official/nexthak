@@ -1,0 +1,1241 @@
+[ {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an Azure subscription. Solution: You assign the Network Contributor role at the subscription level to Admin1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor. Reference: https://docs.microsoft.com/en-us/azure/network-watcher/traffic-analytics-faq"
+  },
+  {
+    "question": "You have an Azure subscription that contains a user named User1. You need to ensure that User1 can deploy virtual machines and manage virtual networks. The solution must use the principle of least privilege. Which role-based access control (RBAC) role should you assign to User1?",
+    "options": [
+      "Owner",
+      "Virtual Machine Contributor",
+      "Contributor",
+      "Virtual Machine Administrator Login"
+    ],
+    "answer": 1,
+    "explanation": "Virtual Machine Contributor: Lets you manage virtual machines, but not access to them, and not the virtual network or storage account they're connected to. Incorrect Answers: A: Owner: Grants full access to manage all resources, including the ability to assign roles in Azure RBAC. C: Contributor: Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC. D: Virtual Machine Administrator Login: View Virtual Machines in the portal and login as administrator. Reference: https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles"
+  },
+  {
+    "question": "You have an Azure DNS zone named adatum.com. You need to delegate a subdomain named research.adatum.com to a different DNS server in Azure. What should you do?",
+    "options": [
+      "Create an NS record named research in the adatum.com zone.",
+      "Create a PTR record named research in the adatum.com zone.",
+      "Modify the SOA record of adatum.com.",
+      "Create an A record named *.research in the adatum.com zone."
+    ],
+    "answer": 0,
+    "explanation": "You need to create a name server (NS) record for the zone. Reference: https://docs.microsoft.com/en-us/azure/dns/delegate-subdomain"
+  },
+  {
+    "question": "You have a registered DNS domain named contoso.com. You create a public Azure DNS zone named contoso.com. You need to ensure that records created in the contoso.com zone are resolvable from the internet. What should you do?",
+    "options": [
+      "Create NS records in contoso.com.",
+      "Modify the SOA record in the DNS domain registrar.",
+      "Create the SOA record in contoso.com.",
+      "Modify the NS records in the DNS domain registrar."
+    ],
+    "answer": 3,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1 that contains the resources shown in the following table. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1. You need to create a new network interface named NIC2 for VM1. Solution: You create NIC2 in RG2 and West US. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The virtual machine you attach a network interface to and the virtual network you connect it to must exist in the same location, here West US, also referred to as a region. Reference: https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You deploy an Azure Kubernetes Service (AKS) cluster named AKS1. You need to deploy a YAML file to AKS1. Solution: From Azure CLI, you run az aks. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You deploy an Azure Kubernetes Service (AKS) cluster named AKS1. You need to deploy a YAML file to AKS1. Solution: From Azure CLI, you run the kubectl client. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You deploy an Azure Kubernetes Service (AKS) cluster named AKS1. You need to deploy a YAML file to AKS1. Solution: From Azure CLI, you run azcopy. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough"
+  },
+  {
+    "question": "You discover that VM3 does NOT meet the technical requirements. You need to verify whether the issue relates to the NSGs. What should you use?",
+    "options": [
+      "Diagram in VNet1",
+      "Diagnostic settings in Azure Monitor",
+      "Diagnose and solve problems in Traffic Manager profiles",
+      "The security recommendations in Azure Advisor",
+      "IP flow verify in Azure Network Watcher"
+    ],
+    "answer": 4,
+    "explanation": "Scenario: Contoso must meet technical requirements including: Ensure that VM3 can establish outbound connections over TCP port 8080 to the applications servers in the Montreal office. IP flow verify checks if a packet is allowed or denied to or from a virtual machine. The information consists of direction, protocol, local IP, remote IP, local port, and remote port. If the packet is denied by a security group, the name of the rule that denied the packet is returned. While any source or destination IP can be chosen, IP flow verify helps administrators quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment. Reference: https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-ip-flow-verify-overview Configure and manage virtual networking Question Set 1"
+  },
+  {
+    "question": "Your on-premises network contains an SMB share named Share1. You have an Azure subscription that contains the following resources: A web app named webapp1 A virtual network named VNET1 You need to ensure that webapp1 can connect to Share1. What should you deploy?",
+    "options": [
+      "an Azure Application Gateway",
+      "an Azure Active Directory (Azure AD) Application Proxy",
+      "an Azure Virtual Network Gateway"
+    ],
+    "answer": 2,
+    "explanation": "A Site-to-Site VPN gateway connection can be used to connect your on-premises network to an Azure virtual network over an IPsec/IKE (IKEv1 or IKEv2) VPN tunnel. This type of connection requires a VPN device, a VPN gateway, located on-premises that has an externally facing public IP address assigned to it. Incorrect Answers: B: Application Proxy is a feature of Azure AD that enables users to access on-premises web applications from a remote client. Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager- portal"
+  },
+  {
+    "question": "You have an Azure subscription that contains a virtual network named VNet1. VNet1 contains four subnets named Gateway, Perimeter, NVA, and Production. The NVA subnet contains two network virtual appliances (NVAs) that will perform network traffic inspection between the Perimeter subnet and the Production subnet. You need to implement an Azure load balancer for the NVAs. The solution must meet the following requirements: The NVAs must run in an active-active configuration that uses automatic failover. The load balancer must load balance traffic to two services on the Production subnet. The services have different IP addresses. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Deploy a basic load balancer",
+      "Deploy a standard load balancer",
+      "Add two load balancing rules that have HA Ports and Floating IP enabled",
+      "Add two load balancing rules that have HA Ports enabled and Floating IP disabled",
+      "Add a frontend IP configuration, a backend pool, and a health probe",
+      "Add a frontend IP configuration, two backend pools, and a health probe"
+    ],
+    "answer": [
+      1,
+      2,
+      5
+    ],
+    "explanation": "A standard load balancer is required for the HA ports. Two backend pools are needed as there are two services with different IP addresses. Floating IP rule is used where backend ports are reused. Incorrect Answers: E: HA Ports are not available for the basic load balancer. Reference: https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-overview https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-multivip-overview"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains two Azure virtual networks named VNet1 and VNet2. VNet1 contains a VPN gateway named VPNGW1 that uses static routing. There is a site-to-site VPN connection between your on-premises network and VNet1. On a computer named Client1 that runs Windows 10, you configure a point-to-site VPN connection to VNet1. You configure virtual network peering between VNet1 and VNet2. You verify that you can connect to VNet2 from the on-premises network. Client1 is unable to connect to VNet2. You need to ensure that you can connect Client1 to VNet2. What should you do?",
+    "options": [
+      "Download and re-install the VPN client configuration package on Client1.",
+      "Select Allow gateway transit on VNet1.",
+      "Select Allow gateway transit on VNet2.",
+      "Enable BGP on VPNGW1"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "You have an Azure web app named webapp1. You have a virtual network named VNET1 and an Azure virtual machine named VM1 that hosts a MySQL database. VM1 connects to VNET1. You need to ensure that webapp1 can access the data hosted on VM1. What should you do?",
+    "options": [
+      "Deploy an internal load balancer",
+      "Peer VNET1 to another virtual network",
+      "Connect webapp1 to VNET1",
+      "Deploy an Azure Application Gateway"
+    ],
+    "answer": 3,
+    "explanation": "The PDF marks D as the correct answer (Deploy an Azure Application Gateway). No further explanation is provided in the source."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the following resources: A virtual network that has a subnet named Subnet1 Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1 A virtual machine named VM1 that has the required Windows Server configurations to allow Remote Desktop connections NSG-Subnet1 has the default inbound security rules only. NSG-VM1 has the default inbound security rules and the following custom inbound security rule: Priority: 100 Source: Any Source port range: * Destination: * Destination port range: 3389 Protocol: UDP Action: Allow VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of VM1. NSG-Subnet1 is associated to Subnet1. You need to be able to establish Remote Desktop connections from the internet to VM1. Solution: You add an inbound security rule to NSG-Subnet1 that allows connections from the Any source to the *destination for port range 3389 and uses the TCP protocol. You remove NSG-VM1 from the network interface of VM1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The default port for RDP is TCP port 3389. A rule to permit RDP traffic must be created automatically when you create your VM. Note on NSG-Subnet1: Azure routes network traffic between all subnets in a virtual network, by default. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshoot-rdp-connection"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the following resources: A virtual network that has a subnet named Subnet1 Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1 A virtual machine named VM1 that has the required Windows Server configurations to allow Remote Desktop connections NSG-Subnet1 has the default inbound security rules only. NSG-VM1 has the default inbound security rules and the following custom inbound security rule: Priority: 100 Source: Any Source port range: * Destination: * Destination port range: 3389 Protocol: UDP Action: Allow VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of VM1. NSG-Subnet1 is associated to Subnet1. You need to be able to establish Remote Desktop connections from the internet to VM1. Solution: You add an inbound security rule to NSG-Subnet1 that allows connections from the internet source to the VirtualNetwork destination for port range 3389 and uses the UDP protocol. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The default port for RDP is TCP port 3389. A rule to permit RDP traffic must be created automatically when you create your VM. Note on NSG-Subnet1: Azure routes network traffic between all subnets in a virtual network, by default. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshoot-rdp-connection"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the following resources: A virtual network that has a subnet named Subnet1 Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1 A virtual machine named VM1 that has the required Windows Server configurations to allow Remote Desktop connections NSG-Subnet1 has the default inbound security rules only. NSG-VM1 has the default inbound security rules and the following custom inbound security rule: Priority: 100 Source: Any Source port range: * Destination: * Destination port range: 3389 Protocol: UDP Action: Allow VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of VM1. NSG-Subnet1 is associated to Subnet1. You need to be able to establish Remote Desktop connections from the internet to VM1. Solution: You add an inbound security rule to NSG-Subnet1 and NSG-VM1 that allows connections from the internet source to the VirtualNetwork destination for port range 3389 and uses the TCP protocol. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The default port for RDP is TCP port 3389. A rule to permit RDP traffic must be created automatically when you create your VM. Note on NSG-Subnet1: Azure routes network traffic between all subnets in a virtual network, by default. Reference: https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshoot-rdp-connection"
+  },
+  {
+    "question": "Your company has an Azure subscription named Subscription1. The company also has two on-premises servers named Server1 and Server2 that run Windows Server 2016. Server1 is configured as a DNS server that has a primary DNS zone named adatum.com. Adatum.com contains 1,000 DNS records. You manage Server1 and Subscription1 from Server2. Server2 has the following tools installed: The DNS Manager console Azure PowerShell Azure CLI 2.0 You need to move the adatum.com zone to an Azure DNS zone in Subscription1. The solution must minimize administrative effort. What should you use?",
+    "options": [
+      "Azure CLI",
+      "Azure PowerShell",
+      "the Azure portal",
+      "the DNS Manager console"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Installing the DNS migration script Open an elevated PowerShell window (Administrative mode) and run following command install-script PrivateDnsMigrationScript Step 2: Running the script Execute following command to run the script PrivateDnsMigrationScript.ps1 Reference: https://docs.microsoft.com/en-us/azure/dns/private-dns-migration-guide"
+  },
+  {
+    "question": "You have a public load balancer that balances ports 80 and 443 across three virtual machines named VM1, VM2, and VM3. You need to direct all the Remote Desktop Protocol (RDP) connections to VM3 only. What should you configure?",
+    "options": [
+      "an inbound NAT rule",
+      "a new public load balancer for VM3",
+      "a frontend IP configuration",
+      "a load balancing rule"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/load-balancer/tutorial-load-balancer-port-forwarding-portal https://pixelrobots.co.uk/2017/08/azure-load-balancer-for-rds/"
+  },
+  {
+    "question": "You have two subscriptions named Subscription1 and Subscription2. Each subscription is associated to a different Azure AD tenant. Subscription1 contains a virtual network named VNet1. VNet1 contains an Azure virtual machine named VM1 and has an IP address space of 10.0.0.0/16. Subscription2 contains a virtual network named VNet2. VNet2 contains an Azure virtual machine named VM2 and has an IP address space of 10.10.0.0/24. You need to connect VNet1 to VNet2. What should you do first?",
+    "options": [
+      "Move VM1 to Subscription2.",
+      "Move VNet1 to Subscription2.",
+      "Modify the IP address space of VNet2.",
+      "Provision virtual network gateways."
+    ],
+    "answer": 3,
+    "explanation": "The virtual networks can be in the same or different regions, and from the same or different subscriptions. When connecting VNets from different subscriptions, the subscriptions do not need to be associated with the same Active Directory tenant. Configuring a VNet-to-VNet connection is a good way to easily connect VNets. Connecting a virtual network to another virtual network using the VNet-to-VNet connection type (VNet2VNet) is similar to creating a Site-to-Site IPsec connection to an on-premises location. Both connectivity types use a VPN gateway to provide a secure tunnel using IPsec/IKE, and both function the same way when communicating. The local network gateway for each VNet treats the other VNet as a local site. This lets you specify additional address space for the local network gateway in order to route traffic. Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager- portal"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site connection uses a self-signed certificate. From Azure, you download and install the VPN client configuration package on a computer named Computer2. You need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2. Solution: You modify the Azure Active Directory (Azure AD) authentication policies. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead export the client certificate from Computer1 and install the certificate on Computer2. Note: Each client computer that connects to a VNet using Point-to-Site must have a client certificate installed. You generate a client certificate from the self-signed root certificate, and then export and install the client certificate. If the client certificate is not installed, authentication fails. Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site connection uses a self-signed certificate. From Azure, you download and install the VPN client configuration package on a computer named Computer2. You need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2. Solution: You join Computer2 to Azure Active Directory (Azure AD). Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A client computer that connects to a VNet using Point-to-Site must have a client certificate installed. Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups. Another administrator plans to create several network security groups (NSGs) in the subscription. You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks. Solution: You create a resource lock, and then you assign the lock to the subscription. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer (No). No further explanation is provided in the source."
+  },
+  {
+    "question": "You have the Azure virtual network named VNet1 that contains a subnet named Subnet1. Subnet1 contains three Azure virtual machines. Each virtual machine has a public IP address. The virtual machines host several applications that are accessible over port 443 to users on the Internet. Your on-premises network has a site-to-site VPN connection to VNet1. You discover that the virtual machines can be accessed by using the Remote Desktop Protocol (RDP) from the Internet and from the on-premises network. You need to prevent RDP access to the virtual machines from the Internet, unless the RDP connection is established from the on-premises network. The solution must ensure that all the applications can still be accessed by the Internet users. What should you do?",
+    "options": [
+      "Modify the address space of the local network gateway",
+      "Create a deny rule in a network security group (NSG) that is linked to Subnet1",
+      "Remove the public IP addresses from the virtual machines",
+      "Modify the address space of Subnet1"
+    ],
+    "answer": 1,
+    "explanation": "You can use a site-to-site VPN to connect your on-premises network to an Azure virtual network. Users on your on-premises network connect by using the RDP or SSH protocol over the site-to-site VPN connection. You don't have to allow direct RDP or SSH access over the internet. Reference: https://docs.microsoft.com/en-us/azure/security/fundamentals/network-best-practices"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains an Azure virtual network named VNet1. VNet1 connects to your on-premises network by using Azure ExpressRoute. You plan to prepare the environment for automatic failover in case of ExpressRoute failure. You need to connect VNet1 to the on-premises network by using a site-to-site VPN. The solution must minimize cost. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Create a connection",
+      "Create a local site VPN gateway",
+      "Create a VPN gateway that uses the VpnGw1 SKU",
+      "Create a gateway subnet",
+      "Create a VPN gateway that uses the Basic SKU"
+    ],
+    "answer": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager- portal"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site connection uses a self-signed certificate. From Azure, you download and install the VPN client configuration package on a computer named Computer2. You need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2. Solution: You export the client certificate from Computer1 and install the certificate on Computer2. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Each client computer that connects to a VNet using Point-to-Site must have a client certificate installed. You generate a client certificate from the self-signed root certificate, and then export and install the client certificate. If the client certificate is not installed, authentication fails. Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups. Another administrator plans to create several network security groups (NSGs) in the subscription. You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks. Solution: From the Resource providers blade, you unregister the Microsoft.ClassicNetwork provider. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You should use a policy definition. Resource policy definition used by Azure Policy enables you to establish conventions for resources in your organization by describing when the policy is enforced and what effect to take. By defining conventions, you can control costs and more easily manage your resources. Reference: https://docs.microsoft.com/en-us/azure/azure-policy/policy-definition"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups. Another administrator plans to create several network security groups (NSGs) in the subscription. You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks. Solution: You assign a built-in policy definition to the subscription. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Resource policy definition used by Azure Policy enables you to establish conventions for resources in your organization by describing when the policy is enforced and what effect to take. By defining conventions, you can control costs and more easily manage your resources. Reference: https://docs.microsoft.com/en-us/azure/azure-policy/policy-definition"
+  },
+  {
+    "question": "You have an Azure subscription. You plan to deploy an Azure Kubernetes Service (AKS) cluster to support an app named App1. On- premises clients connect to App1 by using the IP address of the pod. For the AKS cluster, you need to choose a network type that will support App1. What should you choose?",
+    "options": [
+      "kubenet",
+      "Azure Container Networking Interface (CNI)",
+      "Hybrid Connection endpoints",
+      "Azure Private Link"
+    ],
+    "answer": 1,
+    "explanation": "With Azure CNI, every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space. Incorrect Answers: A: The kubenet networking option is the default configuration for AKS cluster creation. With kubenet, nodes get an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes. Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network. C, D: AKS only supports Kubenet networking and Azure Container Networking Interface (CNI) networking Reference: https://docs.microsoft.com/en-us/azure/aks/concepts-network"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups. Another administrator plans to create several network security groups (NSGs) in the subscription. You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks. Solution: You configure a custom policy definition, and then you assign the policy to the subscription. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Resource policy definition used by Azure Policy enables you to establish conventions for resources in your organization by describing when the policy is enforced and what effect to take. By defining conventions, you can control costs and more easily manage your resources. Reference: https://docs.microsoft.com/en-us/azure/azure-policy/policy-definition"
+  },
+  {
+    "question": "You have two Azure virtual networks named VNet1 and VNet2. VNet1 contains an Azure virtual machine named VM1. VNet2 contains an Azure virtual machine named VM2. VM1 hosts a frontend application that connects to VM2 to retrieve data. Users report that the frontend application is slower than usual. You need to view the average round-trip time (RTT) of the packets from VM1 to VM2. Which Azure Network Watcher feature should you use?",
+    "options": [
+      "IP flow verify",
+      "Connection troubleshoot",
+      "Connection monitor",
+      "NSG flow logs"
+    ],
+    "answer": 2,
+    "explanation": "The connection monitor capability monitors communication at a regular interval and informs you of reachability, latency, and network topology changes between the VM and the endpoint Incorrect Answers: A: The IP flow verify capability enables you to specify a source and destination IPv4 address, port, protocol (TCP or UDP), and traffic direction (inbound or outbound). IP flow verify then tests the communication and informs you if the connection succeeds or fails. If the connection fails, IP flow verify tells you which security rule allowed or denied the communication, so that you can resolve the problem. B: The connection troubleshoot capability enables you to test a connection between a VM and another VM, an FQDN, a URI, or an IPv4 address. The test returns similar information returned when using the connection monitor capability, but tests the connection at a point in time, rather than monitoring it over time, as connection monitor does. D: The NSG flow log capability allows you to log the source and destination IP address, port, protocol, and whether traffic was allowed or denied by an NSG. Reference: https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview"
+  },
+  {
+    "question": "You have an Azure subscription that contains a policy-based virtual network gateway named GW1 and a virtual network named VNet1. You need to ensure that you can configure a point-to-site connection from an on-premises computer to VNet1. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Add a service endpoint to VNet1",
+      "Reset GW1",
+      "Create a route-based virtual network gateway",
+      "Add a connection to GW1",
+      "Delete GW1",
+      "Add a public IP address space to VNet1"
+    ],
+    "answer": [
+      2,
+      4
+    ],
+    "explanation": "C: A VPN gateway is used when creating a VPN connection to your on-premises network. Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. It is typically built on router platforms where each IPsec tunnel is modeled as a network interface or VTI (virtual tunnel interface). E: Policy-based VPN devices use the combinations of prefixes from both networks to define how traffic is encrypted/decrypted through IPsec tunnels. It is typically built on firewall devices that perform packet filtering. IPsec tunnel encryption and decryption are added to the packet filtering and processing engine. Incorrect Answers: F: Point-to-Site connections do not require a VPN device or a public-facing IP address. Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-portal https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Azure Network Watcher, you create a packet capture. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Use the Connection Monitor feature of Azure Network Watcher. Reference: https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-connection-monitor- in-all-public-regions/"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You manage a virtual network named VNet1 that is hosted in the West US Azure region. VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server. You need to inspect all the network traffic from VM1 to VM2 for a period of three hours. Solution: From Azure Network Watcher, you create a connection monitor. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-connection-monitor- in-all-public-regions/"
+  },
+  {
+    "question": "You need to ensure that VM1 can communicate with VM4. The solution must minimize the administrative effort. What should you do?",
+    "options": [
+      "Create an NSG and associate the NSG to VM1 and VM4.",
+      "Establish peering between VNET1 and VNET3.",
+      "Assign VM4 an IP address of 10.0.1.5/24.",
+      "Create a user-defined route from VNET1 to VNET3."
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal"
+  },
+  {
+    "question": "You are planning the move of App1 to Azure. You create a network security group (NSG). You need to recommend a solution to provide users with access to App1. What should you recommend?",
+    "options": [
+      "Create an incoming security rule for port 443 from the Internet. Associate the NSG to the subnet that contains the web servers.",
+      "Create an outgoing security rule for port 443 from the Internet. Associate the NSG to the subnet that contains the web servers.",
+      "Create an incoming security rule for port 443 from the Internet. Associate the NSG to all the subnets.",
+      "Create an outgoing security rule for port 443 from the Internet. Associate the NSG to all the subnets."
+    ],
+    "answer": 0,
+    "explanation": "Incoming and the web server subnet only, as users access the web front end by using HTTPS only. Note Scenario: You have a public-facing application named App1. App1 is comprised of the following three tiers: A SQL database A web front end A processing middle tier Each tier is comprised of five virtual machines. Users access the web front end by using HTTPS only. Monitor and back up Azure resources Question Set 1"
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB. VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to- site VPN connection exists between your company’s on-premises network and VirtualNetworkA. You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation. You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation. Solution: You choose the Allow gateway transit setting on VirtualNetworkA. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB. VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to- site VPN connection exists between your company’s on-premises network and VirtualNetworkA. You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation. You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation. Solution: You choose the Allow gateway transit setting on VirtualNetworkB. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB. VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to- site VPN connection exists between your company’s on-premises network and VirtualNetworkA. You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation. You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation. Solution: You download and re-install the VPN client configuration package on the Windows 10 workstation. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "Your company has virtual machines (VMs) hosted in Microsoft Azure. The VMs are located in a single Azure virtual network named VNet1. The company has users that work remotely. The remote workers require access to the VMs on VNet1. You need to provide access for the remote workers. What should you do?",
+    "options": [
+      "Configure a Site-to-Site (S2S) VPN.",
+      "Configure a VNet-toVNet VPN.",
+      "Configure a Point-to-Site (P2S) VPN.",
+      "Configure DirectAccess on a Windows Server 2012 server VM.",
+      "Configure a Multi-Site VPN"
+    ],
+    "answer": 2,
+    "explanation": "A Point-to-Site (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer."
+  },
+  {
+    "question": "Your company has two on-premises servers named SRV01 and SRV02. Developers have created an application that runs on SRV01. The application calls a service on SRV02 by IP address. You plan to migrate the application on Azure virtual machines (VMs). You have configured two VMs on a single subnet in an Azure virtual network. You need to configure the two VMs with static internal IP addresses. What should you do?",
+    "options": [
+      "Run the New-AzureRMVMConfig PowerShell cmdlet.",
+      "Run the Set-AzureSubnet PowerShell cmdlet.",
+      "Modify the VM properties in the Azure Management Portal.",
+      "Modify the IP properties in Windows Network and Sharing Center.",
+      "Run the Set-AzureStaticVNetIP PowerShell cmdlet."
+    ],
+    "answer": 4,
+    "explanation": "Specify a static internal IP for a previously created VM If you want to set a static IP address for a VM that you previously created, you can do so by using the following cmdlets. If you already set an IP address for the VM and you want to change it to a different IP address, you’ll need to remove the existing static IP address before running these cmdlets. See the instructions below to remove a static IP. For this procedure, you’ll use the Update-AzureVM cmdlet. The Update-AzureVM cmdlet restarts the VM as part of the update process. The DIP that you specify will be assigned after the VM restarts. In this example, we set the IP address for VM2, which is located in cloud service StaticDemo. Get-AzureVM -ServiceName StaticDemo -Name VM2 | Set-AzureStaticVNetIP -IPAddress 192.168.4.7 | Update-AzureVM"
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) subscription. You need to deploy five virtual machines (VMs) to your company’s virtual network subnet. The VMs will each have both a public and private IP address. Inbound and outbound security rules for all of these virtual machines must be identical. Which of the following is the least amount of network interfaces needed for this configuration?",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "40"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) subscription. You need to deploy five virtual machines (VMs) to your company’s virtual network subnet. The VMs will each have both a public and private IP address. Inbound and outbound security rules for all of these virtual machines must be identical. Which of the following is the least amount of security groups needed for this configuration?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "The PDF marks D as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure subscription. Users access the resources in the subscription from either home or from customer sites. From home, users must establish a point-to-site VPN to access the Azure resources. The users on the customer sites access the Azure resources by using site-to-site VPNs. You have a line-of-business-app named App1 that runs on several Azure virtual machine. The virtual machines run Windows Server 2016. You need to ensure that the connections to App1 are spread across all the virtual machines. What are two possible Azure services that you can use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "an internal load balancer",
+      "a public load balancer",
+      "an Azure Content Delivery Network (CDN)",
+      "Traffic Manager",
+      "an Azure Application Gateway"
+    ],
+    "answer": [
+      0,
+      4
+    ],
+    "explanation": "Network traffic from the VPN gateway is routed to the cloud application through an internal load balancer. The load balancer is located in the front-end subnet of the application."
+  },
+  {
+    "question": "You have an Azure DNS zone named adatum.com. You need to delegate a subdomain named research.adatum.com to a different DNS server in Azure. What should you do?",
+    "options": [
+      "Create an NS record named research in the adatum.com zone.",
+      "Create a PTR record named research in the adatum.com zone.",
+      "Modify the SOA record of adatum.com.",
+      "Create an A record named *.research in the adatum.com zone."
+    ],
+    "answer": 0,
+    "explanation": "You need to create a name server (NS) record for the zone."
+  },
+  {
+    "question": "You have a registered DNS domain named contoso.com. You create a public Azure DNS zone named contoso.com. You need to ensure that records created in the contoso.com zone are resolvable from the internet. What should you do?",
+    "options": [
+      "Create NS records in contoso.com.",
+      "Modify the SOA record in the DNS domain registrar.",
+      "Create the SOA record in contoso.com.",
+      "Modify the NS records in the DNS domain registrar."
+    ],
+    "answer": 3,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the resources shown in the following table. VM1 connects to VNET1. You need to connect VM1 to VNET2. Solution: You move VM1 to RG2, and then you add a new network interface to VM1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead you should delete VM1. You recreate VM1, and then you add the network interface for VM1. Note: When you create an Azure virtual machine (VM), you must create a virtual network (VNet) or use an existing VNet. You can change the subnet a VM is connected to after it's created, but you cannot change the VNet."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the resources shown in the following table. VM1 connects to VNET1. You need to connect VM1 to VNET2. Solution: You delete VM1. You recreate VM1, and then you create a new network interface for VM1 and connect it to VNET2. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "You should delete VM1. You recreate VM1, and then you add the network interface for VM1. Note: When you create an Azure virtual machine (VM), you must create a virtual network (VNet) or use an existing VNet. You can change the subnet a VM is connected to after it's created, but you cannot change the VNet."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the resources shown in the following table. VM1 connects to VNET1. You need to connect VM1 to VNET2. Solution: You turn off VM1, and then you add a new network interface to VM1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead you should delete VM1. You recreate VM1, and then you add the network interface for VM1. Note: When you create an Azure virtual machine (VM), you must create a virtual network (VNet) or use an existing VNet. You can change the subnet a VM is connected to after it's created, but you cannot change the VNet."
+  },
+  {
+    "question": "You deploy an Azure Kubernetes Service (AKS) cluster named Cluster1 that uses the IP addresses shown in the following table. You need to provide internet users with access to the applications that run in Cluster1. Which IP address should you include in the DNS record for Cluster1?",
+    "options": [
+      "131.107.2.1",
+      "10.0.10.11",
+      "172.17.7.1",
+      "192.168.10.2"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that has the following providers registered: • Authorization • Automation • Resources • Compute • KeyVault • Network • Storage • Billing • Web Subscription1 contains an Azure virtual machine named VM1 that has the following configurations: • Private IP address: 10.0.0.4 (dynamic) • Network security group (NSG): NSG1 • Public IP address: None • Availability set: AVSet • Subnet: 10.0.0.0/24 • Managed disks: No • Location: East US You need to record all the successful and failed connection attempts to VM1. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Enable Azure Network Watcher in the East US Azure region.",
+      "Add an Azure Network Watcher connection monitor.",
+      "Register the MicrosoftLogAnalytics provider.",
+      "Create an Azure Storage account.",
+      "Register the Microsoft.Insights resource provider.",
+      "Enable Azure Network Watcher flow logs."
+    ],
+    "answer": [
+      0,
+      4,
+      5
+    ],
+    "explanation": "You can log network traffic that flows through an NSG with Network Watcher's NSG flow log capability. • In the Azure portal, enable Network Watcher • Register Insights provider. NSG flow logging requires the Microsoft.Insights provider. • Enable NSG flow log. NSG flow log data is written to an Azure Storage account, Subscription1 has storage."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the resources shown in the following table. VM1 connects to VNET1. You need to connect VM1 to VNET2. Solution: You create a new network interface, and then you add the network interface to VM1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You should delete VM1. You recreate VM1, and then you add the network interface for VM1. Note: When you create an Azure virtual machine (VM), you must create a virtual network (VNet) or use an existing VNet. You can change the subnet a VM is connected to after it's created, but you cannot change the VNet."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1 that contains the resources shown in the following table. Subscription1 also includes a virtual network named VNET2. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1. You need to create a new network interface named NIC2 for VM1. Solution: You create NIC2 in RG1 and West US. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The virtual machine you attach a network interface to and the virtual network you connect it to must exist in the same location, here West US, also referred to as a region."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1 that contains the resources shown in the following table. Subscription1 also includes a virtual network named VNET2. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1. You need to create a new network interface named NIC2 for VM1. Solution: You create NIC2 in RG2 and Central US. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The virtual machine you attach a network interface to and the virtual network you connect it to must exist in the same location, here West US, also referred to as a region."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription named Subscription1 that contains the resources shown in the following table. Subscription1 also includes a virtual network named VNET2. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1. You need to create a new network interface named NIC2 for VM1. Solution: You create NIC2 in RG2 and West US. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The virtual machine you attach a network interface to and the virtual network you connect it to must exist in the same location, here West US, also referred to as a region."
+  },
+  {
+    "question": "Your company has three offices. The offices are located in Miami, Los Angeles, and New York. Each office contains datacenter. You have an Azure subscription that contains resources in the East US and West US Azure regions. Each region contains a virtual network. The virtual networks are peered. You need to connect the datacenters to the subscription. The solution must minimize network latency between the datacenters. What should you create?",
+    "options": [
+      "three Azure Application Gateways and one On-premises data gateway",
+      "three virtual hubs and one virtual WAN",
+      "three virtual WANs and one virtual hub",
+      "three On-premises data gateways and one Azure Application Gateway"
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about"
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources shown in the following table. LB1 is configured as shown in the following table. You plan to create new inbound NAT rules that meet the following requirements: • Provide Remote Desktop access to VM1 from the internet by using port 3389. • Provide Remote Desktop access to VM2 from the internet by using port 3389. What should you create on LB1 before you can create the new inbound NAT rules?",
+    "options": [
+      "a frontend IP address",
+      "a load balancing rule",
+      "a health probe",
+      "a backend pool"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have the Azure virtual networks shown in the following table. To which virtual networks can you establish a peering connection from VNet1?",
+    "options": [
+      "VNet2 andVNet3 only",
+      "VNet2 only",
+      "VNet3 and VNet4 only",
+      "VNet2, VNet3, and VNet4"
+    ],
+    "answer": 2,
+    "explanation": "Address spaces must not overlap to enable VNet Peering. Incorrect Answers: A, B, D: The address space for VNet2 overlaps with VNet1. We therefore cannot establish a peering between VNet2 and VNet1."
+  },
+  {
+    "question": "You have an Azure subscription that contains a virtual network named VNet1. VNet1 contains four subnets named Gateway, Perimeter, NVA, and Production. The NVA subnet contains two network virtual appliances (NVAs) that will perform network traffic inspection between the Perimeter subnet and the Production subnet. You need to implement an Azure load balancer for the NVAs. The solution must meet the following requirements: • The NVAs must run in an active-active configuration that uses automatic failover. • The load balancer must load balance traffic to two services on the Production subnet. The services have different IP addresses. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Deploy a basic load balancer",
+      "Deploy a standard load balancer",
+      "Add two load balancing rules that have HA Ports and Floating IP enabled",
+      "Add two load balancing rules that have HA Ports enabled and Floating IP disabled",
+      "Add a frontend IP configuration, a backend pool, and a health probe",
+      "Add a frontend IP configuration, two backend pools, and a health probe"
+    ],
+    "answer": [
+      1,
+      2,
+      5
+    ],
+    "explanation": "A standard load balancer is required for the HA ports. Two backend pools are needed as there are two services with different IP addresses. Floating IP rule is used where backend ports are reused. Incorrect Answers: E: HA Ports are not available for the basic load balancer."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains two Azure virtual networks named VNet1 and VNet2. VNet1 contains a VPN gateway named VPNGW1 that uses static routing. There is a site-to-site VPN connection between your on-premises network and VNet1. On a computer named Client1 that runs Windows 10, you configure a point-to-site VPN connection to VNet1. You configure virtual network peering between VNet1 and VNet2. You verify that you can connect to VNet2 from the on-premises network. Client1 is unable to connect to VNet2. You need to ensure that you can connect Client1 to VNet2. What should you do?",
+    "options": [
+      "Download and re-install the VPN client configuration package on Client1.",
+      "Select Allow gateway transit on VNet1.",
+      "Select Allow gateway transit on VNet2.",
+      "Enable BGP on VPNGW1"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources in the following table. To which subnets can you apply NSG1?",
+    "options": [
+      "the subnets on VNet1 only",
+      "the subnets on VNet2 and VNet3 only",
+      "the subnets on VNet2 only",
+      "the subnets on VNet3 only",
+      "the subnets on VNet1, VNet2, and VNet3"
+    ],
+    "answer": 3,
+    "explanation": "All Azure resources are created in an Azure region and subscription. A resource can only be created in a virtual network that exists in the same region and subscription as the resource."
+  },
+  {
+    "question": "You have an Azure web app named webapp1. You have a virtual network named VNET1 and an Azure virtual machine named VM1 that hosts a MySQL database. VM1 connects to VNET1. You need to ensure that webapp1 can access the data hosted on VM1. What should you do?",
+    "options": [
+      "Deploy an internal load balancer",
+      "Peer VNET1 to another virtual network",
+      "Connect webapp1 to VNET1",
+      "Deploy an Azure Application Gateway"
+    ],
+    "answer": 3,
+    "explanation": "The PDF marks D as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have five Azure virtual machines that run Windows Server 2016. The virtual machines are configured as web servers. You have an Azure load balancer named LB1 that provides load balancing services for the virtual machines. You need to ensure that visitors are serviced by the same web server for each request. What should you configure?",
+    "options": [
+      "Floating IP (direct server return) to Disabled",
+      "Session persistence to None",
+      "Floating IP (direct server return) to Enabled",
+      "Session persistence to Client IP"
+    ],
+    "answer": 3,
+    "explanation": "With Sticky Sessions when a client starts a session on one of your web servers, session stays on that specific server. To configure An Azure Load-Balancer For Sticky Sessions set Session persistence to Client IP or to Client IP and protocol. On the following image you can see sticky session configuration: Note: • Client IP and protocol specifies that successive requests from the same client IP address and protocol combination will be handled by the same virtual machine. • Client IP specifies that successive requests from the same client IP address will be handled by the same virtual machine."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the following resources: • A virtual network that has a subnet named Subnet1 • Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1 • A virtual machine named VM1 that has the required Windows Server configurations to allow Remote Desktop connections NSG-Subnet1 has the default inbound security rules only. NSG-VM1 has the default inbound security rules and the following custom inbound security rule: • Priority: 100 • Source: Any • Source port range: * • Destination: * • Destination port range: 3389 • Protocol: UDP • Action: Allow VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of VM1. NSG-Subnet1 is associated to Subnet1. You need to be able to establish Remote Desktop connections from the internet to VM1. Solution: You add an inbound security rule to NSG-Subnet1 that allows connections from the Any source to the *destination for port range 3389 and uses the TCP protocol. You remove NSG-VM1 from the network interface of VM1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The default port for RDP is TCP port 3389. A rule to permit RDP traffic must be created automatically when you create your VM. Note on NSG-Subnet1: Azure routes network traffic between all subnets in a virtual network, by default."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the following resources: • A virtual network that has a subnet named Subnet1 • Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1 • A virtual machine named VM1 that has the required Windows Server configurations to allow Remote Desktop connections NSG-Subnet1 has the default inbound security rules only. NSG-VM1 has the default inbound security rules and the following custom inbound security rule: • Priority: 100 • Source: Any • Source port range: * • Destination: * • Destination port range: 3389 • Protocol: UDP • Action: Allow VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of VM1. NSG-Subnet1 is associated to Subnet1. You need to be able to establish Remote Desktop connections from the internet to VM1. Solution: You add an inbound security rule to NSG-Subnet1 that allows connections from the internet source to the VirtualNetwork destination for port range 3389 and uses the UDP protocol. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The default port for RDP is TCP port 3389. A rule to permit RDP traffic must be created automatically when you create your VM. Note on NSG-Subnet1: Azure routes network traffic between all subnets in a virtual network, by default."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the following resources: • A virtual network that has a subnet named Subnet1 • Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1 • A virtual machine named VM1 that has the required Windows Server configurations to allow Remote Desktop connections NSG-Subnet1 has the default inbound security rules only. NSG-VM1 has the default inbound security rules and the following custom inbound security rule: • Priority: 100 • Source: Any • Source port range: * • Destination: * • Destination port range: 3389 • Protocol: UDP • Action: Allow VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of VM1. NSG-Subnet1 is associated to Subnet1. You need to be able to establish Remote Desktop connections from the internet to VM1. Solution: You add an inbound security rule to NSG-Subnet1 and NSG-VM1 that allows connections from the internet source to the VirtualNetwork destination for port range 3389 and uses the TCP protocol. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The default port for RDP is TCP port 3389. A rule to permit RDP traffic must be created automatically when you create your VM. Note on NSG-Subnet1: Azure routes network traffic between all subnets in a virtual network, by default."
+  },
+  {
+    "question": "You have an Azure subscription that contains a virtual network named VNET1. VNET1 contains the subnets shown in the following table. Each virtual machine uses a static IP address. You need to create network security groups (NSGs) to meet following requirements: • Allow web requests from the internet to VM3, VM4, VM5, and VM6. • Allow all connections between VM1 and VM2. • Allow Remote Desktop connections to VM1. • Prevent all other network traffic to VNET1. What is the minimum number of NSGs you should create?",
+    "options": [
+      "1",
+      "3",
+      "4",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Each network security group also contains default security rules. Note: A network security group (NSG) contains a list of security rules that allow or deny network traffic to resources connected to Azure Virtual Networks (VNet). NSGs can be associated to subnets, individual VMs (classic), or individual network interfaces (NIC) attached to VMs (Resource Manager)."
+  },
+  {
+    "question": "Your company has an Azure subscription named Subscription1. The company also has two on-premises servers named Server1 and Server2 that run Windows Server 2016. Server1 is configured as a DNS server that has a primary DNS zone named adatum.com. Adatum.com contains 1,000 DNS records. You manage Server1 and Subscription1 from Server2. Server2 has the following tools installed: • The DNS Manager console • Azure PowerShell • Azure CLI 2.0 You need to move the adatum.com zone to an Azure DNS zone in Subscription1. The solution must minimize administrative effort. What should you use?",
+    "options": [
+      "Azure CLI",
+      "Azure PowerShell",
+      "the Azure portal",
+      "the DNS Manager console"
+    ],
+    "answer": 1,
+    "explanation": "Step 1: Installing the DNS migration script Open an elevated PowerShell window (Administrative mode) and run following command install-script PrivateDnsMigrationScript Step 2: Running the script Execute following command to run the script PrivateDnsMigrationScript.ps1"
+  },
+  {
+    "question": "You have a public load balancer that balances ports 80 and 443 across three virtual machines named VM1, VM2, and VM3. You need to direct all the Remote Desktop Protocol (RDP) connections to VM3 only. What should you configure?",
+    "options": [
+      "an inbound NAT rule",
+      "a new public load balancer for VM3",
+      "a frontend IP configuration",
+      "a load balancing rule"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/load-balancer/tutorial-load-balancer-port-forwarding-portal https://pixelrobots.co.uk/2017/08/azure-load-balancer-for-rds/"
+  },
+  {
+    "question": "You have two subscriptions named Subscription1 and Subscription2. Each subscription is associated to a different Azure AD tenant. Subscription1 contains a virtual network named VNet1. VNet1 contains an Azure virtual machine named VM1 and has an IP address space of 10.0.0.0/16. Subscription2 contains a virtual network named VNet2. VNet2 contains an Azure virtual machine named VM2 and has an IP address space of 10.10.0.0/24. You need to connect VNet1 to VNet2. What should you do first?",
+    "options": [
+      "Move VM1 to Subscription2.",
+      "Move VNet1 to Subscription2.",
+      "Modify the IP address space of VNet2.",
+      "Provision virtual network gateways."
+    ],
+    "answer": 3,
+    "explanation": "The virtual networks can be in the same or different regions, and from the same or different subscriptions. When connecting VNets from different subscriptions, the subscriptions do not need to be associated with the same Active Directory tenant. Configuring a VNet-to-VNet connection is a good way to easily connect VNets. Connecting a virtual network to another virtual network using the VNet-to-VNet connection type (VNet2VNet) is similar to creating a Site-to-Site IPsec connection to an on-premises location. Both connectivity types use a VPN gateway to provide a secure tunnel using IPsec/IKE, and both function the same way when communicating. The local network gateway for each VNet treats the other VNet as a local site. This lets you specify additional address space for the local network gateway in order to route traffic."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site connection uses a self-signed certificate. From Azure, you download and install the VPN client configuration package on a computer named Computer2. You need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2. Solution: You modify the Azure Active Directory (Azure AD) authentication policies. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead export the client certificate from Computer1 and install the certificate on Computer2. Note: Each client computer that connects to a VNet using Point-to-Site must have a client certificate installed. You generate a client certificate from the self-signed root certificate, and then export and install the client certificate. If the client certificate is not installed, authentication fails."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site connection uses a self-signed certificate. From Azure, you download and install the VPN client configuration package on a computer named Computer2. You need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2. Solution: You join Computer2 to Azure Active Directory (Azure AD). Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead export the client certificate from Computer1 and install the certificate on Computer2. A client computer that connects to a VNet using Point-to-Site must have a client certificate installed."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups. Another administrator plans to create several network security groups (NSGs) in the subscription. You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks. Solution: You create a resource lock, and then you assign the lock to the subscription. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have the Azure virtual network named VNet1 that contains a subnet named Subnet1. Subnet1 contains three Azure virtual machines. Each virtual machine has a public IP address. The virtual machines host several applications that are accessible over port 443 to users on the Internet. Your on-premises network has a site-to-site VPN connection to VNet1. You discover that the virtual machines can be accessed by using the Remote Desktop Protocol (RDP) from the Internet and from the on-premises network. You need to prevent RDP access to the virtual machines from the Internet, unless the RDP connection is established from the on-premises network. The solution must ensure that all the applications can still be accessed by the Internet users. What should you do?",
+    "options": [
+      "Modify the address space of the local network gateway",
+      "Create a deny rule in a network security group (NSG) that is linked to Subnet1",
+      "Remove the public IP addresses from the virtual machines",
+      "Modify the address space of Subnet1"
+    ],
+    "answer": 1,
+    "explanation": "You can use a site-to-site VPN to connect your on-premises network to an Azure virtual network. Users on your on-premises network connect by using the RDP or SSH protocol over the site-to-site VPN connection. You don't have to allow direct RDP or SSH access over the internet."
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources in the following table. Subnet1 is associated to VNet1. NIC1 attaches VM1 to Subnet1. You need to apply ASG1 to VM1. What should you do?",
+    "options": [
+      "Associate NIC1 to ASG1",
+      "Modify the properties of ASG1",
+      "Modify the properties of NSG1"
+    ],
+    "answer": 0,
+    "explanation": "Application Security Group can be associated with NICs."
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains an Azure virtual network named VNet1. VNet1 connects to your on-premises network by using Azure ExpressRoute. You plan to prepare the environment for automatic failover in case of ExpressRoute failure. You need to connect VNet1 to the on-premises network by using a site-to-site VPN. The solution must minimize cost. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Create a connection",
+      "Create a local site VPN gateway",
+      "Create a VPN gateway that uses the VpnGw1 SKU",
+      "Create a gateway subnet",
+      "Create a VPN gateway that uses the Basic SKU"
+    ],
+    "answer": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager- portal"
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources shown in the following table. You need to create a network interface named NIC1. In which location can you create NIC1?",
+    "options": [
+      "East US and North Europe only",
+      "East US only",
+      "East US, West Europe, and North Europe",
+      "East US and West Europe only"
+    ],
+    "answer": 1,
+    "explanation": "Before creating a network interface, you must have an existing virtual network in the same location and subscription you create a network interface in."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the virtual machines shown in the following table. You deploy a load balancer that has the following configurations: • Name: LB1 • Type: Internal • SKU: Standard • Virtual network: VNET1 You need to ensure that you can add VM1 and VM2 to the backend pool of LB1. Solution: You create a Basic SKU public IP address, associate the address to the network interface of VM1, and then start VM1. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A Backend Pool configured by IP address has the following limitations: • Standard load balancer only"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the virtual machines shown in the following table. You deploy a load balancer that has the following configurations: • Name: LB1 • Type: Internal • SKU: Standard • Virtual network: VNET1 You need to ensure that you can add VM1 and VM2 to the backend pool of LB1. Solution: You create a Standard SKU public IP address, associate the address to the network interface of VM1, and then stop VM2. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A Backend Pool configured by IP address has the following limitations: • Standard load balancer only"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the virtual machines shown in the following table. You deploy a load balancer that has the following configurations: • Name: LB1 • Type: Internal • SKU: Standard • Virtual network: VNET1 You need to ensure that you can add VM1 and VM2 to the backend pool of LB1. Solution: You create two Standard SKU public IP addresses and associate a Standard SKU public IP address to the network interface of each virtual machine. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "A Backend Pool configured by IP address has the following limitations: • Standard load balancer only"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site connection uses a self-signed certificate. From Azure, you download and install the VPN client configuration package on a computer named Computer2. You need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2. Solution: You export the client certificate from Computer1 and install the certificate on Computer2. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Each client computer that connects to a VNet using Point-to-Site must have a client certificate installed. You generate a client certificate from the self-signed root certificate, and then export and install the client certificate. If the client certificate is not installed, authentication fails."
+  },
+  {
+    "question": "You have an Azure subscription. You plan to deploy an Azure Kubernetes Service (AKS) cluster to support an app named App1. On- premises clients connect to App1 by using the IP address of the pod. For the AKS cluster, you need to choose a network type that will support App1. What should you choose?",
+    "options": [
+      "kubenet",
+      "Azure Container Networking Interface (CNI)",
+      "Hybrid Connection endpoints",
+      "Azure Private Link"
+    ],
+    "answer": 1,
+    "explanation": "With Azure CNI, every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space. Incorrect Answers: A: The kubenet networking option is the default configuration for AKS cluster creation. With kubenet, nodes get an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes. Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network. C, D: AKS only supports Kubenet networking and Azure Container Networking Interface (CNI) networking"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains the virtual machines shown in the following table. You deploy a load balancer that has the following configurations: • Name: LB1 • Type: Internal • SKU: Standard • Virtual network: VNET1 You need to ensure that you can add VM1 and VM2 to the backend pool of LB1. Solution: You disassociate the public IP address from the network interface of VM2. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups. Another administrator plans to create several network security groups (NSGs) in the subscription. You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks. Solution: You configure a custom policy definition, and then you assign the policy to the subscription. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Resource policy definition used by Azure Policy enables you to establish conventions for resources in your organization by describing when the policy is enforced and what effect to take. By defining conventions, you can control costs and more easily manage your resources."
+  },
+  {
+    "question": "You have two Azure virtual networks named VNet1 and VNet2. VNet1 contains an Azure virtual machine named VM1. VNet2 contains an Azure virtual machine named VM2. VM1 hosts a frontend application that connects to VM2 to retrieve data. Users report that the frontend application is slower than usual. You need to view the average round-trip time (RTT) of the packets from VM1 to VM2. Which Azure Network Watcher feature should you use?",
+    "options": [
+      "IP flow verify",
+      "Connection troubleshoot",
+      "Connection monitor",
+      "NSG flow logs"
+    ],
+    "answer": 2,
+    "explanation": "The connection monitor capability monitors communication at a regular interval and informs you of reachability, latency, and network topology changes between the VM and the endpoint Incorrect Answers: A: The IP flow verify capability enables you to specify a source and destination IPv4 address, port, protocol (TCP or UDP), and traffic direction (inbound or outbound). IP flow verify then tests the communication and informs you if the connection succeeds or fails. If the connection fails, IP flow verify tells you which security rule allowed or denied the communication, so that you can resolve the problem. B: The connection troubleshoot capability enables you to test a connection between a VM and another VM, an FQDN, a URI, or an IPv4 address. The test returns similar information returned when using the connection monitor capability, but tests the connection at a point in time, rather than monitoring it over time, as connection monitor does. D: The NSG flow log capability allows you to log the source and destination IP address, port, protocol, and whether traffic was allowed or denied by an NSG."
+  },
+  {
+    "question": "You have an Azure subscription that contains two virtual machines as shown in the following table. You perform a reverse DNS lookup for 10.0.0.4 from VM2. Which FQDN will be returned?",
+    "options": [
+      "vm1.core.windows.net",
+      "vm1.azure.com",
+      "vm1.westeurope.cloudapp.azure.com",
+      "vm1.internal.cloudapp.net"
+    ],
+    "answer": 1,
+    "explanation": "The PDF marks B as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure subscription that contains a policy-based virtual network gateway named GW1 and a virtual network named VNet1. You need to ensure that you can configure a point-to-site connection from an on-premises computer to VNet1. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "Add a service endpoint to VNet1",
+      "Reset GW1",
+      "Create a route-based virtual network gateway",
+      "Add a connection to GW1",
+      "Delete GW1",
+      "Add a public IP address space to VNet1"
+    ],
+    "answer": [
+      2,
+      4
+    ],
+    "explanation": "C: A VPN gateway is used when creating a VPN connection to your on-premises network. Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. It is typically built on router platforms where each IPsec tunnel is modeled as a network interface or VTI (virtual tunnel interface). E: Policy-based VPN devices use the combinations of prefixes from both networks to define how traffic is encrypted/decrypted through IPsec tunnels. It is typically built on firewall devices that perform packet filtering. IPsec tunnel encryption and decryption are added to the packet filtering and processing engine. Incorrect Answers: F: Point-to-Site connections do not require a VPN device or a public-facing IP address."
+  },
+  {
+    "question": "You have the Azure virtual machines shown in the following table. VNET1 is linked to a private DNS zone named contoso.com that contains the records shown in the following table. You need to ping VM2 from VM1. Which DNS names can you use to ping VM2?",
+    "options": [
+      "comp2.contoso.com and comp4.contoso.com only",
+      "comp1.contoso.com, comp2.contoso.com, comp3.contoso.com, and comp4.contoso.com",
+      "comp2.contoso.com only",
+      "comp1.contoso.com and comp2.contoso.com only",
+      "comp1.contoso.com, comp2.contoso.com, and comp4.contoso.com only"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://medium.com/azure-architects/exploring-azure-private-dns-be65de08f780 https://simpledns.plus/help/dns-record-types"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site connection uses a self-signed certificate. From Azure, you download and install the VPN client configuration package on a computer named Computer2. You need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2. Solution: On Computer2, you set the Startup type for the IPSec Policy Agent service to Automatic. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Each client computer that connects to a VNet using Point-to-Site must have a client certificate installed. You generate a client certificate from the self-signed root certificate, and then export and install the client certificate. If the client certificate is not installed, authentication fails."
+  },
+  {
+    "question": "You have five Azure virtual machines that run Windows Server 2016. The virtual machines are configured as web servers. You have an Azure load balancer named LB1 that provides load balancing services for the virtual machines. You need to ensure that visitors are serviced by the same web server for each request. What should you configure?",
+    "options": [
+      "Session persistence to Client IP and protocol",
+      "Protocol to UDP",
+      "Session persistence to None",
+      "Floating IP (direct server return) to Enabled"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-distribution-mode?tabs=azure-portal"
+  },
+  {
+    "question": "You have an Azure subscription that uses the public IP addresses shown in the following table. You need to create a public Azure Standard Load Balancer. Which public IP addresses can you use?",
+    "options": [
+      "IP1, IP2, and IP3",
+      "IP2 only",
+      "IP3 only",
+      "IP1 and IP3 only"
+    ],
+    "answer": 2,
+    "explanation": "Matching SKUs are required for load balancer and public IP resources. You can't have a mixture of Basic SKU resources and standard SKU resources."
+  },
+  {
+    "question": "You have an Azure subscription. You are deploying an Azure Kubernetes Service (AKS) cluster that will contain multiple pods. The pods will use kubernet networking. You need to restrict network traffic between the pods. What should you configure on the AKS cluster?",
+    "options": [
+      "the Azure network policy",
+      "the Calico network policy",
+      "pod security policies",
+      "an application security group"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/aks/use-network-policies"
+  },
+  {
+    "question": "You have five Azure virtual machines that run Windows Server 2016. The virtual machines are configured as web servers. You have an Azure load balancer named LB1 that provides load balancing services for the virtual machines. You need to ensure that visitors are serviced by the same web server for each request. What should you configure?",
+    "options": [
+      "Floating IP (direct server return) to Enabled",
+      "Floating IP (direct server return) to Disabled",
+      "a health probe",
+      "Session persistence to Client IP and Protocol"
+    ],
+    "answer": 3,
+    "explanation": "With Sticky Sessions when a client starts a session on one of your web servers, session stays on that specific server. To configure An Azure Load-Balancer For Sticky Sessions set Session persistence to Client IP. On the following image you can see sticky session configuration: Note: There are several versions of this question in the exam. The question can have other incorrect answer options, including the following: 1. Idle Time-out (minutes) to 20 1. Protocol to UDP"
+  },
+  {
+    "question": "You have an Azure subscription that contains two virtual machines named VM1 and VM2. You create an Azure load balancer. You plan to create a load balancing rule that will load balance HTTPS traffic between VM1 and VM2. Which two additional load balancer resources should you create before you can create the load balancing rule? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "a frontend IP address",
+      "an inbound NAT rule",
+      "a virtual network",
+      "a backend pool",
+      "a health probe"
+    ],
+    "answer": [
+      3,
+      4
+    ],
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/load-balancer/components"
+  },
+  {
+    "question": "You have an on-premises network that contains a database server named dbserver1. You have an Azure subscription. You plan to deploy three Azure virtual machines. Each virtual machine will be deployed to a separate availability zone. You need to configure an Azure VPN gateway for a site-to-site VPN. The solution must ensure that the virtual machines can connect to dbserver1. Which type of public IP address SKU and assignment should you use for the gateway?",
+    "options": [
+      "a basic SKU and a static IP address assignment",
+      "a standard SKU and a static IP address assignment",
+      "a basic SKU and a dynamic IP address assignment"
+    ],
+    "answer": 2,
+    "explanation": "VPN gateway supports only Dynamic. Note: VPN gateway requires a public IP address for its configuration. A public IP address is used as the external connection point of the VPN. Specify in the values for Public IP address. These settings specify the public IP address object that gets associated to the VPN gateway. The public IP address is dynamically assigned to this object when the VPN gateway is created. The only time the Public IP address changes is when the gateway is deleted and re-created."
+  },
+  {
+    "question": "You have an on-premises datacenter and an Azure subscription. You plan to connect the datacenter to Azure by using ExpressRoute. You need to deploy an ExpressRoute gateway. The solution must meet the following requirements: • Support up to 10 Gbps of traffic. • Support availability zones. • Support FastPath. • Minimize costs. Which SKU should you deploy?",
+    "options": [
+      "ERGw1AZ",
+      "ERGw2",
+      "ErGw3",
+      "ErGw3AZ"
+    ],
+    "answer": 3,
+    "explanation": "ErGw3Az supports FastPath. The following table shows the features supported across each gateway type. Note: ExpressRoute virtual network gateways can use the following SKUs: Standard HighPerformance UltraPerformance ErGw1Az ErGw2Az ErGw3Az"
+  },
+  {
+    "question": "Your on-premises network contains an SMB share named Share1. You have an Azure subscription that contains the following resources: • A web app named webapp1 • A virtual network named VNET1 You need to ensure that webapp1 can connect to Share1. What should you deploy?",
+    "options": [
+      "an Azure Application Gateway",
+      "an Azure Active Directory (Azure AD) Application Proxy",
+      "an Azure Virtual Network Gateway"
+    ],
+    "answer": 2,
+    "explanation": "A Site-to-Site VPN gateway connection can be used to connect your on-premises network to an Azure virtual network over an IPsec/IKE (IKEv1 or IKEv2) VPN tunnel. This type of connection requires a VPN device, a VPN gateway, located on-premises that has an externally facing public IP address assigned to it. Incorrect Answers: B: Application Proxy is a feature of Azure AD that enables users to access on-premises web applications from a remote client."
+  },
+  {
+    "question": "Your on-premises network contains a VPN gateway. You have an Azure subscription that contains the resources shown in the following table. You need to ensure that all the traffic from VM1 to storage1 travels across the Microsoft backbone network. What should you configure?",
+    "options": [
+      "a network security group (NSG)",
+      "service endpoints",
+      "Azure Peering Service",
+      "Azure Firewall"
+    ],
+    "answer": 0,
+    "explanation": "The PDF marks A as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You plan to deploy route-based Site-to-Site VPN connections between several on-premises locations and an Azure virtual network. Which tunneling protocol should you use?",
+    "options": [
+      "IKEv1",
+      "PPTP",
+      "IKEv2",
+      "L2TP"
+    ],
+    "answer": 2,
+    "explanation": "A Site-to-Site (S2S) VPN gateway connection is used to connect your on-premises network to an Azure virtual network over an IPsec/IKE (IKEv1 or IKEv2) VPN tunnel. IKEv2 supports 10 S2S connections, while IKEv1 only supports 1."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Litware, Inc. is a consulting company that has a main office in Montreal and two branch offices in Seattle and New York. The Montreal office has 2,000 employees. The Seattle office has 1,000 employees. The New York office has 200 employees. All the resources used by Litware are hosted on-premises. Litware creates a new Azure subscription. The Azure Active Directory (Azure AD) tenant uses a domain named litware.onmicrosoft.com. The tenant uses the Premium P1 pricing tier. Existing Environment The network contains an Active Directory forest named litware.com. All domain controllers are configured as DNS servers and host the litware.com DNS zone. Litware has finance, human resources, sales, research, and information technology departments. Each department has an organizational unit (OU) that contains all the accounts of that respective department. All the user accounts have the department attribute set to their respective department. New users are added frequently. Litware.com contains a user named User1. All the offices connect by using private connections. Litware has data centers in the Montreal and Seattle offices. Each office has a firewall that can be configured as a VPN device. All infrastructure servers are virtualized. The virtualization environment contains the servers in the following table. Litware uses two web applications named App1 and App2. Each instance on each web application requires 1 GB of memory. The Azure subscription contains the resources in the following table. The network security team implements several network security groups (NSGs) Requirements Planned Changes Litware plans to implement the following changes: • Deploy Azure ExpressRoute to the Montreal office. • Migrate the virtual machines hosted on Server1 and Server2 to Azure. • Synchronize on-premises Active Directory to Azure Active Directory (Azure AD). • Migrate App1 and App2 to two Azure web apps named WebApp1 and WebApp2. Technical Requirements Litware must meet the following technical requirements: • Ensure that WebApp1 can adjust the number of instances automatically based on the load and can scale up to five instances. • Ensure that VM3 can establish outbound connections over TCP port 8080 to the applications servers in the Montreal office. • Ensure that routing information is exchanged automatically between Azure and the routers in the Montreal office. • Enable Azure Multi-Factor Authentication (MFA) for the users in the finance department only. • Ensure that webapp2.azurewebsites.net can be accessed by using the name app2.litware.com. • Connect the New York office to VNet1 over the Internet by using an encrypted connection. • Create a workflow to send an email message when the settings of VM4 are modified. • Create a custom Azure role named Role1 that is based on the Reader role. • Minimize costs whenever possible. You need to ensure that VM1 can communicate with VM4. The solution must minimize the administrative effort. What should you do?",
+    "options": [
+      "Create an NSG and associate the NSG to VM1 and VM4.",
+      "Establish peering between VNET1 and VNET3.",
+      "Assign VM4 an IP address of 10.0.1.5/24.",
+      "Create a user-defined route from VNET1 to VNET3."
+    ],
+    "answer": 2,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal"
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview Contoso, Ltd. is a manufacturing company that has offices worldwide. Contoso works with partner organizations to bring products to market. Contoso products are manufactured by using blueprint files that the company authors and maintains. Existing Environment Currently, Contoso uses multiple types of servers for business operations, including the following: • File servers • Domain controllers • Microsoft SQL Server servers Your network contains an Active Directory forest named contoso.com. All servers and client computers are joined to Active Directory. You have a public-facing application named App1. App1 is comprised of the following three tiers: • A SQL database • A web front end • A processing middle tier Each tier is comprised of five virtual machines. Users access the web front end by using HTTPS only. Requirements Planned Changes Contoso plans to implement the following changes to the infrastructure: • Move all the tiers of App1 to Azure. • Move the existing product blueprint files to Azure Blob storage. • Create a hybrid directory to support an upcoming Microsoft 365 migration project. Technical Requirements Contoso must meet the following technical requirements: • Move all the virtual machines for App1 to Azure. • Minimize the number of open ports between the App1 tiers. • Ensure that all the virtual machines for App1 are protected by backups. • Copy the blueprint files to Azure over the Internet. • Ensure that the blueprint files are stored in the archive storage tier. • Ensure that partner access to the blueprint files is secured and temporary. • Prevent user passwords or hashes of passwords from being stored in Azure. • Use unmanaged standard storage for the hard disks of the virtual machines. • Ensure that when users join devices to Azure Active Directory (Azure AD), the users use a mobile phone to verify their identity. • Minimize administrative effort whenever possible. User Requirements Contoso identifies the following requirements for users: • Ensure that only users who are part of a group named Pilot can join devices to Azure AD. • Designate a new user named Admin1 as the service admin for the Azure subscription. • Admin1 must receive email alerts regarding service outages. • Ensure that a new user named User3 can create network objects for the Azure subscription. You are planning the move of App1 to Azure. You create a network security group (NSG). You need to recommend a solution to provide users with access to App1. What should you recommend?",
+    "options": [
+      "Create an incoming security rule for port 443 from the Internet. Associate the NSG to the subnet that contains the web servers.",
+      "Create an outgoing security rule for port 443 from the Internet. Associate the NSG to the subnet that contains the web servers.",
+      "Create an incoming security rule for port 443 from the Internet. Associate the NSG to all the subnets.",
+      "Create an outgoing security rule for port 443 from the Internet. Associate the NSG to all the subnets."
+    ],
+    "answer": 0,
+    "explanation": "Incoming and the web server subnet only, as users access the web front end by using HTTPS only. Note Scenario: You have a public-facing application named App1. App1 is comprised of the following three tiers: • A SQL database • A web front end • A processing middle tier Each tier is comprised of five virtual machines. Users access the web front end by using HTTPS only."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview General Overview Contoso, Ltd. is a consulting company that has a main office in Montreal and branch offices in Seattle and New York. Environment Existing Environment Contoso has an Azure subscription named Sub1 that is linked to an Azure Active Directory (Azure AD) tenant. The network contains an on-premises Active Directory domain that syncs to the Azure AD tenant. The Azure AD tenant contains the users shown in the following table. Sub1 contains two resource groups named RG1 and RG2 and the virtual networks shown in the following table. User1 manages the resources in RG1. User4 manages the resources in RG2. Sub1 contains virtual machines that run Windows Server 2019 as shown in the following table No network security groups (NSGs) are associated to the network interfaces or the subnets. Sub1 contains the storage accounts shown in the following table. Requirements Planned Changes Contoso plans to implement the following changes: • Create a blob container named container1 and a file share named share1 that will use the Cool storage tier. • Create a storage account named storage5 and configure storage replication for the Blob service. • Create an NSG named NSG1 that will have the custom inbound security rules shown in the following table. • Associate NSG1 to the network interface of VM1. • Create an NSG named NSG2 that will have the custom outbound security rules shown in the following table. • Associate NSG2 to VNET1/Subnet2. Technical Requirements Contoso must meet the following technical requirements: • Create container1 and share1. • Use the principle of least privilege. • Create an Azure AD security group named Group4. • Back up the Azure file shares and virtual machines by using Azure Backup. • Trigger an alert if VM1 or VM2 has less than 20 GB of free space on volume C. • Enable User1 to create Azure policy definitions and User2 to assign Azure policies to RG1. • Create an internal Basic Azure Load Balancer named LB1 and connect the load balancer to VNET1/Subnet1 • Enable flow logging for IP traffic from VM5 and retain the flow logs for a period of eight months. • Whenever possible, grant Group4 Azure role-based access control (Azure RBAC) read-only permissions to the Azure file shares. You need to ensure that VM1 can communicate with VM4. The solution must minimize administrative effort. What should you do?",
+    "options": [
+      "Establish peering between VNET1 and VNET3.",
+      "Assign VM4 an IP address of 10.0.1.5/24.",
+      "Create a user-defined route from VNET1 to VNET3.",
+      "Create an NSG and associate the NSG to VM1 and VM4."
+    ],
+    "answer": 0,
+    "explanation": "We need a VPN site-to-site to communicate between Azure and on-premises."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview General Overview Contoso, Ltd. is a consulting company that has a main office in Montreal and branch offices in Seattle and New York. Environment Existing Environment Contoso has an Azure subscription named Sub1 that is linked to an Azure Active Directory (Azure AD) tenant. The network contains an on-premises Active Directory domain that syncs to the Azure AD tenant. The Azure AD tenant contains the users shown in the following table. Sub1 contains two resource groups named RG1 and RG2 and the virtual networks shown in the following table. User1 manages the resources in RG1. User4 manages the resources in RG2. Sub1 contains virtual machines that run Windows Server 2019 as shown in the following table No network security groups (NSGs) are associated to the network interfaces or the subnets. Sub1 contains the storage accounts shown in the following table. Requirements Planned Changes Contoso plans to implement the following changes: • Create a blob container named container1 and a file share named share1 that will use the Cool storage tier. • Create a storage account named storage5 and configure storage replication for the Blob service. • Create an NSG named NSG1 that will have the custom inbound security rules shown in the following table. • Associate NSG1 to the network interface of VM1. • Create an NSG named NSG2 that will have the custom outbound security rules shown in the following table. • Associate NSG2 to VNET1/Subnet2. Technical Requirements Contoso must meet the following technical requirements: • Create container1 and share1. • Use the principle of least privilege. • Create an Azure AD security group named Group4. • Back up the Azure file shares and virtual machines by using Azure Backup. • Trigger an alert if VM1 or VM2 has less than 20 GB of free space on volume C. • Enable User1 to create Azure policy definitions and User2 to assign Azure policies to RG1. • Create an internal Basic Azure Load Balancer named LB1 and connect the load balancer to VNET1/Subnet1 • Enable flow logging for IP traffic from VM5 and retain the flow logs for a period of eight months. • Whenever possible, grant Group4 Azure role-based access control (Azure RBAC) read-only permissions to the Azure file shares. You need to ensure that you can add VM1 and VM2 to the backend pool of LB1. What should you do first?",
+    "options": [
+      "Redeploy VM1 and VM2 to the same availability zone.",
+      "Connect VM2 to VNET1/Subnet1.",
+      "Create a new NSG and associate the NSG to VNET1/Subnet1.",
+      "Redeploy VM1 and VM2 to the same availability set."
+    ],
+    "answer": 1,
+    "explanation": "Need to connect VM2 to VNET1/Subnet1. Scenario: Create an internal Basic Azure Load Balancer named LB1 and connect the load balancer to VNET1/Subnet1."
+  },
+  {
+    "question": "Case study This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided. To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study. At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section. To start the case study To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question. Overview General Overview Contoso, Ltd. is a consulting company that has a main office in Montreal and branch offices in Seattle and New York. Environment Existing Environment Contoso has an Azure subscription named Sub1 that is linked to an Azure Active Directory (Azure AD) tenant. The network contains an on-premises Active Directory domain that syncs to the Azure AD tenant. The Azure AD tenant contains the users shown in the following table. Sub1 contains two resource groups named RG1 and RG2 and the virtual networks shown in the following table. User1 manages the resources in RG1. User4 manages the resources in RG2. Sub1 contains virtual machines that run Windows Server 2019 as shown in the following table No network security groups (NSGs) are associated to the network interfaces or the subnets. Sub1 contains the storage accounts shown in the following table. Requirements Planned Changes Contoso plans to implement the following changes: • Create a blob container named container1 and a file share named share1 that will use the Cool storage tier. • Create a storage account named storage5 and configure storage replication for the Blob service. • Create an NSG named NSG1 that will have the custom inbound security rules shown in the following table. • Associate NSG1 to the network interface of VM1. • Create an NSG named NSG2 that will have the custom outbound security rules shown in the following table. • Associate NSG2 to VNET1/Subnet2. Technical Requirements Contoso must meet the following technical requirements: • Create container1 and share1. • Use the principle of least privilege. • Create an Azure AD security group named Group4. • Back up the Azure file shares and virtual machines by using Azure Backup. • Trigger an alert if VM1 or VM2 has less than 20 GB of free space on volume C. • Enable User1 to create Azure policy definitions and User2 to assign Azure policies to RG1. • Create an internal Basic Azure Load Balancer named LB1 and connect the load balancer to VNET1/Subnet1 • Enable flow logging for IP traffic from VM5 and retain the flow logs for a period of eight months. • Whenever possible, grant Group4 Azure role-based access control (Azure RBAC) read-only permissions to the Azure file shares. You need to add VM1 and VM2 to the backend pool of LB1. What should you do first?",
+    "options": [
+      "Connect VM2 to VNET1/Subnet1.",
+      "Redeploy VM1 and VM2 to the same availability zone.",
+      "Redeploy VM1 and VM2 to the same availability set.",
+      "Create a new NSG and associate the NSG to VNET1/Subnet1."
+    ],
+    "answer": 0,
+    "explanation": "VM1 is already in VNET1/Subnet1. VM2 is on VNET1/Subnet2, and must be moved to VNET1/Subnet1. Note: Create an internal Basic Azure Load Balancer named LB1 and connect the load balancer to VNET1/Subnet1"
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains two Azure virtual networks named VNet1 and VNet2. VNet1 contains a VPN gateway named VPNGW1 that uses static routing. There is a site-to-site VPN connection between your on-premises network and VNet1. On a computer named Client1 that runs Windows 10, you configure a point-to-site VPN connection to VNet1. You configure virtual network peering between VNet1 and VNet2. You verify that you can connect to VNet2 from the on-premises network. Client1 is unable to connect to VNet2. You need to ensure that you can connect Client1 to VNet2. What should you do?",
+    "options": [
+      "Select Use the remote virtual network's gateway or Route Server on VNet1 to VNet2 peering.",
+      "Select Use the remote virtual network s gateway or Route Server on VNet2 to VNet1 peering.",
+      "Download and re-install the VPN client configuration package on Client1.",
+      "Enable BGP on VPNGW1."
+    ],
+    "answer": 2,
+    "explanation": "The PDF marks C as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have a subnet named Subnet1 that contains Azure virtual machines. A network security group (NSG) named NSG1 is associated to Subnet1. NSG1 only contains the default rules. You need to create a rule in NSG1 to prevent the hosts on Subnet1 form connecting to the Azure portal. The hosts must be able to connect to other internet hosts. To what should you set Destination in the rule?",
+    "options": [
+      "Application security group",
+      "IP Addresses",
+      "Service Tag",
+      "Any"
+    ],
+    "answer": 2,
+    "explanation": "The PDF marks C as the correct answer. No further explanation is provided in the source."
+  },
+  {
+    "question": "You have an Azure subscription that contains eight virtual machines and the resources shown in the following table.\nYou need to configure access for VNET1. The solution must meet the following requirements:\n• The virtual machines connected to VNET1 must be able to communicate with the virtual machines connected to VNET2 by using the Microsoft\nbackbone.\n• The virtual machines connected to VNET1 must be able to access storage1, storage2, and Azure AD by using the Microsoft backbone.\nWhat is the minimum number of service endpoints you should add to VNET1?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You need to ensure that VM1 can communicate with VM4. The solution must minimize administrative effort.\nWhat should you do?",
+    "options": [
+      "Create a user-defined route from VNET1 to VNET3.",
+      "Create an NSG and associate the NSG to VM1 and VM4.",
+      "Assign VM4 an IP address of 10.0.1.5/24.",
+      "Establish peering between VNET1 and VNET3."
+    ],
+    "answer": 3,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB. VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to-site VPN connection exists between your company’s on-premises network and VirtualNetworkA. You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation. You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation. Solution: You choose the Allow gateway transit setting on VirtualNetworkA. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB. VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to-site VPN connection exists between your company’s on-premises network and VirtualNetworkA. You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation. You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation. Solution: You choose the Allow gateway transit setting on VirtualNetworkB. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements. Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB. VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to-site VPN connection exists between your company’s on-premises network and VirtualNetworkA. You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation. You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation. Solution: You download and re-install the VPN client configuration package on the Windows 10 workstation. Does the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-point-to-site-routing"
+  },
+  {
+    "question": "Your company has virtual machines (VMs) hosted in Microsoft Azure. The VMs are located in a single Azure virtual network named VNet1. The company has users that work remotely. The remote workers require access to the VMs on VNet1. You need to provide access for the remote workers. What should you do?",
+    "options": [
+      "Configure a Site-to-Site (S2S) VPN.",
+      "Configure a VNet-toVNet VPN.",
+      "Configure a Point-to-Site (P2S) VPN.",
+      "Configure DirectAccess on a Windows Server 2012 server VM.",
+      "Configure a Multi-Site VPN"
+    ],
+    "answer": 2,
+    "explanation": "A Point-to-Site (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer. Reference: https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+  },
+  {
+    "question": "Your company has two on-premises servers named SRV01 and SRV02. Developers have created an application that runs on SRV01. The application calls a service on SRV02 by IP address. You plan to migrate the application on Azure virtual machines (VMs). You have configured two VMs on a single subnet in an Azure virtual network. You need to configure the two VMs with static internal IP addresses. What should you do?",
+    "options": [
+      "Run the New-AzureRMVMConfig PowerShell cmdlet.",
+      "Run the Set-AzureSubnet PowerShell cmdlet.",
+      "Modify the VM properties in the Azure Management Portal.",
+      "Modify the IP properties in Windows Network and Sharing Center.",
+      "Run the Set-AzureStaticVNetIP PowerShell cmdlet."
+    ],
+    "answer": 4,
+    "explanation": "Specify a static internal IP for a previously created VM If you want to set a static IP address for a VM that you previously created, you can do so by using the following cmdlets. If you already set an IP address for the VM and you want to change it to a different IP address, you’ll need to remove the existing static IP address before running these cmdlets. See the instructions below to remove a static IP. For this procedure, you’ll use the Update-AzureVM cmdlet. The Update-AzureVM cmdlet restarts the VM as part of the update process. The DIP that you specify will be assigned after the VM restarts. In this example, we set the IP address for VM2, which is located in cloud service StaticDemo. Get-AzureVM -ServiceName StaticDemo -Name VM2 | Set-AzureStaticVNetIP -IPAddress 192.168.4.7 | Update-AzureVM"
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) subscription. You need to deploy five virtual machines (VMs) to your company’s virtual network subnet. The VMs will each have both a public and private IP address. Inbound and outbound security rules for all of these virtual machines must be identical. Which of the following is the least amount of security groups needed for this configuration?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "The PDF marks D as the correct answer (1). No further explanation is provided in the source."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named Developers. Subscription1 contains a resource group named Dev. You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group. Solution: On Subscription1, you assign the DevTest Labs User role to the Developers group. Does this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "DevTest Labs User role only lets you connect, start, restart, and shutdown virtual machines in your Azure DevTest Labs. The Logic App Contributor role lets you manage logic app, but not access to them. It provides access to view, edit, and update a logic app. Reference: https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app"
+  },
+  {
+    "question": "You have an Azure subscription. Users access the resources in the subscription from either home or from customer sites. From home, users must establish a point-to-site VPN to access the Azure resources. The users on the customer sites access the Azure resources by using site-to-site VPNs. You have a line-of-business-app named App1 that runs on several Azure virtual machine. The virtual machines run Windows Server 2016. You need to ensure that the connections to App1 are spread across all the virtual machines. What are two possible Azure services that you can use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+    "options": [
+      "an internal load balancer",
+      "a public load balancer",
+      "an Azure Content Delivery Network (CDN)",
+      "Traffic Manager",
+      "an Azure Application Gateway"
+    ],
+    "answer": [
+      0,
+      4
+    ],
+    "explanation": "Network traffic from the VPN gateway is routed to the cloud application through an internal load balancer. The load balancer is located in the front-end subnet of the application. Reference: https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/vpn https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-overview https://docs.microsoft.com/en-us/azure/application-gateway/overview"
+  },
+  {
+    "question": "You have a subnet named Subnet1 that contains Azure virtual machines. A network security group (NSG) named NSG1 is associated to Subnet1.\nNSG1 only contains the default rules.\nYou need to create a rule in NSG1 to prevent the hosts on Subnet1 form connecting to the Azure portal. The hosts must be able to connect to\nother internet hosts.\nTo what should you set Destination in the rule?",
+    "options": [
+      "Application security group",
+      "IP Addresses",
+      "Service Tag",
+      "Any"
+    ],
+    "answer": 2,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  }]

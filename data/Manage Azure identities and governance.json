@@ -1,0 +1,628 @@
+[
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company has an Azure Active Directory (Azure AD) subscription.\nYou want to implement an Azure AD conditional access policy.\nThe policy must be configured to require members of the Global Administrators group to use Multi-Factor Authentication and an Azure AD-joined\ndevice when they connect to Azure AD from untrusted locations.\nSolution: You access the multi-factor authentication page to alter the user settings.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company has an Azure Active Directory (Azure AD) subscription.\nYou want to implement an Azure AD conditional access policy.\nThe policy must be configured to require members of the Global Administrators group to use Multi-Factor Authentication and an Azure AD-joined\ndevice when they connect to Azure AD from untrusted locations.\nSolution: You access the Azure portal to alter the session control of the Azure AD conditional access policy.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company has an Azure Active Directory (Azure AD) subscription.\nYou want to implement an Azure AD conditional access policy.\nThe policy must be configured to require members of the Global Administrators group to use Multi-Factor Authentication and an Azure AD-joined\ndevice when they connect to Azure AD from untrusted locations.\nSolution: You access the Azure portal to alter the grant control of the Azure AD conditional access policy.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company makes use of Multi-Factor Authentication for when users are not in the office. The Per Authentication option has been configured\nas the usage model.\nAfter the acquisition of a smaller business and the addition of the new staff to Azure Active Directory (Azure AD) obtains a different company and\nadding the new employees to Azure Active Directory (Azure AD), you are informed that these employees should also make use of Multi-Factor\nAuthentication.\nTo achieve this, the Per Enabled User setting must be set for the usage model.\nSolution: You reconfigure the existing usage model via the Azure portal.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Since it is not possible to change the usage model of an existing provider as it is right now, you have to create a new one and reactivate your existing server with activation credentials from the new provider."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company's Azure solution makes use of Multi-Factor Authentication for when users are not in the office. The Per Authentication option has\nbeen configured as the usage model.\nAfter the acquisition of a smaller business and the addition of the new staff to Azure Active Directory (Azure AD) obtains a different company and\nadding the new employees to Azure Active Directory (Azure AD), you are informed that these employees should also make use of Multi-Factor\nAuthentication.\nTo achieve this, the Per Enabled User setting must be set for the usage model.\nSolution: You reconfigure the existing usage model via the Azure CLI.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Since it is not possible to change the usage model of an existing provider as it is right now, you have to create a new one and reactivate your existing server with activation credentials from the new provider."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company's Azure solution makes use of Multi-Factor Authentication for when users are not in the office. The Per Authentication option has\nbeen configured as the usage model.\nAfter the acquisition of a smaller business and the addition of the new staff to Azure Active Directory (Azure AD) obtains a different company and\nadding the new employees to Azure Active Directory (Azure AD), you are informed that these employees should also make use of Multi-Factor\nAuthentication.\nTo achieve this, the Per Enabled User setting must be set for the usage model.\nSolution: You create a new Multi-Factor Authentication provider with a backup from the existing Multi-Factor Authentication provider data.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Since it is not possible to change the usage model of an existing provider as it is right now, you have to create a new one and reactivate your existing server with activation credentials from the new provider."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company has an Azure Active Directory (Azure AD) tenant named weyland.com that is configured for hybrid coexistence with the on-\npremises Active\nDirectory domain.\nYou have a server named DirSync1 that is configured as a DirSync server.\nYou create a new user account in the on-premise Active Directory. You now need to replicate the user information to Azure AD immediately.\nSolution: You run the Start-ADSyncSyncCycle -PolicyType Initial PowerShell cmdlet.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company has an Azure Active Directory (Azure AD) tenant named weyland.com that is configured for hybrid coexistence with the on-\npremises Active\nDirectory domain.\nYou have a server named DirSync1 that is configured as a DirSync server.\nYou create a new user account in the on-premise Active Directory. You now need to replicate the user information to Azure AD immediately.\nSolution: You use Active Directory Sites and Services to force replication of the Global Catalog on a domain controller.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result.\nEstablish if the solution satisfies the requirements.\nYour company has an Azure Active Directory (Azure AD) tenant named weyland.com that is configured for hybrid coexistence with the on-\npremises Active\nDirectory domain.\nYou have a server named DirSync1 that is configured as a DirSync server.\nYou create a new user account in the on-premise Active Directory. You now need to replicate the user information to Azure AD immediately.\nSolution: You restart the NetLogon service on a domain controller.\nDoes the solution meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) tenant that is configured for hybrid coexistence with the on-premises Active Directory\ndomain.\nThe on-premise virtual environment consists of virtual machines (VMs) running on Windows Server 2012 R2 Hyper-V host servers.\nYou have created some PowerShell scripts to automate the configuration of newly created VMs. You plan to create several new VMs.\nYou need a solution that ensures the scripts are run on the new VMs.\nWhich of the following is the best solution?",
+    "options": [
+      "Configure a SetupComplete.cmd batch file in the %windir%\\setup\\scripts directory.",
+      "Configure a Group Policy Object (GPO) to run the scripts as logon scripts.",
+      "Configure a Group Policy Object (GPO) to run the scripts as startup scripts.",
+      "Place the scripts in a new virtual hard disk (VHD)."
+    ],
+    "answer": 0,
+    "explanation": "After you deploy a Virtual Machine you typically need to make some changes before it's ready to use. This is something you can do manually or you could use Remote PowerShell to automate the configuration of your VM after deployment for example. But now there's a third alternative available allowing you customize your VM: the CustomScriptextension. This CustomScript extension is executed by the VM Agent and it's very straightforward: you specify which files it needs to download from your storage account and which file it needs to execute. You can even specify arguments that need to be passed to the script. The only requirement is that you execute a .ps1 file."
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) tenant that is configured for hybrid coexistence with the on-premises Active Directory\ndomain.\nYou plan to deploy several new virtual machines (VMs) in Azure. The VMs will have the same operating system and custom software\nrequirements.\nYou configure a reference VM in the on-premise virtual environment. You then generalize the VM to create an image.\nYou need to upload the image to Azure to ensure that it is available for selection when you create the new Azure VMs.\nWhich PowerShell cmdlets should you use?",
+    "options": [
+      "Add-AzVM",
+      "Add-AzVhd",
+      "Add-AzImage",
+      "Add-AzImageDataDisk"
+    ],
+    "answer": 1,
+    "explanation": "The Add-AzVhd cmdlet uploads on-premises virtual hard disks, in .vhd file format, to a blob storage account as fixed virtual hard disks."
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) subscription.\nYou need to deploy five virtual machines (VMs) to your company's virtual network subnet.\nThe VMs will each have both a public and private IP address. Inbound and outbound security rules for all of these virtual machines must be\nidentical.\nWhich of the following is the least amount of network interfaces needed for this configuration?",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "40"
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Your company has an Azure Active Directory (Azure AD) subscription.\nYou need to deploy five virtual machines (VMs) to your company's virtual network subnet.\nThe VMs will each have both a public and private IP address. Inbound and outbound security rules for all of these virtual machines must be\nidentical.\nWhich of the following is the least amount of security groups needed for this configuration?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou have a CSV file that contains the names and email addresses of 500 external users.\nYou need to create a guest user account in contoso.com for each of the 500 external users.\nSolution: You create a PowerShell script that runs the New-AzureADUser cmdlet for each user.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The New-AzureADUser cmdlet creates a user in Azure Active Directory (Azure AD). Instead use the New-AzureADMSInvitation cmdlet which is used to invite a new external user to your directory."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou have a CSV file that contains the names and email addresses of 500 external users.\nYou need to create a guest user account in contoso.com for each of the 500 external users.\nSolution: From Azure AD in the Azure portal, you use the Bulk create user operation.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead use the New-AzureADMSInvitation cmdlet which is used to invite a new external user to your directory."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou have a CSV file that contains the names and email addresses of 500 external users.\nYou need to create a guest user account in contoso.com for each of the 500 external users.\nSolution: You create a PowerShell script that runs the New-AzureADMSInvitation cmdlet for each external user.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Use the New-AzureADMSInvitation cmdlet which is used to invite a new external user to your directory."
+  },
+  {
+    "question": "You have an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com and an Azure Kubernetes Service\n(AKS) cluster named AKS1.\nAn administrator reports that she is unable to grant access to AKS1 to the users in contoso.com.\nYou need to ensure that access to AKS1 can be granted to the contoso.com users.\nWhat should you do first?",
+    "options": [
+      "From contoso.com, modify the Organization relationships settings.",
+      "From contoso.com, create an OAuth 2.0 authorization endpoint.",
+      "Recreate AKS1.",
+      "From AKS1, create a namespace."
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have a Microsoft 365 tenant and an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou plan to grant three users named User1, User2, and User3 access to a temporary Microsoft SharePoint document library named Library1.\nYou need to create groups for the users. The solution must ensure that the groups are deleted automatically after 180 days.\nWhich two groups should you create? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+    "options": [
+      "a Microsoft 365 group that uses the Assigned membership type",
+      "a Security group that uses the Assigned membership type",
+      "a Microsoft 365 group that uses the Dynamic User membership type",
+      "a Security group that uses the Dynamic User membership type",
+      "a Security group that uses the Dynamic Device membership type"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "explanation": "You can set expiration policy only for Office 365 groups in Azure Active Directory (Azure AD). Note: With the increase in usage of Office 365 Groups, administrators and users need a way to clean up unused groups. Expiration policies can help remove inactive groups from the system and make things cleaner. When a group expires, all of its associated services (the mailbox, Planner, SharePoint site, etc.) are also deleted. You can set up a rule for dynamic membership on security groups or Office 365 groups. Incorrect Answers: B, D, E: You can set expiration policy only for Office 365 groups in Azure Active Directory (Azure AD)."
+  },
+  {
+    "question": "You have an Azure policy as shown in the following exhibit:\nWhat is the effect of the policy?",
+    "options": [
+      "You are prevented from creating Azure SQL servers anywhere in Subscription 1.",
+      "You can create Azure SQL servers in ContosoRG1 only.",
+      "You are prevented from creating Azure SQL Servers in ContosoRG1 only.",
+      "You can create Azure SQL servers in any resource group within Subscription 1."
+    ],
+    "answer": 1,
+    "explanation": "You are prevented from creating Azure SQL servers anywhere in Subscription 1 with the exception of ContosoRG1"
+  },
+  {
+    "question": "You have an Azure subscription named AZPT1 that contains the resources shown in the following table:\nYou create a new Azure subscription named AZPT2.\nYou need to identify which resources can be moved to AZPT2.\nWhich resources should you identify?",
+    "options": [
+      "VM1, storage1, VNET1, and VM1Managed only",
+      "VM1 and VM1Managed only",
+      "VM1, storage1, VNET1, VM1Managed, and RVAULT1",
+      "RVAULT1 only"
+    ],
+    "answer": 2,
+    "explanation": "You can move a VM and its associated resources to a different subscription by using the Azure portal. You can now move an Azure Recovery Service (ASR) Vault to either a new resource group within the current subscription or to a new subscription."
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant that contains 5,000 user accounts.\nYou create a new user account named AdminUser1.\nYou need to assign the User administrator administrative role to AdminUser1.\nWhat should you do from the user account properties?",
+    "options": [
+      "From the Licenses blade, assign a new license",
+      "From the Directory role blade, modify the directory role",
+      "From the Groups blade, invite the user account to a new group"
+    ],
+    "answer": 1,
+    "explanation": "Assign a role to a user - 1. Sign in to the Azure portal with an account that's a global admin or privileged role admin for the directory. 2. Select Azure Active Directory, select Users, and then select a specific user from the list. 3. For the selected user, select Directory role, select Add role, and then pick the appropriate admin roles from the Directory roles list, such as Conditional access administrator. 4. Press Select to save."
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant named contoso.onmicrosoft.com that contains 100 user accounts.\nYou purchase 10 Azure AD Premium P2 licenses for the tenant.\nYou need to ensure that 10 users can use all the Azure AD Premium features.\nWhat should you do?",
+    "options": [
+      "From the Licenses blade of Azure AD, assign a license",
+      "From the Groups blade of each user, invite the users to a group",
+      "From the Azure AD domain, add an enterprise application",
+      "From the Directory role blade of each user, modify the directory role"
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You sign up for Azure Active Directory (Azure AD) Premium P2.\nYou need to add a user named admin1@contoso.com as an administrator on all the computers that will be joined to the Azure AD domain.\nWhat should you configure in Azure AD?",
+    "options": [
+      "Device settings from the Devices blade",
+      "Providers from the MFA Server blade",
+      "User settings from the Users blade",
+      "General settings from the Groups blade"
+    ],
+    "answer": 0,
+    "explanation": "When you connect a Windows device with Azure AD using an Azure AD join, Azure AD adds the following security principles to the local administrators group on the device: ✑ The Azure AD global administrator role ✑ The Azure AD device administrator role ✑ The user performing the Azure AD join In the Azure portal, you can manage the device administrator role on the Devices page. To open the Devices page: 1. Sign in to your Azure portal as a global administrator or device administrator. 2. On the left navbar, click Azure Active Directory. 3. In the Manage section, click Devices. 4. On the Devices page, click Device settings. 5. To modify the device administrator role, configure Additional local administrators on Azure AD joined devices."
+  },
+  {
+    "question": "You have an Azure subscription that contains a resource group named RG26.\nRG26 is set to the West Europe location and is used to create temporary resources for a project. RG26 contains the resources shown in the\nfollowing table.\nSQLDB01 is backed up to RGV1.\nWhen the project is complete, you attempt to delete RG26 from the Azure portal. The deletion fails.\nYou need to delete RG26.\nWhat should you do first?",
+    "options": [
+      "Delete VM1",
+      "Stop VM1",
+      "Stop the backup of SQLDB01",
+      "Delete sa001"
+    ],
+    "answer": 2,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant named contosocloud.onmicrosoft.com.\nYour company has a public DNS zone for contoso.com.\nYou add contoso.com as a custom domain name to Azure AD.\nYou need to ensure that Azure can verify the domain name.\nWhich type of DNS record should you create?",
+    "options": [
+      "MX",
+      "NSEC",
+      "PTR",
+      "RRSIG"
+    ],
+    "answer": 0,
+    "explanation": "To verify your custom domain name (example) 1. Sign in to the Azure portal using a Global administrator account for the directory. 2. Select Azure Active Directory, and then select Custom domain names. 3. On the Fabrikam - Custom domain names page, select the custom domain name, Contoso. 4. On the Contoso page, select Verify to make sure your custom domain is properly registered and is valid for Azure AD. Use either the TXT or the MX record type. Note: There are several versions of this question in the exam. The question can have two correct answers: 1. MX 2. TXT The question can also have other incorrect answer options, including the following: 1. SRV 2. NSEC3"
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named\nDevelopers.\nSubscription1 contains a resource group named Dev.\nYou need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.\nSolution: On Subscription1, you assign the DevTest Labs User role to the Developers group.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "DevTest Labs User role only lets you connect, start, restart, and shutdown virtual machines in your Azure DevTest Labs. The Logic App Contributor role lets you manage logic app, but not access to them. It provides access to view, edit, and update a logic app."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named\nDevelopers.\nSubscription1 contains a resource group named Dev.\nYou need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.\nSolution: On Subscription1, you assign the Logic App Operator role to the Developers group.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "You would need the Logic App Contributor role."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named\nDevelopers.\nSubscription1 contains a resource group named Dev.\nYou need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.\nSolution: On Dev, you assign the Contributor role to the Developers group.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The Contributor role can manage all resources (and add resources) in a Resource Group."
+  },
+  {
+    "question": "You have an Azure subscription.\nYou have 100 Azure virtual machines.\nYou need to quickly identify underutilized virtual machines that can have their service tier changed to a less expensive offering.\nWhich blade should you use?",
+    "options": [
+      "Monitor",
+      "Advisor",
+      "Metrics",
+      "Customer insights"
+    ],
+    "answer": 1,
+    "explanation": "Advisor helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard."
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant named contoso.onmicrosoft.com.\nThe User administrator role is assigned to a user named Admin1.\nAn external partner has a Microsoft account that uses the user1@outlook.com sign in.\nAdmin1 attempts to invite the external partner to sign in to the Azure AD tenant and receives the following error message: `Unable to invite user\nuser1@outlook.com `\" Generic authorization exception.`\nYou need to ensure that Admin1 can invite the external partner to sign in to the Azure AD tenant.\nWhat should you do?",
+    "options": [
+      "From the Users settings blade, modify the External collaboration settings.",
+      "From the Custom domain names blade, add a custom domain.",
+      "From the Organizational relationships blade, add an identity provider.",
+      "From the Roles and administrators blade, assign the Security administrator role to Admin1."
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have an Azure subscription linked to an Azure Active Directory tenant. The tenant includes a user account named User1.\nYou need to ensure that User1 can assign a policy to the tenant root management group.\nWhat should you do?",
+    "options": [
+      "Assign the Owner role for the Azure Subscription to User1, and then modify the default conditional access policies.",
+      "Assign the Owner role for the Azure subscription to User1, and then instruct User1 to configure access management for Azure resources.",
+      "Assign the Global administrator role to User1, and then instruct User1 to configure access management for Azure resources.",
+      "Create a new management group and delegate User1 as the owner of the new management group."
+    ],
+    "answer": 1,
+    "explanation": "The following chart shows the list of roles and the supported actions on management groups. Note: Each directory is given a single top-level management group called the \"Root\" management group. This root management group is built into the hierarchy to have all management groups and subscriptions fold up to it. This root management group allows for global policies and Azure role assignments to be applied at the directory level. The Azure AD Global Administrator needs to elevate themselves to the User Access Administrator role of this root group initially. After elevating access, the administrator can assign any Azure role to other directory users or groups to manage the hierarchy. As administrator, you can assign your own account as owner of the root management group."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an\nAzure subscription.\nSolution: You assign the Network Contributor role at the subscription level to Admin1.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an\nAzure subscription.\nSolution: You assign the Owner role at the subscription level to Admin1.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an\nAzure subscription.\nSolution: You assign the Reader role at the subscription level to Admin1.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor."
+  },
+  {
+    "question": "You have an Azure subscription that contains a user named User1.\nYou need to ensure that User1 can deploy virtual machines and manage virtual networks. The solution must use the principle of least privilege.\nWhich role-based access control (RBAC) role should you assign to User1?",
+    "options": [
+      "Owner",
+      "Virtual Machine Contributor",
+      "Contributor",
+      "Virtual Machine Administrator Login"
+    ],
+    "answer": 2,
+    "explanation": "Contributor: Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC Incorrect Answers: A: Owner: Grants full access to manage all resources, including the ability to assign roles in Azure RBAC. B: Virtual Machine Contributor: Lets you manage virtual machines, but not access to them, and not the virtual network or storage account they're connected to. D: Virtual Machine Administrator Login: View Virtual Machines in the portal and login as administrator."
+  },
+  {
+    "question": "You have an Azure subscription that contains a resource group named TestRG.\nYou use TestRG to validate an Azure deployment.\nTestRG contains the following resources:\nYou need to delete TestRG.\nWhat should you do first?",
+    "options": [
+      "Modify the backup configurations of VM1 and modify the resource lock type of VNET1",
+      "Remove the resource lock from VNET1 and delete all data in Vault1",
+      "Turn off VM1 and remove the resource lock from VNET1",
+      "Turn off VM1 and delete all data in Vault1"
+    ],
+    "answer": 2,
+    "explanation": "When you delete a resource group, all of its resources are also deleted. Deleting a resource group deletes all of its template deployments and currently stored operations."
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant.\nYou plan to delete multiple users by using Bulk delete in the Azure Active Directory admin center.\nYou need to create and upload a file for the bulk delete.\nWhich user attributes should you include in the file?",
+    "options": [
+      "The user principal name and usage location of each user only",
+      "The user principal name of each user only",
+      "The display name of each user only",
+      "The display name and usage location of each user only",
+      "The display name and user principal name of each user only"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an\nAzure subscription.\nSolution: You assign the Traffic Manager Contributor role at the subscription level to Admin1.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have three offices and an Azure subscription that contains an Azure Active Directory (Azure AD) tenant.\nYou need to grant user management permissions to a local administrator in each office.\nWhat should you use?",
+    "options": [
+      "Azure AD roles",
+      "administrative units",
+      "access packages in Azure AD entitlement management",
+      "Azure roles"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named\nDevelopers.\nSubscription1 contains a resource group named Dev.\nYou need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.\nSolution: On Dev, you assign the Logic App Contributor role to the Developers group.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have 15 Azure subscriptions.\nYou have an Azure Active Directory (Azure AD) tenant that contains a security group named Group1.\nYou plan to purchase additional Azure subscription.\nYou need to ensure that Group1 can manage role assignments for the existing subscriptions and the planned subscriptions. The solution must\nmeet the following requirements:\n✑ Use the principle of least privilege.\n✑ Minimize administrative effort.\nWhat should you do?",
+    "options": [
+      "Assign Group1 the Owner role for the root management group.",
+      "Assign Group1 the User Access Administrator role for the root management group.",
+      "Create a new management group and assign Group1 the User Access Administrator role for the group.",
+      "Create a new management group and assign Group1 the Owner role for the group."
+    ],
+    "answer": 1,
+    "explanation": "The User Access Administrator role enables the user to grant other users access to Azure resources. This switch can be helpful to regain access to a subscription. Management groups give you enterprise-grade management at scale no matter what type of subscriptions you might have. Each directory is given a single top-level management group called the \"Root\" management group. This root management group is built into the hierarchy to have all management groups and subscriptions fold up to it. This root management group allows for global policies and Azure role assignments to be applied at the directory level. Incorrect: Not C: A few directories that started using management groups early in the preview before June 25 2018 could see an issue where not all the subscriptions were within the hierarchy. The process to have all subscriptions in the hierarchy was put in place after a role or policy assignment was done on the root management group in the directory."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure subscription that contains the following users in an Azure Active Directory tenant named contoso.onmicrosoft.com:\nUser1 creates a new Azure Active Directory tenant named external.contoso.onmicrosoft.com.\nYou need to create new user accounts in external.contoso.onmicrosoft.com.\nSolution: You instruct User2 to create the user accounts.\nDoes that meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Only a global administrator can add users to this tenant."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure subscription that contains the following users in an Azure Active Directory tenant named contoso.onmicrosoft.com:\nUser1 creates a new Azure Active Directory tenant named external.contoso.onmicrosoft.com.\nYou need to create new user accounts in external.contoso.onmicrosoft.com.\nSolution: You instruct User4 to create the user accounts.\nDoes that meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Only a global administrator can add users to this tenant."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure subscription that contains the following users in an Azure Active Directory tenant named contoso.onmicrosoft.com:\nUser1 creates a new Azure Active Directory tenant named external.contoso.onmicrosoft.com.\nYou need to create new user accounts in external.contoso.onmicrosoft.com.\nSolution: You instruct User3 to create the user accounts.\nDoes that meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Only a global administrator can add users to this tenant."
+  },
+  {
+    "question": "You have two Azure subscriptions named Sub1 and Sub2.\nAn administrator creates a custom role that has an assignable scope to a resource group named RG1 in Sub1.\nYou need to ensure that you can apply the custom role to any resource group in Sub1 and Sub2. The solution must minimize administrative effort.\nWhat should you do?",
+    "options": [
+      "Select the custom role and add Sub1 and Sub2 to the assignable scopes. Remove RG1 from the assignable scopes.",
+      "Create a new custom role for Sub1. Create a new custom role for Sub2. Remove the role from RG1.",
+      "Create a new custom role for Sub1 and add Sub2 to the assignable scopes. Remove the role from RG1.",
+      "Select the custom role and add Sub1 to the assignable scopes. Remove RG1 from the assignable scopes. Create a new custom role for Sub2."
+    ],
+    "answer": 0,
+    "explanation": "Can be used as: \"AssignableScopes\": [ \"/subscriptions/{Sub1}\", \"/subscriptions/{Sub2}\", Note: Custom role example: The following shows what a custom role looks like as displayed using Azure PowerShell in JSON format. This custom role can be used for monitoring and restarting virtual machines. { \"Name\": \"Virtual Machine Operator\", \"Id\": \"88888888-8888-8888-8888-888888888888\", \"IsCustom\": true, \"Description\": \"Can monitor and restart virtual machines.\", \"Actions\": [ \"Microsoft.Storage/*/read\", \"Microsoft.Network/*/read\", \"Microsoft.Compute/*/read\", \"Microsoft.Compute/virtualMachines/start/action\", \"Microsoft.Compute/virtualMachines/restart/action\", \"Microsoft.Authorization/*/read\", \"Microsoft.ResourceHealth/availabilityStatuses/read\", \"Microsoft.Resources/subscriptions/resourceGroups/read\", \"Microsoft.Insights/alertRules/*\", \"Microsoft.Insights/diagnosticSettings/*\", \"Microsoft.Support/*\" ], \"NotActions\": [], \"DataActions\": [], \"NotDataActions\": [], \"AssignableScopes\": [ \"/subscriptions/{subscriptionId1}\", \"/subscriptions/{subscriptionId2}\", \"/providers/Microsoft.Management/managementGroups/{groupId1}\" ] }"
+  },
+  {
+    "question": "You have an Azure App Services web app named App1.\nYou plan to deploy App1 by using Web Deploy.\nYou need to ensure that the developers of App1 can use their Azure AD credentials to deploy content to App1. The solution must use the principle\nof least privilege.\nWhat should you do?",
+    "options": [
+      "Assign the Owner role to the developers",
+      "Configure app-level credentials for FTPS",
+      "Assign the Website Contributor role to the developers",
+      "Configure user-level credentials for FTPS"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou have a CSV file that contains the names and email addresses of 500 external users.\nYou need to create a guest user account in contoso.com for each of the 500 external users.\nSolution: From Azure AD in the Azure portal, you use the Bulk invite users operation.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have an Azure AD tenant named adatum.com that contains the groups shown in the following table.\nAdatum.com contains the users shown in the following table.\nYou assign the Azure Active Directory Premium Plan 2 license to Group1 and User4.\nWhich users are assigned the Azure Active Directory Premium Plan 2 license?",
+    "options": [
+      "User4 only",
+      "User1 and User4 only",
+      "User1, User2, and User4 only",
+      "User1, User2, User3, and User4"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou have a CSV file that contains the names and email addresses of 500 external users.\nYou need to create a guest user account in contoso.com for each of the 500 external users.\nSolution: You create a PowerShell script that runs the New-MgUser cmdlet for each external user.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou have a CSV file that contains the names and email addresses of 500 external users.\nYou need to create a guest user account in contoso.com for each of the 500 external users.\nSolution: You create a PowerShell script that runs the New-MgInvitation cmdlet for each external user.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have an Azure AD tenant that contains the groups shown in the following table.\nYou purchase Azure Active Directory Premium P2 licenses.\nTo which groups can you assign a license?",
+    "options": [
+      "Group1 only",
+      "Group1 and Group3 only",
+      "Group3 and Group4 only",
+      "Group1, Group2, and Group3 only",
+      "Group1, Group2, Group3, and Group4"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Active Directory (Azure AD) tenant named contoso.com.\nYou have a CSV file that contains the names and email addresses of 500 external users.\nYou need to create a guest user account in contoso.com for each of the 500 external users.\nSolution: You create a PowerShell script that runs the New-MgUser cmdlet for each user.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have an Azure subscription named Sub1 that contains the resources shown in the following table.\nYou create a user named Admin1.\nTo what can you add Admin1 as a co-administrator?",
+    "options": [
+      "RG1",
+      "MG1",
+      "Sub1",
+      "VM1"
+    ],
+    "answer": 2,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant named adatum.com that contains the users shown in the following table.\nAdatum.com has the following configurations:\n✑ Users may join devices to Azure AD is set to User1.\n✑ Additional local administrators on Azure AD joined devices is set to None.\nYou deploy Windows 10 to a computer named Computer1. User1 joins Computer1 to adatum.com.\nYou need to identify the local Administrator group membership on Computer1.\nWhich users are members of the local Administrators group?",
+    "options": [
+      "User1 only",
+      "User2 only",
+      "User1 and User2 only",
+      "User1, User2, and User3 only",
+      "User1, User2, User3, and User4"
+    ],
+    "answer": 2,
+    "explanation": "Users may join devices to Azure AD - This setting enables you to select the users who can register their devices as Azure AD joined devices. The default is All. Additional local administrators on Azure AD joined devices - You can select the users that are granted local administrator rights on a device. Users added here are added to the Device Administrators role in Azure AD. Global administrators, here User2, in Azure AD and device owners are granted local administrator rights by default."
+  },
+  {
+    "question": "You have an Azure AD tenant named contoso.com.\nYou have an Azure subscription that contains an Azure App Service web app named App1 and an Azure key vault named KV1. KV1 contains a\nwildcard certificate for contoso.com.\nYou have a user named user1@contoso.com that is assigned the Owner role for App1 and KV1.\nYou need to configure App1 to use the wildcard certificate of KV1.\nWhat should you do first?",
+    "options": [
+      "Create an access policy for KV1 and assign the Microsoft Azure App Service principal to the policy.",
+      "Assign a managed user identity to App1.",
+      "Configure KV1 to use the role-based access control (RBAC) authorization system.",
+      "Create an access policy for KV1 and assign the policy to User1."
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "You have an Azure subscription that contains the resources shown in the following table.\nThe Not allowed resource types Azure policy that has policy enforcement enabled is assigned to RG1 and uses the following parameters:\nMicrosoft.Network/virtualNetworks\nMicrosoft.Compute/virtualMachines\nIn RG1, you need to create a new virtual machine named VM2, and then connect VM2 to VNET1.\nWhat should you do first?",
+    "options": [
+      "Remove Microsoft.Compute/virtualMachines from the policy.",
+      "Create an Azure Resource Manager template",
+      "Add a subnet to VNET1.",
+      "Remove Microsoft.Network/virtualNetworks from the policy."
+    ],
+    "answer": 0,
+    "explanation": "The Not allowed resource types Azure policy prohibits the deployment of specified resource types. You specify an array of the resource types to block. Virtual Networks and Virtual Machines are prohibited."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site\nconnection uses a self-signed certificate.\nFrom Azure, you download and install the VPN client configuration package on a computer named Computer2.\nYou need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2.\nSolution: You modify the Azure Active Directory (Azure AD) authentication policies.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "Instead export the client certificate from Computer1 and install the certificate on Computer2. Note: Each client computer that connects to a VNet using Point-to-Site must have a client certificate installed. You generate a client certificate from the self-signed root certificate, and then export and install the client certificate. If the client certificate is not installed, authentication fails."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have a computer named Computer1 that has a point-to-site VPN connection to an Azure virtual network named VNet1. The point-to-site\nconnection uses a self-signed certificate.\nFrom Azure, you download and install the VPN client configuration package on a computer named Computer2.\nYou need to ensure that you can establish a point-to-site VPN connection to VNet1 from Computer2.\nSolution: You join Computer2 to Azure Active Directory (Azure AD).\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "A client computer that connects to a VNet using Point-to-Site must have a client certificate installed."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups.\nAnother administrator plans to create several network security groups (NSGs) in the subscription.\nYou need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks.\nSolution: You create a resource lock, and then you assign the lock to the subscription.\nDoes this meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 1,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  },
+  {
+    "question": "Your company has a main office in London that contains 100 client computers.\nThree years ago, you migrated to Azure Active Directory (Azure AD).\nThe company's security policy states that all personal devices and corporate-owned devices must be registered or joined to Azure AD.\nA remote user named User1 is unable to join a personal device to Azure AD from a home network.\nYou verify that User1 was able to join devices to Azure AD in the past.\nYou need to ensure that User1 can join the device to Azure AD.\nWhat should you do?",
+    "options": [
+      "Assign the User administrator role to User1.",
+      "From the Device settings blade, modify the Maximum number of devices per user setting.",
+      "Create a point-to-site VPN from the home network of User1 to Azure.",
+      "From the Device settings blade, modify the Users may join devices to Azure AD setting."
+    ],
+    "answer": 1,
+    "explanation": "The Maximum number of devices setting enables you to select the maximum number of devices that a user can have in Azure AD. If a user reaches this quota, they will not be able to add additional devices until one or more of the existing devices are removed. Incorrect Answers: C: Azure AD Join enables users to join their devices to Active Directory from anywhere as long as they have connectivity with the Internet. D: The Users may join devices to Azure AD setting enables you to select the users who can join devices to Azure AD. Options are All, Selected and None. The default is All."
+  },
+  {
+    "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that\nmight meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure subscription that contains the following users in an Azure Active Directory tenant named contoso.onmicrosoft.com:\nUser1 creates a new Azure Active Directory tenant named external.contoso.onmicrosoft.com.\nYou need to create new user accounts in external.contoso.onmicrosoft.com.\nSolution: You instruct User1 to create the user accounts.\nDoes that meet the goal?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": 0,
+    "explanation": "Only a global administrator can add users to this tenant."
+  },
+  {
+    "question": "You have an Azure subscription.\nYou need to receive an email alert when a resource lock is removed from any resource in the subscription.\nWhat should you use to create an activity log alert in Azure Monitor?",
+    "options": [
+      "a resource, a condition, and an action group",
+      "a resource, a condition, and a Microsoft 365 group",
+      "a Log Analytics workspace, a resource, and an action group",
+      "a data collection endpoint, an application security group, and a resource group"
+    ],
+    "answer": 0,
+    "explanation": "The PDF does not provide a text explanation for this answer; technical verification is pending."
+  }
+]
